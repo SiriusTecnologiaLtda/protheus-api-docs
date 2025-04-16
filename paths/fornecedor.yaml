@@ -11,7 +11,7 @@ post:
     content:
       application/json:
         schema:
-          $ref: './components/schemas/fornecedor.yaml'
+          $ref: '../components/schemas/fornecedor.yaml'
 
   responses:
     "200":
