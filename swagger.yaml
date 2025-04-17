@@ -1,7 +1,7 @@
 openapi: 3.0.0
 info:
-  title: API Protheus Macroex
-  description: API Protheus Macroex
+  title: API Protheus 
+  description: API Protheus Documentação
   version: 1.0.0
   termsOfService: http://example.com/terms/
   contact:
@@ -12,7 +12,7 @@ info:
     name: Apache 2.0
     url: https://www.apache.org/licenses/LICENSE-2.0.html
 servers:
-  - url: "https://webhook.app.hubhero.com.br/webhook/82130c21-3282-4f14-8267-c010b385f30e"
+  - url: "https://macroex.hubhero.com.br/webhook/82130c21-3282-4f14-8267-c010b385f30e"
     description: Development server
   # - url: 'https://api.example.com'
   # description: Production server
