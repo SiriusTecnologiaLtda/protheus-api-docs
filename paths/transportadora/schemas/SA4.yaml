@@ -1,0 +1,197 @@
+type: object
+properties:
+  A4_FILIAL:
+    type: string
+    length: 4
+    description: "Filial do Sistema"
+
+  A4_COD:
+    type: string
+    length: 6
+    description: "Codigo da Transportadora"
+
+  A4_NOME:
+    type: string
+    length: 40
+    description: "Nome da transportadora"
+
+  A4_NREDUZ:
+    type: string
+    length: 15
+    description: "Nome reduzido da transp."
+
+  A4_VIA:
+    type: string
+    length: 15
+    description: "Via de Transporte"
+
+  A4_END:
+    type: string
+    length: 40
+    description: "Endereco da Transportad."
+
+  A4_BAIRRO:
+    type: string
+    length: 30
+    description: "Bairro da Transportadora"
+
+  A4_COD_MUN:
+    type: string
+    length: 5
+    description: "Código do município"
+
+  A4_MUN:
+    type: string
+    length: 60
+    description: "Municipio da Transportad."
+
+  A4_EST:
+    type: string
+    length: 2
+    description: "Estado da transportadora"
+
+  A4_CEP:
+    type: string
+    length: 8
+    description: "Cod Enderecamento Postal"
+    example: "99999-999"
+
+  A4_DDI:
+    type: string
+    length: 6
+    description: "Codigo do DDI"
+    example: "999999"
+
+  A4_DDD:
+    type: string
+    length: 3
+    description: "Codigo do DDD"
+    example: "999"
+
+  A4_TEL:
+    type: string
+    length: 15
+    description: "Telefone da Transportad."
+    example: "9999999999"
+
+  A4_CGC:
+    type: string
+    length: 14
+    description: "CNPJ/CPF da transportador"
+    example: "99.999.999/9999-99"
+
+  A4_TELEX:
+    type: string
+    length: 10
+    description: "Telex da transportadora"
+
+  A4_INSEST:
+    type: string
+    length: 15
+    description: "Inscricao Estadual"
+
+  A4_EMAIL:
+    type: string
+    length: 30
+    description: "E-Mail"
+
+  A4_HPAGE:
+    type: string
+    length: 30
+    description: "Home-Page"
+
+  A4_CONTATO:
+    type: string
+    length: 15
+    description: "Contato na transportadora"
+
+  A4_ESTFIS:
+    type: string
+    length: 6
+    description: "Estrutura Fisica"
+
+  A4_ENDPAD:
+    type: string
+    length: 15
+    description: "Endereco Padrão Carg/Desc"
+
+  A4_LOCAL:
+    type: string
+    length: 2
+    description: "Local"
+
+  A4_RATFRE:
+    type: string
+    length: 1
+    options: "1=Peso;2=Quantidade;3=Volume;4=Item"
+    description: "Rateio do Frete"
+    example: "option"
+
+  A4_COMPLEM:
+    type: string
+    length: 50
+    description: "Complemento do endereço"
+
+  A4_FOMEZER:
+    type: string
+    length: 1
+    options: "1=Sim;2=Não"
+    description: "Participante no Fome Zero"
+    example: "option"
+
+  A4_SUFRAMA:
+    type: string
+    length: 12
+    description: "Inscrição Suframa"
+
+  A4_CODPAIS:
+    type: string
+    length: 5
+    description: "Código do país"
+    example: "99999"
+
+  A4_TPTRANS:
+    type: string
+    length: 1
+    options: "1=Inscrito;2=Não inscrito;3=Autônomo"
+    description: "Tipo do transportador"
+    example: "option"
+
+  A4_COLIG:
+    type: string
+    length: 1
+    options: "S=Sim;N=Nao"
+    description: "Transportadora Coligada?"
+    example: "option"
+
+  A4_INSCRM:
+    type: string
+    length: 18
+    description: "Inscricao Municipal"
+
+  A4_ANTT:
+    type: string
+    length: 14
+    description: "Reg Nac Transp Rod Cargas"
+
+  A4_ENDNOT:
+    type: string
+    length: 1
+    options: "1=Sim;2=Não"
+    description: "Endereço não formatado"
+    example: "option"
+
+  A4_IDETIQ:
+    type: string
+    length: 10
+    description: "ID da etiqueta"
+
+  A4_ECSERVI:
+    type: string
+    length: 6
+    description: "Cod. E-Commerce."
+required: [
+  "A4_FILIAL", 
+  "A4_COD", 
+  "A4_NOME"
+  ]

@@ -1,0 +1,240 @@
+type: object
+properties:
+  CTD_ACAT01:
+    type: string
+    lenght: 1
+    options: "1=Sim;2=Não"
+    example: "option"
+    description: "Aceita Atividade 01"
+
+  CTD_ACAT02:
+    type: string
+    lenght: 1
+    options: "1=Sim;2=Não"
+    example: "option"
+    description: "Aceita Atividade 02"
+
+  CTD_ACAT03:
+    type: string
+    lenght: 1
+    options: "1=Sim;2=Não"
+    example: "option"
+    description: "Aceita Atividade 03"
+
+  CTD_ACAT04:
+    type: string
+    lenght: 1
+    example: "option"
+    options: "1=Sim;2=Não"
+    description: "Aceita Atividade 04"
+
+  CTD_ACATIV:
+    type: string
+    lenght: 1
+    options: "1=Sim;2=Não"
+    example: "option"
+    description: "Aceita Outra Atividade?"
+
+  CTD_ACCLVL:
+    type: string
+    lenght: 1
+    options: "1=Sim;2=Não"
+    example: "option"
+    description: "Aceita Classe de Valor"
+
+  CTD_AT01OB:
+    type: string
+    lenght: 1
+    options: "1=Sim;2=Não"
+    example: "option"
+    description: "Obrigatório Ativ.01"
+
+  CTD_AT02OB:
+    type: string
+    lenght: 1
+    options: "1=Sim;2=Não"
+    example: "option"
+    description: "Obrigatório Ativ.02"
+
+  CTD_AT03OB:
+    type: string
+    lenght: 1
+    options: "1=Sim;2=Não"
+    example: "option"
+    description: "Obrigatório Ativ.03"
+
+  CTD_AT04OB:
+    type: string
+    lenght: 1
+    options: "1=Sim;2=Não"
+    example: "option"
+    description: "Obrigatório Ativ.04"
+
+  CTD_ATOBRG:
+    type: string
+    lenght: 1
+    options: "1=Sim;2=Não"
+    example: "option"
+    description: "Outra ativ. obrigatoria?"
+
+  CTD_BLOQ:
+    type: string
+    lenght: 1
+    example: "option"
+    options: "1=Bloqueado;2=Nao Bloqueado"
+    description: "Item Bloqueado"
+
+  CTD_BOOK:
+    type: string
+    lenght: 20
+    description: "Configuracao de Livros"
+
+  CTD_CLASSE:
+    type: string
+    lenght: 1
+    example: "option"
+    options: "1=Sintetico;2=Analitico"
+    description: "Classe"
+
+  CTD_CLOBRG:
+    type: string
+    lenght: 1
+    options: "1=Sim;2=Não"
+    example: "option"
+    description: "Classe de Valor Obrigat."
+
+  CTD_CRGNV1:
+    type: string
+    lenght: 12
+    description: "Contra Regra Nivel 1"
+
+  CTD_CRGNV2:
+    type: string
+    lenght: 12
+    description: "Contra Regra Nivel 2"
+
+  CTD_DESC01:
+    type: string
+    lenght: 40
+    description: "Descricao na Moeda 1"
+
+  CTD_DESC02:
+    type: string
+    lenght: 40
+    description: "Descricao na Moeda 2"
+
+  CTD_DESC03:
+    type: string
+    lenght: 40
+    description: "Descricao na Moeda 3"
+
+  CTD_DESC04:
+    type: string
+    lenght: 40
+    description: "Descricao na Moeda 4"
+
+  CTD_DESC05:
+    type: string
+    lenght: 40
+    description: "Descricao na Moeda 5"
+
+  CTD_DTBLFI:
+    type: string
+    lenght: 8
+    description: "Data Final Bloqueio"
+    example: "yyyymmdd"
+    format: date
+
+  CTD_DTBLIN:
+    type: string
+    lenght: 8
+    description: "Data Inicio Bloqueio"
+    example: "yyyymmdd"
+    format: date
+
+  CTD_DTEXIS:
+    type: string
+    format: date
+    example: "yyyymmdd"
+    lenght: 8
+    description: "Data Inicio Existencia"
+
+  CTD_DTEXSF:
+    type: string
+    format: date
+    example: "yyyymmdd"
+    lenght: 8
+    description: "Data Final de Existencia"
+
+  CTD_FILIAL:
+    type: string
+    lenght: 2
+    description: "Filial do Sistema"
+
+  CTD_ITEM:
+    type: string
+    lenght: 9
+    description: "Item Contabil"
+
+  CTD_ITLP:
+    type: string
+    lenght: 9
+    description: "Item Lucros/Perdas"
+
+  CTD_ITPON:
+    type: string
+    lenght: 9
+    description: "Item Ponte Lucros/Perdas"
+
+  CTD_ITRED:
+    type: string
+    lenght: 9
+    description: "Item Redutor Var.Monet."
+
+  CTD_ITSUP:
+    type: string
+    lenght: 9
+    description: "Item Superior"
+
+  CTD_ITVM:
+    type: string
+    lenght: 9
+    description: "Item de Var. Monetaria"
+
+  CTD_NORMAL:
+    type: string
+    lenght: 1
+    options: "0=Nenhum;1=Despesa;2=Receita"
+    description: "Condicao Normal"
+    example: "option"
+
+  CTD_RES:
+    type: string
+    lenght: 10
+    description: "Codigo Red. Item Contabil"
+
+  CTD_RGNV3:
+    type: string
+    lenght: 12
+    description: "Regra Nivel 3"
+
+  CTD_TPO01:
+    type: string
+    lenght: 2
+    description: "Tipo Ctb 01"
+
+  CTD_TPO02:
+    type: string
+    lenght: 2
+    description: "Tipo Ctb 02"
+
+  CTD_TPO03:
+    type: string
+    lenght: 2
+    description: "Tipo Ctb 03"
+
+  CTD_TPO04:
+    type: string
+    lenght: 2
+    description: "Tipo Ctb 04"
+required: ["CTD_ITEM", "CTD_CLASSE", "CTD_DESC01"]

@@ -1,0 +1,1400 @@
+type: object
+properties:
+  E2_ACRESC:
+    type: number
+    lenght: 16
+    decimal: 2
+    description: "Valor de Acrescimo"
+    example: "9999999999999.99"
+
+  E2_AGECHQ:
+    type: string
+    lenght: 5
+    description: "Agência Cheque Liquidac."
+
+  E2_AGLIMP:
+    type: string
+    lenght: 9
+    description: "Aglutinacao de Impostos"
+
+  E2_ANOBASE:
+    type: string
+    lenght: 4
+    description: "Ano Base"
+
+  E2_APLVLMN:
+    type: string
+    lenght: 1
+    options: "1=Sim;2=Não"
+    example: "option"
+    description: "Aplica Vlr. Mínimo"
+
+  E2_APROVA:
+    type: string
+    lenght: 20
+    description: "Liberador do titulo"
+
+  E2_ARQRAT:
+    type: string
+    lenght: 30
+    description: "Nome do Arquivo de Rateio"
+
+  E2_BAIXA:
+    type: string
+    format: date
+    example: "yyyymmdd"
+    lenght: 8
+    description: "Data de Baixa do Titulo"
+
+  E2_BASECOF:
+    type: number
+    lenght: 16
+    decimal: 2
+    description: "Base Cofins ref. titulo"
+    example: "9999999999999.99"
+
+  E2_BASECSL:
+    type: number
+    lenght: 16
+    decimal: 2
+    description: "Base Csll ref ao titulo"
+    example: "9999999999999.99"
+
+  E2_BASEINS:
+    type: number
+    lenght: 16
+    decimal: 2
+    description: "Base INSS"
+    example: "9999999999999.99"
+
+  E2_BASEIRF:
+    type: number
+    lenght: 16
+    decimal: 2
+    description: "Base IRRF"
+    example: "9999999999999.99"
+
+  E2_BASEISS:
+    type: number
+    lenght: 16
+    decimal: 2
+    description: "Base ISS"
+    example: "9999999999999.99"
+
+  E2_BASEPIS:
+    type: number
+    lenght: 16
+    decimal: 2
+    description: "Base do PCC"
+    example: "9999999999999.99"
+
+  E2_BCOCHQ:
+    type: string
+    lenght: 3
+    description: "Banco Cheque Liquidac."
+
+  E2_BCOPAG:
+    type: string
+    lenght: 3
+    description: "Banco de pagamento"
+
+  E2_BTRISS:
+    type: number
+    lenght: 14
+    decimal: 2
+    description: "Bitributação do ISS CPOM"
+    example: "99999999999.99"
+
+  E2_CCC:
+    type: string
+    lenght: 9
+    description: "C.Custo a Credito"
+
+  E2_CCD:
+    type: string
+    lenght: 9
+    description: "C.Custo a Debito"
+
+  E2_CCUSTO:
+    type: string
+    lenght: 9
+    description: "Centro de Custo"
+
+  E2_CIDE:
+    type: number
+    lenght: 14
+    decimal: 2
+    description: "Valor do CIDE"
+    example: "99999999999.99"
+
+  E2_CLASCON:
+    type: string
+    lenght: 5
+    description: "Classificacao"
+
+  E2_CLEARIN:
+    type: string
+    lenght: 3
+    description: "Codigo do Clearing SPB"
+
+  E2_CLVL:
+    type: string
+    lenght: 9
+    description: "Classe de Valor"
+
+  E2_CLVLCR:
+    type: string
+    lenght: 9
+    description: "Classe de Valor a Credito"
+
+  E2_CLVLDB:
+    type: string
+    lenght: 9
+    description: "Classe de Valor a Debito"
+
+  E2_CNO:
+    type: string
+    lenght: 6
+    description: "Codigo CNO"
+
+  E2_CNPJRET:
+    type: string
+    lenght: 14
+    description: "CNPJ do retentor"
+
+  E2_CODAGL:
+    type: string
+    lenght: 6
+    description: "Código Aglutinador"
+
+  E2_CODAPRO:
+    type: string
+    lenght: 6
+    description: "Código do Aprovador"
+
+  E2_CODBAR:
+    type: string
+    lenght: 44
+    description: "Codigo de Barras"
+
+  E2_CODINS:
+    type: string
+    lenght: 4
+    description: "Cod Retenção INSS"
+
+  E2_CODISS:
+    type: string
+    lenght: 6
+    description: "Codigo Aliquota ISS"
+
+  E2_CODOPE:
+    type: string
+    lenght: 2
+    description: "Codigo Operadora de Frete"
+
+  E2_CODORCA:
+    type: string
+    lenght: 8
+    description: "Codigo do Orcamento"
+
+  E2_CODRCOF:
+    type: string
+    lenght: 4
+    description: "Cod. Ret Cofins"
+
+  E2_CODRCSL:
+    type: string
+    lenght: 4
+    description: "Codigo Ret. CSL"
+
+  E2_CODRDA:
+    type: string
+    lenght: 6
+    description: "Codigo Rede Atendimento"
+
+  E2_CODRET:
+    type: string
+    lenght: 4
+    description: "Codigo de Retencao"
+    example: "9999"
+
+  E2_CODRPIS:
+    type: string
+    lenght: 4
+    description: "Cod. de Retencao PIS"
+
+  E2_CODSERV:
+    type: string
+    lenght: 9
+    description: "Codigo de Servico do ISS"
+
+  E2_COFINS:
+    type: number
+    lenght: 14
+    decimal: 2
+    description: "Valor COFINS"
+    example: "99999999999.99"
+
+  E2_CONTAD:
+    type: string
+    lenght: 20
+    description: "Conta Contabil"
+
+  E2_CORREC:
+    type: number
+    lenght: 16
+    decimal: 2
+    description: "Valor da Correcao"
+    example: "9999999999999.99"
+
+  E2_CREDIT:
+    type: string
+    lenght: 20
+    description: "Conta Contabil a Credito"
+
+  E2_CSLL:
+    type: number
+    lenght: 14
+    decimal: 2
+    description: "Valor CSLL"
+    example: "99999999999.99"
+
+  E2_CTACHQ:
+    type: string
+    lenght: 10
+    description: "Conta Cheque Liduidac."
+
+  E2_DATAAGE:
+    type: string
+    format: date
+    example: "yyyymmdd"
+    lenght: 8
+    description: "Data de Agendamento"
+
+  E2_DATACAN:
+    type: string
+    format: date
+    example: "yyyymmdd"
+    lenght: 8
+    description: "Data do Cancelamento"
+
+  E2_DATALIB:
+    type: string
+    format: date
+    example: "yyyymmdd"
+    lenght: 8
+    description: "Data da Liberacao"
+
+  E2_DATASUS:
+    type: string
+    format: date
+    example: "yyyymmdd"
+    lenght: 8
+    description: "Data da Suspensão"
+
+  E2_DEBITO:
+    type: string
+    lenght: 20
+    description: "Conta a Debito"
+
+  E2_DECRESC:
+    type: number
+    lenght: 16
+    decimal: 2
+    description: "Valor de Decrescimo"
+    example: "9999999999999.99"
+
+  E2_DESCONT:
+    type: number
+    lenght: 16
+    decimal: 2
+    description: "Valor do Desconto"
+    example: "9999999999999.99"
+
+  E2_DESDOBR:
+    type: string
+    lenght: 1
+    options: "1=Sim;2=Não"
+    example: "option"
+    description: "Desdobramento"
+
+  E2_DIACTB:
+    type: string
+    lenght: 2
+    description: "Cod. Diario da Contabilid"
+
+  E2_DIRF:
+    type: string
+    lenght: 1
+    options: "1=Sim;2=Não"
+    example: "option"
+    description: "Gera Dirf para este tit?"
+
+  E2_DOCHAB:
+    type: string
+    lenght: 6
+    description: "Documento Hábil"
+
+  E2_DTAPUR:
+    type: string
+    format: date
+    example: "yyyymmdd"
+    lenght: 8
+    description: "Data de apuração"
+
+  E2_DTBORDE:
+    type: string
+    format: date
+    example: "yyyymmdd"
+    lenght: 8
+    description: "Data do bordero"
+
+  E2_DTDIRF:
+    type: string
+    format: date
+    example: "yyyymmdd"
+    lenght: 8
+    description: "Data de Geracao da Dirf"
+
+  E2_DTFATUR:
+    type: string
+    format: date
+    example: "yyyymmdd"
+    lenght: 8
+    description: "Data Faturamento"
+
+  E2_DTVARIA:
+    type: string
+    format: date
+    example: "yyyymmdd"
+    lenght: 8
+    description: "Data da Ultima Variacao"
+
+  E2_EMIS1:
+    type: string
+    format: date
+    example: "yyyymmdd"
+    lenght: 8
+    description: "Data de Contabilizacao"
+
+  E2_EMISSAO:
+    type: string
+    format: date
+    example: "yyyymmdd"
+    lenght: 8
+    description: "Data de Emissao do Titulo"
+
+  E2_FABOV:
+    type: number
+    lenght: 14
+    decimal: 2
+    description: "Valor do tributo FABOV"
+    example: "99999999999.99"
+
+  E2_FACS:
+    type: number
+    lenght: 14
+    decimal: 2
+    description: "Valor do tributo FACS"
+    example: "99999999999.99"
+
+  E2_FAGEDV:
+    type: string
+    lenght: 1
+    description: "Digito Verificador Agenc."
+
+  E2_FAMAD:
+    type: number
+    lenght: 16
+    decimal: 2
+    description: "Valor do Famad"
+    example: "9999999999999.99"
+
+  E2_FATFOR:
+    type: string
+    lenght: 6
+    description: "Fornecedor Fatura"
+
+  E2_FATLOJ:
+    type: string
+    lenght: 2
+    description: "Loja Fornecedor Fatura"
+
+  E2_FATPREF:
+    type: string
+    lenght: 3
+    description: "Prefixo fatura gerada"
+
+  E2_FATURA:
+    type: string
+    lenght: 9
+    description: "Numero da Fatura"
+
+  E2_FCTADV:
+    type: string
+    lenght: 2
+    description: "Digito Verificador Conta"
+
+  E2_FETHAB:
+    type: number
+    lenght: 14
+    decimal: 2
+    description: "Valor do Imposto FETHAB"
+    example: "99999999999.99"
+
+  E2_FILDEB:
+    type: string
+    lenght: 2
+    description: "Filial de Debito"
+
+  E2_FILIAL:
+    type: string
+    lenght: 2
+    description: "Filial do Sistema"
+
+  E2_FILORIG:
+    type: string
+    lenght: 2
+    description: "Filial de origem"
+
+  E2_FIMP:
+    type: string
+    lenght: 1
+    description: "Flag de Impressão NFe"
+
+  E2_FLAGFAT:
+    type: string
+    lenght: 1
+    description: "Flag Faturas"
+
+  E2_FLUXO:
+    type: string
+    lenght: 1
+    options: "1=Sim;2=Não"
+    example: "option"
+    description: "Fluxo de Caixa"
+
+  E2_FMPEQ:
+    type: number
+    lenght: 16
+    decimal: 2
+    description: "Valor do Fumipeq"
+    example: "9999999999999.99"
+
+  E2_FORAGE:
+    type: string
+    lenght: 5
+    description: "Agencia Bancaria Fornec."
+
+  E2_FORBCO:
+    type: string
+    lenght: 3
+    description: "Banco do Fornecedor"
+
+  E2_FORCTA:
+    type: string
+    lenght: 10
+    description: "Conta do Fornecedor"
+
+  E2_FORMPAG:
+    type: string
+    lenght: 2
+    description: "Forma de pagamento Prefer"
+
+  E2_FORNECE:
+    type: string
+    lenght: 6
+    description: "Codigo do Fornecedor"
+
+  E2_FORNISS:
+    type: string
+    lenght: 6
+    description: "Cod Fornecedor ISS"
+
+  E2_FORNPAI:
+    type: string
+    lenght: 50
+    description: "Fornec.Titulo Pai PCC"
+
+  E2_FORORI:
+    type: string
+    lenght: 6
+    description: "Fornecedor Original"
+
+  E2_FRETISS:
+    type: string
+    lenght: 1
+    options: "1=Cons.Vlr.Min.;2=Sempre retém"
+    example: "option"
+    description: "Forma de retenção do ISS"
+
+  E2_HIST:
+    type: string
+    lenght: 40
+    description: "Historico do Título"
+
+  E2_HORASPB:
+    type: string
+    lenght: 5
+    description: "Hora do Agendamento SPB"
+    example: "99:99"
+
+  E2_IDCNAB:
+    type: string
+    lenght: 10
+    description: "Identificador Cnab"
+
+  E2_IDDARF:
+    type: string
+    lenght: 20
+    description: "Identificação DARF"
+
+  E2_IDENTEE:
+    type: string
+    lenght: 6
+    description: "Ident Comp Entre Carteira"
+
+  E2_IDMOV:
+    type: string
+    lenght: 10
+    description: "Id. Movimento"
+
+  E2_IMA:
+    type: number
+    lenght: 14
+    decimal: 2
+    description: "Valor do Imposto IMA"
+    example: "99999999999.99"
+
+  E2_IMPCHEQ:
+    type: string
+    lenght: 1
+    description: "Flag Imp Cheque"
+
+  E2_INDICE:
+    type: string
+    lenght: 3
+    description: "Cod da Tabela de Reajuste"
+
+  E2_INDPRO:
+    type: string
+    lenght: 1
+    options: "0=Sefaz;1=Justiça Federal;2=Justiça Estadual;3=Secex/SRF;9=Outros"
+    example: "option"
+    description: "Tipo de Processo"
+
+  E2_INSS:
+    type: number
+    lenght: 14
+    decimal: 2
+    description: "Valor do INSS"
+    example: "99999999999.99"
+
+  E2_INSSRET:
+    type: number
+    lenght: 6
+    decimal: 2
+    description: "INSS Retido"
+    example: "999.99"
+
+  E2_IRRF:
+    type: number
+    lenght: 14
+    decimal: 2
+    description: "Valor do IRRF"
+    example: "99999999999.99"
+
+  E2_ISS:
+    type: number
+    lenght: 14
+    decimal: 2
+    description: "Valor do ISS"
+    example: "99999999999.99"
+
+  E2_ITEMC:
+    type: string
+    lenght: 9
+    description: "Item Contabil a Credito"
+
+  E2_ITEMCTA:
+    type: string
+    lenght: 9
+    description: "Item Contabil"
+
+  E2_ITEMD:
+    type: string
+    lenght: 9
+    description: "Item Contabil a Debito"
+
+  E2_JUROS:
+    type: number
+    lenght: 16
+    decimal: 2
+    description: "Valor do Juros"
+    example: "9999999999999.99"
+
+  E2_PREFIXO:
+    type: string
+    lenght: 3
+    description: "Prefixo do Titulo"
+
+  E2_NUM:
+    type: string
+    lenght: 9
+    description: "Numero do Titulo"
+
+  E2_PARCELA:
+    type: string
+    lenght: 2
+    description: "Parcela do Titulo"
+
+  E2_TIPO:
+    type: string
+    lenght: 3
+    description: "Tipo do Titulo"
+
+  E2_NATUREZ:
+    type: string
+    lenght: 10
+    description: "Codigo da natureza"
+
+  E2_PORTADO:
+    type: string
+    lenght: 3
+    description: "Codigo do portador"
+
+  E2_LOJA:
+    type: string
+    lenght: 2
+    description: "Loja do Fornecedor"
+
+  E2_NOMFOR:
+    type: string
+    lenght: 20
+    description: "Nome do fornecedor"
+
+  E2_VENCTO:
+    type: string
+    format: date
+    example: "yyyymmdd"
+    lenght: 8
+    description: "Vencimento do Titulo"
+
+  E2_VENCREA:
+    type: string
+    format: date
+    example: "yyyymmdd"
+    lenght: 8
+    description: "Vencimento real do Titulo"
+
+  E2_VALOR:
+    type: number
+    lenght: 16
+    decimal: 2
+    description: "Valor do Titulo"
+    example: "9999999999999.99"
+
+  E2_NUMBCO:
+    type: string
+    lenght: 15
+    description: "Numero do Cheque"
+
+  E2_LA:
+    type: string
+    lenght: 1
+    description: "Identificador de LA    ."
+
+  E2_LOTE:
+    type: string
+    lenght: 4
+    description: "Lote Contabil"
+
+  E2_MOTIVO:
+    type: string
+    lenght: 20
+    description: "Motivo do nao pagamento"
+
+  E2_MOVIMEN:
+    type: string
+    format: date
+    example: "yyyymmdd"
+    lenght: 8
+    description: "Data da ultima movimentac"
+
+  E2_OP:
+    type: string
+    lenght: 14
+    description: "Ordem de producao"
+
+  E2_SALDO:
+    type: number
+    lenght: 16
+    decimal: 2
+    description: "Saldo a Receber"
+    example: "9999999999999.99"
+
+  E2_OK:
+    type: string
+    lenght: 2
+    description: "Ident.Baixa Automatica"
+
+  E2_MULTA:
+    type: number
+    lenght: 16
+    decimal: 2
+    description: "Valor da Multa"
+    example: "9999999999999.99"
+
+  E2_VALLIQ:
+    type: number
+    lenght: 16
+    decimal: 2
+    description: "Valor Liquido da Baixa"
+    example: "9999999999999.99"
+
+  E2_VENCORI:
+    type: string
+    format: date
+    example: "yyyymmdd"
+    lenght: 8
+    description: "Vencimento Original"
+
+  E2_VALJUR:
+    type: number
+    lenght: 14
+    decimal: 2
+    description: "Taxa Permanencia Diaria"
+    example: "99999999999.99"
+
+  E2_PORCJUR:
+    type: number
+    lenght: 5
+    decimal: 2
+    description: "Porcentual Juros Diario"
+    example: "99.99"
+
+  E2_MOEDA:
+    type: number
+    lenght: 2
+    description: "Moeda do Titulo"
+    example: "99"
+
+  E2_NUMBOR:
+    type: string
+    lenght: 6
+    description: "Numero do Bordero"
+
+  E2_PROJETO:
+    type: string
+    lenght: 6
+    description: "Codigo do Projeto"
+
+  E2_RATEIO:
+    type: string
+    lenght: 1
+    options: "1=Sim;2=Não"
+    example: "option"
+    description: "Rateio Centro Custo"
+
+  E2_VARURV:
+    type: number
+    lenght: 16
+    decimal: 2
+    description: "Valor da Variacao Acumul."
+    example: "9999999999999.99"
+
+  E2_VLCRUZ:
+    type: number
+    lenght: 16
+    decimal: 2
+    description: "Valor na moeda nacional"
+    example: "9999999999999.99"
+
+  E2_TITORIG:
+    type: string
+    lenght: 50
+    description: "Nº Título Origem Vendor"
+
+  E2_PARCIR:
+    type: string
+    lenght: 2
+    description: "Parcela do IRF"
+
+  E2_OCORREN:
+    type: string
+    lenght: 2
+    description: "Codigo Ocorrencia CNAB"
+
+  E2_ORIGEM:
+    type: string
+    lenght: 8
+    description: "Origem do Título"
+
+  E2_PARCISS:
+    type: string
+    lenght: 2
+    description: "Parcela do ISS"
+
+  E2_ORDPAGO:
+    type: string
+    lenght: 6
+    description: "Numero da Ordem de Pagto"
+
+  E2_PARCINS:
+    type: string
+    lenght: 2
+    description: "Parcela do INSS"
+
+  E2_NUMLIQ:
+    type: string
+    lenght: 6
+    description: "Número da Liquidação"
+
+  E2_TIPOFAT:
+    type: string
+    lenght: 3
+    description: "Tipo da Fatura"
+
+  E2_MESBASE:
+    type: string
+    lenght: 2
+    description: "Mes Base"
+
+  E2_TXMOEDA:
+    type: number
+    lenght: 11
+    decimal: 4
+    description: "Taxa da moeda"
+    example: "999999.9999"
+
+  E2_SDACRES:
+    type: number
+    lenght: 16
+    decimal: 2
+    description: "Saldo do Acrescimo"
+    example: "9999999999999.99"
+
+  E2_SDDECRE:
+    type: number
+    lenght: 16
+    decimal: 2
+    description: "Saldo do Decrescimo"
+    example: "9999999999999.99"
+
+  E2_USUALIB:
+    type: string
+    lenght: 25
+    description: "Nome do Usuario"
+
+  E2_MULTNAT:
+    type: string
+    lenght: 1
+    options: "1=Sim;2=Não"
+    example: "option"
+    description: "Multiplas naturezas p/Tit"
+
+  E2_NUMTIT:
+    type: string
+    lenght: 50
+    description: "Nro Titulo IR off line"
+
+  E2_PROJPMS:
+    type: string
+    lenght: 1
+    options: "1=Sim;2=Não"
+    example: "option"
+    description: "Rateio de Projetos"
+
+  E2_PLLOTE:
+    type: string
+    lenght: 10
+    description: "Numero do Lote PLS"
+
+  E2_MODSPB:
+    type: string
+    lenght: 1
+    options: "1=TED;2=CIP;3=COMP"
+    example: "option"
+    description: "Modalidade Pagto.Previsto"
+
+  E2_PARCCSS:
+    type: string
+    lenght: 2
+    description: "Parcela do Funrural"
+
+  E2_RETENC:
+    type: number
+    lenght: 16
+    decimal: 2
+    description: "Valor de Retencão"
+    example: "9999999999999.99"
+
+  E2_SEST:
+    type: number
+    lenght: 14
+    decimal: 2
+    description: "SEST/SENAT"
+    example: "99999999999.99"
+
+  E2_PARCSES:
+    type: string
+    lenght: 2
+    description: "Parcela do SEST"
+
+  E2_LOJAISS:
+    type: string
+    lenght: 2
+    description: "Loja do Fornecedor ISS"
+
+  E2_PIS:
+    type: number
+    lenght: 14
+    decimal: 2
+    description: "Valor PIS"
+    example: "99999999999.99"
+
+  E2_PARCCOF:
+    type: string
+    lenght: 2
+    description: "Parcela do Cofins"
+
+  E2_PARCPIS:
+    type: string
+    lenght: 2
+    description: "Parcela do PIS"
+
+  E2_PARCSLL:
+    type: string
+    lenght: 2
+    description: "Parcela do CSLL"
+
+  E2_TITPIS:
+    type: string
+    lenght: 50
+    description: "Num do titulo orig do PIS"
+
+  E2_TITCOF:
+    type: string
+    lenght: 50
+    description: "No. Tit origem do COFINS"
+
+  E2_TITCSL:
+    type: string
+    lenght: 50
+    description: "No. tit. origem CSLL"
+
+  E2_TITINS:
+    type: string
+    lenght: 50
+    description: "Titulo INSS off line"
+
+  E2_VRETPIS:
+    type: number
+    lenght: 14
+    decimal: 2
+    description: "Valor retido - PIS"
+    example: "99999999999.99"
+
+  E2_VRETCOF:
+    type: number
+    lenght: 14
+    decimal: 2
+    description: "Valor retido - COFINS"
+    example: "99999999999.99"
+
+  E2_VRETCSL:
+    type: number
+    lenght: 14
+    decimal: 2
+    description: "Valor Retido - CSLL"
+    example: "99999999999.99"
+
+  E2_PRETPIS:
+    type: string
+    lenght: 1
+    description: "Pendente Retencao - PIS"
+
+  E2_PRETCOF:
+    type: string
+    lenght: 1
+    description: "Pendente Retencao -COFINS"
+
+  E2_PRETCSL:
+    type: string
+    lenght: 1
+    description: "Pendente Retencao - CSLL"
+
+  E2_SEQBX:
+    type: string
+    lenght: 2
+    description: "Sequencia da Baixa"
+
+  E2_LINDIG:
+    type: string
+    lenght: 48
+    description: "Linha Digitável"
+
+  E2_VRETISS:
+    type: number
+    lenght: 14
+    decimal: 2
+    description: "Valor Retido - ISS"
+    example: "99999999999.99"
+
+  E2_VENCISS:
+    type: string
+    format: date
+    example: "yyyymmdd"
+    lenght: 8
+    description: "Vencimento ISS"
+
+  E2_VBASISS:
+    type: number
+    lenght: 15
+    decimal: 2
+    description: "Valor Acumulado Serviços"
+    example: "999999999999.99"
+
+  E2_MDRTISS:
+    type: string
+    lenght: 1
+    options: "1=Normal;2=Por Base"
+    example: "option"
+    description: "Modo de Retenção de ISS"
+
+  E2_VARIAC:
+    type: number
+    lenght: 2
+    description: "Variação conf.Cod.Rec."
+    example: "99"
+
+  E2_PERIOD:
+    type: string
+    lenght: 1
+    description: "Periodicidade cod. DCTF"
+
+  E2_MDCONTR:
+    type: string
+    lenght: 15
+    description: "Numero do contrato"
+
+  E2_MDREVIS:
+    type: string
+    lenght: 3
+    description: "Revisão do contrato"
+
+  E2_MDPLANI:
+    type: string
+    lenght: 6
+    description: "Numero da Planilha"
+
+  E2_MDCRON:
+    type: string
+    lenght: 6
+    description: "Numero do Cronograma"
+
+  E2_MDPARCE:
+    type: string
+    lenght: 2
+    description: "Numero da Parcela"
+
+  E2_TXMDCOR:
+    type: number
+    lenght: 14
+    decimal: 4
+    description: "Tx. Moeda na Correcao M."
+    example: "999999999.9999"
+
+  E2_PRETIRF:
+    type: string
+    lenght: 1
+    description: "Pendente de Retenção - IR"
+
+  E2_SEFIP:
+    type: string
+    lenght: 1
+    description: "SEFIP"
+
+  E2_TRETISS:
+    type: string
+    lenght: 1
+    description: "Retenção do ISS"
+
+  E2_VRETIRF:
+    type: number
+    lenght: 14
+    decimal: 2
+    description: "Valor Retido - IRRF"
+    example: "99999999999.99"
+
+  E2_PLOPELT:
+    type: string
+    lenght: 4
+    description: "Operadora Lote Pagto"
+
+  E2_PARCFET:
+    type: string
+    lenght: 2
+    description: "Parcela do Imposto FETHAB"
+
+  E2_LOJORI:
+    type: string
+    lenght: 2
+    description: "Loja Original"
+
+  E2_STATUS:
+    type: string
+    lenght: 1
+    description: "Status"
+
+  E2_TITADT:
+    type: string
+    lenght: 50
+    description: "Titulo Adto do PA Bruto"
+
+  E2_TITPAI:
+    type: string
+    lenght: 50
+    description: "Titulo Pai do Imposto"
+
+  E2_PROCPCC:
+    type: string
+    lenght: 9
+    description: "Nro. Processo PCC"
+
+  E2_USUASUS:
+    type: string
+    lenght: 25
+    description: "Nome do Usuário"
+
+  E2_USUACAN:
+    type: string
+    lenght: 25
+    description: "Nome do usuario"
+
+  E2_LIMCAN:
+    type: string
+    format: date
+    example: "yyyymmdd"
+    lenght: 8
+    description: "Dt Limite do Cancelamento"
+
+  E2_PREOP:
+    type: string
+    lenght: 6
+    description: "Pre-Ordem de Pago"
+
+  E2_NROREF:
+    type: string
+    lenght: 15
+    description: "Numero de Referencia"
+
+  E2_NOMERET:
+    type: string
+    lenght: 60
+    description: "Nome do Contribuinte"
+
+  E2_TPINSC:
+    type: string
+    lenght: 1
+    description: "Tipo de Inscricao do Cont"
+
+  E2_PARCIMA:
+    type: string
+    lenght: 2
+    description: "Parcela do Imposto IMA"
+
+  E2_NUMPRO:
+    type: string
+    lenght: 10
+    description: "Nro Proc. Referenciado"
+
+  E2_NFELETR:
+    type: string
+    lenght: 20
+    description: "Nota Fiscal Eletrônica"
+
+  E2_RETCNTR:
+    type: number
+    lenght: 15
+    decimal: 2
+    description: "Retencao de Contrato"
+    example: "999999999999.99"
+
+  E2_MDDESC:
+    type: number
+    lenght: 15
+    decimal: 2
+    description: "Desconto de Contrato"
+    example: "999999999999.99"
+
+  E2_MDBONI:
+    type: number
+    lenght: 15
+    decimal: 2
+    description: "Bonificação de Contrato"
+    example: "999999999999.99"
+
+  E2_MDMULT:
+    type: number
+    lenght: 15
+    decimal: 2
+    description: "Multa de Contrato"
+    example: "999999999999.99"
+
+  E2_PARCFAM:
+    type: string
+    lenght: 2
+    description: "Parcela do tributo Famad"
+
+  E2_MEDNUME:
+    type: string
+    lenght: 6
+    description: "Num. Medição"
+
+  E2_STATLIB:
+    type: string
+    lenght: 2
+    description: "Status de Aprovação"
+
+  E2_PARCFMP:
+    type: string
+    lenght: 2
+    description: "Parcela Tributo Fumipeq"
+
+  E2_TEMDOCS:
+    type: string
+    lenght: 1
+    options: "1=Sim;2=Não"
+    example: "option"
+    description: "Possui documentos"
+
+  E2_TPESOC:
+    type: string
+    lenght: 1
+    description: "Classif tp serviço"
+
+  E2_PRETINS:
+    type: string
+    lenght: 1
+    description: "Pendente Retenção - INSS"
+
+  E2_PARCAGL:
+    type: string
+    lenght: 2
+    description: "Parcelea aglutinadora"
+
+  E2_RETINS:
+    type: string
+    lenght: 4
+    description: "Código de Retenção INSS"
+
+  E2_VRETINS:
+    type: number
+    lenght: 14
+    decimal: 2
+    description: "Valor Retido INSS"
+    example: "99999999999.99"
+
+  E2_PRINSS:
+    type: number
+    lenght: 14
+    decimal: 2
+    description: "Provisao de  - INSS"
+    example: "99999999999.99"
+
+  E2_NODIA:
+    type: string
+    lenght: 10
+    description: "Seq. Diario Contabilidade"
+
+  E2_PARCCID:
+    type: string
+    lenght: 2
+    description: "Parcela do imposto"
+
+  E2_VRETBIS:
+    type: number
+    lenght: 14
+    decimal: 2
+    description: "Vlr. Retenção ISS Bitrib."
+    example: "99999999999.99"
+
+  E2_NUMSOL:
+    type: string
+    lenght: 6
+    description: "No. Solicitacäo de transf"
+
+  E2_PARCFAB:
+    type: string
+    lenght: 2
+    description: "Parcela do tributo FABOV"
+
+  E2_PRISS:
+    type: number
+    lenght: 14
+    decimal: 2
+    description: "Provisao de  - ISS"
+    example: "99999999999.99"
+
+  E2_PARCFAC:
+    type: string
+    lenght: 2
+    description: "Parcela do tributo FACS"
+
+  E2_PARIMP5:
+    type: string
+    lenght: 2
+    description: "Parcela Imposto 05"
+
+  E2_PARIMP4:
+    type: string
+    lenght: 2
+    description: "Parcela Imposto 05"
+
+  E2_TPDESC:
+    type: string
+    lenght: 1
+    description: "Desconto F100"
+
+  E2_PARIMP3:
+    type: string
+    lenght: 2
+    description: "Parcela Imposto 03"
+
+  E2_PARIMP2:
+    type: string
+    lenght: 2
+    description: "Parcela Imposto 02"
+
+  E2_PARIMP1:
+    type: string
+    lenght: 2
+    description: "Parcela Imposto 01"
+
+  E2_TIPOLIQ:
+    type: string
+    lenght: 3
+    description: "Tipo gerado p/Liquidação"
+
+  E2_MSIDENT:
+    type: string
+    lenght: 10
+    description: "Ident.Reg."
+
+  E2_NOMOPE:
+    type: string
+    lenght: 30
+    description: "Nome da Operadora de Fret"
+required:
+  [
+    "E2_NUM",
+    "E2_TIPO",
+    "E2_NATUREZ",
+    "E2_FORNECE",
+    "E2_LOJA",
+    "E2_EMISSAO",
+    "E2_VENCTO",
+    "E2_VENCREA",
+    "E2_VALOR",
+  ]

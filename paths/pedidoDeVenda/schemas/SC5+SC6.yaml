@@ -1,0 +1,1871 @@
+type: object
+properties:
+  SC5:
+    type: object
+    properties:
+      C5_EMISSAO:
+        type: string
+        format: date
+        example: "yyyymmdd"
+        lenght: 8
+        description: "Data da Emissao"
+
+      C5_FORNISS:
+        type: string
+        lenght: 6
+        description: "Fornecedor de ISS"
+
+      C5_FRETAUT:
+        type: number
+        lenght: 12
+        decimal: 2
+        description: "Frete Autonomo"
+        example: "999999999.99"
+
+      C5_FRTCFOP:
+        type: string
+        lenght: 5
+        description: "CFOP Referente ao Frete"
+
+      C5_INDPRES:
+        type: string
+        lenght: 1
+        options: "0=Não Aplica;1=Presencial;2=Não PresencialNet;3=Não PresencialTeleAtendi.;5=PresencialForadoEstab.;9=Não Presencialoutros"
+        description: "Presença Comprador"
+        example: "option"
+
+      C5_LOJACLI:
+        type: string
+        lenght: 2
+        description: "Loja do Cliente"
+
+      C5_LOJAENT:
+        type: string
+        lenght: 2
+        description: "Codigo da Loja de Entrega"
+
+      C5_LOJARET:
+        type: string
+        lenght: 2
+        description: "Loja de Retirada"
+
+      C5_MDCONTR:
+        type: string
+        lenght: 15
+        description: "Numero do Contrato"
+
+      C5_MDNUMED:
+        type: string
+        lenght: 6
+        description: "Numero da Medicao"
+
+      C5_MDPLANI:
+        type: string
+        lenght: 6
+        description: "Numero da Planilha"
+
+      C5_MENNOTA:
+        type: string
+        lenght: 254
+        description: "Mensagem para Nota Fiscal"
+        example: "@S45"
+
+      C5_MENPAD:
+        type: string
+        lenght: 3
+        description: "Mensagem Padrao 1"
+
+      C5_MOEDTIT:
+        type: number
+        lenght: 2
+        description: "Moeda do titulo"
+        example: "99"
+
+      C5_MSBLQL:
+        type: string
+        lenght: 1
+        options: "1=Inativo;2=Ativo"
+        description: "Status do registro"
+
+      C5_MUNPRES:
+        type: string
+        lenght: 7
+        description: "Municipio de Prestação"
+
+      C5_NFSUBST:
+        type: string
+        lenght: 9
+        description: "NF Substituída"
+
+      C5_NOMMOT:
+        type: string
+        lenght: 30
+        description: "Nome do Motorista"
+
+      C5_NOTA:
+        type: string
+        lenght: 9
+        description: "Numero da Nota Fiscal"
+
+      C5_NUM:
+        type: string
+        lenght: 6
+        description: "Numero do Pedido"
+
+      C5_NUMENT:
+        type: string
+        lenght: 9
+        description: "Número da Entrega"
+        example: "@9"
+
+      C5_NUMEXT:
+        type: string
+        lenght: 36
+        description: "Número Externo do Pedido"
+
+      C5_OBRA:
+        type: string
+        lenght: 10
+        description: "Codigo da Obra"
+
+      C5_OK:
+        type: string
+        lenght: 2
+        description: "OK"
+
+      C5_ORCRES:
+        type: string
+        lenght: 6
+        description: "Numero do Orcamento"
+
+      C5_OS:
+        type: string
+        lenght: 6
+        description: "Numero da OS geradora"
+
+      C5_PBRUTO:
+        type: number
+        lenght: 11
+        decimal: 4
+        description: "Peso Bruto"
+        example: "999999.9999"
+
+      C5_PDESCAB:
+        type: number
+        lenght: 5
+        decimal: 2
+        description: "Percentual de indenizacao"
+
+      C5_PEDEXP:
+        type: string
+        lenght: 20
+        description: "Processo de Exportacao"
+
+      C5_PESOL:
+        type: number
+        lenght: 11
+        decimal: 4
+        description: "Peso Liquido"
+        example: "999999.9999"
+
+      C5_PREPEMB:
+        type: string
+        lenght: 1
+        options: "0=Nao;1=Sim"
+        description: "Status do embarque"
+
+      C5_RASTR:
+        type: string
+        lenght: 20
+        description: "Rastreio do Pedido E-com."
+
+      C5_REAJUST:
+        type: string
+        lenght: 3
+        description: "Tipo de Reajuste Usado"
+
+      C5_RECFAUT:
+        type: string
+        lenght: 1
+        options: "1=Emitente;2=Transportador"
+        example: "option"
+        description: "Pagto do frete autonomo"
+
+      C5_RECISS:
+        type: string
+        lenght: 1
+        options: "1=Sim;2=Não"
+        description: "Recolhe ISS?"
+        example: "option"
+
+      C5_REIMP:
+        type: number
+        lenght: 1
+        description: "Quant. Pre-Notas Impr."
+        example: "9"
+
+      C5_REMCTR:
+        type: string
+        lenght: 15
+        description: "Nro Contrato Ref Remessa"
+
+      C5_REMREV:
+        type: string
+        lenght: 3
+        description: "Nro Revisão Ctr. Remessa"
+
+      C5_RET20G:
+        type: string
+        lenght: 1
+        options: "S=Sim;N=Não"
+        example: "option"
+        description: "Retorno a 20 Graus.?"
+
+      C5_SDOC:
+        type: string
+        lenght: 3
+        description: "Série do Documento Fiscal"
+        example: "!!!"
+
+      C5_SEGURO:
+        type: number
+        lenght: 12
+        decimal: 2
+        description: "Valor do Seguro"
+        example: "999999999.99"
+
+      C5_SERIE:
+        type: string
+        lenght: 3
+        description: "Serie da Nota Fiscal"
+        example: "!!!"
+
+      C5_SERSUBS:
+        type: string
+        lenght: 3
+        description: "Serie da Nf Substituída"
+        example: "!!!"
+
+      C5_SLENVT:
+        type: string
+        lenght: 1
+        options: "1=Sim;2=Não"
+        example: "option"
+        description: "Sol.Env.Amost.-Testemunho"
+
+      C5_SOLFRE:
+        type: string
+        lenght: 2
+        description: "Solicitação de Frete"
+
+      C5_SOLOPC:
+        type: string
+        lenght: 1
+        options: "1=Nao;2=Sim"
+        example: "option"
+        description: "Usa Opcionais do Cliente"
+
+      C5_STATUS:
+        type: string
+        lenght: 2
+        example: "option"
+        options: "00=Gerado; 05=Em analise; 10=Pagamento confirmado; 15=Embalado; 21=Parcialmente enviado; 30=Enviado; 90=cancelado; 91=Devolvido"
+        description: "Status E-Commerce"
+
+      C5_SUGENT:
+        type: string
+        format: date
+        example: "yyyymmdd"
+        lenght: 8
+        description: "Data sugerida de entrega"
+
+      C5_TABTRF:
+        type: string
+        lenght: 3
+        description: "Tab Transf de IPI"
+
+      C5_TIPLIB:
+        type: string
+        lenght: 1
+        options: "1=Libera por Item;2=Libera por Pedido"
+        example: "option"
+        description: "Tipo de Liberação"
+
+      C5_TIPO:
+        type: string
+        lenght: 1
+        example: "option"
+        options: "N=Normal;C=Compl.Preco/Quantidade;I=Compl.ICMS;P=Compl.IPI;D=Dev.Compras;B=Utiliza Fornecedor"
+        description: "Tipo de Pedido"
+
+      C5_TIPOBRA:
+        type: string
+        lenght: 1
+        options: "1=Minha Casa Minha Vida;2=Regime Presumido;3=Regime Ordinário"
+        example: "option"
+        description: "Tipo da Obra"
+
+      C5_TPCARGA:
+        type: string
+        lenght: 1
+        options: "1=Utiliza;2=Nao utiliza"
+        description: "Carga"
+        example: "option"
+
+      C5_TPCOMPL:
+        type: string
+        lenght: 1
+        options: "1=Preço; 2=Quantidade"
+        description: "Tipo de Complemento"
+        example: "option"
+
+      C5_TPFRETE:
+        type: string
+        lenght: 1
+        options: "C=CIF;F=FOB;T=Por conta terceiros;R=Por conta remetente;D=Por conta destinatário;S=Sem frete"
+        description: "Tipo do Frete Utilizado"
+        example: "option"
+
+      C5_TRANSP:
+        type: string
+        lenght: 6
+        description: "Codigo da Transportadora"
+
+      C5_TRCNUM:
+        type: string
+        lenght: 6
+        description: "Número do Acordo de Troca"
+
+      C5_TXMOEDA:
+        type: number
+        lenght: 11
+        decimal: 4
+        description: "Taxa da Moeda"
+        example: "999999.9999"
+
+      C5_TXREF:
+        type: number
+        lenght: 11
+        decimal: 4
+        description: "Taxa Cambial"
+        example: "999999.9999"
+
+      C5_UFDEST:
+        type: string
+        lenght: 2
+        description: "UF Destino"
+
+      C5_UFORIG:
+        type: string
+        lenght: 2
+        description: "UF Origem"
+
+      C5_VEICULO:
+        type: string
+        lenght: 8
+        description: "Veiculo do Transporte"
+
+      C5_VEND1:
+        type: string
+        lenght: 6
+        description: "Codigo do Vendedor 1"
+
+      C5_VLR_FRT:
+        type: number
+        lenght: 12
+        decimal: 2
+        description: "Valor do Frete de Pauta"
+        example: "999999999.99"
+
+      C5_VOLTAPS:
+        type: string
+        lenght: 1
+        options: "1=Sim;2=Não"
+        description: "Volta passo de Status"
+
+      C5_VOLUME1:
+        type: number
+        lenght: 5
+        description: "Qtde de Volumes tipo 1"
+        example: "99999"
+
+      C5_VOLUME2:
+        type: number
+        lenght: 5
+        description: "Qtde de Volumes tipo 2"
+        example: "99999"
+
+      C5_VOLUME3:
+        type: number
+        lenght: 5
+        description: "Qtde de Volumes tipo 3"
+        example: "99999"
+
+      C5_VOLUME4:
+        type: number
+        lenght: 5
+        description: "Qtde de Volumes tipo 4"
+        example: "99999"
+
+      C5_VEND3:
+        type: string
+        lenght: 6
+        description: "Codigo do Vendedor 3"
+
+      C5_VEND2:
+        type: string
+        lenght: 6
+        description: "Codigo do Vendedor 2"
+
+      C5_TIPOCLI:
+        type: string
+        lenght: 1
+        options: "F=Cons.Final;L=Prod.Rural;R=Revendedor;S=Solidario;X=Exportacao/Importacao"
+        description: "Tipo do Cliente"
+
+      C5_TABELA:
+        type: string
+        lenght: 3
+        description: "Codigo da Tabela de Preco"
+
+      C5_SDOCSUB:
+        type: string
+        lenght: 3
+        description: "Série da Nf Substituída"
+
+      C5_REDESP:
+        type: string
+        lenght: 6
+        description: "Codigo Transp. Redespacho"
+
+      C5_PLACA2:
+        type: string
+        lenght: 7
+        description: "Placa da Carreta"
+        example: "AAA-9999"
+
+      C5_PLACA1:
+        type: string
+        lenght: 7
+        description: "Placa do Truck/Cavalo"
+        example: "AAA-9999"
+
+      C5_PEDECOM:
+        type: string
+        lenght: 50
+        description: "Pedido E-Commerce"
+
+      C5_PARC4:
+        type: number
+        lenght: 12
+        decimal: 2
+        description: "Valor da Parcela 4"
+        example: "999999999.99"
+
+      C5_PARC3:
+        type: number
+        lenght: 12
+        decimal: 2
+        description: "Valor da Parcela 3"
+        example: "999999999.99"
+
+      C5_PARC2:
+        type: number
+        lenght: 12
+        decimal: 2
+        description: "Valor da Parcela 2"
+        example: "999999999.99"
+
+      C5_PARC1:
+        type: number
+        lenght: 12
+        decimal: 2
+        description: "Valor da Parcela 1"
+        example: "999999999.99"
+
+      C5_ORIGEM:
+        type: string
+        lenght: 15
+        description: "Origem do Pedido"
+
+      C5_NUMPR:
+        type: string
+        lenght: 15
+        description: "Numero Processo"
+
+      C5_NTEMPEN:
+        type: string
+        lenght: 22
+        description: "Ident. Nota Empenho"
+
+      C5_NATUREZ:
+        type: string
+        lenght: 10
+        description: "Natureza"
+
+      C5_MOEDA:
+        type: number
+        lenght: 2
+        description: "Moeda do Pedido de Venda"
+        example: "99"
+
+      C5_MODANP:
+        type: string
+        lenght: 2
+        description: "Via de transp. Modal ANP"
+        example: "99"
+
+      C5_LOJAREM:
+        type: string
+        lenght: 2
+        description: "Codigo da loja de Remessa"
+
+      C5_LIBEROK:
+        type: string
+        lenght: 1
+        description: "Pedido Liberado Total"
+
+      C5_KM:
+        type: number
+        lenght: 7
+        description: "Distancia de Entrega"
+        example: "9999999"
+
+      C5_KITREP:
+        type: string
+        lenght: 6
+        description: "Codigo do Kit de Reparo"
+
+      C5_INCISS:
+        type: string
+        lenght: 1
+        options: "S=Sim"
+        example: "option"
+        description: "ISS incluso no Preço"
+
+      C5_IMINT:
+        type: string
+        lenght: 18
+        description: "Inscricao municipal"
+
+      C5_GERAWMS:
+        type: string
+        lenght: 1
+        options: "1=No pedido;2=Na Montagem da Carga;3=Na Unitização da Carga"
+        example: "option"
+
+      C5_FRETE:
+        type: number
+        lenght: 12
+        decimal: 2
+        description: "Valor do Frete"
+        example: "999999999.99"
+
+      C5_FILIAL:
+        type: string
+        lenght: 2
+        description: "Filial do Sistema"
+
+      C5_FILGCT:
+        type: string
+        lenght: 2
+        description: "Filial Matriz Contrato"
+
+      C5_FECENT:
+        type: string
+        format: date
+        example: "yyyymmdd"
+        lenght: 8
+        description: "Data de Entrega"
+
+      C5_ESTPRES:
+        type: string
+        lenght: 2
+        description: "UF Prestação"
+
+      C5_ESPECI4:
+        type: string
+        lenght: 10
+        description: "Especie do Volume tipo 4"
+
+      C5_ESPECI3:
+        type: string
+        lenght: 10
+        description: "Especie do Volume tipo 3"
+
+      C5_ESPECI2:
+        type: string
+        lenght: 10
+        description: "Especie do Volume tipo 2"
+
+      C5_ESPECI1:
+        type: string
+        lenght: 10
+        description: "Especie do Volume tipo 1"
+
+      C5_ECVINCU:
+        type: string
+        lenght: 6
+        description: "Sedex E-Commerce"
+
+      C5_ECSEDEX:
+        type: string
+        lenght: 13
+        description: "Sedex E-Commerce"
+
+      C5_ECPRESN:
+        type: string
+        lenght: 1
+        description: "Pedido Presente"
+
+      C5_DTTXREF:
+        type: string
+        format: date
+        example: "yyyymmdd"
+        lenght: 8
+        description: "Data Referencia Cambial"
+
+      C5_DTLANC:
+        type: string
+        format: date
+        example: "yyyymmdd"
+        lenght: 8
+        description: "Data de Contabilização"
+
+      C5_DESPESA:
+        type: number
+        lenght: 14
+        decimal: 2
+        description: "Valor Despesa Acessoria"
+        example: "99999999999.99"
+
+      C5_DESCONT:
+        type: number
+        lenght: 14
+        decimal: 2
+        description: "Desconto de Indenizacao"
+        example: "99999999999.99"
+
+      C5_DESCMUN:
+        type: string
+        lenght: 30
+        description: "Descrição Mun.Prest."
+
+      C5_DESCFI:
+        type: number
+        lenght: 5
+        decimal: 2
+        description: "Desconto Financeiro"
+
+      C5_DESC4:
+        type: number
+        lenght: 5
+        decimal: 2
+        description: "Desconto 4"
+
+      C5_DESC3:
+        type: number
+        lenght: 5
+        decimal: 2
+        description: "Desconto 3"
+
+      C5_DESC2:
+        type: number
+        lenght: 5
+        decimal: 2
+        description: "Desconto 2"
+
+      C5_DESC1:
+        type: number
+        lenght: 5
+        decimal: 2
+        description: "Desconto 1"
+
+      C5_DATA4:
+        type: string
+        format: date
+        example: "yyyymmdd"
+        lenght: 8
+        description: "Vencimento da Parcela 4"
+
+      C5_DATA3:
+        type: string
+        format: date
+        example: "yyyymmdd"
+        lenght: 8
+        description: "Vencimento da Parcela 3"
+
+      C5_DATA2:
+        type: string
+        format: date
+        example: "yyyymmdd"
+        lenght: 8
+        description: "Vencimento da Parcela 2"
+
+      C5_DATA1:
+        type: string
+        format: date
+        example: "yyyymmdd"
+        lenght: 8
+        description: "Vencimento da Parcela 1"
+
+      C5_COTACAO:
+        type: string
+        lenght: 6
+        description: "Numero da Licitacao"
+
+      C5_CONTRA:
+        type: string
+        lenght: 10
+        description: "Numero do contrato"
+
+      C5_CONDPAG:
+        type: string
+        lenght: 3
+        description: "Condicao de Pagamento"
+
+      C5_COMIS5:
+        type: number
+        lenght: 5
+        decimal: 2
+        description: "Comissao do Vendedor 5"
+
+      C5_COMIS2:
+        type: number
+        lenght: 5
+        decimal: 2
+        description: "Comissao do Vendedor 2"
+
+      C5_COMIS1:
+        type: number
+        lenght: 5
+        decimal: 2
+        description: "Comissao do Vendedor 1"
+
+      C5_COMENT:
+        type: string
+        lenght: 254
+        description: "Comentario do pedido"
+
+      C5_CODVGLP:
+        type: string
+        lenght: 6
+        description: "Código do Vasilhame GLP"
+        example: "999999"
+
+      C5_CODSAF:
+        type: string
+        lenght: 15
+        description: "Código da Safra"
+
+      C5_CODMOT:
+        type: string
+        lenght: 11
+        description: "Cod. do Motorista"
+        example: "999.999.999-99"
+
+      C5_CODEMB:
+        type: string
+        lenght: 4
+        description: "Código da Embarcação"
+        example: "9999"
+
+      C5_CODED:
+        type: string
+        lenght: 15
+        description: "Codigo do Edital"
+
+      C5_CODA1U:
+        type: string
+        lenght: 6
+        description: "Código Intermediador"
+
+      C5_CNO:
+        type: string
+        lenght: 6
+        description: "Codigo CNO"
+
+      C5_CMUNOR:
+        type: string
+        lenght: 5
+        description: "Mun.Origem"
+
+      C5_CMUNDE:
+        type: string
+        lenght: 5
+        description: "Mun.Dest"
+
+      C5_CLIRET:
+        type: string
+        lenght: 6
+        description: "Cliente de Retirada"
+
+      C5_CLIREM:
+        type: string
+        lenght: 6
+        description: "Cliente da Remessa"
+
+      C5_CLIINT:
+        type: string
+        lenght: 40
+        description: "Razao Intermediario"
+
+      C5_CLIENTE:
+        type: string
+        lenght: 6
+        description: "Codigo do Cliente"
+
+      C5_CLIENT:
+        type: string
+        lenght: 6
+        description: "Cliente da Entrega"
+
+      C5_CGCINT:
+        type: string
+        lenght: 14
+        description: "CNPJ/CPF"
+
+      C5_BLQ:
+        type: string
+        lenght: 1
+        description: "Bloqueio de Regras"
+
+      C5_BANCO:
+        type: string
+        lenght: 3
+        description: "Codigo do Banco"
+
+      C5_ARTOBRA:
+        type: string
+        lenght: 15
+        description: "ART da Obra"
+
+      C5_ACRSFIN:
+        type: number
+        lenght: 6
+        decimal: 2
+        description: "Acrescimo Financeiro"
+
+      C5_VEND5:
+        type: string
+        lenght: 6
+        description: "Codigo do Vendedor 5"
+
+      C5_VEND4:
+        type: string
+        lenght: 6
+        description: "Codigo do Vendedor 4"
+
+      C5_COMIS4:
+        type: number
+        lenght: 5
+        decimal: 2
+        description: "Comissao do Vendedor 4"
+
+      C5_COMIS3:
+        type: number
+        lenght: 5
+        decimal: 2
+        description: "Comissao do Vendedor 3"
+
+    required:
+      ["C5_TIPO", "C5_CLIENTE", "C5_LOJACLI", "C5_TIPOCLI", "C5_CONDPAG"]
+  SC6:
+    type: array
+    items:
+      type: object
+      properties:
+        C6_ABATINS:
+          type: number
+          lenght: 14
+          decimal: 2
+          description: "Valor abatimento / INSS"
+          example: "@E 99999999999.99"
+
+        C6_ABATISS:
+          type: number
+          lenght: 14
+          decimal: 2
+          description: "Valor abatimento / ISS"
+          example: "@E 99999999999.99"
+
+        C6_ABATMAT:
+          type: number
+          lenght: 14
+          decimal: 2
+          description: "Abatimento ISS material"
+          example: "@E 99999999999.99"
+
+        C6_ABSCINS:
+          type: number
+          lenght: 14
+          decimal: 2
+          description: "Abat. INSS Subcontrat."
+          example: "@E 999999999.99"
+
+        C6_ALMTERC:
+          type: string
+          lenght: 2
+          description: "Armazem de Terceiros"
+
+        C6_BASVEIC:
+          type: number
+          lenght: 16
+          decimal: 2
+          description: "Valor Total NF Entrada"
+
+        C6_BLOQUEI:
+          type: string
+          lenght: 2
+          description: "Bloqueio do Pedido"
+
+        C6_BLQ:
+          type: string
+          lenght: 2
+          description: "Status do Bloqueio Pedido"
+
+        C6_CATEG:
+          type: string
+          lenght: 2
+          description: "Categoria"
+
+        C6_CC:
+          type: string
+          lenght: 9
+          description: "Cento de custo"
+
+        C6_CCUSTO:
+          type: string
+          lenght: 9
+          description: "Centro de Custo"
+
+        C6_CF:
+          type: string
+          lenght: 5
+          description: "Codigo Fiscal da Operacao"
+          example: "@9"
+
+        C6_CHASSI:
+          type: string
+          lenght: 25
+          description: "Codigo do Chassi"
+
+        C6_CLASFIS:
+          type: string
+          lenght: 3
+          description: "Situacao Tributaria"
+
+        C6_CLI:
+          type: string
+          lenght: 6
+          description: "Codigo do Cliente"
+
+        C6_CLVL:
+          type: string
+          lenght: 9
+          description: "Classe Valor Contabil"
+
+        C6_CNATREC:
+          type: string
+          lenght: 3
+          description: "Cod Nat Receita"
+
+        C6_CODFAB:
+          type: string
+          lenght: 6
+          description: "Codigo do Fabricante"
+
+        C6_CODINF:
+          type: string
+          lenght: 6
+          description: "Cod. Informacao Produto"
+
+        C6_CODISS:
+          type: string
+          lenght: 9
+          description: "Código de Serviço do ISS"
+          example: "@9"
+
+        C6_CODLAN:
+          type: string
+          lenght: 6
+          description: "Codigo CAT/83"
+
+        C6_CODLPRE:
+          type: string
+          lenght: 6
+          description: "Lista de Presentes"
+
+        C6_CODROM:
+          type: string
+          lenght: 10
+          description: "Codigo do Romaneio"
+
+        C6_COMIS1:
+          type: number
+          lenght: 5
+          decimal: 2
+          description: "Percentual Comissao 1"
+          example: "@E 99.99"
+
+        C6_COMIS2:
+          type: number
+          lenght: 5
+          decimal: 2
+          description: "Percentual Comissao 2"
+          example: "@E 99.99"
+
+        C6_COMIS3:
+          type: number
+          lenght: 5
+          decimal: 2
+          description: "Percentual Comissao 3"
+          example: "@E 99.99"
+
+        C6_COMIS4:
+          type: number
+          lenght: 5
+          decimal: 2
+          description: "Percentual Comissao 4"
+          example: "@E 99.99"
+
+        C6_COMIS5:
+          type: number
+          lenght: 5
+          decimal: 2
+          description: "Percentual Comissao 5"
+          example: "@E 99.99"
+
+        C6_CONTA:
+          type: string
+          lenght: 20
+          description: "Conta Contábil"
+
+        C6_CONTRAT:
+          type: string
+          lenght: 6
+          description: "Nr. do Contrato Parceria"
+
+        C6_CONTRT:
+          type: string
+          lenght: 15
+          description: "Contrato de Servico"
+
+        C6_CSTPIS:
+          type: string
+          lenght: 2
+          description: "CST PIS"
+
+        C6_CTVAR:
+          type: string
+          lenght: 10
+          description: "Cultivar"
+
+        C6_CULTRA:
+          type: string
+          lenght: 10
+          description: "Cultura"
+
+        C6_D1DOC:
+          type: string
+          lenght: 15
+          description: "Num. Doc. Entrada"
+
+        C6_D1ITEM:
+          type: string
+          lenght: 4
+          description: "Item Nota Fiscal"
+
+        C6_D1SERIE:
+          type: string
+          lenght: 3
+          description: "Serie Nota Fiscal"
+
+        C6_DATAEMB:
+          type: string
+          format: date
+          example: "yyyymmdd"
+          lenght: 8
+          description: "Data Inicio Embarque"
+
+        C6_DATCPL:
+          type: string
+          format: date
+          example: "yyyymmdd"
+          lenght: 8
+          description: "Data da integracao"
+
+        C6_DATFAT:
+          type: string
+          format: date
+          example: "yyyymmdd"
+          lenght: 8
+          description: "Data do Faturamento"
+
+        C6_DESCONT:
+          type: number
+          lenght: 5
+          decimal: 2
+          description: "Percentual de Desconto"
+          example: "@E 99.99"
+
+        C6_DESCRI:
+          type: string
+          lenght: 30
+          description: "Descricao Auxiliar"
+          example: "@X"
+
+        C6_DTFIMNT:
+          type: string
+          format: date
+          example: "yyyymmdd"
+          lenght: 8
+          description: "Data Fim Nat. Receita"
+
+        C6_DTVALID:
+          type: string
+          format: date
+          example: "yyyymmdd"
+          lenght: 8
+          description: "Validade do Lote Inform."
+
+        C6_EDTPMS:
+          type: string
+          lenght: 12
+          description: "Codigo da EDT"
+
+        C6_ENDPAD:
+          type: string
+          lenght: 15
+          description: "Endereço Destino"
+
+        C6_ENTREG:
+          type: string
+          format: date
+          example: "yyyymmdd"
+          lenght: 8
+          description: "Data da Entrega"
+
+        C6_FCICOD:
+          type: string
+          lenght: 36
+          description: "Código FCI"
+
+        C6_FETAB:
+          type: number
+          lenght: 14
+          decimal: 2
+          description: "Valor do Fetab"
+          example: "@E 99999999999.99"
+
+        C6_FILIAL:
+          type: string
+          lenght: 2
+          description: "Filial do Sistema"
+
+        C6_FILPED:
+          type: string
+          lenght: 2
+          description: "Filial do Pedido de Compr"
+
+        C6_FORDED:
+          type: string
+          lenght: 6
+          description: "Fornecedor Dedução"
+
+        C6_FUNRURA:
+          type: number
+          lenght: 14
+          decimal: 2
+          description: "Valor do Funrural"
+          example: "@E 99999999999.99"
+
+        C6_GCPIT:
+          type: string
+          lenght: 6
+          description: "GCP Item"
+
+        C6_GCPLT:
+          type: string
+          lenght: 8
+          description: "GCP Lote"
+
+        C6_GERMINA:
+          type: string
+          lenght: 1
+          description: "Germinacao solic. cliente"
+
+        C6_GEROUPV:
+          type: string
+          lenght: 1
+          description: "Se gerou previsao de vend"
+
+        C6_GRADE:
+          type: string
+          lenght: 1
+          options: "S=Sim;N=Nao"
+          example: "option"
+          description: "Ind.se prod.digitado Grad"
+
+        C6_GRPNATR:
+          type: string
+          lenght: 2
+          description: "Grupo Natureza Receita"
+
+        C6_HORCPL:
+          type: string
+          lenght: 8
+          description: "Hora Integracao"
+          example: "99:99:99"
+
+        C6_HORENT:
+          type: string
+          lenght: 4
+          description: "Hora da Entrega"
+          example: "@R 99:99"
+
+        C6_IDENTB6:
+          type: string
+          lenght: 6
+          description: "Identificador Poder Terc."
+
+        C6_INDSUS:
+          type: string
+          lenght: 14
+          description: "Ind.Susp. Nat. Rendimento"
+
+        C6_INFAD:
+          type: M
+          lenght: 80
+          description: "Inf. Adicionais do Prod"
+
+        C6_INTROT:
+          type: string
+          lenght: 1
+          options: "1=Não Integrado;2=Integrado;3=Falha de Integração;4=Integrado Parcial"
+          example: "option"
+          description: "Integracao Roteirizador"
+
+        C6_IPIDEV:
+          type: number
+          lenght: 14
+          decimal: 2
+          description: "Vl.IPI qdo.nota devolucao"
+          example: "@E 999999999.99"
+
+        C6_IPITRF:
+          type: number
+          lenght: 14
+          decimal: 2
+          description: "Base do IPI para transfer"
+          example: "@E 99999999999.99"
+
+        C6_ITCONTR:
+          type: string
+          lenght: 2
+          description: "Item/Contrato de Servico"
+
+        C6_ITEM:
+          type: string
+          lenght: 2
+          description: "Numero do Item no Pedido"
+
+        C6_ITEMCON:
+          type: string
+          lenght: 2
+          description: "Item de Contr. Parcerias"
+
+        C6_ITEMCTA:
+          type: string
+          lenght: 9
+          description: "Item da Conta Contabil"
+
+        C6_ITEMED:
+          type: string
+          lenght: 3
+          description: "Item da Medição"
+
+        C6_ITEMGAR:
+          type: string
+          lenght: 2
+          description: "Item Garantia Estendida"
+
+        C6_ITEMGRD:
+          type: string
+          lenght: 3
+          description: "Item de Grade"
+
+        C6_ITEMOP:
+          type: string
+          lenght: 2
+          description: "Item da OP gerada por PV"
+
+        C6_ITEMORI:
+          type: string
+          lenght: 4
+          description: "Nr.Item da N.Fiscal Orig."
+
+        C6_ITEMPC:
+          type: string
+          lenght: 6
+          description: "Item.Ped.Comp."
+
+        C6_ITEMSC:
+          type: string
+          lenght: 4
+          description: "Item da SC gerada por PV"
+
+        C6_ITLPRE:
+          type: string
+          lenght: 3
+          description: "Item da Lista de Presente"
+
+        C6_ITPC:
+          type: string
+          lenght: 4
+          description: "Item Ped.Compra Vinc.PV"
+
+        C6_ITPROJ:
+          type: string
+          lenght: 2
+          description: "It.Contrato/Field Service"
+
+        C6_LA:
+          type: string
+          lenght: 8
+          description: "Campo de Controle"
+
+        C6_LICITA:
+          type: string
+          lenght: 6
+          description: "Codigo da licitacao"
+
+        C6_LOCAL:
+          type: string
+          lenght: 2
+          description: "Armazem"
+
+        C6_LOCALIZ:
+          type: string
+          lenght: 15
+          description: "Endereco"
+
+        C6_LOJA:
+          type: string
+          lenght: 2
+          description: "Loja do Cliente"
+
+        C6_LOJAFA:
+          type: string
+          lenght: 2
+          description: "Loja do Fabricante"
+
+        C6_LOJDED:
+          type: string
+          lenght: 2
+          description: "Loj. Ded."
+
+        C6_LOTECTL:
+          type: string
+          lenght: 10
+          description: "Lote"
+
+        C6_MOPC:
+          type: M
+          lenght: 10
+          description: "Mesmo Opcional"
+
+        C6_MOTDED:
+          type: string
+          lenght: 1
+          options: "1=Despesas com Materiais;2=Despesas com Sub-empreitada;3=Serviço de Veiculação e Divulgação"
+          description: "Motivo da Dedução"
+          example: "option"
+
+        C6_NATREN:
+          type: string
+          lenght: 5
+          description: "Natureza de Rendimento"
+
+        C6_NFDED:
+          type: string
+          lenght: 9
+          description: "NF. Dedução"
+
+        C6_NFORI:
+          type: string
+          lenght: 9
+          description: "N.F.Original"
+
+        C6_NOTA:
+          type: string
+          lenght: 9
+          description: "Numero da Nota Fiscal"
+
+        C6_NRSEQCQ:
+          type: string
+          lenght: 6
+          description: "Nro. Sequencial do CQ"
+
+        C6_NUM:
+          type: string
+          lenght: 6
+          description: "Numero do Pedido"
+          example: "@X"
+
+        C6_NUMCP:
+          type: string
+          lenght: 9
+          description: "Compromisso Futuro"
+
+        C6_NUMLOTE:
+          type: string
+          lenght: 6
+          description: "Sub-Lote"
+
+        C6_NUMOP:
+          type: string
+          lenght: 6
+          description: "Num. da OP gerada por PV"
+          example: "@X"
+
+        C6_NUMORC:
+          type: string
+          lenght: 8
+          description: "Numero do Orçamento"
+
+        C6_NUMOS:
+          type: string
+          lenght: 14
+          description: "Nr. da Ordem de Servico"
+
+        C6_NUMOSFA:
+          type: string
+          lenght: 14
+          description: "Nr.OS do Fabricante"
+
+        C6_NUMPCOM:
+          type: string
+          lenght: 15
+          description: "Num.Ped.Comp."
+
+        C6_NUMSC:
+          type: string
+          lenght: 6
+          description: "Num. da SC gerada por PV"
+          example: "@x"
+
+        C6_NUMSERI:
+          type: string
+          lenght: 20
+          description: "Num de Serie do Produto"
+
+        C6_OBSCCMP:
+          type: string
+          lenght: 20
+          description: "Titulo Obs. Contribuinte"
+
+        C6_OBSCONT:
+          type: string
+          lenght: 60
+          description: "Observação Contribuinte"
+
+        C6_OBSFCMP:
+          type: string
+          lenght: 20
+          description: "Titulo Obs. Fisco"
+
+        C6_OBSFISC:
+          type: string
+          lenght: 60
+          description: "Observação Fisco"
+
+        C6_OK:
+          type: string
+          lenght: 2
+          description: "Ok para Emissao de O.P."
+
+        C6_OP:
+          type: string
+          lenght: 2
+          description: "Flag de geracao de OP"
+
+        C6_OPC:
+          type: string
+          lenght: 80
+          description: "Opcionais utilizados p/PV"
+          example: "@!S40"
+
+        C6_OPER:
+          type: string
+          lenght: 2
+          description: "Tipo de Operacao"
+
+        C6_ORCGAR:
+          type: string
+          lenght: 6
+          description: "Orcamento Garantia Estend"
+
+        C6_PCDED:
+          type: number
+          lenght: 5
+          decimal: 2
+          description: "Percentual de Dedução"
+          example: "@E 99.99"
+
+        C6_PEDCLI:
+          type: string
+          lenght: 9
+          description: "Numero do Pedido Cliente"
+          example: "@X"
+
+        C6_PEDCOM:
+          type: string
+          lenght: 6
+          description: "Ped.Compra Vinc.ao PV"
+
+        C6_PEDVINC:
+          type: string
+          lenght: 6
+          description: "Número Pedido Vinculado"
+          example: "@X"
+
+        C6_PENE:
+          type: string
+          lenght: 4
+          description: "Peneira"
+
+        C6_PICMRET:
+          type: number
+          lenght: 5
+          decimal: 2
+          description: "Icm Retido (Margem Lucro)"
+          example: "@E 99.99"
+
+        C6_PMSID:
+          type: string
+          lenght: 10
+          description: "ID Protheus"
+
+        C6_POTENCI:
+          type: number
+          lenght: 6
+          decimal: 2
+          description: "Potencia de Lote"
+          example: "@E 999.99"
+
+        C6_PRCVEN:
+          type: number
+          lenght: 11
+          decimal: 2
+          description: "Preco Unitario Liquido"
+          example: "@E 99999999.99"
+
+        C6_PRODFIN:
+          type: string
+          lenght: 15
+          description: "Produto Final"
+
+        C6_PRODUTO:
+          type: string
+          lenght: 15
+          description: "Codigo do Produto"
+
+        C6_PROGRAM:
+          type: string
+          lenght: 10
+          description: "Programa"
+
+        C6_PROJET:
+          type: string
+          lenght: 6
+          description: "Contrato / Field Service"
+
+        C6_PROJPMS:
+          type: string
+          lenght: 10
+          description: "Codigo do Projeto"
+
+        C6_PRUNIT:
+          type: number
+          lenght: 11
+          decimal: 2
+          description: "Preco Unitario de Tabela"
+          example: "@E 99999999.99"
+
+        C6_PVCOMOP:
+          type: string
+          lenght: 1
+          description: "Pedido de Venda com OP"
+
+        C6_QTDEMP:
+          type: number
+          lenght: 9
+          decimal: 2
+          description: "Quantidade Empenhada"
+          example: "@E 999999.99"
+
+        C6_QTDEMP2:
+          type: number
+          lenght: 9
+          decimal: 2
+          description: "Qtd. Seg. UN Empenhada"
+          example: "@E 999999.99"
+
+        C6_QTDENT:
+          type: number
+          lenght: 9
+          decimal: 2
+          description: "Quantidade Entregue"
+          example: "@E 999999.99"
+
+        C6_QTDENT2:
+          type: number
+          lenght: 9
+          decimal: 2
+          description: "Qtd.Seg. UM Entregue"
+          example: "@E 999999.99"
+
+        C6_QTDLIB:
+          type: number
+          lenght: 9
+          decimal: 2
+          description: "Quantidade Liberada"
+          example: "@E 999999.99"
+
+        C6_QTDLIB2:
+          type: number
+          lenght: 9
+          decimal: 2
+          description: "Quantidade Liberada 2a UM"
+          example: "@E 999999.99"
+
+        C6_QTDRESE:
+          type: number
+          lenght: 12
+          decimal: 2
+          description: "Quant. Reservada"
+          example: "@E 999999999.99"
+
+        C6_QTDVEN:
+          type: number
+          lenght: 9
+          decimal: 2
+          description: "Quantidade Vendida"
+          example: "@E 999999.99"
+
+        C6_RATEIO:
+          type: string
+          lenght: 1
+          options: "1=Sim;2=Não"
+          description: "Rateio"
+          example: "option"
+
+        C6_REGWMS:
+          type: string
+          lenght: 1
+          options: "1=Lote;2=Nr de Serie;3=Data/Seq.Abastecimento;4=Data"
+          description: "Regra de apanhe do WMS"
+          example: "option"
+
+        C6_RESERVA:
+          type: string
+          lenght: 6
+          description: "Numero da reserva"
+
+        C6_REVISAO:
+          type: string
+          lenght: 3
+          description: "Revisao da Estrutura"
+
+        C6_REVPROD:
+          type: string
+          lenght: 3
+          description: "Revisão do produto"
+
+        C6_SDOC:
+          type: string
+          lenght: 3
+          description: "Série do Documento Fiscal"
+
+        C6_SDOCDED:
+          type: string
+          lenght: 3
+          description: "Série NF Dedução"
+
+        C6_SDOCORI:
+          type: string
+          lenght: 3
+          description: "Série da N.F. Original"
+
+        C6_SDOCSD1:
+          type: string
+          lenght: 3
+          description: "Série do Documento Fiscal"
+
+        C6_SEGUM:
+          type: string
+          lenght: 2
+          description: "Segunda Unidade de Medida"
+
+        C6_SERDED:
+          type: string
+          lenght: 3
+          description: "Serie NF Dedução"
+
+        C6_SERIE:
+          type: string
+          lenght: 3
+          description: "Serie da Nota Fiscal"
+
+        C6_SERIORI:
+          type: string
+          lenght: 3
+          description: "Serie da N.F. Original"
+
+        C6_SERVIC:
+          type: string
+          lenght: 3
+          description: "Tipo de Servico"
+
+        C6_SLDALIB:
+          type: number
+          lenght: 12
+          decimal: 2
+          description: "Saldo a Liberar"
+          example: "@e 999999999.99"
+
+        C6_SOLCOM:
+          type: string
+          lenght: 6
+          description: "Número da Solicitação de"
+
+        C6_SUGENTR:
+          type: string
+          format: date
+          example: "yyyymmdd"
+          lenght: 8
+          description: "Entrega Sugerida pelo APS"
+
+        C6_TASKPMS:
+          type: string
+          lenght: 12
+          description: "Codigo da Tarefa"
+
+        C6_TES:
+          type: string
+          lenght: 3
+          description: "Tipo de Saida do Item"
+
+        C6_TNATREC:
+          type: string
+          lenght: 4
+          description: "Tab. Nat. Receita"
+
+        C6_TPCONTR:
+          type: string
+          lenght: 1
+          options: "1=Servicos;2=WMS;3=Manutenção"
+          example: "option"
+          description: "Item/Contrato de Servico"
+
+        C6_TPDEDUZ:
+          type: string
+          lenght: 1
+          options: "1=Percentual;2=Valor"
+          example: "option"
+          description: "Tipo de Dedução"
+
+        C6_TPESTR:
+          type: string
+          lenght: 6
+          description: "Cod. da Estrutura Fisica"
+
+        C6_TPOP:
+          type: string
+          lenght: 1
+          options: "F=Firme;P=Prevista"
+          example: "option"
+          description: "Tipo da Ordem de Produção"
+
+        C6_TPPROD:
+          type: string
+          lenght: 1
+          options: "1=Venda; 2=Desenvolvimento"
+          description: "Tipo do Produto"
+          example: "option"
+
+        C6_TPREPAS:
+          type: string
+          lenght: 6
+          description: "Tipo de Repasse"
+
+        C6_TRT:
+          type: string
+          lenght: 3
+          description: "Sequencia do Empenho"
+
+        C6_TURNO:
+          type: string
+          lenght: 1
+          description: "ManhãTarde e Noite"
+
+        C6_UM:
+          type: string
+          lenght: 2
+          description: "Unidade de Medida Primar."
+
+        C6_UNSVEN:
+          type: number
+          lenght: 9
+          decimal: 2
+          description: "Quant. Vend. na 2 Unid M."
+          example: "@E 999999.99"
+
+        C6_VALDESC:
+          type: number
+          lenght: 14
+          decimal: 2
+          description: "Valor do Desconto do Item"
+          example: "@E 99999999999.99"
+
+        C6_VALOR:
+          type: number
+          lenght: 12
+          decimal: 2
+          description: "Valor Total do Item"
+          example: "@E 999999999.99"
+
+        C6_VDMOST:
+          type: string
+          lenght: 1
+          options: "N=Normal;M=Mostruario;S=Saldao"
+          description: "Tipo Peça"
+          example: "option"
+
+        C6_VDOBS:
+          type: M
+          lenght: 250
+          description: "Observação da Peça"
+
+        C6_VLDED:
+          type: number
+          lenght: 16
+          decimal: 2
+          description: "Valor da Dedução"
+
+        C6_VLIMPOR:
+          type: number
+          lenght: 14
+          decimal: 2
+          description: "Valor da Importação"
+          example: "@E 99999999999.99"
+
+        C6_VLNFD:
+          type: number
+          lenght: 16
+          decimal: 2
+          description: "Val NF Ded."
+
+      required:
+        ["C6_PRODUTO", "C6_QTDVEN", "C6_PRCVEN", "C6_VALOR", "C6_TES"]

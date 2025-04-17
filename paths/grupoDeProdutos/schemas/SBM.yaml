@@ -1,0 +1,153 @@
+type: object
+properties:
+  BM_FILIAL:
+    type: string
+    length: 4
+    description: "Filial"
+
+  BM_GRUPO:
+    type: string
+    length: 4
+    description: "Codigo do Grupo"
+
+  BM_DESC:
+    type: string
+    length: 30
+    description: "Descricao do Grupo"
+
+  BM_PICPAD:
+    type: string
+    length: 30
+    description: "Picture Padrao do Campo"
+
+  BM_PROORI:
+    type: string
+    length: 1
+    options: "1=Original;0=Nao Original"
+    description: "Procedencia do Produto"
+    example: "option"
+
+  BM_CODMAR:
+    type: string
+    length: 3
+    description: "Codigo da Marca"
+
+  BM_DESMAR:
+    type: string
+    length: 30
+    description: "Descricao da Marca"
+
+  BM_STATUS:
+    type: string
+    length: 1
+    options: "1=Novo;2=Remanufaturado;3=Reciclado;4=Usado"
+    description: "Status do Grupo"
+    example: "option"
+
+  BM_GRUREL:
+    type: string
+    length: 40
+    description: "Grupo Relacionado"
+
+  BM_TIPGRU:
+    type: string
+    length: 2
+    description: "Tipo de Grupo"
+
+  BM_DESTGR:
+    type: string
+    length: 20
+    description: "Descricao do Tipo Grupo"
+
+  BM_MARKUP:
+    type: number
+    length: 10
+    decimal: 6
+    description: "Indice de Mark-Up"
+    example: "999.999999"
+
+  BM_PRECO:
+    type: string
+    length: 3
+    description: "Tabela de Preco"
+
+  BM_MARGPRE:
+    type: number
+    length: 6
+    decimal: 2
+    description: "% Margem de Preferência"
+    example: "999.99"
+
+  BM_LENREL:
+    type: number
+    length: 2
+    description: "Tam Chave Item Relacionad"
+    example: "99"
+
+  BM_TIPMOV:
+    type: string
+    length: 1
+    options: "0=Paciente/Centro de Custo;1=Centro de Custo;2=Pacotes"
+    description: "Tipo da Movimentacao"
+    example: "option"
+
+  BM_CODGRT:
+    type: string
+    length: 2
+    description: "Código Grupo de Produtos"
+
+  BM_DESGRT:
+    type: string
+    length: 20
+    description: "Nome do Tipo do Grupo"
+
+  BM_CLASGRU:
+    type: string
+    length: 1
+    options: "1=Outros;2=Material Automotivo;3=Insumos Agrícolas;4=Turismo;5=Serviço"
+    description: "Classificacao de Grupo de"
+    example: "option"
+
+  BM_FORMUL:
+    type: string
+    length: 6
+    description: "Formula"
+
+  BM_TPSEGP:
+    type: string
+    length: 1
+    description: "Tipo de Segmento"
+
+  BM_DTUMOV:
+    type: string
+    length: 8
+    description: "Data Transf. uMov.me"
+    example: "yyyymmdd"
+
+  BM_HRUMOV:
+    type: string
+    length: 5
+    description: "Hora Transf. uMov.me"
+
+  BM_CONC:
+    type: string
+    length: 1
+    options: "1=Sim;2=Não"
+    description: "Exige Conciliação?"
+    example: "option"
+
+  BM_CORP:
+    type: boolean
+    length: 1
+    description: "Segmente Corporativo"
+
+  BM_EVENTO:
+    type: boolean
+    length: 1
+    description: "Segmento Evento"
+
+  BM_LAZER:
+    type: boolean
+    length: 1
+    description: "Segmento Lazer"
+required: ["BM_FILIAL", "BM_GRUPO"]

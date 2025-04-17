@@ -1,0 +1,1573 @@
+type: object
+properties:
+  E1_FILIAL:
+    type: string
+    lenght: 2
+    description: "Filial do Sistema"
+
+  E1_PREFIXO:
+    type: string
+    lenght: 3
+    description: "Prefixo do titulo"
+
+  E1_NUM:
+    type: string
+    lenght: 9
+    description: "Numero do Titulo"
+
+  E1_PARCELA:
+    type: string
+    lenght: 2
+    description: "Parcela do Titulo"
+
+  E1_TIPO:
+    type: string
+    lenght: 3
+    description: "Tipo do titulo"
+
+  E1_NATUREZ:
+    type: string
+    lenght: 10
+    description: "Codigo da natureza"
+
+  E1_PORTADO:
+    type: string
+    lenght: 3
+    description: "Codigo do portador"
+
+  E1_AGEDEP:
+    type: string
+    lenght: 5
+    description: "Agencia Depositaria"
+
+  E1_CLIENTE:
+    type: string
+    lenght: 6
+    description: "Codigo do Cliente"
+
+  E1_LOJA:
+    type: string
+    lenght: 2
+    description: "Loja do Cliente"
+
+  E1_NOMCLI:
+    type: string
+    lenght: 20
+    description: "Nome Reduzido do Cliente"
+
+  E1_EMISSAO:
+    type: string
+    format: date
+    lenght: 8
+    description: "Data de Emissao do Titulo"
+
+  E1_VENCTO:
+    type: string
+    format: date
+    lenght: 8
+    description: "Vencimento do Titulo"
+
+  E1_VENCREA:
+    type: string
+    format: date
+    lenght: 8
+    description: "Vencimento real do Titulo"
+
+  E1_VALOR:
+    type: number
+    lenght: 16
+    decimal: 2
+    description: "Valor do Titulo"
+    example: "9 999 999 999 999.99"
+
+  E1_BASEIRF:
+    type: number
+    lenght: 16
+    decimal: 2
+    description: "Base Imposto"
+    example: "9 999 999 999 999.99"
+
+  E1_IRRF:
+    type: number
+    lenght: 14
+    decimal: 2
+    description: "Valor do IRRF"
+    example: "99 999 999 999.99"
+
+  E1_ISS:
+    type: number
+    lenght: 14
+    decimal: 2
+    description: "Valor do ISS"
+    example: "99 999 999 999.99"
+
+  E1_NUMBCO:
+    type: string
+    lenght: 15
+    description: "No. do Titulo no Banco"
+
+  E1_INDICE:
+    type: string
+    lenght: 3
+    description: "Cod da Tabela de Reajuste"
+
+  E1_BAIXA:
+    type: string
+    format: date
+    lenght: 8
+    description: "Data de Baixa do Titulo"
+
+  E1_NUMBOR:
+    type: string
+    lenght: 6
+    description: "Numero do Bordero"
+
+  E1_DATABOR:
+    type: string
+    format: date
+    lenght: 8
+    description: "Data do Bordero"
+
+  E1_EMIS1:
+    type: string
+    format: date
+    lenght: 8
+    description: "Data de Contabilizacao"
+
+  E1_HIST:
+    type: string
+    lenght: 40
+    description: "Historico do Título"
+
+  E1_LA:
+    type: string
+    lenght: 1
+    description: "Identificador de LA"
+
+  E1_LOTE:
+    type: string
+    lenght: 4
+    description: "Lote Contabil"
+
+  E1_MOTIVO:
+    type: string
+    lenght: 20
+    description: "Motivo do nao pagamento"
+
+  E1_MOVIMEN:
+    type: string
+    format: date
+    lenght: 8
+    description: "Data da ultima movimentac"
+
+  E1_OP:
+    type: string
+    lenght: 14
+    description: "Ordem de producao"
+
+  E1_SITUACA:
+    type: string
+    lenght: 1
+    description: "Situacao do titulo"
+
+  E1_CONTRAT:
+    type: string
+    lenght: 15
+    description: "Contrato com banco"
+
+  E1_SALDO:
+    type: number
+    lenght: 16
+    decimal: 2
+    description: "Saldo a Receber"
+    example: "9 999 999 999 999.99"
+
+  E1_SUPERVI:
+    type: string
+    lenght: 6
+    description: "Codigo do Supervisor"
+
+  E1_VEND1:
+    type: string
+    lenght: 6
+    description: "Codigo do Vendedor 1"
+
+  E1_VEND2:
+    type: string
+    lenght: 6
+    description: "Codigo do Vendedor 2"
+
+  E1_VEND3:
+    type: string
+    lenght: 6
+    description: "Codigo do Vendedor 3"
+
+  E1_VEND4:
+    type: string
+    lenght: 6
+    description: "Codigo do Vendedor 4"
+
+  E1_VEND5:
+    type: string
+    lenght: 6
+    description: "Codigo do Vendedor 5"
+
+  E1_COMIS1:
+    type: number
+    lenght: 6
+    decimal: 2
+    description: "% da Comissao 1"
+    example: "999.99"
+
+  E1_COMIS2:
+    type: number
+    lenght: 6
+    decimal: 2
+    description: "% da Comissao 2"
+    example: "999.99"
+
+  E1_COMIS3:
+    type: number
+    lenght: 6
+    decimal: 2
+    description: "% da Comissao 3"
+    example: "999.99"
+
+  E1_COMIS4:
+    type: number
+    lenght: 6
+    decimal: 2
+    description: "% da Comissao 4"
+    example: "999.99"
+
+  E1_DESCONT:
+    type: number
+    lenght: 16
+    decimal: 2
+    description: "Desconto concedido"
+    example: "9 999 999 999 999.99"
+
+  E1_MULTA:
+    type: number
+    lenght: 16
+    decimal: 2
+    description: "Valor da Multa"
+    example: "9 999 999 999 999.99"
+
+  E1_COMIS5:
+    type: number
+    lenght: 6
+    decimal: 2
+    description: "% da Comissao 5"
+    example: "999.99"
+
+  E1_JUROS:
+    type: number
+    lenght: 16
+    decimal: 2
+    description: "Valor do Juros"
+    example: "9 999 999 999 999.99"
+
+  E1_CORREC:
+    type: number
+    lenght: 16
+    decimal: 2
+    description: "Valor da Correcao"
+    example: "9 999 999 999 999.99"
+
+  E1_VALLIQ:
+    type: number
+    lenght: 16
+    decimal: 2
+    description: "Valor Liquido da Baixa"
+    example: "9 999 999 999 999.99"
+
+  E1_VENCORI:
+    type: string
+    format: date
+    lenght: 8
+    description: "Vencimento Original"
+
+  E1_CONTA:
+    type: string
+    lenght: 10
+    description: "Numero da Conta Corrente"
+
+  E1_VALJUR:
+    type: number
+    lenght: 14
+    decimal: 2
+    description: "Taxa Permanencia Diaria"
+    example: "99 999 999 999.99"
+
+  E1_PORCJUR:
+    type: number
+    lenght: 5
+    decimal: 2
+    description: "Porcentual Juros Diario"
+    example: "99.99"
+
+  E1_MOEDA:
+    type: number
+    lenght: 2
+    description: "Moeda do Titulo"
+    example: "99"
+
+  E1_BASCOM1:
+    type: number
+    lenght: 16
+    decimal: 2
+    description: "Base da Comis. do Vend. 1"
+    example: "9 999 999 999 999.99"
+
+  E1_BASCOM2:
+    type: number
+    lenght: 16
+    decimal: 2
+    description: "Base da Comis. do Vend. 2"
+    example: "9 999 999 999 999.99"
+
+  E1_BASCOM3:
+    type: number
+    lenght: 16
+    decimal: 2
+    description: "Base da Comis. do Vend. 3"
+    example: "9 999 999 999 999.99"
+
+  E1_BASCOM4:
+    type: number
+    lenght: 16
+    decimal: 2
+    description: "Base da Comis. do Vend. 4"
+    example: "9 999 999 999 999.99"
+
+  E1_BASCOM5:
+    type: number
+    lenght: 16
+    decimal: 2
+    description: "Base da Comis. do Vend. 5"
+    example: "9 999 999 999 999.99"
+
+  E1_FATPREF:
+    type: string
+    lenght: 3
+    description: "Prefixo da Fatura gerada"
+
+  E1_FATURA:
+    type: string
+    lenght: 9
+    description: "Numero da Fatura"
+
+  E1_OK:
+    type: string
+    lenght: 2
+    description: "Identificador de Selecao"
+
+  E1_PROJETO:
+    type: string
+    lenght: 6
+    description: "Codigo do Projeto"
+
+  E1_CLASCON:
+    type: string
+    lenght: 5
+    description: "Classificacao"
+
+  E1_VALCOM1:
+    type: number
+    lenght: 16
+    decimal: 2
+    description: "Valor comissao vend. 1"
+    example: "9 999 999 999 999.99"
+
+  E1_VALCOM2:
+    type: number
+    lenght: 16
+    decimal: 2
+    description: "Valor comissao vend. 2"
+    example: "9 999 999 999 999.99"
+
+  E1_VALCOM3:
+    type: number
+    lenght: 16
+    decimal: 2
+    description: "Valor comissao vend. 3"
+    example: "9 999 999 999 999.99"
+
+  E1_VALCOM4:
+    type: number
+    lenght: 16
+    decimal: 2
+    description: "Valor comissao vend. 4"
+    example: "9 999 999 999 999.99"
+
+  E1_VALCOM5:
+    type: number
+    lenght: 16
+    decimal: 2
+    description: "Valor comissao vend. 5"
+    example: "9 999 999 999 999.99"
+
+  E1_OCORREN:
+    type: string
+    lenght: 2
+    description: "Codigo Ocorrencia CNAB"
+
+  E1_INSTR1:
+    type: string
+    lenght: 2
+    description: "Instrucao primaria CNAB"
+
+  E1_INSTR2:
+    type: string
+    lenght: 2
+    description: "Instrucao secundaria CNAB"
+
+  E1_PEDIDO:
+    type: string
+    lenght: 6
+    description: "Numero do Pedido"
+
+  E1_DTVARIA:
+    type: string
+    format: date
+    lenght: 8
+    description: "Data da ultima variacao"
+
+  E1_VARURV:
+    type: number
+    lenght: 16
+    decimal: 2
+    description: "Valor da Variacao Apurada"
+    example: "9 999 999 999 999.99"
+
+  E1_VLCRUZ:
+    type: number
+    lenght: 16
+    decimal: 2
+    description: "Valor na moeda nacional"
+    example: "9 999 999 999 999.99"
+
+  E1_DTFATUR:
+    type: string
+    format: date
+    lenght: 8
+    description: "Data Faturamento"
+
+  E1_NUMNOTA:
+    type: string
+    lenght: 9
+    description: "Numero da Nota Fiscal"
+
+  E1_SERIE:
+    type: string
+    lenght: 3
+    description: "Serie da Nota Fiscal"
+
+  E1_STATUS:
+    type: string
+    lenght: 1
+    description: "Status"
+
+  E1_ORIGEM:
+    type: string
+    lenght: 8
+    description: "Origem do Título"
+
+  E1_IDENTEE:
+    type: string
+    lenght: 6
+    description: "Ident da Comp entre Cart"
+
+  E1_NUMCART:
+    type: string
+    lenght: 19
+    description: "N·mero do Cartão"
+
+  E1_FLUXO:
+    type: string
+    lenght: 1
+    options: "S=Sim;N=Não"
+    example: "option"
+    description: "Fluxo de Caixa"
+
+  E1_DESCFIN:
+    type: number
+    lenght: 5
+    decimal: 2
+    description: "Desconto Financeiro"
+    example: "99.99"
+
+  E1_DIADESC:
+    type: number
+    lenght: 2
+    description: "Dias para Desconto"
+    example: "99"
+
+  E1_TIPODES:
+    type: string
+    lenght: 1
+    options: "1=Fixo;2=Proporcional"
+    description: "Tipo do Desconto"
+
+  E1_CARTAO:
+    type: string
+    lenght: 16
+    description: "Nro. Cartao de Credito"
+    example: "10000000000000000"
+
+  E1_CARTVAL:
+    type: string
+    format: date
+    lenght: 8
+    description: "Data de Validade do CC"
+
+  E1_CARTAUT:
+    type: string
+    lenght: 50
+    description: "Autorização do CC"
+
+  E1_ADM:
+    type: string
+    lenght: 3
+    description: "Adm. de Cartao de Credito"
+
+  E1_VLRREAL:
+    type: number
+    lenght: 16
+    decimal: 2
+    description: "Valor Real do Titulo"
+    example: "9 999 999 999 999.99"
+
+  E1_TRANSF:
+    type: string
+    lenght: 15
+    description: "Numero do docto. transf."
+
+  E1_BCOCHQ:
+    type: string
+    lenght: 3
+    description: "Banco Cheque Liquidacao"
+
+  E1_AGECHQ:
+    type: string
+    lenght: 5
+    description: "Agencia Cheque Liquidacao"
+
+  E1_CTACHQ:
+    type: string
+    lenght: 10
+    description: "Conta Cheque Liquidacao"
+
+  E1_NUMLIQ:
+    type: string
+    lenght: 6
+    description: "Numero da Liquidacao"
+
+  E1_ORDPAGO:
+    type: string
+    lenght: 6
+    description: "Ordem de Pagamento"
+
+  E1_RECIBO:
+    type: string
+    lenght: 6
+    description: "Numero de Recibo"
+
+  E1_INSS:
+    type: number
+    lenght: 14
+    decimal: 2
+    description: "Valor INSS"
+    example: "99 999 999 999.99"
+
+  E1_FILORIG:
+    type: string
+    lenght: 2
+    description: "Filial de Origem"
+
+  E1_DTACRED:
+    type: string
+    format: date
+    lenght: 8
+    description: "Data para compensacäo"
+
+  E1_TIPOFAT:
+    type: string
+    lenght: 3
+    description: "Tipo da Fatura"
+
+  E1_TIPOLIQ:
+    type: string
+    lenght: 3
+    description: "Tipo gerado p/Liquidacao"
+
+  E1_CSLL:
+    type: number
+    lenght: 14
+    decimal: 2
+    description: "Valor CSLL"
+    example: "99 999 999 999.99"
+
+  E1_COFINS:
+    type: number
+    lenght: 14
+    decimal: 2
+    description: "Valor COFINS"
+    example: "99 999 999 999.99"
+
+  E1_PIS:
+    type: number
+    lenght: 14
+    decimal: 2
+    description: "Valor PIS"
+    example: "99 999 999 999.99"
+
+  E1_FLAGFAT:
+    type: string
+    lenght: 1
+    description: "Flag para Faturas"
+
+  E1_MESBASE:
+    type: string
+    lenght: 2
+    description: "Mes Base"
+
+  E1_ANOBASE:
+    type: string
+    lenght: 4
+    description: "Ano Base"
+
+  E1_PLNUCOB:
+    type: string
+    lenght: 12
+    description: "Numero Cobranca"
+
+  E1_CODINT:
+    type: string
+    lenght: 4
+    description: "Instituicao"
+
+  E1_CODEMP:
+    type: string
+    lenght: 4
+    description: "Empresa/Grupo"
+
+  E1_MATRIC:
+    type: string
+    lenght: 6
+    description: "Matricula"
+
+  E1_TXMOEDA:
+    type: number
+    lenght: 11
+    decimal: 4
+    description: "Taxa da moeda"
+    example: "999999.9999"
+
+  E1_ACRESC:
+    type: number
+    lenght: 16
+    decimal: 2
+    description: "Valor do Acrescimo"
+    example: "9 999 999 999 999.99"
+
+  E1_SDACRES:
+    type: number
+    lenght: 16
+    decimal: 2
+    description: "Saldo do Acrescimo"
+    example: "9 999 999 999 999.99"
+
+  E1_DECRESC:
+    type: number
+    lenght: 16
+    decimal: 2
+    description: "Valor do Decrescimo"
+    example: "9 999 999 999 999.99"
+
+  E1_SDDECRE:
+    type: number
+    lenght: 16
+    decimal: 2
+    description: "Saldo do Decrescimo"
+    example: "9 999 999 999 999.99"
+
+  E1_MULTNAT:
+    type: string
+    lenght: 1
+    options: "1=Sim;2=Não"
+    description: "Multiplas naturezas p/Tit"
+
+  E1_MSFIL:
+    type: string
+    lenght: 2
+    description: "."
+
+  E1_MSEMP:
+    type: string
+    lenght: 2
+    description: "."
+
+  E1_PROJPMS:
+    type: string
+    lenght: 1
+    options: "1=Sim;2=Não"
+    description: "Rateio de Projetos"
+
+  E1_DESDOBR:
+    type: string
+    lenght: 1
+    options: "1=Sim;2=Não"
+    description: "Desdobramento"
+
+  E1_NRDOC:
+    type: string
+    lenght: 50
+    description: "Numero do Documento"
+
+  E1_EMITCHQ:
+    type: string
+    lenght: 40
+    description: "Emitente do Cheque"
+
+  E1_MODSPB:
+    type: string
+    lenght: 1
+    options: "1=TED;2=CIP;3=COMP"
+    description: "Modalidade Rec.Previsto"
+
+  E1_IDCNAB:
+    type: string
+    lenght: 10
+    description: "Identificador Cnab"
+
+  E1_PLCOEMP:
+    type: string
+    lenght: 12
+    description: "Contrato Empresa"
+
+  E1_PLTPCOE:
+    type: string
+    lenght: 1
+    description: "Tipo Contrato Empresa"
+
+  E1_CODCOR:
+    type: string
+    lenght: 6
+    description: "Codigo Corretor"
+
+  E1_PARCCSS:
+    type: string
+    lenght: 2
+    description: "Parcela do Funrural"
+
+  E1_CODORCA:
+    type: string
+    lenght: 8
+    description: "Codigo do Orcamento"
+
+  E1_CODIMOV:
+    type: string
+    lenght: 12
+    description: "Codigo do Imovel"
+
+  E1_FILDEB:
+    type: string
+    lenght: 2
+    description: "Filial de Debito"
+
+  E1_NUMRA:
+    type: string
+    lenght: 15
+    description: "Numero da RA Aluno"
+
+  E1_NUMSOL:
+    type: string
+    lenght: 6
+    description: "No. Solicitacäo de transf"
+
+  E1_INSCRIC:
+    type: string
+    lenght: 10
+    description: "Inscric.Processo Seletivo"
+
+  E1_SERREC:
+    type: string
+    lenght: 3
+    description: "Serie do Recibo"
+
+  E1_DATAEDI:
+    type: string
+    format: date
+    lenght: 8
+    description: "Data de Geracao do EDI"
+
+  E1_CODBAR:
+    type: string
+    lenght: 44
+    description: "Codigo de Barras"
+
+  E1_CHQDEV:
+    type: string
+    lenght: 1
+    description: "Cheque devolvido"
+
+  E1_CODDIG:
+    type: string
+    lenght: 48
+    description: "Codigo Digitado"
+
+  E1_LIDESCF:
+    type: string
+    format: date
+    lenght: 8
+    description: "Data Limite p/Desc Financ"
+
+  E1_VLBOLSA:
+    type: number
+    lenght: 15
+    decimal: 2
+    description: "Valor da Bolsa"
+    example: "999 999 999 999.99"
+
+  E1_NUMCRD:
+    type: string
+    lenght: 10
+    description: "Numero Contrato Financiam"
+
+  E1_VLFIES:
+    type: number
+    lenght: 15
+    decimal: 2
+    description: "Valor da Bolsa FIES"
+    example: "999 999 999 999.99"
+
+  E1_DEBITO:
+    type: string
+    lenght: 20
+    description: "Conta Contabil a Debito"
+
+  E1_CCD:
+    type: string
+    lenght: 9
+    description: "C.Custo a Debito"
+
+  E1_ITEMD:
+    type: string
+    lenght: 9
+    description: "Item Contabil a Debito"
+
+  E1_CLVLDB:
+    type: string
+    lenght: 9
+    description: "Classe de Valor a Debito"
+
+  E1_CREDIT:
+    type: string
+    lenght: 20
+    description: "Conta Contabil a Credito"
+
+  E1_CCC:
+    type: string
+    lenght: 9
+    description: "C.Custo a Credito"
+
+  E1_ITEMC:
+    type: string
+    lenght: 9
+    description: "Item Contabil Credito"
+
+  E1_CLVLCR:
+    type: string
+    lenght: 9
+    description: "Classe de Valor a Credito"
+
+  E1_DESCON1:
+    type: number
+    lenght: 15
+    decimal: 2
+    description: "Valor do Desconto 1a faix"
+    example: "999 999 999 999.99"
+
+  E1_DESCON2:
+    type: number
+    lenght: 15
+    decimal: 2
+    description: "Valor do Desconto 2a faix"
+    example: "999 999 999 999.99"
+
+  E1_DTDESC3:
+    type: string
+    format: date
+    lenght: 8
+    description: "Data do Desconto 1a faixa"
+
+  E1_DTDESC1:
+    type: string
+    format: date
+    lenght: 8
+    description: "Data do Desconto 2a faixa"
+
+  E1_DTDESC2:
+    type: string
+    format: date
+    lenght: 8
+    description: "Data do Desconto 3a faixa"
+
+  E1_VLMULTA:
+    type: number
+    lenght: 15
+    decimal: 2
+    description: "Valor da Multa no Boleto"
+    example: "999 999 999 999.99"
+
+  E1_DESCON3:
+    type: number
+    lenght: 15
+    decimal: 2
+    description: "Valor do Desconto 3a faix"
+    example: "999 999 999 999.99"
+
+  E1_MOTNEG:
+    type: string
+    lenght: 3
+    description: "Motivo da Negociacao"
+
+  E1_SABTPIS:
+    type: number
+    lenght: 14
+    decimal: 2
+    description: "Saldo a abater - PIS"
+    example: "99 999 999 999.99"
+
+  E1_SABTCOF:
+    type: number
+    lenght: 14
+    decimal: 2
+    description: "Saldo Abater - COFINS"
+    example: "99 999 999 999.99"
+
+  E1_SABTCSL:
+    type: number
+    lenght: 14
+    decimal: 2
+    description: "Saldo a abater - CSLL"
+    example: "99 999 999 999.99"
+
+  E1_FORNISS:
+    type: string
+    lenght: 6
+    description: "Fornecedor do ISS"
+
+  E1_PARTOT:
+    type: string
+    lenght: 4
+    description: "Parcela atual"
+
+  E1_SITFAT:
+    type: string
+    lenght: 1
+    options: "1=Fatura näo impressa;2=Fatura impressa;3=Fatura cancelada"
+    description: "Situacäo da fatura"
+
+  E1_BASEPIS:
+    type: number
+    lenght: 14
+    decimal: 2
+    description: "Base do Pis Ref. Titulo"
+    example: "99 999 999 999.99"
+
+  E1_BASECOF:
+    type: number
+    lenght: 14
+    decimal: 2
+    description: "Base Cofins ref. titulo"
+    example: "99 999 999 999.99"
+
+  E1_BASECSL:
+    type: number
+    lenght: 14
+    decimal: 2
+    description: "Base Csll ref. titulo"
+    example: "99 999 999 999.99"
+
+  E1_VRETISS:
+    type: number
+    lenght: 14
+    decimal: 2
+    description: "Valor Retido - ISS"
+    example: "99 999 999 999.99"
+
+  E1_PARCIRF:
+    type: string
+    lenght: 2
+    description: "Parcela Titulo IRRF"
+
+  E1_SCORGP:
+    type: string
+    lenght: 1
+    options: "1=Sim;2=Não"
+    description: "Apura Pis/Cofins Org.Publ"
+
+  E1_FRETISS:
+    type: string
+    lenght: 1
+    options: "1=Cons. Vlr. Min;2=Sempre Retém"
+    description: "Forma de retenção do ISS"
+
+  E1_TXMDCOR:
+    type: number
+    lenght: 14
+    decimal: 4
+    description: "Tx. Moeda na Correcao M."
+    example: "999 999 999.9999"
+
+  E1_SATBIRF:
+    type: number
+    lenght: 14
+    decimal: 2
+    description: "Saldo a abater - IRRF"
+    example: "99 999 999 999.99"
+
+  E1_TIPREG:
+    type: string
+    lenght: 2
+    description: "Tipo de Registro"
+
+  E1_CONEMP:
+    type: string
+    lenght: 12
+    description: "Contrato Empresa"
+
+  E1_VERCON:
+    type: string
+    lenght: 3
+    description: "Versão do Contrato"
+
+  E1_SUBCON:
+    type: string
+    lenght: 9
+    description: "Sub-Contrato"
+
+  E1_VERSUB:
+    type: string
+    lenght: 3
+    description: "Versao SubContrato"
+
+  E1_PLLOTE:
+    type: string
+    lenght: 10
+    description: "Número do Lote do PLS"
+
+  E1_PLOPELT:
+    type: string
+    lenght: 4
+    description: "Operadora Lote Pagamento"
+
+  E1_CODRDA:
+    type: string
+    lenght: 6
+    description: "Código da Rede de Atendim"
+
+  E1_FORMREC:
+    type: string
+    lenght: 2
+    description: "Código da Forma de Pagto"
+
+  E1_BCOCLI:
+    type: string
+    lenght: 3
+    description: "Banco do Cliente"
+
+  E1_AGECLI:
+    type: string
+    lenght: 5
+    description: "Agência do Cliente"
+
+  E1_CTACLI:
+    type: string
+    lenght: 10
+    description: "Conta do Cliente"
+
+  E1_PARCFET:
+    type: string
+    lenght: 2
+    description: "Parcela do Imposto FETHAB"
+
+  E1_FETHAB:
+    type: number
+    lenght: 14
+    decimal: 2
+    description: "Valor do Imposto FETHAB"
+    example: "99 999 999 999.99"
+
+  E1_MDCRON:
+    type: string
+    lenght: 6
+    description: "Número do Cronograma"
+
+  E1_MDCONTR:
+    type: string
+    lenght: 15
+    description: "Num. Contrato"
+
+  E1_MEDNUME:
+    type: string
+    lenght: 6
+    description: "Número da Medição"
+
+  E1_MDPLANI:
+    type: string
+    lenght: 6
+    description: "Num. Planilha"
+
+  E1_MDPARCE:
+    type: string
+    lenght: 2
+    description: "Número da Parcela"
+
+  E1_MDREVIS:
+    type: string
+    lenght: 3
+    description: "Revisão do Contrato"
+
+  E1_NUMMOV:
+    type: string
+    lenght: 2
+    description: "Movimento do Dia"
+
+  E1_PREFORI:
+    type: string
+    lenght: 3
+    description: "Prefixo Origem"
+
+  E1_IDMOV:
+    type: string
+    lenght: 10
+    description: "Id. Movimento"
+
+  E1_PARCIMA:
+    type: string
+    lenght: 2
+    description: "Parcela do Imposto IMA"
+
+  E1_IMA:
+    type: number
+    lenght: 14
+    decimal: 2
+    description: "Valor do Imposto IMA"
+    example: "99 999 999 999.99"
+
+  E1_BOLETO:
+    type: string
+    lenght: 1
+    options: "1=Sim;2=Não"
+    description: "Gera boleto p/ o título"
+
+  E1_NUMPRO:
+    type: string
+    lenght: 10
+    description: "Nro Proc. Referenciado"
+
+  E1_INDPRO:
+    type: string
+    lenght: 1
+    options: "0=Sefaz;1=Justiça Federal;2=Justiça Estadual;3=Secex/SRF;9=Outros"
+    description: "Tipo de Processo"
+
+  E1_BASEINS:
+    type: number
+    lenght: 16
+    decimal: 2
+    description: "Base de INSS"
+    example: "9 999 999 999 999.99"
+
+  E1_PRINSS:
+    type: number
+    lenght: 14
+    decimal: 2
+    description: "Provisao de  - INSS"
+    example: "99 999 999 999.99"
+
+  E1_NODIA:
+    type: string
+    lenght: 10
+    description: "Seq. Diario Contabilidade"
+
+  E1_FACS:
+    type: number
+    lenght: 14
+    decimal: 2
+    description: "Valor do tributo FACS"
+    example: "99 999 999 999.99"
+
+  E1_FABOV:
+    type: number
+    lenght: 14
+    decimal: 2
+    description: "Valor do tributo FABOV"
+    example: "99 999 999 999.99"
+
+  E1_CODRET:
+    type: string
+    lenght: 4
+    description: "Codigo Retencao do PCC"
+
+  E1_MULTDIA:
+    type: number
+    lenght: 9
+    decimal: 2
+    description: "Multa ao Dia"
+
+  E1_FAMAD:
+    type: number
+    lenght: 16
+    decimal: 2
+    description: "Valor do Famad"
+    example: "9 999 999 999 999.99"
+
+  E1_FMPEQ:
+    type: number
+    lenght: 16
+    decimal: 2
+    description: "Valor do tributo FUMIPEQ."
+    example: "9 999 999 999 999.99"
+
+  E1_NFELETR:
+    type: string
+    lenght: 20
+    description: "Nota Fiscal Eletrônica"
+
+  E1_MDDESC:
+    type: number
+    lenght: 15
+    decimal: 2
+    description: "Desconto de Contrato"
+    example: "999 999 999 999.99"
+
+  E1_VLMINIS:
+    type: string
+    lenght: 1
+    description: "Aplica Vlr. Minimo ISS"
+
+  E1_MDBONI:
+    type: number
+    lenght: 15
+    decimal: 2
+    description: "Bonificacao de Contrato"
+    example: "999 999 999 999.99"
+
+  E1_MDMULT:
+    type: number
+    lenght: 15
+    decimal: 2
+    description: "Multa de Contrato"
+    example: "999 999 999 999.99"
+
+  E1_JURFAT:
+    type: string
+    lenght: 50
+    description: "Numero Fatura Juridico"
+
+  E1_PARCFAM:
+    type: string
+    lenght: 2
+    description: "Parc.FAMAD"
+
+  E1_CDRETIR:
+    type: string
+    lenght: 4
+    description: "Código de Retenção do IR"
+
+  E1_TPDESC:
+    type: string
+    lenght: 1
+    description: "Desconto F100"
+
+  E1_TPDP:
+    type: number
+    lenght: 14
+    decimal: 2
+    description: "Vlr. TPDP"
+    example: "99 999 999 999.99"
+
+  E1_RELATO:
+    type: string
+    lenght: 1
+    options: "1=Sim;2=Não"
+    description: "Enviado no Relato"
+
+  E1_RATFIN:
+    type: string
+    lenght: 1
+    options: "1=Sim;2=Não"
+    description: "Rateio Financeiro"
+
+  E1_ITEMCTA:
+    type: string
+    lenght: 9
+    description: "Item Contabil"
+
+  E1_DESCJUR:
+    type: number
+    lenght: 5
+    decimal: 2
+    description: "Desconto Juros"
+    example: "99.99"
+
+  E1_CDRETCS:
+    type: string
+    lenght: 4
+    description: "Código de Retenção CSLL"
+
+  E1_RETCNTR:
+    type: number
+    lenght: 15
+    decimal: 2
+    description: "Retencao de Contrato"
+    example: "999 999 999 999.99"
+
+  E1_PARTPDP:
+    type: string
+    lenght: 1
+    description: "Par. TPDP"
+
+  E1_PARCFAC:
+    type: string
+    lenght: 2
+    description: "Parcela do tributo FACS"
+
+  E1_PARCFAB:
+    type: string
+    lenght: 2
+    description: "Parcela do tributo FABOV"
+
+  E1_TITPAI:
+    type: string
+    lenght: 50
+    description: "Titulo Originário Imposto"
+
+  E1_CCUSTO:
+    type: string
+    lenght: 9
+    description: "Centro de Custo"
+
+  E1_PARCFMP:
+    type: string
+    lenght: 2
+    description: "Parcela tributo Fumipeq"
+
+  E1_CLVL:
+    type: string
+    lenght: 9
+    description: "Classe de Valor"
+
+  E1_DOCTEF:
+    type: string
+    lenght: 100
+    description: "Numero NSU-SITEF"
+
+  E1_NUMCON:
+    type: string
+    lenght: 20
+    description: "Número do Contrato"
+
+  E1_CODIRRF:
+    type: string
+    lenght: 4
+    description: "Código da Receita - IRRF"
+
+  E1_DIACTB:
+    type: string
+    lenght: 2
+    description: "Cod. Diario Contabilidade"
+
+  E1_LTCXA:
+    type: string
+    lenght: 10
+    description: "Lote do Caixa"
+
+  E1_NOPER:
+    type: number
+    lenght: 11
+    description: "Num Trans Caixa"
+    example: "99 999 999 999"
+
+  E1_PRISS:
+    type: number
+    lenght: 14
+    decimal: 2
+    description: "Provisao de  - ISS"
+    example: "99 999 999 999.99"
+
+  E1_APLVLMN:
+    type: string
+    lenght: 1
+    options: "1=Sim;2=Não"
+    description: "Aplica Valor Minimo"
+
+  E1_CODISS:
+    type: string
+    lenght: 6
+    description: "Codigo Aliquota ISS"
+
+  E1_PROCEL:
+    type: number
+    lenght: 15
+    description: "Processo Seletivo"
+    example: "999 999 999 999 999"
+
+  E1_CONHTL:
+    type: string
+    lenght: 32
+    description: "Número da Conta Hoteleira"
+
+  E1_BTRISS:
+    type: number
+    lenght: 14
+    decimal: 2
+    description: "Bitributação do ISS CPOM"
+    example: "99 999 999 999.99"
+
+  E1_NUMINSC:
+    type: number
+    lenght: 15
+    description: "Numero Inscricao"
+    example: "999 999 999 999 999"
+
+  E1_CNO:
+    type: string
+    lenght: 6
+    description: "Codigo CNO"
+
+  E1_SABTIRF:
+    type: number
+    lenght: 14
+    decimal: 2
+    description: "Saldo de Abatimento IRRF"
+    example: "99 999 999 999.99"
+
+  E1_CODSERV:
+    type: string
+    lenght: 9
+    description: "Codigo de Servico do ISS"
+
+  E1_NSUTEF:
+    type: string
+    lenght: 50
+    description: "Numero NSU SITEF"
+
+  E1_VLBOLP:
+    type: number
+    lenght: 9
+    decimal: 2
+    description: "Valor Bolsa Pontualidade"
+    example: "999 999.99"
+
+  E1_IDLAN:
+    type: number
+    lenght: 9
+    description: "Nr. Lancamento na FLAN"
+    example: "999 999 999"
+
+  E1_CTRBCO:
+    type: string
+    lenght: 50
+    description: "Contrato Minha Casa Minha"
+
+  E1_IDAPLIC:
+    type: number
+    lenght: 9
+    description: "Matriz Aplicada"
+    example: "999 999 999"
+
+  E1_SERVICO:
+    type: string
+    lenght: 10
+    description: "Codigo do Servico"
+
+  E1_IDBOLET:
+    type: number
+    lenght: 9
+    description: "Id. Boleto"
+    example: "999 999 999"
+
+  E1_VRETBIS:
+    type: number
+    lenght: 14
+    decimal: 2
+    description: "Vlr. Retenção ISS Bitrib."
+    example: "99 999 999 999.99"
+
+  E1_VRETIRF:
+    type: number
+    lenght: 14
+    decimal: 2
+    description: "Valor Retencao Irrf"
+    example: "99 999 999 999.99"
+
+  E1_SDOC:
+    type: string
+    lenght: 3
+    description: "Série do Documento Fiscal"
+
+  E1_SDOCREC:
+    type: string
+    lenght: 3
+    description: "Série do Recibo"
+
+  E1_BASEISS:
+    type: number
+    lenght: 16
+    decimal: 2
+    description: "Base ISS"
+    example: "9 999 999 999 999.99"
+
+  E1_PERLET:
+    type: string
+    lenght: 4
+    description: "Período Letivo"
+
+  E1_PRODUTO:
+    type: string
+    lenght: 15
+    description: "Cod. Produto p/ Fatura"
+
+  E1_TCONHTL:
+    type: string
+    lenght: 1
+    options: "1=Evento;2=Grupo;3=Individual;4=Avulsa"
+    description: "Tipo da Conta - Hotelaria"
+
+  E1_SEQBX:
+    type: string
+    lenght: 2
+    description: "Sequencia de Baixa"
+
+  E1_TURMA:
+    type: string
+    lenght: 20
+    description: "Turma"
+
+  E1_CHAVENF:
+    type: string
+    lenght: 12
+    description: "Chave da Nota Fiscal"
+
+  E1_TPESOC:
+    type: string
+    lenght: 2
+    description: "Classif tipo de serviço"
+required:
+  [
+    "E1_NUM",
+    "E1_TIPO",
+    "E1_NATUREZ",
+    "E1_CLIENTE",
+    "E1_LOJA",
+    "E1_EMISSAO",
+    "E1_VENCTO",
+    "E1_VENCREA",
+    "E1_VALOR",
+  ]

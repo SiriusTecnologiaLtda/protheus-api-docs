@@ -1,0 +1,144 @@
+post:
+  tags:
+    - TitulosAPagar
+  summary: EndPoint para criar um titulo a pagar
+  operationId: postTitulosAPagar
+  requestBody:
+    required: true
+    content:
+      application/json:
+        schema:
+          $ref: "./schemas/SE2.yaml"
+
+  responses:
+    "200":
+      description: Successful response
+      content:
+        application/json:
+          schema:
+            type: object
+            properties:
+              success:
+                type: boolean
+                example: true
+              code:
+                type: integer
+                example: 200
+              message:
+                type: object
+                properties:
+                  info:
+                    type: string
+                    example: Título a pagar incluido com sucesso!
+                  E2_PREFIXO:
+                    type: string
+                    example: MAN
+                  E2_NUM:
+                    type: string
+                    example: 99/9999
+                  E2_PARCELA:
+                    type: string
+                    example: 000001
+                  E2_TIPO:
+                    type: string
+                    example: FT
+                  E2_FORNEC:
+                    type: string
+                    example: 000011
+                  E2_LOJA:
+                    type: string
+                    example: 01
+    "400":
+      description: Invalid input
+      content:
+        application/json:
+          schema:
+            type: object
+            properties:
+              success:
+                type: boolean
+                example: false
+              code:
+                type: integer
+                example: 400
+              message:
+                type: object
+                properties:
+                  info:
+                    type: string
+                    example: Descrição do erro.
+    "500":
+      description: Invalid input
+      content:
+        application/json:
+          schema:
+            type: object
+            properties:
+              success:
+                type: boolean
+                example: false
+              code:
+                type: integer
+                example: 500
+              message:
+                type: object
+                properties:
+                  info:
+                    type: string
+                    example: "{\"code\":500,\"detailedMessage\":\"\",\"message\":\"Internal Server Error\"}"
+  security:
+    - basicAuth: []
+get:
+  tags:
+    - TitulosAPagar
+  summary: EndPoint para retornar todos os titulos a pagar
+  operationId: getAllTitulosAPagar
+  responses:
+    "200":
+      description: Successful response
+      content:
+        application/json:
+          schema:
+            type: array
+            items:
+              $ref: "./schemas/SE2.yaml"
+    "400":
+      description: Invalid input
+      content:
+        application/json:
+          schema:
+            type: object
+            properties:
+              success:
+                type: boolean
+                example: false
+              code:
+                type: integer
+                example: 400
+              message:
+                type: object
+                properties:
+                  info:
+                    type: string
+                    example: Descrição do erro.
+    "500":
+      description: Invalid input
+      content:
+        application/json:
+          schema:
+            type: object
+            properties:
+              success:
+                type: boolean
+                example: false
+              code:
+                type: integer
+                example: 500
+              message:
+                type: object
+                properties:
+                  info:
+                    type: string
+                    example: "{\"code\":500,\"detailedMessage\":\"\",\"message\":\"Internal Server Error\"}"
+  security:
+    - basicAuth: []

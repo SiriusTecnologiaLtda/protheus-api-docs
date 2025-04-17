@@ -1,0 +1,3447 @@
+type: object
+properties:
+  SF1:
+    type: object
+    properties:
+      F1_FILIAL:
+        type: string
+        lenght: 4
+        description: "Filial do Sistema"
+
+      F1_DOC:
+        type: string
+        lenght: 9
+        description: "Numero do documento"
+
+      F1_SERIE:
+        type: string
+        lenght: 3
+        description: "Serie do Documento"
+
+      F1_FORNECE:
+        type: string
+        lenght: 6
+        description: "Codigo do fornecedor"
+
+      F1_LOJA:
+        type: string
+        lenght: 2
+        description: "Loja do fornecedor"
+
+      F1_YNOME:
+        type: string
+        lenght: 120
+        description: "Nome Fornecedor/Cliente"
+
+      F1_COND:
+        type: string
+        lenght: 3
+        description: "Codigo da condic. de pgto"
+
+      F1_DUPL:
+        type: string
+        lenght: 9
+        description: "Numero do titulo"
+
+      F1_EMISSAO:
+        type: string
+        format: date
+        example: "yyyymmdd"
+        lenght: 8
+        description: "Data de Emissao da NF"
+
+      F1_EST:
+        type: string
+        lenght: 2
+        description: "Estado de emissao da NF"
+
+      F1_FRETE:
+        type: number
+        lenght: 15
+        decimal: 2
+        description: "Valor do frete"
+        example: "E 999999999999.99"
+
+      F1_DESPESA:
+        type: number
+        lenght: 15
+        decimal: 2
+        description: "Valor das despesas"
+        example: "E 999999999999.99"
+
+      F1_BASEICM:
+        type: number
+        lenght: 14
+        decimal: 2
+        description: "Base de calculo para ICM"
+        example: "E 999999999.99"
+
+      F1_VALICM:
+        type: number
+        lenght: 14
+        decimal: 2
+        description: "Valor do ICMS"
+        example: "E 999999999.99"
+
+      F1_BASEIPI:
+        type: number
+        lenght: 14
+        decimal: 2
+        description: "Base de calculo para IPI"
+        example: "E 999999999.99"
+
+      F1_VALIPI:
+        type: number
+        lenght: 14
+        decimal: 2
+        description: "Valor do IPI"
+        example: "E 999999999.99"
+
+      F1_VALMERC:
+        type: number
+        lenght: 14
+        decimal: 2
+        description: "Valor da nercadoria"
+        example: "E 99999999999.99"
+
+      F1_VALBRUT:
+        type: number
+        lenght: 14
+        decimal: 2
+        description: "Valor bruto da NF"
+        example: "E 99999999999.99"
+
+      F1_TIPO:
+        type: string
+        lenght: 1
+        description: "Nota/Consumidor/Ticket..."
+
+      F1_DESCONT:
+        type: number
+        lenght: 14
+        decimal: 2
+        description: "Descontos da nota fiscal"
+        example: "E 99999999999.99"
+
+      F1_DTDIGIT:
+        type: string
+        format: date
+        lenght: 8
+        example: "yyyymmdd"
+        description: "Data de Digitacao"
+
+      F1_CPROVA:
+        type: string
+        lenght: 14
+        description: "Nome Arq. de Contra Prova"
+
+      F1_NUMTRIB:
+        type: string
+        lenght: 9
+        description: "Relac. SF1 x SE2"
+
+      F1_BRICMS:
+        type: number
+        lenght: 14
+        decimal: 2
+        description: "Base ICMS Solidario"
+        example: "E 999999999.99"
+
+      F1_ICMSRET:
+        type: number
+        lenght: 14
+        decimal: 2
+        description: "Valor ICMS Solidario"
+        example: "E 999999999.99"
+
+      F1_BASEFD:
+        type: number
+        lenght: 14
+        decimal: 2
+        description: "Base do Frete e Despesas"
+        example: "E 999999999.99"
+
+      F1_DTLANC:
+        type: string
+        format: date
+        lenght: 8
+        example: "yyyymmdd"
+        description: "Data de Lancamento"
+
+      F1_OK:
+        type: string
+        lenght: 2
+        description: "Ok Lancto. Conhec. Frete"
+
+      F1_ORIGLAN:
+        type: string
+        lenght: 2
+        description: "Origem do Lancamento"
+
+      F1_TX:
+        type: string
+        lenght: 1
+        description: "Flag para Transmissao"
+
+      F1_CONTSOC:
+        type: number
+        lenght: 14
+        decimal: 2
+        description: "Valor Contr.Segur.Social"
+        example: "E 99999999999.99"
+
+      F1_IRRF:
+        type: number
+        lenght: 14
+        decimal: 2
+        description: "Imposto de Renda"
+        example: "E 999999999.99"
+
+      F1_FORMUL:
+        type: string
+        lenght: 1
+        description: "Formulario Proprio"
+
+      F1_NFORIG:
+        type: string
+        lenght: 9
+        description: "Documento de Despesa"
+
+      F1_SERORIG:
+        type: string
+        lenght: 3
+        description: "Serie do Docto.de Despesa"
+
+      F1_ESPECIE:
+        type: string
+        lenght: 5
+        description: "Espécie do Documento"
+
+      F1_IMPORT:
+        type: string
+        lenght: 1
+        description: "Flag de Importacao"
+
+      F1_II:
+        type: number
+        lenght: 14
+        decimal: 2
+        description: "Vlr.Imposto de Importacao"
+        example: "E 99999999999.99"
+
+      F1_REMITO:
+        type: string
+        lenght: 9
+        description: "Campo para Localizaçöes"
+
+      F1_BASIMP2:
+        type: number
+        lenght: 14
+        decimal: 2
+        description: "Base de Calculo Imposto 2"
+        example: "E  99999999999.99"
+
+      F1_BASIMP3:
+        type: number
+        lenght: 14
+        decimal: 2
+        description: "Base de Calculo Imposto 3"
+        example: "E  99999999999.99"
+
+      F1_BASIMP4:
+        type: number
+        lenght: 14
+        decimal: 2
+        description: "Base de Calculo Imposto 4"
+        example: "E  99999999999.99"
+
+      F1_BASIMP5:
+        type: number
+        lenght: 14
+        decimal: 2
+        description: "Base de Calculo Imposto 5"
+        example: "E  99999999999.99"
+
+      F1_BASIMP6:
+        type: number
+        lenght: 14
+        decimal: 2
+        description: "Base de Calculo Imposto 6"
+        example: "E  99999999999.99"
+
+      F1_VALIMP1:
+        type: number
+        lenght: 14
+        decimal: 2
+        description: "Valor do Imposto 1"
+        example: "E  99999999999.99"
+
+      F1_VALIMP2:
+        type: number
+        lenght: 14
+        decimal: 2
+        description: "Valor do Imposto 2"
+        example: "E  99999999999.99"
+
+      F1_VALIMP3:
+        type: number
+        lenght: 14
+        decimal: 2
+        description: "Valor do Imposto 3"
+        example: "E  99999999999.99"
+
+      F1_VALIMP4:
+        type: number
+        lenght: 14
+        decimal: 2
+        description: "Valor do Imposto 4"
+        example: "E  99999999999.99"
+
+      F1_VALIMP5:
+        type: number
+        lenght: 14
+        decimal: 2
+        description: "Valor do Imposto 5"
+        example: "E  99999999999.99"
+
+      F1_VALIMP6:
+        type: number
+        lenght: 14
+        decimal: 2
+        description: "Valor do Imposto 6"
+        example: "E  99999999999.99"
+
+      F1_ORDPAGO:
+        type: string
+        lenght: 6
+        description: "Ordem de Pagamento"
+
+      F1_HORA:
+        type: string
+        lenght: 8
+        description: "Hora"
+        example: "99:99:99"
+
+      F1_INSS:
+        type: number
+        lenght: 14
+        decimal: 2
+        description: "Valor do INSS"
+        example: "E 999999999.99"
+
+      F1_ISS:
+        type: number
+        lenght: 14
+        decimal: 2
+        description: "Valor do ISS"
+        example: "E 999999999.99"
+
+      F1_BASIMP1:
+        type: number
+        lenght: 14
+        decimal: 2
+        description: "Base de Calculo Imposto 1"
+        example: "E  99999999999.99"
+
+      F1_HAWB:
+        type: string
+        lenght: 20
+        description: "No. Conhec."
+
+      F1_TIPO_NF:
+        type: string
+        lenght: 1
+        description: "Tipo Docto. - Importacao"
+
+      F1_IPI:
+        type: number
+        lenght: 15
+        decimal: 2
+        description: "Alíquota de IPI"
+        example: "E 999999999999.99"
+
+      F1_ICMS:
+        type: number
+        lenght: 15
+        decimal: 2
+        description: "ICMS"
+        example: "E 999999999999.99"
+
+      F1_PESOL:
+        type: number
+        lenght: 12
+        decimal: 4
+        description: "Peso Liquido"
+        example: "E 9999999.9999"
+
+      F1_FOB_R:
+        type: number
+        lenght: 15
+        decimal: 2
+        description: "FOB"
+        example: "E 999999999999.99"
+
+      F1_SEGURO:
+        type: number
+        lenght: 15
+        decimal: 2
+        description: "Vlr.Seguro"
+        example: "E 999999999999.99"
+
+      F1_CIF:
+        type: number
+        lenght: 15
+        decimal: 2
+        description: "C.I.F."
+        example: "E 999999999999.99"
+
+      F1_MOEDA:
+        type: number
+        lenght: 2
+        description: "Moeda da Fatura"
+        example: "E 99"
+
+      F1_PREFIXO:
+        type: string
+        lenght: 3
+        description: "Prefixo da Duplicata"
+
+      F1_STATUS:
+        type: string
+        lenght: 1
+        description: "Status da NF"
+
+      F1_VALEMB:
+        type: number
+        lenght: 14
+        decimal: 2
+        description: "Valor da Embalagem"
+        example: "E 99999999.99"
+
+      F1_RECBMTO:
+        type: string
+        format: date
+        lenght: 8
+        example: "yyyymmdd"
+        description: "Data de Recebimento"
+
+      F1_APROV:
+        type: string
+        lenght: 6
+        description: "Grupo de Aprovador"
+
+      F1_CTR_NFC:
+        type: string
+        lenght: 12
+        description: "Controle de N.F.C"
+
+      F1_TXMOEDA:
+        type: number
+        lenght: 11
+        decimal: 4
+        description: "Taxa da Moeda"
+        example: "E 999999.9999"
+
+      F1_PEDVEND:
+        type: string
+        lenght: 6
+        description: "Pedido de vendas gerado"
+
+      F1_VERBAIS:
+        type: string
+        lenght: 9
+        description: "Verba Folha Isento"
+
+      F1_SUBSERI:
+        type: string
+        lenght: 3
+        description: "Subserie do documento"
+
+      F1_DOCISEN:
+        type: string
+        lenght: 9
+        description: "Documento Folha Isento"
+
+      F1_TIPODOC:
+        type: string
+        lenght: 2
+        description: "Identificador de doc."
+
+      F1_TIPOREM:
+        type: string
+        lenght: 1
+        options: "0=Compra;A=Consignacao"
+        description: "Tipo do Remito"
+
+      F1_GNR:
+        type: string
+        lenght: 6
+        description: "Guia Nac. Recolhimento"
+
+      F1_ORIGEM:
+        type: string
+        lenght: 8
+        description: "Origem"
+
+      F1_PLACA:
+        type: string
+        lenght: 8
+        description: "Placa Veiculo"
+
+      F1_VALPIS:
+        type: number
+        lenght: 12
+        decimal: 2
+        description: "PIS Retenção"
+        example: "e 999999999.99"
+
+      F1_VALCOFI:
+        type: number
+        lenght: 12
+        decimal: 2
+        description: "Vlr.Retenção do COFINS"
+        example: "e 999999999.99"
+
+      F1_VALCSLL:
+        type: number
+        lenght: 12
+        decimal: 2
+        description: "Vlr.Retenção CSLL"
+        example: "e 999999999.99"
+
+      F1_BASEPS3:
+        type: number
+        lenght: 14
+        decimal: 2
+        description: "Base Pis ST"
+        example: "E 999999999.99"
+
+      F1_VALPS3:
+        type: number
+        lenght: 14
+        decimal: 2
+        description: "Valor Pis ST"
+        example: "E 999.999.99999"
+
+      F1_BASECF3:
+        type: number
+        lenght: 14
+        decimal: 2
+        description: "Base Cofins ST"
+        example: "E 999999999.99"
+
+      F1_VALCF3:
+        type: number
+        lenght: 14
+        decimal: 2
+        description: "Valor Cofins ST"
+        example: "E 999999999.99"
+
+      F1_NFELETR:
+        type: string
+        lenght: 20
+        description: "Nota Fiscal Eletrônica"
+
+      F1_EMINFE:
+        type: string
+        format: date
+        lenght: 8
+        description: "Emissão da NF Eletrônica"
+        example: "yyyymmdd"
+
+      F1_HORNFE:
+        type: string
+        lenght: 8
+        description: "Hora da emissão da NF-e"
+        example: "R 99:99:99"
+
+      F1_CODNFE:
+        type: string
+        lenght: 50
+        description: "Código verificação NF-e"
+
+      F1_CREDNFE:
+        type: number
+        lenght: 16
+        decimal: 2
+        description: "Crédito concedido NF-e"
+        example: "E 9999999999999.99"
+
+      F1_VNAGREG:
+        type: number
+        lenght: 16
+        decimal: 2
+        description: "Valor não agregado total"
+        example: "E 9999999999999.99"
+
+      F1_NUMRPS:
+        type: string
+        lenght: 12
+        description: "Número do RPS"
+
+      F1_VALIRF:
+        type: number
+        lenght: 14
+        decimal: 2
+        description: "Valor do IRRF Retido"
+        example: "E 999999999.99"
+
+      F1_NUMMOV:
+        type: string
+        lenght: 2
+        description: "Movimento do Dia"
+
+      F1_CHVNFE:
+        type: string
+        lenght: 44
+        description: "Chave da NFe SEFAZ"
+
+      F1_RECISS:
+        type: string
+        lenght: 1
+        options: "1=Sim;2=Não"
+        description: "Recolhe ISS ?"
+
+      F1_FILORIG:
+        type: string
+        lenght: 4
+        description: "Filial de Origem"
+
+      F1_ESTCRED:
+        type: number
+        lenght: 16
+        decimal: 2
+        description: "Valor Estorno Credito"
+        example: "E 9999999999999.99"
+
+      F1_NODIA:
+        type: string
+        lenght: 10
+        description: "Seq. Diário Contabilidade"
+
+      F1_DIACTB:
+        type: string
+        lenght: 2
+        description: "Cód Diário Contabilidaded"
+
+      F1_NUMRA:
+        type: string
+        lenght: 6
+        description: "Código do funcionário"
+
+      F1_BASEINS:
+        type: number
+        lenght: 14
+        decimal: 2
+        description: "Base de cálculo do INSS"
+        example: "E 99999999999.99"
+
+      F1_VALFDS:
+        type: number
+        lenght: 14
+        decimal: 2
+        description: "Valor do Fundersul"
+        example: "E 999999999.99"
+
+      F1_TRANSP:
+        type: string
+        lenght: 6
+        description: "Codigo da Transportadora"
+
+      F1_PLIQUI:
+        type: number
+        lenght: 12
+        decimal: 4
+        description: "Peso Liquido da N.F."
+        example: "E 9999999.9999"
+
+      F1_PBRUTO:
+        type: number
+        lenght: 12
+        decimal: 4
+        description: "Peso Bruto da N.F."
+        example: "E 9999999.9999"
+
+      F1_ESPECI1:
+        type: string
+        lenght: 10
+        description: "Especie 1"
+
+      F1_VOLUME1:
+        type: number
+        lenght: 6
+        description: "Volume 1"
+        example: "E 999999"
+
+      F1_ESPECI2:
+        type: string
+        lenght: 10
+        description: "Especie 2"
+
+      F1_VOLUME2:
+        type: number
+        lenght: 6
+        description: "Volume 2"
+        example: "E 999999"
+
+      F1_ESPECI3:
+        type: string
+        lenght: 10
+        description: "Especie 3"
+
+      F1_VOLUME3:
+        type: number
+        lenght: 6
+        description: "Volume 3"
+        example: "E 999999"
+
+      F1_ESPECI4:
+        type: string
+        lenght: 10
+        description: "Especie 4"
+
+      F1_VOLUME4:
+        type: number
+        lenght: 6
+        description: "Volume 4"
+        example: "999999"
+
+      F1_MOTIVO:
+        type: string
+        lenght: 14
+        description: "Motivo Aprov/Rej AFIP"
+
+      F1_VALIMA:
+        type: number
+        lenght: 14
+        decimal: 2
+        description: "Valor do IMA-MT"
+        example: "E 99999999999.99"
+
+      F1_CLIDEST:
+        type: string
+        lenght: 6
+        description: "Cliente de Destino"
+
+      F1_VALFUND:
+        type: number
+        lenght: 14
+        decimal: 2
+        description: "Valor do FUNDESA"
+        example: "E 99999999999.99"
+
+      F1_LOJDEST:
+        type: string
+        lenght: 2
+        description: "Loja Cliente de Destino"
+
+      F1_VALFASE:
+        type: number
+        lenght: 14
+        decimal: 2
+        description: "Valor do FASE-MT"
+        example: "E 99999999999.99"
+
+      F1_SERELTR:
+        type: string
+        lenght: 3
+        description: "Serie NF Eletronica"
+
+      F1_BASECID:
+        type: number
+        lenght: 14
+        decimal: 2
+        description: "Base de Calculo Cide"
+        example: "E 99999999999.99"
+
+      F1_BASECPM:
+        type: number
+        lenght: 14
+        decimal: 2
+        description: "Base ISS CPM"
+        example: "E 99999999999.99"
+
+      F1_VLCIDE:
+        type: number
+        lenght: 14
+        decimal: 2
+        description: "Valor do Cide"
+        example: "E 99999999999.99"
+
+      F1_GF:
+        type: string
+        lenght: 2
+        description: "Guarda Fiscal"
+
+      F1_SIMPNAC:
+        type: string
+        lenght: 1
+        options: "1=Sim;2=Não"
+        description: "Optante Simples Nacional"
+
+      F1_RECOPI:
+        type: string
+        lenght: 1
+        description: "Flag RECOPI"
+
+      F1_VLCPM:
+        type: number
+        lenght: 14
+        decimal: 2
+        description: "Valor ISS CPM"
+        example: "E 99999999999.99"
+
+      F1_IDNF:
+        type: string
+        lenght: 36
+        description: "ID da Nota Fiscal"
+
+      F1_VLSENAR:
+        type: number
+        lenght: 14
+        decimal: 2
+        description: "Valor do Senar"
+        example: "E 99999999999.99"
+
+      F1_MENNOTA:
+        type: string
+        lenght: 60
+        description: "Mensagem para Nota Fiscal"
+        example: "S45"
+
+      F1_FIMP:
+        type: string
+        lenght: 1
+        description: "Flag de impressão NF-e"
+
+      F1_CODA1U:
+        type: string
+        lenght: 6
+        description: "Codigo Intermediador"
+
+      F1_BASEFMP:
+        type: number
+        lenght: 14
+        decimal: 2
+        description: "Base de Cálculo FUMIPEQ"
+        example: "E 99999999999.99"
+
+      F1_VALPEDG:
+        type: number
+        lenght: 14
+        decimal: 2
+        description: "Valor Pedágio"
+        example: "E 99999999999.99"
+
+      F1_INDPRES:
+        type: string
+        lenght: 1
+        options: "0=Não Aplica;1=Presencial;2=Não PresencialNet;3=Não PresencialTel;4=NFC-e;5=PresencialForadoEstab.;9=Não Presencialoutros"
+        description: "Presença Comprador"
+
+      F1_FORRET:
+        type: string
+        lenght: 6
+        description: "Fornecedor Retirada"
+
+      F1_LOJARET:
+        type: string
+        lenght: 2
+        description: "Loja Retirada"
+
+      F1_VALFAB:
+        type: number
+        lenght: 14
+        decimal: 2
+        description: "Valor do Fabov"
+        example: "E 99999999999.99"
+
+      F1_VALFAC:
+        type: number
+        lenght: 14
+        decimal: 2
+        description: "Valor do Facs"
+        example: "E 99999999999.99"
+
+      F1_VALFET:
+        type: number
+        lenght: 14
+        decimal: 2
+        description: "Valor do Fethab"
+        example: "E 99999999999.99"
+
+      F1_LOJAENT:
+        type: string
+        lenght: 2
+        description: "Loja Entrega"
+
+      F1_OBSDES:
+        type: M
+        lenght: 10
+        description: "Observação desacordo"
+
+      F1_FORENT:
+        type: string
+        lenght: 6
+        description: "Fornecedor Entrega"
+
+      F1_VALFMP:
+        type: number
+        lenght: 14
+        decimal: 2
+        description: "Valor do Fumipeq"
+        example: "E 99999999999.99"
+
+      F1_ESTDES:
+        type: string
+        lenght: 2
+        description: "Estado Cliente de Destino"
+
+      F1_IDDES:
+        type: string
+        lenght: 1
+        description: "Id Desacordo"
+
+      F1_VALFMD:
+        type: number
+        lenght: 14
+        decimal: 2
+        description: "Valor do Famad"
+        example: "E 99999999999.99"
+
+      F1_LOJAORI:
+        type: string
+        lenght: 2
+        description: "Loja Cliente Origem"
+
+      F1_CLIORI:
+        type: string
+        lenght: 6
+        description: "Cliente Origem"
+
+      F1_TPCOMPL:
+        type: string
+        lenght: 1
+        options: "1=Preco; 2=Quantidade; 3=Frete"
+        description: "Tipo de Complemento"
+
+      F1_MODAL:
+        type: string
+        lenght: 2
+        options: "01=Rodoviario;02=Aereo;03=Aquaviario;04=Ferroviario;05=Dutoviario;06=Multimodal"
+        description: "Modalidade de transporte"
+
+      F1_BASEINA:
+        type: number
+        lenght: 14
+        decimal: 2
+        description: "Base do INSS Condições Es"
+        example: "E 99999999999.99"
+
+      F1_MOTRET:
+        type: string
+        lenght: 6
+        description: "Cod. Motivo do Retorno"
+
+      F1_ESTPRES:
+        type: string
+        lenght: 2
+        description: "UF Prestacao"
+
+      F1_DEVMERC:
+        type: string
+        lenght: 1
+        options: "S=Sim;N=Não"
+        description: "Devol. merc. nao recebida"
+
+      F1_UFDESTR:
+        type: string
+        lenght: 2
+        description: "UF Destino do Transporte"
+
+      F1_UFORITR:
+        type: string
+        lenght: 2
+        description: "Uf Origem do transporte"
+
+      F1_MUORITR:
+        type: string
+        lenght: 5
+        description: "Municipio Original Transp"
+
+      F1_BOMDES:
+        type: string
+        lenght: 4
+        description: "NFE Bombeio/Descarga"
+
+      F1_VALINA:
+        type: number
+        lenght: 14
+        decimal: 2
+        description: "Valor do INSS Condições E"
+        example: "E 99999999999.99"
+
+      F1_MUDESTR:
+        type: string
+        lenght: 5
+        description: "Municipio Destino Transpo"
+
+      F1_NUMAIDF:
+        type: string
+        lenght: 7
+        description: "Numero da AIDF"
+
+      F1_ANOAIDF:
+        type: string
+        lenght: 4
+        description: "Ano da AIDF"
+
+      F1_IDRECOP:
+        type: string
+        lenght: 6
+        description: "ID Solicitação RECOPI"
+
+      F1_CODROM:
+        type: string
+        lenght: 10
+        description: "Código do Romaneio"
+
+      F1_SDOC:
+        type: string
+        lenght: 3
+        description: "Série do Documento Fiscal"
+
+      F1_SDOCORI:
+        type: string
+        lenght: 3
+        description: "Série do Docto.de Despesa"
+
+      F1_SERMDF:
+        type: string
+        lenght: 3
+        description: "Serie do MDFe vinculado"
+
+      F1_SDOCMAN:
+        type: string
+        lenght: 3
+        description: "Série Doc. Manual"
+
+      F1_HISTRET:
+        type: M
+        lenght: 10
+        description: "Historico do Retorno"
+
+      F1_VEICUL3:
+        type: string
+        lenght: 8
+        description: "Código do Veículo 3"
+
+      F1_VEICUL2:
+        type: string
+        lenght: 8
+        description: "Código do Veículo 2"
+
+      F1_VEICUL1:
+        type: string
+        lenght: 8
+        description: "Código do Veoculo 1"
+
+      F1_NUMMDF:
+        type: string
+        lenght: 9
+        description: "Numero do MDFe vinculado"
+
+      F1_DTCPISS:
+        type: string
+        format: date
+        lenght: 8
+        example: "yyyymmdd"
+        description: "Desc. Data Competencia"
+
+      F1_BASFECP:
+        type: number
+        lenght: 14
+        decimal: 2
+        description: "Base FCP Próprio"
+        example: "E 99999999999.99"
+
+      F1_BFCPANT:
+        type: number
+        lenght: 14
+        decimal: 2
+        description: "Base FCP Rec. Ant."
+        example: "E 99999999999.99"
+
+      F1_BSFCCMP:
+        type: number
+        lenght: 14
+        decimal: 2
+        description: "Base FCP Complementar"
+        example: "E 99999999999.99"
+
+      F1_BSFCPST:
+        type: number
+        lenght: 14
+        decimal: 2
+        description: "Base FCP ST"
+        example: "E 99999999999.99"
+
+      F1_VFCPANT:
+        type: number
+        lenght: 14
+        decimal: 2
+        description: "Valor do FCP Rec. Ant."
+        example: "E 99999999999.99"
+
+      F1_BASPIS:
+        type: number
+        lenght: 14
+        decimal: 2
+        description: "Base do PIS"
+        example: "E 99999999999.99"
+
+      F1_IT_ROMA:
+        type: string
+        lenght: 9
+        description: "Numero de Romaneio"
+
+      F1_BASCSLL:
+        type: number
+        lenght: 14
+        decimal: 2
+        description: "Base CSLL"
+        example: "E 99999999999.99"
+
+      F1_BASEFUN:
+        type: number
+        lenght: 14
+        decimal: 2
+        description: "Base Calculo FUNRURAL"
+        example: "E 99999999999.99"
+
+      F1_BASCOFI:
+        type: number
+        lenght: 14
+        decimal: 2
+        description: "Base COFINS"
+        example: "E 99999999999.99"
+
+      F1_TPFRETE:
+        type: string
+        lenght: 1
+        description: "Indica tipo de frete"
+
+      F1_LJCLIPR:
+        type: string
+        lenght: 2
+        description: "Loja Cliente Proprietario"
+
+      F1_STATCON:
+        type: string
+        lenght: 1
+        options: "0=Nao Conferido;1=Conferido;2=Divergente;3=Em Conferencia"
+        description: "Status da conf. fisica"
+
+      F1_QTDCONF:
+        type: number
+        lenght: 2
+        description: "Qtd de conferentes"
+        example: "99"
+
+      F1_MENPAD:
+        type: string
+        lenght: 3
+        description: "Mensagem Padrao 1"
+
+      F1_CLIPROP:
+        type: string
+        lenght: 6
+        description: "Cliente Proprietario"
+
+      F1_VERBAFO:
+        type: string
+        lenght: 9
+        description: "Verba da Folha"
+
+      F1_DOCFOL:
+        type: string
+        lenght: 9
+        description: "Documento da Folha"
+
+      F1_EVENFLG:
+        type: string
+        lenght: 1
+        description: "Flag da carta de correcao"
+
+      F1_FLAGRGS:
+        type: string
+        lenght: 4
+        description: "Flag registro de saída"
+
+      F1_HAUTNFE:
+        type: string
+        lenght: 5
+        description: "Hora de Autorizacao da NF"
+
+      F1_IDCCE:
+        type: string
+        lenght: 54
+        description: "Id da CC-e"
+
+      F1_IDRGS:
+        type: string
+        lenght: 54
+        description: "Id do registro de saída"
+
+      F1_DAUTNFE:
+        type: string
+        format: date
+        lenght: 8
+        example: "yyyymmdd"
+        description: "Data de Autorizacao da NF"
+
+      F1_CODRGS:
+        type: string
+        lenght: 1
+        description: "Status registro saida"
+
+      F1_MSIDENT:
+        type: string
+        lenght: 10
+        description: "Ident.Reg."
+
+      F1_IDSA1:
+        type: string
+        lenght: 20
+        description: "ID Hist. SA1"
+
+      F1_IDSA2:
+        type: string
+        lenght: 20
+        description: "ID Hist. SA2"
+
+      F1_INCISS:
+        type: string
+        lenght: 5
+        description: "Munic. de Incid. do ISS"
+        example: "99999"
+
+      F1_IDSED:
+        type: string
+        lenght: 20
+        description: "ID Hist. SED"
+
+      F1_TPCTE:
+        type: string
+        lenght: 1
+        options: "N=Normal;C=Complem.Valores;A=Anula.Valores;S=Substituto"
+        description: "Indica tipo de CT-e"
+
+      F1_OBSFTIT:
+        type: string
+        lenght: 20
+        description: "Titulo Observação Fisco"
+
+      F1_OBSFISC:
+        type: string
+        lenght: 60
+        description: "Observacao Fisco"
+
+      F1_MSUIDT:
+        type: string
+        lenght: 32
+        decimal: 0
+        description: ""
+    required: ["F1_DOC", "F1_SERIE", "F1_FORNECE", "F1_LOJA", "F1_FORMUL"]
+  SD1:
+    type: array
+    items:
+      type: object
+      properties:
+        D1_FILIAL:
+          type: string
+          lenght: 4
+          description: "Filial do Sistema"
+
+        D1_LEGENDA:
+          type: string
+          lenght: 13
+          description: "Legenda"
+
+        D1_ITEM:
+          type: string
+          lenght: 4
+          description: "Item da Nota Fiscal"
+
+        D1_COD:
+          type: string
+          lenght: 15
+          description: "Codigo do Produto"
+
+        D1_UM:
+          type: string
+          lenght: 2
+          description: "Unidade de Medida"
+
+        D1_SEGUM:
+          type: string
+          lenght: 2
+          description: "Segunda Unidade de Medida"
+
+        D1_QUANT:
+          type: number
+          lenght: 12
+          decimal: 2
+          description: "Quantidade do Produto"
+          example: " 999999999.99"
+
+        D1_VUNIT:
+          type: number
+          lenght: 14
+          decimal: 6
+          description: "Valor Unitario"
+          example: " 9999999.999999"
+
+        D1_TOTAL:
+          type: number
+          lenght: 14
+          decimal: 2
+          description: "Valor Total"
+          example: " 99999999999.99"
+
+        D1_VALIPI:
+          type: number
+          lenght: 14
+          decimal: 2
+          description: "Valor do IPI do Item"
+          example: " 999999999.99"
+
+        D1_VLSLXML:
+          type: number
+          lenght: 14
+          decimal: 2
+          description: "ICMS ST Fornecedor"
+          example: " 99999999999.99"
+
+        D1_VALICM:
+          type: number
+          lenght: 14
+          decimal: 2
+          description: "Valor do ICM do Item"
+          example: " 999999999.99"
+
+        D1_OPER:
+          type: string
+          lenght: 6
+          description: "Tipo de Operacao"
+
+        D1_TES:
+          type: string
+          lenght: 3
+          description: "Tipo de entrada da nota"
+          example: "@9"
+
+        D1_CF:
+          type: string
+          lenght: 5
+          description: "Codigo Fiscal da Operacao"
+          example: "@9"
+
+        D1_DESC:
+          type: number
+          lenght: 5
+          decimal: 2
+          description: "Desconto no Item"
+          example: " 99.99"
+
+        D1_IPI:
+          type: number
+          lenght: 6
+          decimal: 2
+          description: "Alíquota de IPI"
+          example: " 99.99"
+
+        D1_PICM:
+          type: number
+          lenght: 5
+          decimal: 2
+          description: "Alíquota de ICMS"
+          example: " 99.99"
+
+        D1_PESO:
+          type: number
+          lenght: 12
+          decimal: 4
+          description: "Peso do produto rateio"
+          example: " 9999999.9999"
+
+        D1_CONTA:
+          type: string
+          lenght: 20
+          description: "Codigo da Conta Contabil"
+
+        D1_ITEMCTA:
+          type: string
+          lenght: 9
+          description: "Item da Conta Contabil"
+
+        D1_CC:
+          type: string
+          lenght: 9
+          description: "Centro de Custo"
+
+        D1_OP:
+          type: string
+          lenght: 14
+          description: "Ordem de Producao"
+          example: "@9"
+
+        D1_PEDIDO:
+          type: string
+          lenght: 6
+          description: "pedido de compra/venda"
+
+        D1_ITEMPC:
+          type: string
+          lenght: 4
+          description: "Item do ped.compra/venda"
+
+        D1_FORNECE:
+          type: string
+          lenght: 6
+          description: "Codigo do Forn/Cliente"
+
+        D1_LOJA:
+          type: string
+          lenght: 2
+          description: "Loja do Forn/Cliente"
+
+        D1_LOCAL:
+          type: string
+          lenght: 2
+          description: "Codigo do Armazem"
+
+        D1_DOC:
+          type: string
+          lenght: 9
+          description: "Numero do Documento/Nota"
+
+        D1_EMISSAO:
+          type: string
+          format: date
+          example: "yyyymmdd"
+          lenght: 8
+          description: "Data de Emissao"
+
+        D1_DTDIGIT:
+          type: string
+          format: date
+          example: "yyyymmdd"
+          lenght: 8
+          description: "Data de Digitacao"
+
+        D1_GRUPO:
+          type: string
+          lenght: 4
+          description: "Grupo do Produto"
+
+        D1_TIPO:
+          type: string
+          lenght: 1
+          description: "Tipo do Documento"
+          example: "!"
+
+        D1_SERIE:
+          type: string
+          lenght: 3
+          description: "Serie da Nota Fiscal"
+
+        D1_CUSTO3:
+          type: number
+          lenght: 14
+          decimal: 2
+          description: "Custo de Entrada Moeda 3"
+          example: " 99999999999.99"
+
+        D1_CUSTO2:
+          type: number
+          lenght: 14
+          decimal: 2
+          description: "Custo de Entrada Moeda 2"
+          example: " 99999999999.99"
+
+        D1_CUSTO4:
+          type: number
+          lenght: 14
+          decimal: 2
+          description: "Custo de Entrada Moeda 4"
+          example: " 99999999999.99"
+
+        D1_CUSTO5:
+          type: number
+          lenght: 14
+          decimal: 2
+          description: "Custo de Entrada Moeda 5"
+          example: " 99999999999.99"
+
+        D1_TP:
+          type: string
+          lenght: 2
+          description: "Tipo do Produto Vendido"
+
+        D1_QTSEGUM:
+          type: number
+          lenght: 12
+          decimal: 2
+          description: "Segunda Unidade de Medida"
+          example: " 999999999.99"
+
+        D1_NUMSEQ:
+          type: string
+          lenght: 6
+          description: "Numeracao sequencial"
+
+        D1_DATACUS:
+          type: string
+          format: date
+          example: "yyyymmdd"
+          lenght: 8
+          description: "Data do Custo a Vista"
+
+        D1_NFORI:
+          type: string
+          lenght: 9
+          description: "Documento Original"
+
+        D1_SERIORI:
+          type: string
+          lenght: 3
+          description: "Serie do Doc. Original"
+
+        D1_ITEMORI:
+          type: string
+          lenght: 4
+          description: "Item do Docto. de Origem"
+
+        D1_QTDEDEV:
+          type: number
+          lenght: 12
+          decimal: 2
+          description: "Qtde Devolvida"
+          example: " 999999999.99"
+
+        D1_VALDEV:
+          type: number
+          lenght: 14
+          decimal: 2
+          description: "Valor Devolvido"
+          example: " 99999999999.99"
+
+        D1_ORIGLAN:
+          type: string
+          lenght: 2
+          description: "Origem do Lancamento"
+
+        D1_ICMSRET:
+          type: number
+          lenght: 14
+          decimal: 2
+          description: "Valor do ICMS Solidario"
+          example: " 99999999999.99"
+
+        D1_BRICMS:
+          type: number
+          lenght: 14
+          decimal: 2
+          description: "Base de Retencao ICMS"
+          example: " 99999999999.99"
+
+        D1_NUMCQ:
+          type: string
+          lenght: 6
+          description: "Num. Controle Qualidade"
+
+        D1_DATORI:
+          type: string
+          format: date
+          example: "yyyymmdd"
+          lenght: 8
+          description: "Data Emissao NF Original"
+
+        D1_BASEICM:
+          type: number
+          lenght: 14
+          decimal: 2
+          description: "Valor Base do Icms"
+          example: " 99999999999.99"
+
+        D1_VALDESC:
+          type: number
+          lenght: 12
+          decimal: 2
+          description: "Valor do Desconto no Item"
+          example: " 999999999.99"
+
+        D1_IDENTB6:
+          type: string
+          lenght: 6
+          description: "Identificador no Poder 3"
+
+        D1_LOTEFOR:
+          type: string
+          lenght: 18
+          description: "Num.do Lote no Fornecedor"
+
+        D1_SKIPLOT:
+          type: string
+          lenght: 1
+          description: "Controle do Skip Lote"
+
+        D1_BASEIPI:
+          type: number
+          lenght: 14
+          decimal: 2
+          description: "Valor Base de Calc. IPI"
+          example: " 999999999999.99"
+
+        D1_SEQCALC:
+          type: string
+          lenght: 14
+          description: "Seq.Recalc.Custo Médio"
+
+        D1_LOTECTL:
+          type: string
+          lenght: 10
+          description: "Lote"
+
+        D1_NUMLOTE:
+          type: string
+          lenght: 6
+          description: "Sub-Lote"
+
+        D1_DTVALID:
+          type: string
+          format: date
+          example: "yyyymmdd"
+          lenght: 8
+          description: "Validade do Lote inform."
+
+        D1_PLACA:
+          type: string
+          lenght: 7
+          description: "Placa do Veiculo"
+          example: "@R XXX 9999"
+
+        D1_CHASSI:
+          type: string
+          lenght: 25
+          description: "Codigo do Chassi"
+
+        D1_ANOFAB:
+          type: string
+          lenght: 2
+          description: "Ano de Fabricacao"
+          example: "99"
+
+        D1_MODFAB:
+          type: string
+          lenght: 2
+          description: "Modelo de Fabricacao"
+          example: "99"
+
+        D1_MODELO:
+          type: string
+          lenght: 15
+          description: "Modelo"
+
+        D1_COMBUST:
+          type: string
+          lenght: 10
+          description: "Tipo de Combustivel"
+
+        D1_COR:
+          type: string
+          lenght: 3
+          description: "Cor Predominante"
+
+        D1_EQUIPS:
+          type: string
+          lenght: 3
+          description: "Equipamentos adicionais"
+
+        D1_FORMUL:
+          type: string
+          lenght: 1
+          description: "Formulario Proprio"
+          example: "!"
+
+        D1_II:
+          type: number
+          lenght: 14
+          decimal: 2
+          description: "Vlr. Imposto Importacao"
+          example: " 99999999999.99"
+
+        D1_TEC:
+          type: string
+          lenght: 16
+          description: "TEC + NCM + QUALIFICADOR"
+
+        D1_CONHEC:
+          type: string
+          lenght: 20
+          description: "Numero Conhec Importacao"
+
+        D1_GERAPV:
+          type: string
+          lenght: 1
+          options: "S=Sim"
+          description: "Gera Pedido de Venda"
+
+        D1_NUMPV:
+          type: string
+          lenght: 6
+          description: "Numero do Pedido de Venda"
+
+        D1_ITEMPV:
+          type: string
+          lenght: 2
+          description: "Item do Pedido de Venda"
+
+        D1_CUSFF1:
+          type: number
+          lenght: 14
+          decimal: 2
+          description: "Custo FIFO Moeda 1"
+          example: " 99999999999.99"
+
+        D1_CUSFF2:
+          type: number
+          lenght: 14
+          decimal: 2
+          description: "Custo FIFO Moeda 2"
+          example: " 99999999999.99"
+
+        D1_CUSFF3:
+          type: number
+          lenght: 14
+          decimal: 2
+          description: "Custo FIFO Moeda 3"
+          example: " 99999999999.99"
+
+        D1_CUSFF4:
+          type: number
+          lenght: 14
+          decimal: 2
+          description: "Custo FIFO Moeda 4"
+          example: " 99999999999.99"
+
+        D1_CUSFF5:
+          type: number
+          lenght: 14
+          decimal: 2
+          description: "Custo FIFO Moeda 5"
+          example: " 99999999999.99"
+
+        D1_CODCIAP:
+          type: string
+          lenght: 6
+          description: "Codigo CIAP"
+
+        D1_CLASFIS:
+          type: string
+          lenght: 3
+          description: "Situacao Tributaria"
+
+        D1_BASIMP1:
+          type: number
+          lenght: 14
+          decimal: 2
+          description: "Base de Calculo Imposto 1"
+          example: "  99999999999.99"
+
+        D1_REMITO:
+          type: string
+          lenght: 9
+          description: "Remito"
+
+        D1_SERIREM:
+          type: string
+          lenght: 3
+          description: "Serie remito"
+
+        D1_BASIMP4:
+          type: number
+          lenght: 14
+          decimal: 2
+          description: "Base de Calculo Imposto 4"
+          example: "  99999999999.99"
+
+        D1_CUSTO:
+          type: number
+          lenght: 14
+          decimal: 2
+          description: "Custo de Entrada Moeda 1"
+          example: " 99999999999.99"
+
+        D1_BASIMP3:
+          type: number
+          lenght: 14
+          decimal: 2
+          description: "Base de Calculo Imposto 3"
+          example: "  99999999999.99"
+
+        D1_BASIMP5:
+          type: number
+          lenght: 14
+          decimal: 2
+          description: "Base de Calculo Imposto 5"
+          example: "  99999999999.99"
+
+        D1_BASIMP6:
+          type: number
+          lenght: 14
+          decimal: 2
+          description: "Base de Calculo Imposto 6"
+          example: "  99999999999.99"
+
+        D1_VALIMP1:
+          type: number
+          lenght: 14
+          decimal: 2
+          description: "Valor do Imposto 1"
+          example: "  99999999999.99"
+
+        D1_VALIMP2:
+          type: number
+          lenght: 14
+          decimal: 2
+          description: "Valor do Imposto 2"
+          example: "  99999999999.99"
+
+        D1_VALIMP3:
+          type: number
+          lenght: 14
+          decimal: 2
+          description: "Valor do Imposto 3"
+          example: "  99999999999.99"
+
+        D1_VALIMP4:
+          type: number
+          lenght: 14
+          decimal: 2
+          description: "Valor do Imposto 4"
+          example: "  99999999999.99"
+
+        D1_VALIMP5:
+          type: number
+          lenght: 14
+          decimal: 2
+          description: "Valor do Imposto 5"
+          example: "  99999999999.99"
+
+        D1_VALIMP6:
+          type: number
+          lenght: 14
+          decimal: 2
+          description: "Valor do Imposto 6"
+          example: "  99999999999.99"
+
+        D1_CBASEAF:
+          type: string
+          lenght: 14
+          description: "Numero do Imobilizado"
+
+        D1_ICMSCOM:
+          type: number
+          lenght: 14
+          decimal: 2
+          description: "Valor ICMS Complementar"
+          example: " 99999999999.99"
+
+        D1_CIF:
+          type: number
+          lenght: 15
+          decimal: 2
+          description: "C.I.F."
+          example: " 999999999999.99"
+
+        D1_ITEMREM:
+          type: string
+          lenght: 4
+          description: "Item remito"
+
+        D1_PROJ:
+          type: string
+          lenght: 10
+          description: "Código do Projeto"
+
+        D1_BASIMP2:
+          type: number
+          lenght: 14
+          decimal: 2
+          description: "Base de Calculo Imposto 2"
+          example: "  99999999999.99"
+
+        D1_TIPO_NF:
+          type: string
+          lenght: 1
+          description: "Tipo Doc. - Importacao"
+
+        D1_ALQIMP1:
+          type: number
+          lenght: 6
+          decimal: 2
+          description: "Aliquota do Imposto 1"
+          example: "  999.99"
+
+        D1_ALQIMP2:
+          type: number
+          lenght: 6
+          decimal: 2
+          description: "Aliquota do Imposto 2"
+          example: "  999.99"
+
+        D1_ALQIMP3:
+          type: number
+          lenght: 6
+          decimal: 2
+          description: "Aliquota do Imposto 3"
+          example: "  999.99"
+
+        D1_ALQIMP4:
+          type: number
+          lenght: 6
+          decimal: 2
+          description: "Aliquota do Imposto 4"
+          example: "  999.99"
+
+        D1_ALQIMP5:
+          type: number
+          lenght: 6
+          decimal: 2
+          description: "Aliquota do Imposto 5"
+          example: "  999.99"
+
+        D1_ALQIMP6:
+          type: number
+          lenght: 6
+          decimal: 2
+          description: "Aliquota do Imposto 6"
+          example: "  999.99"
+
+        D1_QTDPEDI:
+          type: number
+          lenght: 12
+          decimal: 2
+          description: "Qtde em Pedido de Compras"
+          example: " 999999999.99"
+
+        D1_VALFRE:
+          type: number
+          lenght: 14
+          decimal: 2
+          description: "Valor do Frete"
+          example: " 99999999999.99"
+
+        D1_ALIIMA:
+          type: number
+          lenght: 5
+          decimal: 2
+          description: "Alíquota do IMA-MT"
+          example: " 99.99"
+
+        D1_RATEIO:
+          type: string
+          lenght: 1
+          options: "1=Sim;2=Não"
+          example: "option"
+          description: "Possui Rateio por CC"
+
+        D1_SEGURO:
+          type: number
+          lenght: 14
+          decimal: 2
+          description: "Valor do Seguro do item"
+          example: " 99999999999.99"
+
+        D1_DESPESA:
+          type: number
+          lenght: 14
+          decimal: 2
+          description: "Valor das Despesas"
+          example: " 99999999999.99"
+
+        D1_BASEIRR:
+          type: number
+          lenght: 14
+          decimal: 2
+          description: "Base de calculo do IRRF"
+          example: " 99999999.99"
+
+        D1_ALIQIRR:
+          type: number
+          lenght: 5
+          decimal: 2
+          description: "Aliquota de IRRF"
+          example: " 999.99"
+
+        D1_VALIRR:
+          type: number
+          lenght: 14
+          decimal: 2
+          description: "Valor do IRRF"
+          example: " 999999999.99"
+
+        D1_BASEISS:
+          type: number
+          lenght: 14
+          decimal: 2
+          description: "Base de calculo do ISS"
+          example: " 99999999999.99"
+
+        D1_ALIQISS:
+          type: number
+          lenght: 5
+          decimal: 2
+          description: "Aliquota de ISS"
+          example: " 99.99"
+
+        D1_VALISS:
+          type: number
+          lenght: 14
+          decimal: 2
+          description: "Valor do ISS"
+          example: " 99999999999.99"
+
+        D1_BASEINS:
+          type: number
+          lenght: 14
+          decimal: 2
+          description: "Base de calculo do INSS"
+          example: " 999999999.99"
+
+        D1_ALIQINS:
+          type: number
+          lenght: 5
+          decimal: 2
+          description: "Aliquota de INSS"
+          example: " 99.99"
+
+        D1_VALINS:
+          type: number
+          lenght: 14
+          decimal: 2
+          description: "Valor do INSS"
+          example: " 999999999.99"
+
+        D1_CUSORI:
+          type: number
+          lenght: 16
+          decimal: 3
+          description: "Custo Original Moeda 1"
+          example: " 999999999999.999"
+
+        D1_LOCPAD:
+          type: string
+          lenght: 6
+          description: "Local Externo Carga/Desc."
+
+        D1_CLVL:
+          type: string
+          lenght: 9
+          description: "Classe Valor Contabil"
+
+        D1_ORDEM:
+          type: string
+          lenght: 6
+          description: "Ordem de Servico"
+
+        D1_CODFIS:
+          type: string
+          lenght: 15
+          description: "Código Fiscal Fornecedor"
+
+        D1_CNO:
+          type: string
+          lenght: 14
+          description: "Numero do CNO"
+
+        D1_ORDDIA:
+          type: string
+          lenght: 4
+          description: "Ordem na DIA"
+
+        D1_NRECAGR:
+          type: string
+          lenght: 5
+          description: "Num Receita Agronômica"
+
+        D1_VALFASE:
+          type: number
+          lenght: 14
+          decimal: 2
+          description: "Valor do FASE"
+          example: " 99999999999.99"
+
+        D1_PDDES:
+          type: number
+          lenght: 6
+          decimal: 2
+          description: "Perc. Difal Destino"
+          example: " 999.99"
+
+        D1_PERCINP:
+          type: number
+          lenght: 5
+          decimal: 2
+          description: "Percent. do INSS Patronal"
+          example: " 99.99"
+
+        D1_VFCPDIF:
+          type: number
+          lenght: 14
+          decimal: 2
+          description: "FECP da UF de destino"
+          example: " 99999999999.99"
+
+        D1_FILEDT:
+          type: string
+          lenght: 4
+          description: "Filial Edital"
+
+        D1_TESDES:
+          type: string
+          lenght: 3
+          description: "Tes Entrada de Destino"
+          example: "@9"
+
+        D1_ALIFASE:
+          type: number
+          lenght: 5
+          decimal: 2
+          description: "Alíquota do FASE-MT"
+          example: " 99.99"
+
+        D1_BASIMA:
+          type: number
+          lenght: 14
+          decimal: 2
+          description: "Base do IMA-MT"
+          example: " 99999999999.99"
+
+        D1_BASFUND:
+          type: number
+          lenght: 14
+          decimal: 2
+          description: "Base do FUNDESA"
+          example: " 99999999999.99"
+
+        D1_BASFASE:
+          type: number
+          lenght: 14
+          decimal: 2
+          description: "Base do FASE-MT"
+          example: " 99999999999.99"
+
+        D1_ALIFUND:
+          type: number
+          lenght: 5
+          decimal: 2
+          description: "Alíquota do FUNDESA"
+          example: " 99.99"
+
+        D1_BASEDES:
+          type: number
+          lenght: 14
+          decimal: 2
+          description: "Base. Difal Destino"
+          example: " 99999999999.99"
+
+        D1_CODGRP:
+          type: string
+          lenght: 4
+          description: "Grupo Veiculos/Oficina"
+
+        D1_CODITE:
+          type: string
+          lenght: 27
+          description: "Produto Veiculos/Oficina"
+
+        D1_SERVIC:
+          type: string
+          lenght: 3
+          description: "Codigo do Servico"
+
+        D1_STSERV:
+          type: string
+          lenght: 1
+          options: "1=Servico Nao Executado;2=Servico Interrompido;3=Servico Executado"
+          example: "option"
+          description: "Status do Servico"
+
+        D1_ENDER:
+          type: string
+          lenght: 15
+          description: "Endereco Inicial"
+
+        D1_TPESTR:
+          type: string
+          lenght: 6
+          description: "Cod. da Estrutura Fisica"
+
+        D1_DESEST:
+          type: string
+          lenght: 20
+          description: "Dsc.Estrutura Fisica"
+
+        D1_ITPCCEN:
+          type: string
+          lenght: 4
+          description: "It.Pedido Centralizador"
+
+        D1_PCCENTR:
+          type: string
+          lenght: 6
+          description: "Pedido Centralizador"
+
+        D1_QTPCCEN:
+          type: number
+          lenght: 12
+          decimal: 2
+          description: "Qt.Vinc.Ped.Compra Centr"
+          example: " 999999999.99"
+
+        D1_REGWMS:
+          type: string
+          lenght: 1
+          options: "1=Lote;2=Numero de Serie;3=Data"
+          example: "option"
+          description: "Regra de apanhe do WMS"
+
+        D1_VALFUND:
+          type: number
+          lenght: 14
+          decimal: 2
+          description: "Valor do FUNDESA"
+          example: " 99999999999.99"
+
+        D1_VALINP:
+          type: number
+          lenght: 14
+          decimal: 2
+          description: "Valor do INSS Patronal"
+          example: " 99999999999.99"
+
+        D1_PDORI:
+          type: number
+          lenght: 6
+          decimal: 2
+          description: "Perc. Difal Origem"
+          example: " 999.99"
+
+        D1_VRDICMS:
+          type: number
+          lenght: 16
+          decimal: 2
+          description: "Valor de Redução Desc.ICM"
+          example: " 9999999999999.99"
+
+        D1_ALIQCMP:
+          type: number
+          lenght: 6
+          decimal: 2
+          description: "Aliq. ICMS complementar"
+          example: " 999.99"
+
+        D1_TIPODOC:
+          type: string
+          lenght: 2
+          description: "Identificador de doc."
+
+        D1_POTENCI:
+          type: number
+          lenght: 6
+          decimal: 2
+          description: "Potencia do Lote"
+          example: " 999.99"
+
+        D1_TRT:
+          type: string
+          lenght: 3
+          description: "Sequencia na Estrutura"
+
+        D1_TESACLA:
+          type: string
+          lenght: 3
+          description: "TES para Classificacäo"
+
+        D1_NUMDESP:
+          type: string
+          lenght: 16
+          description: "Numero do Despacho"
+
+        D1_ORIGEM:
+          type: string
+          lenght: 3
+          description: "Origem da Importacäo"
+
+        D1_GRADE:
+          type: string
+          lenght: 1
+          options: "1=Sim;2=Não"
+          example: "option"
+          description: "Referencia de Grade?"
+
+        D1_ITEMGRD:
+          type: string
+          lenght: 3
+          description: "Item Grade"
+
+        D1_DESCICM:
+          type: number
+          lenght: 14
+          decimal: 2
+          description: "Desconto ICMS"
+          example: " 999999999.99"
+
+        D1_VALIMA:
+          type: number
+          lenght: 14
+          decimal: 2
+          description: "Valor do IMA-MT"
+          example: " 99999999999.99"
+
+        D1_TRIBMUN:
+          type: string
+          lenght: 20
+          description: "Cód. Trib. Municipal"
+
+        D1_IDCFC:
+          type: string
+          lenght: 20
+          description: "ID Histórico CFC"
+
+        D1_GRPCST:
+          type: string
+          lenght: 3
+          description: "Cod. Enquadramento do IPI"
+
+        D1_SLDDEP:
+          type: number
+          lenght: 14
+          decimal: 2
+          description: "Saldo Dependente"
+          example: " 99999999999.99"
+
+        D1_CODNOR:
+          type: string
+          lenght: 6
+          description: "Codigo da Norma"
+          example: "999999"
+
+        D1_CTAREC:
+          type: string
+          lenght: 20
+          description: "Conta Receita"
+
+        D1_QTDCONF:
+          type: number
+          lenght: 12
+          decimal: 2
+          description: "Qtd conferida via coletor"
+          example: " 999999999.99"
+
+        D1_PRUNDA:
+          type: number
+          lenght: 14
+          decimal: 6
+          description: "Valor Unitario D.A."
+          example: " 9999999.999999"
+
+        D1_VALFMP:
+          type: number
+          lenght: 14
+          decimal: 2
+          description: "Valor do FUMIPEQ"
+          example: " 99999999999.99"
+
+        D1_CFPS:
+          type: string
+          lenght: 6
+          description: "Código CFPS"
+          example: "@9"
+
+        D1_BASEPIS:
+          type: number
+          lenght: 14
+          decimal: 2
+          description: "Base do Pis"
+          example: " 99999999999.99"
+
+        D1_BASECSL:
+          type: number
+          lenght: 14
+          decimal: 2
+          description: "Base do CSLL"
+          example: " 99999999999.99"
+
+        D1_BASECOF:
+          type: number
+          lenght: 14
+          decimal: 2
+          description: "Base do Cofins"
+          example: " 99999999999.99"
+
+        D1_VALCOF:
+          type: number
+          lenght: 14
+          decimal: 2
+          description: "Valor do Cofins"
+          example: " 99999999999.99"
+
+        D1_CONIMP:
+          type: number
+          lenght: 9
+          decimal: 4
+          description: "Conteudo de Importacao"
+          example: " 9999.9999"
+
+        D1_ABATISS:
+          type: number
+          lenght: 14
+          decimal: 2
+          description: "Valor abatimento / ISS"
+          example: " 99999999999.99"
+
+        D1_VALINA:
+          type: number
+          lenght: 14
+          decimal: 2
+          description: "Valor do INSS Cond. Esp."
+          example: " 99999999999.99"
+
+        D1_ABATINS:
+          type: number
+          lenght: 14
+          decimal: 2
+          description: "Valor abatimento / INSS"
+          example: " 99999999999.99"
+
+        D1_ALIQINA:
+          type: number
+          lenght: 5
+          decimal: 2
+          description: "Aliquota do INSS Condiçõe"
+          example: " 99.99"
+
+        D1_BASEINA:
+          type: number
+          lenght: 14
+          decimal: 2
+          description: "Base do INSS Condições Es"
+          example: " 99999999999.99"
+
+        D1_VALPMAJ:
+          type: number
+          lenght: 14
+          decimal: 2
+          description: "Valor PIS Majorada"
+          example: " 99999999999.99"
+
+        D1_CONBAR:
+          type: string
+          lenght: 1
+          description: "Conferencia Cod.Barras"
+
+        D1_BASEFMP:
+          type: number
+          lenght: 14
+          decimal: 2
+          description: "Base de Cálculo FUMIPEQ"
+          example: " 99999999999.99"
+
+        D1_VALFAB:
+          type: number
+          lenght: 14
+          decimal: 2
+          description: "Valor do Fabov"
+          example: " 99999999999.99"
+
+        D1_VALFAC:
+          type: number
+          lenght: 14
+          decimal: 2
+          description: "Valor do Facs"
+          example: " 99999999999.99"
+
+        D1_VALFET:
+          type: number
+          lenght: 14
+          decimal: 2
+          description: "Valor do Fethab"
+          example: " 99999999999.99"
+
+        D1_BASEFAB:
+          type: number
+          lenght: 14
+          decimal: 2
+          description: "Base do Fabov"
+          example: " 99999999999.99"
+
+        D1_ALIQFAB:
+          type: number
+          lenght: 5
+          decimal: 2
+          description: "Aliquota do Fabov"
+          example: " 99.99"
+
+        D1_CRPRSIM:
+          type: number
+          lenght: 14
+          decimal: 2
+          description: "Crd Pres Sim Nac.- SC"
+          example: " 99999999999.99"
+
+        D1_ALIQSOL:
+          type: number
+          lenght: 6
+          decimal: 2
+          description: "Aliq ICMS Solidario"
+          example: " 999.99"
+
+        D1_ALIQCF3:
+          type: number
+          lenght: 5
+          decimal: 2
+          description: "Aliquota Cofins ST"
+          example: " 99.99"
+
+        D1_BASEFAC:
+          type: number
+          lenght: 14
+          decimal: 2
+          description: "Base do Facs"
+          example: " 99999999999.99"
+
+        D1_BASEFET:
+          type: number
+          lenght: 14
+          decimal: 2
+          description: "Base do Fethab"
+          example: " 99999999999.99"
+
+        D1_VALCMAJ:
+          type: number
+          lenght: 14
+          decimal: 2
+          description: "Valor COFINS Majorada"
+          example: " 99999999999.99"
+
+        D1_CODDIS:
+          type: string
+          lenght: 6
+          description: "Código Distribuição"
+
+        D1_HREXPO:
+          type: string
+          lenght: 8
+          description: "Hora da última Exportação"
+
+        D1_MSEXP:
+          type: string
+          lenght: 8
+          description: "Ident.Exp.Dados"
+
+        D1_EXPSOP:
+          type: string
+          format: date
+          example: "yyyymmdd"
+          lenght: 8
+          description: "Data da exportação S&OP"
+
+        D1_ITMVINC:
+          type: string
+          lenght: 4
+          description: "Item do Doc. de Vinculo"
+
+        D1_VALACRS:
+          type: number
+          lenght: 16
+          decimal: 2
+          description: "Valor Acrescimo do Item"
+          example: " 9999999999999.99"
+
+        D1_ALSENAR:
+          type: number
+          lenght: 7
+          decimal: 4
+          description: "Aliquota Senar"
+          example: " 99.9999"
+
+        D1_BSSENAR:
+          type: number
+          lenght: 14
+          decimal: 2
+          description: "Base do Senar"
+          example: " 99999999999.99"
+
+        D1_CODISS:
+          type: string
+          lenght: 9
+          description: "Código de Serviço do ISS"
+          example: "@9"
+
+        D1_CODNE:
+          type: string
+          lenght: 12
+          description: "Cód. da Nota de Empenho"
+
+        D1_ITEMNE:
+          type: string
+          lenght: 3
+          description: "Item da Nota de Empenho"
+
+        D1_VLSENAR:
+          type: number
+          lenght: 14
+          decimal: 2
+          description: "Valor do Senar"
+          example: " 99999999999.99"
+
+        D1_REVISAO:
+          type: string
+          lenght: 3
+          description: "Revisão da Estrutura"
+
+        D1_SERVINC:
+          type: string
+          lenght: 3
+          description: "Serie do Doc. de Vinculo"
+
+        D1_TPREPAS:
+          type: string
+          lenght: 6
+          description: "Tipo de Repasse"
+
+        D1_VRETSUB:
+          type: number
+          lenght: 14
+          decimal: 2
+          description: "Retenção Subcontratada"
+          example: " 99999999999.99"
+
+        D1_VALFEEF:
+          type: number
+          lenght: 14
+          decimal: 2
+          description: "Valor do FEEF-RJ"
+          example: " 99999999999.99"
+
+        D1_BASFEEF:
+          type: number
+          lenght: 14
+          decimal: 2
+          description: "Base FEEF-RJ"
+          example: " 99999999999.99"
+
+        D1_ALQFEEF:
+          type: number
+          lenght: 5
+          decimal: 2
+          description: "Alíquota FEEF-RJ"
+          example: " 99.99"
+
+        D1_ABATTRA:
+          type: number
+          lenght: 14
+          decimal: 2
+          description: "Abatimento Transportes"
+          example: " 99999999999.99"
+
+        D1_ABATALM:
+          type: number
+          lenght: 14
+          decimal: 2
+          description: "Abatimento Alimentação"
+          example: " 99999999999.99"
+
+        D1_VALCPB:
+          type: number
+          lenght: 14
+          decimal: 2
+          description: "Valor da CPRB"
+          example: " 99999999999.99"
+
+        D1_BASECPB:
+          type: number
+          lenght: 14
+          decimal: 2
+          description: "Base CPRB"
+          example: " 99999999999.99"
+
+        D1_ALIQCPB:
+          type: number
+          lenght: 5
+          decimal: 2
+          description: "Alíquota CPRB"
+          example: " 99.99"
+
+        D1_ALIQFET:
+          type: number
+          lenght: 5
+          decimal: 2
+          description: "Aliquota do Fethab"
+          example: " 99.99"
+
+        D1_ALIQFAC:
+          type: number
+          lenght: 5
+          decimal: 2
+          description: "Aliquota do Facs"
+          example: " 99.99"
+
+        D1_VLCIDE:
+          type: number
+          lenght: 14
+          decimal: 2
+          description: "Valor do Cide"
+          example: " 99999999999.99"
+
+        D1_BASECID:
+          type: number
+          lenght: 14
+          decimal: 2
+          description: "Base de Calculo Cide"
+          example: " 99999999999.99"
+
+        D1_ALQCIDE:
+          type: number
+          lenght: 5
+          decimal: 2
+          description: "Aliquota de Cide"
+          example: " 99.99"
+
+        D1_VALCPM:
+          type: number
+          lenght: 14
+          decimal: 2
+          description: "Valor ISS CPM"
+          example: " 99999999999.99"
+
+        D1_RETENCA:
+          type: number
+          lenght: 14
+          decimal: 2
+          description: "Retenção"
+          example: " 99999999999.99"
+
+        D1_DEDUCAO:
+          type: number
+          lenght: 14
+          decimal: 2
+          description: "Dedução"
+          example: " 99999999999.99"
+
+        D1_BASECPM:
+          type: number
+          lenght: 14
+          decimal: 2
+          description: "Base ISS CPM"
+          example: " 99999999999.99"
+
+        D1_ALQCPM:
+          type: number
+          lenght: 5
+          decimal: 2
+          description: "Aliquota ISS CPM"
+          example: " 99.99"
+
+        D1_FATDIRE:
+          type: number
+          lenght: 14
+          decimal: 2
+          description: "Faturamento Direto"
+          example: " 99999999999.99"
+
+        D1_MARGEM:
+          type: number
+          lenght: 6
+          decimal: 2
+          description: "% Lucro Calc. Solid.Entra"
+          example: " 999.99"
+
+        D1_ESTCRED:
+          type: number
+          lenght: 16
+          decimal: 2
+          description: "Valor Estorno Credito"
+          example: " 9999999999.99"
+
+        D1_DTFIMNT:
+          type: string
+          format: date
+          example: "yyyymmdd"
+          lenght: 8
+          description: "Dt.Fim Nat.Receita"
+
+        D1_TNATREC:
+          type: string
+          lenght: 4
+          description: "Tab. Nat. Receita"
+
+        D1_CNATREC:
+          type: string
+          lenght: 3
+          description: "Código Nat. Receita"
+
+        D1_GRUPONC:
+          type: string
+          lenght: 2
+          description: "Grupo Nat. Receita"
+
+        D1_VALANTI:
+          type: number
+          lenght: 14
+          decimal: 2
+          description: "Valor Antecipação ICMS"
+          example: " 99999999999.99"
+
+        D1_ITEMMED:
+          type: string
+          lenght: 1
+          description: "Item de Medição"
+
+        D1_CRDZFM:
+          type: number
+          lenght: 14
+          decimal: 2
+          description: "Cred.Zona Franca Manaus"
+          example: " 999999999.99"
+
+        D1_FTRICMS:
+          type: number
+          lenght: 8
+          decimal: 5
+          description: "Fator de Redução Desc.ICM"
+          example: " 99.99999"
+
+        D1_IDSBZ:
+          type: string
+          lenght: 20
+          description: "ID Hist. SBZ"
+
+        D1_ICMSDIF:
+          type: number
+          lenght: 14
+          decimal: 2
+          description: "Valor do ICMS Diferido"
+          example: " 99999999999.99"
+
+        D1_IDSB5:
+          type: string
+          lenght: 20
+          description: "ID Hist. SB5"
+
+        D1_IDDCF:
+          type: string
+          lenght: 6
+          description: "Identificador DCF"
+
+        D1_ALFCCMP:
+          type: number
+          lenght: 6
+          decimal: 2
+          description: "FECP ICMS complementar"
+          example: " 999.99"
+
+        D1_BASEINP:
+          type: number
+          lenght: 14
+          decimal: 2
+          description: "Base do INSS Patronal"
+          example: " 99999999999.99"
+
+        D1_CSOSN:
+          type: string
+          lenght: 3
+          description: "Cód Sit Ope SN"
+
+        D1_IDSB1:
+          type: string
+          lenght: 20
+          description: "ID Hist. SB1"
+
+        D1_ABATMAT:
+          type: number
+          lenght: 14
+          decimal: 2
+          description: "Abatimento ISS material"
+          example: " 99999999999.99"
+
+        D1_OBSFISC:
+          type: string
+          lenght: 60
+          description: "Observacao Fisco"
+
+        D1_OBSCONT:
+          type: string
+          lenght: 60
+          description: "Observacao Contribuinte"
+
+        D1_BASEPS3:
+          type: number
+          lenght: 14
+          decimal: 2
+          description: "Base Pis ST"
+          example: " 999999999.99"
+
+        D1_ALIQPS3:
+          type: number
+          lenght: 5
+          decimal: 2
+          description: "Aliquota Pis ST"
+          example: " 99.99"
+
+        D1_VALPS3:
+          type: number
+          lenght: 14
+          decimal: 2
+          description: "Valor Pis ST"
+          example: " 999999999.99"
+
+        D1_ITXML:
+          type: string
+          lenght: 3
+          description: "Item do XML"
+          example: "999"
+
+        D1_BASECF3:
+          type: number
+          lenght: 14
+          decimal: 2
+          description: "Base Cofins ST"
+          example: " 999999999.99"
+
+        D1_VALCF3:
+          type: number
+          lenght: 14
+          decimal: 2
+          description: "Valor Cofins ST"
+          example: " 999999999.99"
+
+        D1_AVLINSS:
+          type: number
+          lenght: 14
+          decimal: 2
+          description: "Abat INSS Subcontratada"
+          example: " 99999999999.99"
+
+        D1_OBSFTIT:
+          type: string
+          lenght: 20
+          description: "Titulo Observação Fisco"
+
+        D1_DIFAL:
+          type: number
+          lenght: 14
+          decimal: 2
+          description: "ICMS Comple. UF Destino"
+          example: " 99999999999.99"
+
+        D1_OBSCTIT:
+          type: string
+          lenght: 20
+          description: "Titulo Obs Contribuinte"
+
+        D1_IDTRIB:
+          type: string
+          lenght: 36
+          description: "ID dos Tributos"
+
+        D1_NFVINC:
+          type: string
+          lenght: 9
+          description: "Vinculo do Doc. de Saida"
+
+        D1_DFABRIC:
+          type: string
+          format: date
+          example: "yyyymmdd"
+          lenght: 8
+          description: "Data de Fabricação Lote"
+
+        D1_IDSF7:
+          type: string
+          lenght: 20
+          description: "ID Hist. SF7"
+
+        D1_NUMPED:
+          type: string
+          lenght: 15
+          description: "Nº de Pedido"
+
+        D1_ALMTERC:
+          type: string
+          lenght: 2
+          description: "Armazem de Terceiros"
+
+        D1_IDSF4:
+          type: string
+          lenght: 20
+          description: "ID Hist. SF4"
+
+        D1_BASESES:
+          type: number
+          lenght: 14
+          decimal: 2
+          description: "Base do SEST/SENAT"
+          example: " 999999999.99"
+
+        D1_VALSES:
+          type: number
+          lenght: 14
+          decimal: 2
+          description: "Valor do SEST/SENAT"
+          example: " 999999999.99"
+
+        D1_ALIQII:
+          type: number
+          lenght: 6
+          decimal: 2
+          description: "Aliq Imp Importação"
+          example: " 999.99"
+
+        D1_CODBAIX:
+          type: string
+          lenght: 6
+          description: "Cod. Bem Principal"
+
+        D1_ALIQSES:
+          type: number
+          lenght: 5
+          decimal: 2
+          description: "Aliquota do SEST/SENAT"
+          example: " 99.99"
+
+        D1_ALIQFUN:
+          type: number
+          lenght: 6
+          decimal: 2
+          description: "Aliquota FUNRURAL"
+          example: " 999.99"
+
+        D1_CODLAN:
+          type: string
+          lenght: 6
+          description: "Código Lançamento Cat83"
+
+        D1_GARANTI:
+          type: string
+          lenght: 1
+          options: "1=Sim;2=Não"
+          example: "option"
+          description: "Insumo Tem Garantia"
+
+        D1_CRPREPR:
+          type: number
+          lenght: 14
+          decimal: 2
+          description: "Credito Presumido Parana"
+          example: " 99999999999.99"
+
+        D1_VALPRO:
+          type: number
+          lenght: 14
+          decimal: 2
+          description: "Valor do PROTEGE-GO"
+          example: " 99999999999.99"
+
+        D1_VLINCMG:
+          type: number
+          lenght: 14
+          decimal: 2
+          description: "Vl.Incentivo Prod.Leite"
+          example: " 99999999999.99"
+
+        D1_BASEPRO:
+          type: number
+          lenght: 14
+          decimal: 2
+          description: "Base PROTEGE-GO"
+          example: " 99999999999.99"
+
+        D1_FCICOD:
+          type: string
+          lenght: 36
+          description: "Codigo FCI"
+
+        D1_OKISS:
+          type: string
+          lenght: 2
+          description: "Marca"
+
+        D1_BASEFUN:
+          type: number
+          lenght: 14
+          decimal: 2
+          description: "Base de Calculo FUNRURAL"
+          example: " 99999999999.99"
+
+        D1_ALIQPRO:
+          type: number
+          lenght: 5
+          decimal: 2
+          description: "Aliquota PROTEGE-GO"
+          example: " 99.99"
+
+        D1_PRINCMG:
+          type: number
+          lenght: 6
+          decimal: 2
+          description: "Perc.Incentivo Prod.Leite"
+          example: " 999.99"
+
+        D1_UFERMS:
+          type: number
+          lenght: 14
+          decimal: 2
+          description: "Valor UFERMS"
+          example: " 99999999999.99"
+
+        D1_PRFDSUL:
+          type: number
+          lenght: 12
+          decimal: 8
+          description: "Percentual Fundersul"
+          example: " 999.99999999"
+
+        D1_VALFUN:
+          type: number
+          lenght: 14
+          decimal: 2
+          description: "Valor do FUNRURAL"
+          example: " 99999999999.99"
+
+        D1_TRANSIT:
+          type: string
+          lenght: 1
+          description: "Status para Amz. transito"
+
+        D1_ALQPIS:
+          type: number
+          lenght: 6
+          decimal: 2
+          description: "Aliquota do PIS"
+          example: " 999.99"
+
+        D1_FILORI:
+          type: string
+          lenght: 4
+          description: "Filial do Docto.de Origem"
+
+        D1_ALQCSL:
+          type: number
+          lenght: 6
+          decimal: 2
+          description: "Aliquota CSLL"
+          example: " 999.99"
+
+        D1_ALQCOF:
+          type: number
+          lenght: 6
+          decimal: 2
+          description: "Aliquota do Cofins"
+          example: " 999.99"
+
+        D1_VALPIS:
+          type: number
+          lenght: 14
+          decimal: 2
+          description: "Valor do PIS"
+          example: " 99999999999.99"
+
+        D1_VALFDS:
+          type: number
+          lenght: 14
+          decimal: 2
+          description: "Valor do Fundersul"
+          example: " 99999999999.99"
+
+        D1_CUSRP5:
+          type: number
+          lenght: 14
+          decimal: 2
+          description: "Custo de Reposicao 5a M"
+          example: " 99999999999.99"
+
+        D1_SDOCVNC:
+          type: string
+          lenght: 3
+          description: "Série do Doc. de Vinculo"
+
+        D1_CUSRP4:
+          type: number
+          lenght: 14
+          decimal: 2
+          description: "Custo de Reposicao 4a M"
+          example: " 99999999999.99"
+
+        D1_SDOCREM:
+          type: string
+          lenght: 3
+          description: "Série do Doc Envio"
+
+        D1_SDOC:
+          type: string
+          lenght: 3
+          description: "Série do Documento Fiscal"
+
+        D1_SDOCORI:
+          type: string
+          lenght: 3
+          description: "Série da N.F. Original"
+
+        D1_VALCSL:
+          type: number
+          lenght: 14
+          decimal: 2
+          description: "Valor do CSLL"
+          example: " 99999999999.99"
+
+        D1_SLDEXP:
+          type: number
+          lenght: 11
+          decimal: 2
+          description: "Saldo Exportação Indireta"
+          example: " 99999999.99"
+
+        D1_CUSRP1:
+          type: number
+          lenght: 14
+          decimal: 2
+          description: "Custo de Reposicao"
+          example: " 99999999999.99"
+
+        D1_CUSRP2:
+          type: number
+          lenght: 14
+          decimal: 2
+          description: "Custo de Reposicao 2a M"
+          example: " 99999999999.99"
+
+        D1_CUSRP3:
+          type: number
+          lenght: 14
+          decimal: 2
+          description: "Custo de Reposicao 3a M"
+          example: " 99999999999.99"
+
+        D1_BASNDES:
+          type: number
+          lenght: 14
+          decimal: 2
+          description: "Base ICMS ST Anterior"
+          example: " 99999999999.99"
+
+        D1_ICMNDES:
+          type: number
+          lenght: 14
+          decimal: 2
+          description: "Valor ICMS ST Anterior"
+          example: " 99999999999.99"
+
+        D1_AFCPANT:
+          type: number
+          lenght: 6
+          decimal: 2
+          description: "Alíquota do FCP Rec. Ant."
+          example: " 999.99"
+
+        D1_CRPRESC:
+          type: number
+          lenght: 14
+          decimal: 2
+          description: "Crd Presumido - SC"
+          example: " 9999999999.99"
+
+        D1_ALQFMP:
+          type: number
+          lenght: 5
+          decimal: 2
+          description: "Aliquota de FUMIPEQ"
+          example: " 99.99"
+
+        D1_NFPSER:
+          type: string
+          lenght: 3
+          description: "NF Própia Série"
+
+        D1_CODROM:
+          type: string
+          lenght: 10
+          description: "Romaneio Originação"
+
+        D1_CODSAF:
+          type: string
+          lenght: 15
+          description: "Código da Safra"
+
+        D1_DESCZFP:
+          type: number
+          lenght: 14
+          decimal: 2
+          description: "Val. desc. do PIS para ZF"
+          example: " 99999999999.99"
+
+        D1_BASFECP:
+          type: number
+          lenght: 14
+          decimal: 2
+          description: "Base FCP Próprio"
+          example: " 99999999999.99"
+
+        D1_BSFCCMP:
+          type: number
+          lenght: 14
+          decimal: 2
+          description: "Base FCP Complementar"
+          example: " 99999999999.99"
+
+        D1_ALQNDES:
+          type: number
+          lenght: 6
+          decimal: 2
+          description: "Aliq. ICMS ST Anterior"
+          example: " 999.99"
+
+        D1_BSFCPST:
+          type: number
+          lenght: 14
+          decimal: 2
+          description: "Base FCP ST"
+          example: " 99999999999.99"
+
+        D1_BASEFMD:
+          type: number
+          lenght: 14
+          decimal: 2
+          description: "Base do Famad"
+          example: " 99999999999.99"
+
+        D1_NFPNUM:
+          type: string
+          lenght: 9
+          description: "NF Propria Número"
+
+        D1_DESCZFC:
+          type: number
+          lenght: 14
+          decimal: 2
+          description: "Val. desc. do Cof para ZF"
+          example: " 99999999999.99"
+
+        D1_ITEROM:
+          type: string
+          lenght: 2
+          description: "Item do Romaneio"
+
+        D1_VFCPANT:
+          type: number
+          lenght: 14
+          decimal: 2
+          description: "Valor do FCP Rec. Ant."
+          example: " 99999999999.99"
+
+        D1_BFCPANT:
+          type: number
+          lenght: 14
+          decimal: 2
+          description: "Base FCP Rec. Ant."
+          example: " 99999999999.99"
+
+        D1_DESCZFR:
+          type: number
+          lenght: 14
+          decimal: 2
+          description: "Desconto venda Z.Franca"
+          example: " 99999999999.99"
+
+        D1_ALFCPST:
+          type: number
+          lenght: 6
+          decimal: 2
+          description: "Alíquota do FCP ST"
+          example: " 999.99"
+
+        D1_VALFECP:
+          type: number
+          lenght: 14
+          decimal: 2
+          description: "Valor do FCP Próprio"
+          example: " 99999999999.99"
+
+        D1_OPERADO:
+          type: string
+          lenght: 3
+          description: "Operador de Caixa"
+
+        D1_CTROG:
+          type: string
+          lenght: 6
+          description: "Contrato Originação"
+
+        D1_RGESPST:
+          type: string
+          lenght: 1
+          options: "1=Sim;2=Não"
+          example: "option"
+          description: "Regime Especial ST"
+
+        D1_VALFMD:
+          type: number
+          lenght: 14
+          decimal: 2
+          description: "Valor do Famad"
+          example: " 99999999999.99"
+
+        D1_FCPAUX:
+          type: number
+          lenght: 7
+          decimal: 4
+          description: "Indice Auxiliar do FCP"
+          example: " 99.9999"
+
+        D1_VOPDIF:
+          type: number
+          lenght: 16
+          decimal: 2
+          description: "Valor da Operação"
+          example: " 9999999999999.99"
+
+        D1_VFECPST:
+          type: number
+          lenght: 14
+          decimal: 2
+          description: "Valor do FCP ST"
+          example: " 99999999999.99"
+
+        D1_ALQFMD:
+          type: number
+          lenght: 5
+          decimal: 2
+          description: "Aliquota do Famad"
+          example: " 99.99"
+
+        D1_ALQFECP:
+          type: number
+          lenght: 6
+          decimal: 2
+          description: "Alíquota do FECP"
+          example: " 999.99"
+
+        D1_MSUIDT:
+          type: string
+          lenght: 32
+          description: ""
+      required: ["D1_COD", "D1_QUANT", "D1_VUNIT", "D1_TOTAL"]

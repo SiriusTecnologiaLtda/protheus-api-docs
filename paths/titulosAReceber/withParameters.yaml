@@ -1,0 +1,301 @@
+get:
+  tags:
+    - TitulosAReceber
+  summary: EndPoint para retornar um titulo a receber pelo código
+  operationId: getTitulosAReceberById
+  parameters:
+    - name: "E1_PREFIXO"
+      in: path
+      description: Número do prefixo do titulo a receber
+      required: false
+      schema:
+        type: string
+        example: "001"
+    - name: "E1_NUM"
+      in: path
+      description: Número do código do titulo a receber
+      required: true
+      schema:
+        type: string
+        example: "000001"
+    - name: "E1_PARCELA"
+      in: path
+      description: Número da parcela do titulo a receber
+      required: false
+      schema:
+        type: string
+        example: "01"
+    - name: "E1_TIPO"
+      in: path
+      description: Número do tipo do titulo a receber
+      required: false
+      schema:
+        type: string
+        example: "001"
+  responses:
+    "200":
+      description: Successful response
+      content:
+        application/json:
+          schema:
+            $ref: "./schemas/SE1.yaml"
+    "400":
+      description: Invalid input
+      content:
+        application/json:
+          schema:
+            type: object
+            properties:
+              success:
+                type: boolean
+                example: false
+              code:
+                type: integer
+                example: 400
+              message:
+                type: object
+                properties:
+                  info:
+                    type: string
+                    example: Descrição do erro.
+    "500":
+      description: Invalid input
+      content:
+        application/json:
+          schema:
+            type: object
+            properties:
+              success:
+                type: boolean
+                example: false
+              code:
+                type: integer
+                example: 500
+              message:
+                type: object
+                properties:
+                  info:
+                    type: string
+                    example: "{\"code\":500,\"detailedMessage\":\"\",\"message\":\"Internal Server Error\"}"
+  security:
+    - basicAuth: []
+
+put:
+  tags:
+    - TitulosAReceber
+  summary: EndPoint para alterar um titulo a receber pelo código
+  operationId: UpdateTitulosAReceber
+  parameters:
+    - name: "E1_PREFIXO"
+      in: path
+      description: Número do prefixo do titulo a receber
+      required: true
+      schema:
+        type: string
+        example: "001"
+    - name: "E1_NUM"
+      in: path
+      description: Número do código do titulo a receber
+      required: true
+      schema:
+        type: string
+        example: "000001"
+    - name: "E1_PARCELA"
+      in: path
+      description: Número da parcela do titulo a receber
+      required: true
+      schema:
+        type: string
+        example: "01"
+    - name: "E1_TIPO"
+      in: path
+      description: Número do tipo do titulo a receber
+      required: true
+      schema:
+        type: string
+        example: "001"
+  requestBody:
+    required: true
+    content:
+      application/json:
+        schema:
+          $ref: "./schemas/SE1.yaml"
+  responses:
+    "200":
+      description: Successful response
+      content:
+        application/json:
+          schema:
+            type: object
+            properties:
+              success:
+                type: boolean
+                example: true
+              code:
+                type: integer
+                example: 200
+              message:
+                type: object
+                properties:
+                  info:
+                    type: string
+                    example: Título a receber alterado com sucesso!
+                  E1_PREFIXO:
+                    type: string
+                    example: MAN
+                  E1_NUM:
+                    type: string
+                    example: 99/9999
+                  E1_PARCELA:
+                    type: string
+                    example: 000001
+                  E1_TIPO:
+                    type: string
+                    example: PRE
+    "400":
+      description: Invalid input
+      content:
+        application/json:
+          schema:
+            type: object
+            properties:
+              success:
+                type: boolean
+                example: false
+              code:
+                type: integer
+                example: 400
+              message:
+                type: object
+                properties:
+                  info:
+                    type: string
+                    example: Descrição do erro.
+    "500":
+      description: Invalid input
+      content:
+        application/json:
+          schema:
+            type: object
+            properties:
+              success:
+                type: boolean
+                example: false
+              code:
+                type: integer
+                example: 500
+              message:
+                type: object
+                properties:
+                  info:
+                    type: string
+                    example: "{\"code\":500,\"detailedMessage\":\"\",\"message\":\"Internal Server Error\"}"
+  security:
+    - basicAuth: []
+
+delete:
+  tags:
+    - TitulosAReceber
+  summary: EndPoint para deletar um titulo a receber pelo código
+  operationId: deleteTitulosAReceberById
+  parameters:
+    - name: "E1_PREFIXO"
+      in: path
+      description: Número do prefixo do titulo a receber
+      required: true
+      schema:
+        type: string
+        example: "001"
+    - name: "E1_NUM"
+      in: path
+      description: Número do código do titulo a receber
+      required: true
+      schema:
+        type: string
+        example: "000001"
+    - name: "E1_PARCELA"
+      in: path
+      description: Número da parcela do titulo a receber
+      required: true
+      schema:
+        type: string
+        example: "01"
+    - name: "E1_TIPO"
+      in: path
+      description: Número do tipo do titulo a receber
+      required: true
+      schema:
+        type: string
+        example: "001"
+  responses:
+    "200":
+      description: Successful response
+      content:
+        application/json:
+          schema:
+            type: object
+            properties:
+              success:
+                type: boolean
+                example: true
+              code:
+                type: integer
+                example: 200
+              message:
+                type: object
+                properties:
+                  info:
+                    type: string
+                    example: Título a receber deletado com sucesso!
+                  E1_PREFIXO:
+                    type: string
+                    example: MAN
+                  E1_NUM:
+                    type: string
+                    example: 99/9999
+                  E1_PARCELA:
+                    type: string
+                    example: 000001
+                  E1_TIPO:
+                    type: string
+                    example: PRE
+    "400":
+      description: Invalid input
+      content:
+        application/json:
+          schema:
+            type: object
+            properties:
+              success:
+                type: boolean
+                example: false
+              code:
+                type: integer
+                example: 400
+              message:
+                type: object
+                properties:
+                  info:
+                    type: string
+                    example: Descrição do erro.
+    "500":
+      description: Invalid input
+      content:
+        application/json:
+          schema:
+            type: object
+            properties:
+              success:
+                type: boolean
+                example: false
+              code:
+                type: integer
+                example: 500
+              message:
+                type: object
+                properties:
+                  info:
+                    type: string
+                    example: "{\"code\":500,\"detailedMessage\":\"\",\"message\":\"Internal Server Error\"}"
+  security:
+    - basicAuth: []
