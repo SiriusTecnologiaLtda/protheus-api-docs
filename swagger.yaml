@@ -3,11 +3,11 @@ info:
   title: API Protheus 
   description: API Protheus Documentação
   version: 1.0.0
-  termsOfService: http://example.com/terms/
+  termsOfService: https://siriusdigital.com.br/termos-e-condicoes-de-uso/
   contact:
-    name: Érico Amorim Pedrosa
-    url: http://www.example.com/support
-    email: erico.pedrosa@totvs.com.br
+    name: Sirius Digital
+    url: https://siriusdigital.com.br/
+    email: contato@siriusdigital.com.br
   license:
     name: Apache 2.0
     url: https://www.apache.org/licenses/LICENSE-2.0.html
