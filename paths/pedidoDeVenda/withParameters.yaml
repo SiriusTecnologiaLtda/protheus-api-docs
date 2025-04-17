@@ -1,7 +1,7 @@
 get:
   tags:
     - PedidoDeVenda
-  summary: EndPoint para retornar um pedido de venda
+  summary: EndPoint para retornar um pedido de venda pelo código
   operationId: getPedidoDeVendaById
   parameters:
     - name: "C5_NUM"

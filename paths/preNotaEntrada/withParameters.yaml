@@ -1,7 +1,7 @@
 get:
   tags:
     - PreNotaEntrada
-  summary: EndPoint para retornar uma pré nota de entrada
+  summary: EndPoint para retornar uma pré nota de entrada pelo código
   operationId: getPreNotaEntradaById
   parameters:
     - name: "F1_DOC"
