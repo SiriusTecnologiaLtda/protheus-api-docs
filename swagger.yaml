@@ -54,10 +54,10 @@ paths:
     $ref: './paths/grupoDeProdutos/withParameters.yaml'
 
   /api/v1/produto:
-     $ref: './paths/Produto/noParameters.yaml'
+     $ref: './paths/produto/noParameters.yaml'
 
   /api/v1/produto/{B1_COD}:
-     $ref: './paths/Produto/withParameters.yaml'
+     $ref: './paths/produto/withParameters.yaml'
 
   /api/v1/titulosAReceber:
     $ref: './paths/titulosAReceber/noParameters.yaml'
