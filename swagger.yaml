@@ -30,9 +30,10 @@ tags:
 
 paths:
   /api/v1/fornecedor:
+    $ref2: './paths/fornecedor/getAll.yaml'
+    
     $ref: './paths/fornecedor/post.yaml'
 
-    $ref2: './paths/fornecedor/getAll.yaml'
    
   /api/v1/fornecedor/{A2_COD}/{A2_LOJA}:
     get:
