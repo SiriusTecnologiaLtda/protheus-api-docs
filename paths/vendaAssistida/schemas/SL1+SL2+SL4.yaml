@@ -1,6 +1,6 @@
 type: object
 properties:
-SL1:
+  SL1:
     type: object
     properties:
       L1_FILIAL:
@@ -1140,7 +1140,7 @@ SL1:
         length: 15
         description: "Telefone"
 
-SL2:
+  SL2:
     type: object
     properties:
       L2_ABATISS:
@@ -2065,7 +2065,7 @@ SL2:
         length: 14
         description: "Valor do FECP ST"
 
-SL4:
+  SL4:
     type: object
     properties:
       L4_ACRCART:
