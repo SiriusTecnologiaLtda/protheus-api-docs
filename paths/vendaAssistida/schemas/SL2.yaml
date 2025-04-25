@@ -1,921 +1,923 @@
-L2_ABATISS:
-  type: number
-  length: 14
-  description: "Valor abatimento / ISS"
-
-L2_ALIQCF2:
-  type: number
-  length: 14
-  description: "Aliquota apuracäo COFINS"
-
-L2_ALIQCOF:
-  type: number
-  length: 5
-  description: "Aliq. de Retencao Cofins"
-
-L2_ALIQISS:
-  type: number
-  length: 5
-  description: "Aliquota de ISS"
-
-L2_ALIQPIS:
-  type: number
-  length: 5
-  description: "Aliq. de Retencao de Pis"
-
-L2_ALIQPS2:
-  type: number
-  length: 14
-  description: "Aliquota de apuracäo PIS"
-
-L2_ALIQSOL:
-  type: number
-  length: 6
-  description: "Aliq. ICMS Sol."
-
-L2_ALQCSLL:
-  type: number
-  length: 5
-  description: "Aliquota de CSLL"
-
-L2_ALQFCST:
-  type: number
-  length: 5
-  description: "Aliquota FECP ST"
-
-L2_ALQFECP:
-  type: number
-  length: 5
-  description: "Aliquota FECP"
-
-L2_ALQIRRF:
-  type: number
-  length: 5
-  description: "Aliquota de IRRF"
-
-L2_BASCSLL:
-  type: number
-  length: 14
-  description: "Base de Calculo do CSLL"
-
-L2_BASECF2:
-  type: number
-  length: 14
-  description: "Base de apuracäo COFINS"
-
-L2_BASECOF:
-  type: number
-  length: 14
-  description: "Base de Retencao Cofins"
-
-L2_BASEICM:
-  type: number
-  length: 14
-  description: "Base do ICMS"
-
-L2_BASEIPI:
-  type: number
-  length: 14
-  description: "Valor Base de Calc. IPI"
-
-L2_BASEISS:
-  type: number
-  length: 14
-  description: "Base de Cálculo do ISS"
-
-L2_BASEPIS:
-  type: number
-  length: 14
-  description: "Base de Retencao de Pis"
-
-L2_BASEPS2:
-  type: number
-  length: 14
-  description: "Base de apuracäo do PIS"
-
-L2_BASFECP:
-  type: number
-  length: 14
-  description: "Base FECP"
-
-L2_BASIRRF:
-  type: number
-  length: 14
-  description: "Base de Cálculo do IRRF"
-
-L2_BCONTA:
-  type: string
-  length: 44
-  description: "Codigo de Barras da Conta"
-
-L2_BLEST:
-  type: string
-  length: 2
-  description: "Bloqueio Estoque"
-
-L2_BRICMS:
-  type: number
-  length: 14
-  description: "Base de Retenção ICMS"
-
-L2_BSFCPST:
-  type: number
-  length: 14
-  description: "Base FECP ST"
-
-L2_CCUSTO:
-  type: string
-  length: 9
-  description: "Centro de Custo"
-
-L2_CEST:
-  type: string
-  length: 9
-  description: "Cod. Especificador ST"
-
-L2_CF:
-  type: string
-  length: 5
-  description: "Codigo Fiscal da Operacao"
-
-L2_CLASFIS:
-  type: string
-  length: 3
-  description: "Situacao Tributaria"
-
-L2_CLIENT:
-  type: string
-  length: 6
-  description: "Cliente de Entrega"
-
-L2_CLILOJA:
-  type: string
-  length: 2
-  description: "Loja Cliente de Entrega"
-
-L2_CLVL:
-  type: string
-  length: 9
-  description: "Classe Valor Contabil"
-
-L2_CNAE:
-  type: string
-  length: 9
-  description: "Cod.Atividade do Lancto."
-
-L2_CODBAR:
-  type: string
-  length: 15
-  description: "Código de Barras"
-
-L2_CODCONT:
-  type: string
-  length: 6
-  description: "Contato do Cliente"
-
-L2_CODISS:
-  type: string
-  length: 9
-  description: "Codigo de Servico do ISS"
-
-L2_CODITE:
-  type: string
-  length: 27
-  description: "Produto Veiculos/Oficina"
-
-L2_CODLAN:
-  type: string
-  length: 6
-  description: "Código Lançamento CAT83"
-
-L2_CODLPRE:
-  type: string
-  length: 6
-  description: "Lista de Presentes"
-
-L2_CODREG:
-  type: string
-  length: 6
-  description: "Codigo Regra de Desconto"
-
-L2_CONTDOC:
-  type: string
-  length: 9
-  description: "CONTDOC do Cupom"
-
-L2_CSTCOF:
-  type: string
-  length: 2
-  description: "CST COF"
-
-L2_CSTPIS:
-  type: string
-  length: 2
-  description: "CST Pis"
-
-L2_CUSTO1:
-  type: number
-  length: 14
-  description: "Custo na Moeda 1"
-
-L2_CUSTO2:
-  type: number
-  length: 14
-  description: "Custo na Moeda 2"
-
-L2_DECQTD:
-  type: number
-  length: 1
-  example: 9
-  description: "Dec. Qtde"
-
-L2_DECVLU:
-  type: number
-  length: 1
-  example: 9
-  description: "Dec.Vl Unitario"
-
-L2_DESC:
-  type: number
-  length: 5
-  description: "Desconto do Item"
-
-L2_DESCICM:
-  type: number
-  length: 14
-  description: "Desconto do ICMS"
-
-L2_DESCORC:
-  type: number
-  length: 15
-  description: "Desc Orçamento importado"
-
-L2_DESCPRO:
-  type: number
-  length: 16
-  description: "Desc.Proporcional da NF"
-
-L2_DESCRI:
-  type: string
-  length: 100
-  description: "Descrição do Produto"
-
-L2_DESPESA:
-  type: number
-  length: 14
-  description: "Valor Despesas Acessorias"
-
-L2_FILIAL:
-  type: string
-  length: 2
-  description: "Filial do Sistema"
-
-L2_NUM:
-  type: string
-  length: 6
-  description: "Numero do Orcamento"
-
-L2_PRODUTO:
-  type: string
-  length: 15
-  description: "Codigo do Produto"
-
-L2_ITEM:
-  type: string
-  length: 2
-  description: "Numero do Item"
-
-L2_QUANT:
-  type: number
-  length: 16
-  example: 9
-  description: "Quantidade Vendida"
-
-L2_LOCAL:
-  type: string
-  length: 2
-  description: "Armazem do Produto"
-
-L2_UM:
-  type: string
-  length: 2
-  description: "Unidade de Medida"
-
-L2_TES:
-  type: string
-  length: 3
-  description: "Tipo Entrada e Saida"
-
-L2_DOC:
-  type: string
-  length: 9
-  description: "Numero da Nota Fiscal"
-
-L2_SERIE:
-  type: string
-  length: 3
-  description: "Serie da Nota Fiscal"
-
-L2_PDV:
-  type: string
-  length: 10
-  description: "Numero do PDV"
-
-L2_TABELA:
-  type: string
-  length: 3
-  description: "Tabela de Preco"
-
-L2_STATUS:
-  type: string
-  length: 1
-  description: "Status Troca Mercadoria"
-
-L2_EMISSAO:
-  type: string
-  format: date
-  length: 8
-  description: "Data Emissao da Venda"
-
-L2_PRCTAB:
-  type: number
-  length: 14
-  description: "Preco de Tabela do Produt"
-
-L2_GRADE:
-  type: string
-  length: 1
-  description: "Grade de Produto"
-
-L2_PREMIO:
-  type: string
-  length: 1
-  description: "Premio"
-
-L2_LOTECTL:
-  type: string
-  length: 10
-  description: "Lote do Produto"
-
-L2_NLOTE:
-  type: string
-  length: 6
-  description: "Sub Lote do Produto"
-
-L2_LOCALIZ:
-  type: string
-  length: 15
-  description: "Endereco do Lote"
-
-L2_NSERIE:
-  type: string
-  length: 20
-  description: "Nº de serie do produto"
-
-L2_SITUA:
-  type: string
-  length: 2
-  description: "Situacao do Registro"
-
-L2_RESERVA:
-  type: string
-  length: 6
-  description: "Numero da Reserva"
-
-L2_LOJARES:
-  type: string
-  length: 6
-  description: "Loja onde esta a reserva"
-
-L2_PEDFAT:
-  type: string
-  length: 6
-  description: "Num.do pedido da outra Lj"
-
-L2_SEGURO:
-  type: number
-  length: 14
-  description: "Valor do Seguro"
-
-L2_NUMLAY:
-  type: string
-  length: 6
-  description: "Numero do Lay-Away"
-
-L2_ITEMLAY:
-  type: string
-  length: 2
-  description: "Item do Lay-Away"
-
-L2_EMPRES:
-  type: string
-  length: 2
-  description: "Cod.da Empresa da Reserva"
-
-L2_FILRES:
-  type: string
-  length: 2
-  description: "Cod.da Filial da Reserva"
-
-L2_ORCRES:
-  type: string
-  length: 6
-  description: "Cod.da Orcamento da Res."
-
-L2_ICMSRET:
-  type: number
-  length: 14
-  description: "ICMS retido na fonte"
-
-L2_ENTREGA:
-  type: option
-  length: 1
-  options: 1=Retira Posterior;2=Retira;3=Entrega;4=Retira Posterior c/ Pedido;5=Entrega c/ Pedido s/ Reserva
-  description: "Item para entrega?"
-
-L2_VALCOFI:
-  type: number
-  length: 14
-  description: "Valor de retencäo COFINS"
-
-L2_VALCSLL:
-  type: number
-  length: 14
-  description: "Valor de retencäo do CSLL"
-
-L2_VALCF2:
-  type: number
-  length: 14
-  description: "Valor de apuracäo COFINS"
-
-L2_ITEMSD1:
-  type: string
-  length: 6
-  description: "Item relacionado no SD1"
-
-L2_DTVALID:
-  type: string
-  format: date
-  length: 8
-  description: "Validade do Lote Inform."
-
-L2_SEGUM:
-  type: string
-  length: 2
-  description: "Segunda unidade de medida"
-
-L2_PEDRES:
-  type: string
-  length: 6
-  description: "Num. Pedido de venda"
-
-L2_FDTENTR:
-  type: string
-  format: date
-  length: 8
-  description: "Data Entrega"
-
-L2_FDTMONT:
-  type: string
-  format: date
-  length: 8
-  description: "Data de montagem"
-
-L2_TURNO:
-  type: string
-  length: 1
-  description: "ManhaTarde ou Noite"
-
-L2_NUMORIG:
-  type: string
-  length: 6
-  description: "Numero Orcamento Original"
-
-L2_SITTRIB:
-  type: string
-  length: 5
-  description: "Situação tributada ECF"
-
-L2_MARCA:
-  type: string
-  length: 30
-  description: "Marca"
-
-L2_MODELO:
-  type: string
-  length: 30
-  description: "Modelo"
-
-L2_TIPO:
-  type: string
-  length: 3
-  description: "Tipo do Produto"
-
-L2_PEDSC5:
-  type: string
-  length: 6
-  description: "Ped.Venda (SC5)"
-
-L2_QUALIDA:
-  type: string
-  length: 30
-  description: "Qualidade"
-
-L2_ESPECIE:
-  type: string
-  length: 30
-  description: "Especie do Produto"
-
-L2_ITESC6:
-  type: string
-  length: 2
-  description: "Item Pedido Fat"
-
-L2_SEQUEN:
-  type: string
-  length: 2
-  description: "Sequencia Fat"
-
-L2_SOLCOM:
-  type: string
-  length: 6
-  description: "Numero da Sol.de Compras"
-
-L2_SERPDV:
-  type: string
-  length: 20
-  description: "Série ECF"
-
-L2_PAFMD5:
-  type: string
-  length: 32
-  description: "Chave MD5 do Registro"
-
-L2_GARANT:
-  type: string
-  length: 15
-  description: "Garantia Estendida"
-
-L2_ITLPRE:
-  type: string
-  length: 3
-  description: "Item da Lista de Presente"
-
-L2_MSMLPRE:
-  type: string
-  length: 6
-  description: "Mensagem presente"
-
-L2_MSGLPRE:
-  type: M
-  length: 250
-  description: "Mensagem presente(Memo)"
-
-L2_REMLPRE:
-  type: string
-  length: 6
-  description: "Cod.Remetente Mensagem"
-
-L2_REVLPRE:
-  type: string
-  length: 30
-  description: "Remetente da Mensagem"
-
-L2_MESREC:
-  type: number
-  length: 16
-  description: "Recno da tabela MES"
-
-L2_NUMCFID:
-  type: string
-  length: 40
-  description: "Cartão Fidelidade"
-
-L2_DTSDFID:
-  type: string
-  format: date
-  length: 8
-  description: "Validade Recarga Cart.Fid"
-
-L2_PROCFID:
-  type: string
-  length: 1
-  description: "Modo Proc. Fid."
-
-L2_ORIGEM:
-  type: string
-  length: 1
-  description: "Codigo de origem"
-
-L2_MODBC:
-  type: string
-  length: 1
-  description: "Modalidade da Base Calc."
-
-L2_POSIPI:
-  type: string
-  length: 10
-  description: "Nomenclatura Ext.Mercosul"
-
-L2_LEGCOD:
-  type: string
-  length: 10
-  description: "Codigo do Abastecimento"
-
-L2_ITEMNF:
-  type: string
-  length: 2
-  description: "Numero Item da NF"
-
-L2_VALACRS:
-  type: number
-  length: 14
-  description: "Acrescimo Financeiro"
-
-L2_FCICOD:
-  type: string
-  length: 36
-  description: "Codigo FCI"
-
-L2_ECPRESN:
-  type: string
-  length: 1
-  description: "Presente SN ecommerce"
-
-L2_ECSEDEX:
-  type: string
-  length: 13
-  description: "Sedex e-commerce"
-
-L2_DOCPED:
-  type: string
-  length: 9
-  description: "Numero da Nota Fiscal"
-
-L2_SERPED:
-  type: string
-  length: 3
-  description: "Serie da Nota Fiscal"
-
-L2_PEDPRS:
-  type: string
-  length: 6
-  description: "Pedido Presente"
-
-L2_ECMSGPR:
-  type: M
-  length: 10
-  description: "Msg Presente eCommerce"
-
-L2_IPPT:
-  type: option
-  length: 1
-  options: P=Propria;T=Terceiros
-  description: "Ind. Prod Prop/Terc(IPPT)"
-
-L2_IAT:
-  type: option
-  length: 1
-  options: A=Arredondamento;T=Truncamento
-  description: "Ind. Arred ou Trunc(IAT)"
-
-L2_MOTDICM:
-  type: string
-  length: 2
-  description: "Mot.Desone. ICMS"
-
-L2_DTUMOV:
-  type: string
-  format: date
-  length: 8
-  description: "Data Transf. uMov.me"
-
-L2_IPI:
-  type: number
-  length: 5
-  description: "Alíquota de IPI"
-
-L2_TOTFED:
-  type: number
-  length: 14
-  description: "Carga Tributária Federal"
-
-L2_PREDIC:
-  type: number
-  length: 5
-  description: "% Reducao da Base de ICMS"
-
-L2_ECVALOR:
-  type: number
-  length: 12
-  description: "Vlr Item Venda e-commerce"
-
-L2_KIT:
-  type: string
-  length: 15
-  description: "Kit de Produtos"
-
-L2_ITEMCC:
-  type: string
-  length: 9
-  description: "Item Conta Contabil"
-
-L2_PICM:
-  type: number
-  length: 5
-  description: "Aliquota de ICMS"
-
-L2_HRUMOV:
-  type: string
-  length: 8
-  example: 99:99:99
-  description: "Hora Transf. uMov.me"
-
-L2_FLUMOV:
-  type: string
-  length: 1
-  description: "Flag Transf. uMov.me"
-
-L2_INDPAR:
-  type: string
-  length: 6
-  description: "Cod. do Parceiro"
-
-L2_REV:
-  type: number
-  length: 2
-  example: 99
-  description: "Revisao Montagem uMov.me"
-
-L2_TRANSP:
-  type: string
-  length: 6
-  description: "Codigo da Transportadora"
-
-L2_TOTIMP:
-  type: number
-  length: 14
-  description: "Total de Impostos"
-
-L2_QTDEDEV:
-  type: number
-  length: 11
-  description: "Qtd. Devolvida"
-
-L2_TOTMUN:
-  type: number
-  length: 14
-  description: "Carga Tributária Municipa"
-
-L2_TOTEST:
-  type: number
-  length: 14
-  description: "Carga Tributária Estadual"
-
-L2_ITEMCOB:
-  type: string
-  length: 2
-  description: "Item Cobertura Serviço"
-
-L2_PRDCOBE:
-  type: string
-  length: 15
-  description: "Produto Cobertura Serviço"
-
-L2_ITEMGAR:
-  type: string
-  length: 2
-  description: "Item Garantia Estendida"
-
-L2_GARDEV:
-  type: string
-  format: date
-  length: 8
-  description: "Data Devolucao Garantia"
-
-L2_IDITREL:
-  type: string
-  length: 3
-  description: "Id de item relacionado"
-
-L2_SDOC:
-  type: string
-  length: 3
-  description: "Série do Documento Fiscal"
-
-L2_SDOCPED:
-  type: string
-  length: 3
-  description: "Série da Nota Fiscal"
-
-L2_VRUNIT:
-  type: number
-  length: 16
-  example: 99
-  description: "Preco Unitario"
-
-L2_VLRITEM:
-  type: number
-  length: 16
-  description: "Valor do Item"
-
-L2_VALDESC:
-  type: number
-  length: 16
-  description: "Valor do Desconto"
-
-L2_VENDIDO:
-  type: string
-  length: 1
-  description: "Status de Vendido"
-
-L2_VALIPI:
-  type: number
-  length: 14
-  description: "Valor de IPI"
-
-L2_VALICM:
-  type: number
-  length: 14
-  description: "Valor de ICM"
-
-L2_VALISS:
-  type: number
-  length: 14
-  description: "Valor do ISS"
-
-L2_VEND:
-  type: string
-  length: 6
-  description: "Vendedor do Item"
-
-L2_VALFRE:
-  type: number
-  length: 14
-  description: "Valor do Frete"
-
-L2_VALPIS:
-  type: number
-  length: 14
-  description: "Valor de retencäo do PIS"
-
-L2_VALPS2:
-  type: number
-  length: 14
-  description: "Valor de apuracäo PIS"
-
-L2_VLDESRE:
-  type: number
-  length: 14
-  description: "Percen. Desconto p/ Regra"
-
-L2_VALEPRE:
-  type: string
-  length: 15
-  description: "Código do Vale-Presente"
-
-L2_VDMOST:
-  type: option
-  length: 1
-  options: N=Normal;M=Mostruario;S=Saldao
-  description: "Tipo de peça"
-
-L2_VDOBS:
-  type: M
-  length: 250
-  description: "Observação da Peça"
-
-L2_VLRCFID:
-  type: number
-  length: 16
-  description: "Valor da Recarga"
-
-L2_VLGAPRO:
-  type: number
-  length: 5
-  description: "Validade Garantia Estendi"
-
-L2_VLIMPOR:
-  type: number
-  length: 14
-  description: "Valor da Importação"
-
-L2_VALFECP:
-  type: number
-  length: 14
-  description: "Valor do FECP"
-
-L2_VALIRRF:
-  type: number
-  length: 14
-  description: "Valor de IRRF"
-
-L2_VLTROCA:
-  type: string
-  length: 1
-  description: "Imprime Vale Troca?"
-
-L2_VFECPST:
-  type: number
-  length: 14
-  description: "Valor do FECP ST"
+type: object
+properties:
+  L2_ABATISS:
+    type: number
+    length: 14
+    description: "Valor abatimento / ISS"
+
+  L2_ALIQCF2:
+    type: number
+    length: 14
+    description: "Aliquota apuracäo COFINS"
+
+  L2_ALIQCOF:
+    type: number
+    length: 5
+    description: "Aliq. de Retencao Cofins"
+
+  L2_ALIQISS:
+    type: number
+    length: 5
+    description: "Aliquota de ISS"
+
+  L2_ALIQPIS:
+    type: number
+    length: 5
+    description: "Aliq. de Retencao de Pis"
+
+  L2_ALIQPS2:
+    type: number
+    length: 14
+    description: "Aliquota de apuracäo PIS"
+
+  L2_ALIQSOL:
+    type: number
+    length: 6
+    description: "Aliq. ICMS Sol."
+
+  L2_ALQCSLL:
+    type: number
+    length: 5
+    description: "Aliquota de CSLL"
+
+  L2_ALQFCST:
+    type: number
+    length: 5
+    description: "Aliquota FECP ST"
+
+  L2_ALQFECP:
+    type: number
+    length: 5
+    description: "Aliquota FECP"
+
+  L2_ALQIRRF:
+    type: number
+    length: 5
+    description: "Aliquota de IRRF"
+
+  L2_BASCSLL:
+    type: number
+    length: 14
+    description: "Base de Calculo do CSLL"
+
+  L2_BASECF2:
+    type: number
+    length: 14
+    description: "Base de apuracäo COFINS"
+
+  L2_BASECOF:
+    type: number
+    length: 14
+    description: "Base de Retencao Cofins"
+
+  L2_BASEICM:
+    type: number
+    length: 14
+    description: "Base do ICMS"
+
+  L2_BASEIPI:
+    type: number
+    length: 14
+    description: "Valor Base de Calc. IPI"
+
+  L2_BASEISS:
+    type: number
+    length: 14
+    description: "Base de Cálculo do ISS"
+
+  L2_BASEPIS:
+    type: number
+    length: 14
+    description: "Base de Retencao de Pis"
+
+  L2_BASEPS2:
+    type: number
+    length: 14
+    description: "Base de apuracäo do PIS"
+
+  L2_BASFECP:
+    type: number
+    length: 14
+    description: "Base FECP"
+
+  L2_BASIRRF:
+    type: number
+    length: 14
+    description: "Base de Cálculo do IRRF"
+
+  L2_BCONTA:
+    type: string
+    length: 44
+    description: "Codigo de Barras da Conta"
+
+  L2_BLEST:
+    type: string
+    length: 2
+    description: "Bloqueio Estoque"
+
+  L2_BRICMS:
+    type: number
+    length: 14
+    description: "Base de Retenção ICMS"
+
+  L2_BSFCPST:
+    type: number
+    length: 14
+    description: "Base FECP ST"
+
+  L2_CCUSTO:
+    type: string
+    length: 9
+    description: "Centro de Custo"
+
+  L2_CEST:
+    type: string
+    length: 9
+    description: "Cod. Especificador ST"
+
+  L2_CF:
+    type: string
+    length: 5
+    description: "Codigo Fiscal da Operacao"
+
+  L2_CLASFIS:
+    type: string
+    length: 3
+    description: "Situacao Tributaria"
+
+  L2_CLIENT:
+    type: string
+    length: 6
+    description: "Cliente de Entrega"
+
+  L2_CLILOJA:
+    type: string
+    length: 2
+    description: "Loja Cliente de Entrega"
+
+  L2_CLVL:
+    type: string
+    length: 9
+    description: "Classe Valor Contabil"
+
+  L2_CNAE:
+    type: string
+    length: 9
+    description: "Cod.Atividade do Lancto."
+
+  L2_CODBAR:
+    type: string
+    length: 15
+    description: "Código de Barras"
+
+  L2_CODCONT:
+    type: string
+    length: 6
+    description: "Contato do Cliente"
+
+  L2_CODISS:
+    type: string
+    length: 9
+    description: "Codigo de Servico do ISS"
+
+  L2_CODITE:
+    type: string
+    length: 27
+    description: "Produto Veiculos/Oficina"
+
+  L2_CODLAN:
+    type: string
+    length: 6
+    description: "Código Lançamento CAT83"
+
+  L2_CODLPRE:
+    type: string
+    length: 6
+    description: "Lista de Presentes"
+
+  L2_CODREG:
+    type: string
+    length: 6
+    description: "Codigo Regra de Desconto"
+
+  L2_CONTDOC:
+    type: string
+    length: 9
+    description: "CONTDOC do Cupom"
+
+  L2_CSTCOF:
+    type: string
+    length: 2
+    description: "CST COF"
+
+  L2_CSTPIS:
+    type: string
+    length: 2
+    description: "CST Pis"
+
+  L2_CUSTO1:
+    type: number
+    length: 14
+    description: "Custo na Moeda 1"
+
+  L2_CUSTO2:
+    type: number
+    length: 14
+    description: "Custo na Moeda 2"
+
+  L2_DECQTD:
+    type: number
+    length: 1
+    example: 9
+    description: "Dec. Qtde"
+
+  L2_DECVLU:
+    type: number
+    length: 1
+    example: 9
+    description: "Dec.Vl Unitario"
+
+  L2_DESC:
+    type: number
+    length: 5
+    description: "Desconto do Item"
+
+  L2_DESCICM:
+    type: number
+    length: 14
+    description: "Desconto do ICMS"
+
+  L2_DESCORC:
+    type: number
+    length: 15
+    description: "Desc Orçamento importado"
+
+  L2_DESCPRO:
+    type: number
+    length: 16
+    description: "Desc.Proporcional da NF"
+
+  L2_DESCRI:
+    type: string
+    length: 100
+    description: "Descrição do Produto"
+
+  L2_DESPESA:
+    type: number
+    length: 14
+    description: "Valor Despesas Acessorias"
+
+  L2_FILIAL:
+    type: string
+    length: 2
+    description: "Filial do Sistema"
+
+  L2_NUM:
+    type: string
+    length: 6
+    description: "Numero do Orcamento"
+
+  L2_PRODUTO:
+    type: string
+    length: 15
+    description: "Codigo do Produto"
+
+  L2_ITEM:
+    type: string
+    length: 2
+    description: "Numero do Item"
+
+  L2_QUANT:
+    type: number
+    length: 16
+    example: 9
+    description: "Quantidade Vendida"
+
+  L2_LOCAL:
+    type: string
+    length: 2
+    description: "Armazem do Produto"
+
+  L2_UM:
+    type: string
+    length: 2
+    description: "Unidade de Medida"
+
+  L2_TES:
+    type: string
+    length: 3
+    description: "Tipo Entrada e Saida"
+
+  L2_DOC:
+    type: string
+    length: 9
+    description: "Numero da Nota Fiscal"
+
+  L2_SERIE:
+    type: string
+    length: 3
+    description: "Serie da Nota Fiscal"
+
+  L2_PDV:
+    type: string
+    length: 10
+    description: "Numero do PDV"
+
+  L2_TABELA:
+    type: string
+    length: 3
+    description: "Tabela de Preco"
+
+  L2_STATUS:
+    type: string
+    length: 1
+    description: "Status Troca Mercadoria"
+
+  L2_EMISSAO:
+    type: string
+    format: date
+    length: 8
+    description: "Data Emissao da Venda"
+
+  L2_PRCTAB:
+    type: number
+    length: 14
+    description: "Preco de Tabela do Produt"
+
+  L2_GRADE:
+    type: string
+    length: 1
+    description: "Grade de Produto"
+
+  L2_PREMIO:
+    type: string
+    length: 1
+    description: "Premio"
+
+  L2_LOTECTL:
+    type: string
+    length: 10
+    description: "Lote do Produto"
+
+  L2_NLOTE:
+    type: string
+    length: 6
+    description: "Sub Lote do Produto"
+
+  L2_LOCALIZ:
+    type: string
+    length: 15
+    description: "Endereco do Lote"
+
+  L2_NSERIE:
+    type: string
+    length: 20
+    description: "Nº de serie do produto"
+
+  L2_SITUA:
+    type: string
+    length: 2
+    description: "Situacao do Registro"
+
+  L2_RESERVA:
+    type: string
+    length: 6
+    description: "Numero da Reserva"
+
+  L2_LOJARES:
+    type: string
+    length: 6
+    description: "Loja onde esta a reserva"
+
+  L2_PEDFAT:
+    type: string
+    length: 6
+    description: "Num.do pedido da outra Lj"
+
+  L2_SEGURO:
+    type: number
+    length: 14
+    description: "Valor do Seguro"
+
+  L2_NUMLAY:
+    type: string
+    length: 6
+    description: "Numero do Lay-Away"
+
+  L2_ITEMLAY:
+    type: string
+    length: 2
+    description: "Item do Lay-Away"
+
+  L2_EMPRES:
+    type: string
+    length: 2
+    description: "Cod.da Empresa da Reserva"
+
+  L2_FILRES:
+    type: string
+    length: 2
+    description: "Cod.da Filial da Reserva"
+
+  L2_ORCRES:
+    type: string
+    length: 6
+    description: "Cod.da Orcamento da Res."
+
+  L2_ICMSRET:
+    type: number
+    length: 14
+    description: "ICMS retido na fonte"
+
+  L2_ENTREGA:
+    type: option
+    length: 1
+    options: 1=Retira Posterior;2=Retira;3=Entrega;4=Retira Posterior c/ Pedido;5=Entrega c/ Pedido s/ Reserva
+    description: "Item para entrega?"
+
+  L2_VALCOFI:
+    type: number
+    length: 14
+    description: "Valor de retencäo COFINS"
+
+  L2_VALCSLL:
+    type: number
+    length: 14
+    description: "Valor de retencäo do CSLL"
+
+  L2_VALCF2:
+    type: number
+    length: 14
+    description: "Valor de apuracäo COFINS"
+
+  L2_ITEMSD1:
+    type: string
+    length: 6
+    description: "Item relacionado no SD1"
+
+  L2_DTVALID:
+    type: string
+    format: date
+    length: 8
+    description: "Validade do Lote Inform."
+
+  L2_SEGUM:
+    type: string
+    length: 2
+    description: "Segunda unidade de medida"
+
+  L2_PEDRES:
+    type: string
+    length: 6
+    description: "Num. Pedido de venda"
+
+  L2_FDTENTR:
+    type: string
+    format: date
+    length: 8
+    description: "Data Entrega"
+
+  L2_FDTMONT:
+    type: string
+    format: date
+    length: 8
+    description: "Data de montagem"
+
+  L2_TURNO:
+    type: string
+    length: 1
+    description: "ManhaTarde ou Noite"
+
+  L2_NUMORIG:
+    type: string
+    length: 6
+    description: "Numero Orcamento Original"
+
+  L2_SITTRIB:
+    type: string
+    length: 5
+    description: "Situação tributada ECF"
+
+  L2_MARCA:
+    type: string
+    length: 30
+    description: "Marca"
+
+  L2_MODELO:
+    type: string
+    length: 30
+    description: "Modelo"
+
+  L2_TIPO:
+    type: string
+    length: 3
+    description: "Tipo do Produto"
+
+  L2_PEDSC5:
+    type: string
+    length: 6
+    description: "Ped.Venda (SC5)"
+
+  L2_QUALIDA:
+    type: string
+    length: 30
+    description: "Qualidade"
+
+  L2_ESPECIE:
+    type: string
+    length: 30
+    description: "Especie do Produto"
+
+  L2_ITESC6:
+    type: string
+    length: 2
+    description: "Item Pedido Fat"
+
+  L2_SEQUEN:
+    type: string
+    length: 2
+    description: "Sequencia Fat"
+
+  L2_SOLCOM:
+    type: string
+    length: 6
+    description: "Numero da Sol.de Compras"
+
+  L2_SERPDV:
+    type: string
+    length: 20
+    description: "Série ECF"
+
+  L2_PAFMD5:
+    type: string
+    length: 32
+    description: "Chave MD5 do Registro"
+
+  L2_GARANT:
+    type: string
+    length: 15
+    description: "Garantia Estendida"
+
+  L2_ITLPRE:
+    type: string
+    length: 3
+    description: "Item da Lista de Presente"
+
+  L2_MSMLPRE:
+    type: string
+    length: 6
+    description: "Mensagem presente"
+
+  L2_MSGLPRE:
+    type: M
+    length: 250
+    description: "Mensagem presente(Memo)"
+
+  L2_REMLPRE:
+    type: string
+    length: 6
+    description: "Cod.Remetente Mensagem"
+
+  L2_REVLPRE:
+    type: string
+    length: 30
+    description: "Remetente da Mensagem"
+
+  L2_MESREC:
+    type: number
+    length: 16
+    description: "Recno da tabela MES"
+
+  L2_NUMCFID:
+    type: string
+    length: 40
+    description: "Cartão Fidelidade"
+
+  L2_DTSDFID:
+    type: string
+    format: date
+    length: 8
+    description: "Validade Recarga Cart.Fid"
+
+  L2_PROCFID:
+    type: string
+    length: 1
+    description: "Modo Proc. Fid."
+
+  L2_ORIGEM:
+    type: string
+    length: 1
+    description: "Codigo de origem"
+
+  L2_MODBC:
+    type: string
+    length: 1
+    description: "Modalidade da Base Calc."
+
+  L2_POSIPI:
+    type: string
+    length: 10
+    description: "Nomenclatura Ext.Mercosul"
+
+  L2_LEGCOD:
+    type: string
+    length: 10
+    description: "Codigo do Abastecimento"
+
+  L2_ITEMNF:
+    type: string
+    length: 2
+    description: "Numero Item da NF"
+
+  L2_VALACRS:
+    type: number
+    length: 14
+    description: "Acrescimo Financeiro"
+
+  L2_FCICOD:
+    type: string
+    length: 36
+    description: "Codigo FCI"
+
+  L2_ECPRESN:
+    type: string
+    length: 1
+    description: "Presente SN ecommerce"
+
+  L2_ECSEDEX:
+    type: string
+    length: 13
+    description: "Sedex e-commerce"
+
+  L2_DOCPED:
+    type: string
+    length: 9
+    description: "Numero da Nota Fiscal"
+
+  L2_SERPED:
+    type: string
+    length: 3
+    description: "Serie da Nota Fiscal"
+
+  L2_PEDPRS:
+    type: string
+    length: 6
+    description: "Pedido Presente"
+
+  L2_ECMSGPR:
+    type: M
+    length: 10
+    description: "Msg Presente eCommerce"
+
+  L2_IPPT:
+    type: option
+    length: 1
+    options: P=Propria;T=Terceiros
+    description: "Ind. Prod Prop/Terc(IPPT)"
+
+  L2_IAT:
+    type: option
+    length: 1
+    options: A=Arredondamento;T=Truncamento
+    description: "Ind. Arred ou Trunc(IAT)"
+
+  L2_MOTDICM:
+    type: string
+    length: 2
+    description: "Mot.Desone. ICMS"
+
+  L2_DTUMOV:
+    type: string
+    format: date
+    length: 8
+    description: "Data Transf. uMov.me"
+
+  L2_IPI:
+    type: number
+    length: 5
+    description: "Alíquota de IPI"
+
+  L2_TOTFED:
+    type: number
+    length: 14
+    description: "Carga Tributária Federal"
+
+  L2_PREDIC:
+    type: number
+    length: 5
+    description: "% Reducao da Base de ICMS"
+
+  L2_ECVALOR:
+    type: number
+    length: 12
+    description: "Vlr Item Venda e-commerce"
+
+  L2_KIT:
+    type: string
+    length: 15
+    description: "Kit de Produtos"
+
+  L2_ITEMCC:
+    type: string
+    length: 9
+    description: "Item Conta Contabil"
+
+  L2_PICM:
+    type: number
+    length: 5
+    description: "Aliquota de ICMS"
+
+  L2_HRUMOV:
+    type: string
+    length: 8
+    example: 99:99:99
+    description: "Hora Transf. uMov.me"
+
+  L2_FLUMOV:
+    type: string
+    length: 1
+    description: "Flag Transf. uMov.me"
+
+  L2_INDPAR:
+    type: string
+    length: 6
+    description: "Cod. do Parceiro"
+
+  L2_REV:
+    type: number
+    length: 2
+    example: 99
+    description: "Revisao Montagem uMov.me"
+
+  L2_TRANSP:
+    type: string
+    length: 6
+    description: "Codigo da Transportadora"
+
+  L2_TOTIMP:
+    type: number
+    length: 14
+    description: "Total de Impostos"
+
+  L2_QTDEDEV:
+    type: number
+    length: 11
+    description: "Qtd. Devolvida"
+
+  L2_TOTMUN:
+    type: number
+    length: 14
+    description: "Carga Tributária Municipa"
+
+  L2_TOTEST:
+    type: number
+    length: 14
+    description: "Carga Tributária Estadual"
+
+  L2_ITEMCOB:
+    type: string
+    length: 2
+    description: "Item Cobertura Serviço"
+
+  L2_PRDCOBE:
+    type: string
+    length: 15
+    description: "Produto Cobertura Serviço"
+
+  L2_ITEMGAR:
+    type: string
+    length: 2
+    description: "Item Garantia Estendida"
+
+  L2_GARDEV:
+    type: string
+    format: date
+    length: 8
+    description: "Data Devolucao Garantia"
+
+  L2_IDITREL:
+    type: string
+    length: 3
+    description: "Id de item relacionado"
+
+  L2_SDOC:
+    type: string
+    length: 3
+    description: "Série do Documento Fiscal"
+
+  L2_SDOCPED:
+    type: string
+    length: 3
+    description: "Série da Nota Fiscal"
+
+  L2_VRUNIT:
+    type: number
+    length: 16
+    example: 99
+    description: "Preco Unitario"
+
+  L2_VLRITEM:
+    type: number
+    length: 16
+    description: "Valor do Item"
+
+  L2_VALDESC:
+    type: number
+    length: 16
+    description: "Valor do Desconto"
+
+  L2_VENDIDO:
+    type: string
+    length: 1
+    description: "Status de Vendido"
+
+  L2_VALIPI:
+    type: number
+    length: 14
+    description: "Valor de IPI"
+
+  L2_VALICM:
+    type: number
+    length: 14
+    description: "Valor de ICM"
+
+  L2_VALISS:
+    type: number
+    length: 14
+    description: "Valor do ISS"
+
+  L2_VEND:
+    type: string
+    length: 6
+    description: "Vendedor do Item"
+
+  L2_VALFRE:
+    type: number
+    length: 14
+    description: "Valor do Frete"
+
+  L2_VALPIS:
+    type: number
+    length: 14
+    description: "Valor de retencäo do PIS"
+
+  L2_VALPS2:
+    type: number
+    length: 14
+    description: "Valor de apuracäo PIS"
+
+  L2_VLDESRE:
+    type: number
+    length: 14
+    description: "Percen. Desconto p/ Regra"
+
+  L2_VALEPRE:
+    type: string
+    length: 15
+    description: "Código do Vale-Presente"
+
+  L2_VDMOST:
+    type: option
+    length: 1
+    options: N=Normal;M=Mostruario;S=Saldao
+    description: "Tipo de peça"
+
+  L2_VDOBS:
+    type: M
+    length: 250
+    description: "Observação da Peça"
+
+  L2_VLRCFID:
+    type: number
+    length: 16
+    description: "Valor da Recarga"
+
+  L2_VLGAPRO:
+    type: number
+    length: 5
+    description: "Validade Garantia Estendi"
+
+  L2_VLIMPOR:
+    type: number
+    length: 14
+    description: "Valor da Importação"
+
+  L2_VALFECP:
+    type: number
+    length: 14
+    description: "Valor do FECP"
+
+  L2_VALIRRF:
+    type: number
+    length: 14
+    description: "Valor de IRRF"
+
+  L2_VLTROCA:
+    type: string
+    length: 1
+    description: "Imprime Vale Troca?"
+
+  L2_VFECPST:
+    type: number
+    length: 14
+    description: "Valor do FECP ST"

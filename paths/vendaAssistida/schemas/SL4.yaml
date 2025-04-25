@@ -1,257 +1,322 @@
-L4_ACRCART:
-  type: number
-  length: 14
+type: object
+properties:
+  L4_ACRCART:
+    type: number
+    length: 14
+    description: Acréscimo Cartão
 
-L4_ACRSFI:
-  type: number
-  length: 14
+  L4_ACRSFI:
+    type: number
+    length: 14
+    description: Acrescimo Financeiro
 
-L4_ADMINIS:
-  type: string
-  length: 20
+  L4_ADMINIS:
+    type: string
+    length: 20
+    description: Administradora do Cartao
 
-L4_AGENCIA:
-  type: string
-  length: 8
+  L4_AGENCIA:
+    type: string
+    length: 8
+    description: Agencia
 
-L4_ANOACTA:
-  type: string
-  length: 4
-  example: 9999
+  L4_ANOACTA:
+    type: string
+    length: 4
+    example: 9999
+    description: Ano de Abertura da Conta
 
-L4_AUTORIZ:
-  type: string
-  length: 50
+  L4_AUTORIZ:
+    type: string
+    length: 50
+    description: N·mero da Autorização TEF
 
-L4_BANDEIR:
-  type: string
-  length: 40
+  L4_BANDEIR:
+    type: string
+    length: 40
+    description: Codigo da Bandeira
 
-L4_BANPRC:
-  type: string
-  length: 6
+  L4_BANPRC:
+    type: string
+    length: 6
+    description: Banco patroc. de desconto
 
-L4_CGC:
-  type: string
-  length: 14
+  L4_CGC:
+    type: string
+    length: 14
+    description: CNPJ do Emitente do Chequ
 
-L4_CODVP:
-  type: string
-  length: 15
+  L4_CODVP:
+    type: string
+    length: 15
+    description: Codigo do VP
 
-L4_COMP:
-  type: string
-  length: 3
+  L4_COMP:
+    type: string
+    length: 3
+    description: Numero da Compensacao
 
-L4_CONHTL:
-  type: string
-  length: 50
+  L4_CONHTL:
+    type: string
+    length: 50
+    description: InternalId RA Hotel
 
-L4_CONTA:
-  type: string
-  length: 20
+  L4_CONTA:
+    type: string
+    length: 20
+    description: Conta do Cheque
 
-L4_CONTDO:
-  type: string
-  length: 9
+  L4_CONTDO:
+    type: string
+    length: 9
+    description: CONTDOC do Cupom
 
-L4_CONTONF:
-  type: string
-  length: 9
+  L4_CONTONF:
+    type: string
+    length: 9
+    description: CONTONF
 
-L4_DATA:
-  type: D
-  length: 8
+  L4_DATA:
+    type: D
+    length: 8
+    description: Data do Orcamento
 
-L4_DATATEF:
-  type: string
-  length: 8
+  L4_DATATEF:
+    type: string
+    length: 8
+    description: Data da Transação TEF
 
-L4_DATCAN:
-  type: string
-  length: 8
+  L4_DATCAN:
+    type: string
+    length: 8
+    description: Data do Cancelamento TEF
 
-L4_DESCMN:
-  type: number
-  length: 16
+  L4_DESCMN:
+    type: number
+    length: 16
+    description: Desconto MultNegociacao
 
-L4_DESPRC:
-  type: number
-  length: 16
+  L4_DESPRC:
+    type: number
+    length: 16
+    description: Valor Desconto
 
-L4_DOC:
-  type: string
-  length: 9
+  L4_DOC:
+    type: string
+    length: 9
+    description: DOC
 
-L4_DOCCAN:
-  type: string
-  length: 100
+  L4_DOCCAN:
+    type: string
+    length: 100
+    description: Documento Cancelado TEF
 
-L4_DOCTEF:
-  type: string
-  length: 100
+  L4_DOCTEF:
+    type: string
+    length: 100
+    description: N·mero do Documento TEF
 
-L4_ESTORN:
-  type: string
-  length: 1
+  L4_ESTORN:
+    type: string
+    length: 1
+    description: Pagamento estornado
 
-L4_FILIAL:
-  type: string
-  length: 2
+  L4_FILIAL:
+    type: string
+    length: 2
+    description: Filial do Sistema
 
-L4_FORMA:
-  type: string
-  length: 15
+  L4_FORMA:
+    type: string
+    length: 15
+    description: Forma Pagto da Parcela
 
-L4_FORMAID:
-  type: string
-  length: 1
+  L4_FORMAID:
+    type: string
+    length: 1
+    description: Identific. Cartäo
 
-L4_FORMPG:
-  type: string
-  length: 2
+  L4_FORMPG:
+    type: string
+    length: 2
+    description: Forma de pagamento
 
-L4_HORATEF:
-  type: string
-  length: 6
+  L4_HORATEF:
+    type: string
+    length: 6
+    description: Hora da Transação TEF
 
-L4_HORCAN:
-  type: string
-  length: 6
+  L4_HORCAN:
+    type: string
+    length: 6
+    description: Hora do Cancelamento TEF
 
-L4_IDCNAB:
-  type: string
-  length: 10
+  L4_IDCNAB:
+    type: string
+    length: 10
+    description: IDCNAB
 
-L4_IDPGVFP:
-  type: string
-  length: 9
+  L4_IDPGVFP:
+    type: string
+    length: 9
+    description: Id do pagamento MFe
 
-L4_IDRSPFI:
-  type: string
-  length: 9
+  L4_IDRSPFI:
+    type: string
+    length: 9
+    description: Id da resposta fiscal MFe
 
-L4_INSTITU:
-  type: string
-  length: 16
+  L4_INSTITU:
+    type: string
+    length: 16
+    description: Nome da Instituição TEF
 
-L4_ITEM:
-  type: string
-  length: 2
+  L4_ITEM:
+    type: string
+    length: 2
+    description: Número da Parcela
 
-L4_MESACTA:
-  type: string
-  length: 2
-  example: 99
+  L4_MESACTA:
+    type: string
+    length: 2
+    example: 99
+    description: Mes de Abertura da Conta
 
-L4_MOEDA:
-  type: number
-  length: 2
-  example: 99
+  L4_MOEDA:
+    type: number
+    length: 2
+    example: 99
+    description: Moeda da fatura
 
-L4_NOMECLI:
-  type: string
-  length: 40
+  L4_NOMECLI:
+    type: string
+    length: 40
+    description: Nome Emitente do Cheque
 
-L4_NSUTEF:
-  type: string
-  length: 50
+  L4_NSUTEF:
+    type: string
+    length: 50
+    description: NSU do Sitef
 
-L4_NUM:
-  type: string
-  length: 6
+  L4_NUM:
+    type: string
+    length: 6
+    description: Numero do Orcamento
 
-L4_NUMCART:
-  type: string
-  length: 30
+  L4_NUMCART:
+    type: string
+    length: 30
+    description: Numero do Cartao
 
-L4_NUMCFID:
-  type: string
-  length: 40
+  L4_NUMCFID:
+    type: string
+    length: 40
+    description: Cartão Fidelidade
 
-L4_OBS:
-  type: string
-  length: 80
+  L4_OBS:
+    type: string
+    length: 80
+    description: Observacao
 
-L4_OPERAES:
-  type: string
-  length: 3
+  L4_OPERAES:
+    type: string
+    length: 3
+    description: Caixa do Estorno
 
-L4_ORIGEM:
-  type: string
-  length: 8
+  L4_ORIGEM:
+    type: string
+    length: 8
+    description: Origem da Condicao-Modulo
 
-L4_PAFMD5:
-  type: string
-  length: 32
+  L4_PAFMD5:
+    type: string
+    length: 32
+    description: Chave MD5
 
-L4_PARCTEF:
-  type: string
-  length: 3
+  L4_PARCTEF:
+    type: string
+    length: 3
+    description: Parcelamento TEF
 
-L4_PROCFID:
-  type: string
-  length: 1
+  L4_PROCFID:
+    type: string
+    length: 1
+    description: Modo Proc. Fid.
 
-L4_REDEAUT:
-  type: string
-  length: 40
+  L4_REDEAUT:
+    type: string
+    length: 40
+    description: Codigo Rede Autorizadora
 
-L4_RG:
-  type: string
-  length: 20
+  L4_RG:
+    type: string
+    length: 20
+    description: RG do Cheque
 
-L4_SERCHQ:
-  type: string
-  length: 6
+  L4_SERCHQ:
+    type: string
+    length: 6
+    description: Serie/Codigo do Cheque
 
-L4_SERPDV:
-  type: string
-  length: 20
+  L4_SERPDV:
+    type: string
+    length: 20
+    description: Série ECF
 
-L4_SITUA:
-  type: string
-  length: 2
+  L4_SITUA:
+    type: string
+    length: 2
+    description: Situacao do Registro
 
-L4_VALOR:
-  type: number
-  length: 16
+  L4_VALOR:
+    type: number
+    length: 16
+    description: Valor da Parcela
 
-L4_TELEFO:
-  type: string
-  length: 15
-  example: 9999-9999
+  L4_TELEFO:
+    type: string
+    length: 15
+    example: 9999-9999
+    description: Telefone do Cheque
 
-L4_TERCEIR:
-  type: boolean
-  length: 1
+  L4_TERCEIR:
+    type: L
+    length: 1
+    description: Cheque de Terceiro
 
-L4_TIPCART:
-  type: string
-  length: 1
-  options: MagnÚtico;Nõo MagnÚtico
+  L4_TIPCART:
+    type: string
+    length: 1
+    options: MagnÚtico;Nõo MagnÚtico
+    description: Tipo de Cartão de Crédito
 
-L4_TIPOCHQ:
-  type: string
-  length: 1
-  example: 9
+  L4_TIPOCHQ:
+    type: string
+    length: 1
+    example: 9
+    description: Tipo do Cheque
 
-L4_VENDTEF:
-  type: string
-  length: 1
+  L4_VENDTEF:
+    type: string
+    length: 1
+    description: Indica se foi venda TEF
 
-L4_TROCO:
-  type: number
-  length: 16
+  L4_TROCO:
+    type: number
+    length: 16
+    description: Valor do Troco
 
-L4_TRNID:
-  type: string
-  length: 100
+  L4_TRNID:
+    type: string
+    length: 100
+    description: ID da Transação
 
-L4_TRNPCID:
-  type: string
-  length: 100
+  L4_TRNPCID:
+    type: string
+    length: 100
+    description: ID Transação Processador
 
-L4_TRNEXID:
-  type: string
-  length: 100
+  L4_TRNEXID:
+    type: string
+    length: 100
+    description: ID da Transação Externa
