@@ -1,12 +1,12 @@
 get:
   tags:
-    - Transportadora
-  summary: EndPoint para retornar uma transportadora pelo código
-  operationId: getTransportadoraById
+    - VendaAssistida
+  summary: EndPoint para retornar uma venda assistida pelo código
+  operationId: getVendaAssistidaById
   parameters:
-    - name: "A4_COD"
+    - name: "L1_NUM"
       in: path
-      description: Número do código da transportadora
+      description: Número do código da venda assistida
       required: true
       schema:
         type: string
@@ -17,7 +17,7 @@ get:
       content:
         application/json:
           schema:
-            $ref: "./schemas/SA4.yaml"
+            $ref: "./schemas/SL1+SL2+SL4.yaml"
     "400":
       description: Invalid input
       content:
@@ -61,13 +61,13 @@ get:
 
 put:
   tags:
-    - Transportadora
-  summary: EndPoint para alterar uma transportadora pelo código
-  operationId: UpdateTransportadora
+    - VendaAssistida
+  summary: EndPoint para alterar uma venda assistida pelo código
+  operationId: UpdateVendaAssistida
   parameters:
-    - name: "A4_COD"
+    - name: "L1_NUM"
       in: path
-      description: Número do código da transportadora
+      description: Número do código da venda assistida
       required: true
       schema:
         type: string
@@ -77,7 +77,7 @@ put:
     content:
       application/json:
         schema:
-          $ref: "./schemas/SA4.yaml"
+          $ref: "./schemas/SL1+SL2+SL4.yaml"
   responses:
     "200":
       description: Successful response
@@ -97,8 +97,8 @@ put:
                 properties:
                   info:
                     type: string
-                    example: Transportadora alterado com sucesso!
-                  A4_COD:
+                    example: Venda assistida alterada com sucesso!
+                  L1_NUM:
                     type: string
                     example: 000001
     "400":
@@ -144,13 +144,13 @@ put:
 
 delete:
   tags:
-    - Transportadora
-  summary: EndPoint para deletar uma transportadora pelo código
-  operationId: deleteTransportadoraById
+    - VendaAssistida
+  summary: EndPoint para deletar uma venda assistida pelo código
+  operationId: deleteVendaAssistidaById
   parameters:
-    - name: "A4_COD"
+    - name: "L1_NUM"
       in: path
-      description: Número do código da transportadora
+      description: Número do código da venda assistida
       required: true
       schema:
         type: string
@@ -174,8 +174,8 @@ delete:
                 properties:
                   info:
                     type: string
-                    example: Transportadora deletado com sucesso!
-                  A4_COD:
+                    example: Venda assistida deletada com sucesso!
+                  path:
                     type: string
                     example: 000001
     "400":

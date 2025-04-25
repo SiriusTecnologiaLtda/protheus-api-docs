@@ -27,6 +27,7 @@ tags:
   - name: ItemContabil
   - name: PreNotaEntrada
   - name: PedidoDeVenda
+  - name: VendaAssistida
 
 paths:
   /api/v1/fornecedor:
@@ -88,6 +89,12 @@ paths:
 
   /api/v1/pedidoDeVenda/{C5_NUM}:
     $ref: './paths/pedidoDeVenda/withParameters.yaml'
+  
+  /api/v1/vendaAssistida:
+    $ref: './paths/vendaAssistida/noParameters.yaml'
+
+  /api/v1/vendaAssistida/{L1_NUM}:
+    $ref: './paths/vendaAssistida/withParameters.yaml'
 
 components:
   securitySchemes:
@@ -124,6 +131,9 @@ components:
       
     PedidoDeVenda:
       $ref: "./paths/pedidoDeVenda/schemas/SC5+SC6.yaml"
+    
+    VendaAssistida:
+      $ref: "./paths/vendaAssistida/schemas/SL1+SL2+SL4.yaml"
 
   responses:
     UnauthorizedError:

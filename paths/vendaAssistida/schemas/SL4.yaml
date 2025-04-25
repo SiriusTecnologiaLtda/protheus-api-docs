@@ -1,0 +1,257 @@
+L4_ACRCART:
+  type: number
+  length: 14
+
+L4_ACRSFI:
+  type: number
+  length: 14
+
+L4_ADMINIS:
+  type: string
+  length: 20
+
+L4_AGENCIA:
+  type: string
+  length: 8
+
+L4_ANOACTA:
+  type: string
+  length: 4
+  example: 9999
+
+L4_AUTORIZ:
+  type: string
+  length: 50
+
+L4_BANDEIR:
+  type: string
+  length: 40
+
+L4_BANPRC:
+  type: string
+  length: 6
+
+L4_CGC:
+  type: string
+  length: 14
+
+L4_CODVP:
+  type: string
+  length: 15
+
+L4_COMP:
+  type: string
+  length: 3
+
+L4_CONHTL:
+  type: string
+  length: 50
+
+L4_CONTA:
+  type: string
+  length: 20
+
+L4_CONTDO:
+  type: string
+  length: 9
+
+L4_CONTONF:
+  type: string
+  length: 9
+
+L4_DATA:
+  type: D
+  length: 8
+
+L4_DATATEF:
+  type: string
+  length: 8
+
+L4_DATCAN:
+  type: string
+  length: 8
+
+L4_DESCMN:
+  type: number
+  length: 16
+
+L4_DESPRC:
+  type: number
+  length: 16
+
+L4_DOC:
+  type: string
+  length: 9
+
+L4_DOCCAN:
+  type: string
+  length: 100
+
+L4_DOCTEF:
+  type: string
+  length: 100
+
+L4_ESTORN:
+  type: string
+  length: 1
+
+L4_FILIAL:
+  type: string
+  length: 2
+
+L4_FORMA:
+  type: string
+  length: 15
+
+L4_FORMAID:
+  type: string
+  length: 1
+
+L4_FORMPG:
+  type: string
+  length: 2
+
+L4_HORATEF:
+  type: string
+  length: 6
+
+L4_HORCAN:
+  type: string
+  length: 6
+
+L4_IDCNAB:
+  type: string
+  length: 10
+
+L4_IDPGVFP:
+  type: string
+  length: 9
+
+L4_IDRSPFI:
+  type: string
+  length: 9
+
+L4_INSTITU:
+  type: string
+  length: 16
+
+L4_ITEM:
+  type: string
+  length: 2
+
+L4_MESACTA:
+  type: string
+  length: 2
+  example: 99
+
+L4_MOEDA:
+  type: number
+  length: 2
+  example: 99
+
+L4_NOMECLI:
+  type: string
+  length: 40
+
+L4_NSUTEF:
+  type: string
+  length: 50
+
+L4_NUM:
+  type: string
+  length: 6
+
+L4_NUMCART:
+  type: string
+  length: 30
+
+L4_NUMCFID:
+  type: string
+  length: 40
+
+L4_OBS:
+  type: string
+  length: 80
+
+L4_OPERAES:
+  type: string
+  length: 3
+
+L4_ORIGEM:
+  type: string
+  length: 8
+
+L4_PAFMD5:
+  type: string
+  length: 32
+
+L4_PARCTEF:
+  type: string
+  length: 3
+
+L4_PROCFID:
+  type: string
+  length: 1
+
+L4_REDEAUT:
+  type: string
+  length: 40
+
+L4_RG:
+  type: string
+  length: 20
+
+L4_SERCHQ:
+  type: string
+  length: 6
+
+L4_SERPDV:
+  type: string
+  length: 20
+
+L4_SITUA:
+  type: string
+  length: 2
+
+L4_VALOR:
+  type: number
+  length: 16
+
+L4_TELEFO:
+  type: string
+  length: 15
+  example: 9999-9999
+
+L4_TERCEIR:
+  type: boolean
+  length: 1
+
+L4_TIPCART:
+  type: string
+  length: 1
+  options: MagnÚtico;Nõo MagnÚtico
+
+L4_TIPOCHQ:
+  type: string
+  length: 1
+  example: 9
+
+L4_VENDTEF:
+  type: string
+  length: 1
+
+L4_TROCO:
+  type: number
+  length: 16
+
+L4_TRNID:
+  type: string
+  length: 100
+
+L4_TRNPCID:
+  type: string
+  length: 100
+
+L4_TRNEXID:
+  type: string
+  length: 100

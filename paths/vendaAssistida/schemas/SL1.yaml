@@ -1,0 +1,1136 @@
+L1_FILIAL:
+  type: string
+  length: 2
+  description: "Filial do Sistema"
+
+L1_NUM:
+  type: string
+  length: 6
+  description: "Numero do Orcamento"
+
+L1_VEND:
+  type: string
+  length: 6
+  description: "Codigo do Vendedor"
+
+L1_COMIS:
+  type: number
+  length: 5
+  description: "Comissao do Vendedor"
+
+L1_CLIENTE:
+  type: string
+  length: 6
+  description: "Codigo do Cliente"
+
+L1_LOJA:
+  type: string
+  length: 2
+  description: "Loja Cliente"
+
+L1_TIPOCLI:
+  type: string
+  length: 1
+  description: "Tipo do Cliente"
+
+L1_VLRTOT:
+  type: number
+  length: 16
+  description: "Valor Total do Orcamento"
+
+L1_DESCONT:
+  type: number
+  length: 12
+  description: "Valor Total do Desconto"
+
+L1_VLRLIQ:
+  type: number
+  length: 16
+  description: "Valor Liquido Orcamento"
+
+L1_NROPCLI:
+  type: string
+  length: 9
+  description: "Numero do Pedido Cliente"
+
+L1_DTLIM:
+  type: string
+  format: date
+  length: 8
+  description: "Data Validade Orcamento"
+
+L1_DOC:
+  type: string
+  length: 9
+  description: "Numero da Nota Fiscal"
+
+L1_SERIE:
+  type: string
+  length: 3
+  description: "Serie da Nota Fiscal"
+
+L1_PDV:
+  type: string
+  length: 10
+  description: "Numero do PDV"
+
+L1_EMISNF:
+  type: string
+  format: date
+  length: 8
+  description: "Data Emissao NF"
+
+L1_VALBRUT:
+  type: number
+  length: 16
+  description: "Valor Bruto da NF"
+
+L1_VALMERC:
+  type: number
+  length: 16
+  description: "Valor das Mercadorias"
+
+L1_TIPO:
+  type: string
+  length: 1
+  description: "Tipo da Venda"
+
+L1_DESCNF:
+  type: number
+  length: 7
+  description: "Valor do Desconto"
+
+L1_OPERADO:
+  type: string
+  length: 3
+  description: "Nome do Operador"
+
+L1_DINHEIR:
+  type: number
+  length: 15
+  description: "Total em Dinheiro"
+
+L1_CHEQUES:
+  type: number
+  length: 15
+  description: "Total em Cheques"
+
+L1_CARTAO:
+  type: number
+  length: 15
+  description: "Total em Cartao"
+
+L1_CONVENI:
+  type: number
+  length: 15
+  description: "Total em Convenio"
+
+L1_VALES:
+  type: number
+  length: 15
+  description: "Total em Vales"
+
+L1_FINANC:
+  type: number
+  length: 15
+  description: "Total Financiado"
+
+L1_OUTROS:
+  type: number
+  length: 15
+  description: "Total em Outros"
+
+L1_ENTRADA:
+  type: number
+  length: 15
+  description: "Entrada Negociada"
+
+L1_JUROS:
+  type: number
+  length: 6
+  description: "Taxa de Juros Negociada"
+
+L1_PARCELA:
+  type: number
+  length: 2
+  example: 99
+  description: "Num. de Parcelas Negoc."
+
+L1_INTERV:
+  type: number
+  length: 2
+  example: 99
+  description: "Intervalo de dias Negoc."
+
+L1_COND:
+  type: number
+  length: 3
+  example: 999
+  description: "Condicao de Pagamento"
+
+L1_FORMA:
+  type: number
+  length: 3
+  example: 999
+  description: "Forma de Pagamento"
+
+L1_VALICM:
+  type: number
+  length: 14
+  description: "Valor de ICM"
+
+L1_VALIPI:
+  type: number
+  length: 14
+  description: "Valor de IPI"
+
+L1_VALISS:
+  type: number
+  length: 14
+  description: "Valor do ISS"
+
+L1_TXDESC:
+  type: number
+  length: 6
+  description: "Taxa de Desconto Negoc."
+
+L1_CONDPG:
+  type: string
+  length: 3
+  description: "Codigo Condicao Pagamento"
+
+L1_FORMPG:
+  type: string
+  length: 2
+  description: "Forma de Pagamento"
+
+L1_CREDITO:
+  type: number
+  length: 16
+  description: "Valor do Credito no Orcam"
+
+L1_EMISSAO:
+  type: string
+  format: date
+  length: 8
+  description: "Data de Emissao Orcamento"
+
+L1_VEND2:
+  type: string
+  length: 6
+  description: "Codigo do Vendedor 2"
+
+L1_VEND3:
+  type: string
+  length: 6
+  description: "Codigo do Vendedor 3"
+
+L1_CONFVEN:
+  type: string
+  length: 20
+  description: "Configuracao da Venda"
+
+L1_MULTNOT:
+  type: string
+  length: 9
+  description: "Iden Mul Notas"
+
+L1_NUMCFIS:
+  type: string
+  length: 9
+  description: "Numero do Cupom Fiscal"
+
+L1_FATOR:
+  type: number
+  length: 12
+  example: 999999
+  description: "Fator Multiplicador"
+
+L1_IMPRIME:
+  type: string
+  length: 10
+  description: "Imprime NF/CH no Loja Win"
+
+L1_VENDTEF:
+  type: string
+  length: 1
+  example: !
+  description: "Indica se foi venda Tef"
+
+L1_DATATEF:
+  type: string
+  length: 8
+  example: 9999
+  description: "Indica a data da tran.Tef"
+
+L1_HORATEF:
+  type: string
+  length: 6
+  description: "Indica a hora da tran.Tef"
+
+L1_DOCTEF:
+  type: string
+  length: 100
+  description: "Numero do Documento Tef"
+
+L1_AUTORIZ:
+  type: string
+  length: 50
+  description: "Codigo Autorizacao Venda"
+
+L1_DOCCANC:
+  type: string
+  length: 100
+  description: "Numero de Cancelamento"
+
+L1_DATCANC:
+  type: string
+  length: 8
+  example: 9999
+  description: "Data de Cancelamento"
+
+L1_HORCANC:
+  type: string
+  length: 6
+  description: "Hora de Cancelamento"
+
+L1_INSTITU:
+  type: string
+  length: 16
+  description: "Codigo da Instituicao"
+
+L1_NSUTEF:
+  type: string
+  length: 50
+  description: "Numero Sequencial Trans."
+
+L1_TIPCART:
+  type: string
+  length: 6
+  description: "Modalidade do cartao"
+
+L1_VLRDEBI:
+  type: number
+  length: 15
+  description: "Vlr no Cartao de Debito"
+
+L1_TEFSTAT:
+  type: string
+  length: 1
+  description: "Status da Venda TEF"
+
+L1_ADMFIN:
+  type: string
+  length: 3
+  description: "Admin. Financeira"
+
+L1_STATUS:
+  type: string
+  length: 6
+  description: "Status TEF"
+
+L1_HORA:
+  type: string
+  length: 8
+  example: 99:99:99
+  description: "Hora"
+
+L1_OPERACA:
+  type: string
+  length: 1
+  description: "Pedido/Financeiro/Orcamen"
+
+L1_SITUA:
+  type: string
+  length: 2
+  description: "Situacao do Registro"
+
+L1_SUBSERI:
+  type: string
+  length: 3
+  description: "Sub Serie"
+
+L1_NUMORIG:
+  type: string
+  length: 6
+  description: "Numero Orcamento Original"
+
+L1_TXMOEDA:
+  type: number
+  length: 11
+  description: "Taxa da moeda"
+
+L1_MOEDA:
+  type: number
+  length: 2
+  example: 99
+  description: "Moeda da fatura"
+
+L1_ENDCOB:
+  type: string
+  length: 40
+  description: "Enderaco de Cobranca"
+
+L1_ENDENT:
+  type: string
+  length: 40
+  description: "Endereco de Entrega"
+
+L1_TPFRET:
+  type: option
+  length: 1
+  options: C=CIF;F=FOB;T=Por conta terceiros;R=Por conta remetente;D=Por conta destinatário;S=Sem frete
+  description: "Tipo do frete do cliente"
+
+L1_BAIRROC:
+  type: string
+  length: 20
+  description: "Bairro de Cobranca"
+
+L1_CEPC:
+  type: string
+  length: 8
+  description: "Cep de Cobranca"
+
+L1_MUNC:
+  type: string
+  length: 15
+  description: "Municipio de Cobranca"
+
+L1_ESTC:
+  type: string
+  length: 2
+  description: "UF de Cobranca"
+
+L1_BAIRROE:
+  type: string
+  length: 20
+  description: "Bairro de entrada"
+
+L1_CEPE:
+  type: string
+  length: 8
+  description: "Cep de Entrega"
+
+L1_MUNE:
+  type: string
+  length: 15
+  description: "Municipio da Entrega"
+
+L1_ESTE:
+  type: string
+  length: 2
+  description: "UF da Entrega"
+
+L1_FRETE:
+  type: number
+  length: 14
+  description: "Valor do Frete"
+
+L1_SEGURO:
+  type: number
+  length: 14
+  description: "Valor do Seguro"
+
+L1_DESPESA:
+  type: number
+  length: 14
+  description: "Valor de Despesas/Acessor"
+
+L1_PLIQUI:
+  type: number
+  length: 9
+  description: "Peso Liquido"
+
+L1_PBRUTO:
+  type: number
+  length: 9
+  description: "Peso Bruto"
+
+L1_VOLUME:
+  type: number
+  length: 9
+  description: "Volume"
+
+L1_TRANSP:
+  type: string
+  length: 6
+  description: "Codigo da Transportadora"
+
+L1_ESPECIE:
+  type: string
+  length: 15
+  description: "Especie"
+
+L1_MARCA:
+  type: string
+  length: 15
+  description: "Marca"
+
+L1_NUMERO:
+  type: string
+  length: 10
+  description: "Numero"
+
+L1_PLACA:
+  type: string
+  length: 10
+  description: "Placa do veiculo"
+
+L1_UFPLACA:
+  type: string
+  length: 2
+  description: "Uf da placa do veiculo"
+
+L1_BLCRED:
+  type: string
+  length: 2
+  description: "Cod.Bloqueio ref.Credito"
+
+L1_RESERVA:
+  type: string
+  length: 1
+  description: "Orcamento com reservas"
+
+L1_VEICTIP:
+  type: string
+  length: 1
+  description: "Indica rotina de gravacao"
+
+L1_VEIPESQ:
+  type: string
+  length: 10
+  description: "Chave de pesquisa veiculo"
+
+L1_NRDOC:
+  type: string
+  length: 15
+  description: "Numero do RPS"
+
+L1_TIPOJUR:
+  type: number
+  length: 1
+  example: 9
+  description: "Tipo de Juros da Venda"
+
+L1_TROCO1:
+  type: number
+  length: 15
+  description: "Valor do Troco na moeda 1"
+
+L1_EMPRES:
+  type: string
+  length: 2
+  description: "Cod.da Empresa da Reserva"
+
+L1_FILRES:
+  type: string
+  length: 2
+  description: "Cod.da Filial da Reserva"
+
+L1_ORCRES:
+  type: string
+  length: 6
+  description: "Cod.da Orcamento da Res."
+
+L1_TIPODES:
+  type: string
+  length: 1
+  description: "Tipo do Destonto"
+
+L1_FORCADA:
+  type: string
+  length: 1
+  description: "Venda Forcada"
+
+L1_ESTACAO:
+  type: string
+  length: 3
+  description: "Codigo da Estacao"
+
+L1_CGCCART:
+  type: string
+  length: 16
+  description: "Numero do CGC ou Cartäo"
+
+L1_DOCPED:
+  type: string
+  length: 9
+  description: "Numero da Nota Fiscal"
+
+L1_SERPED:
+  type: string
+  length: 3
+  description: "Serie da Nota Fiscal"
+
+L1_BRICMS:
+  type: number
+  length: 14
+  description: "Base ICMS Solidario"
+
+L1_CLIENT:
+  type: string
+  length: 6
+  description: "Cliente Entrega"
+
+L1_LOJENT:
+  type: string
+  length: 2
+  description: "Loja Entrega"
+
+L1_NSO:
+  type: string
+  length: 6
+  description: "Núm Sequencial Orçamento"
+
+L1_CONTRA:
+  type: string
+  length: 10
+  description: "Código do Contrato"
+
+L1_LOGDESC:
+  type: string
+  length: 25
+  description: "Usuario Autoriz. Desconto"
+
+L1_ICMSRET:
+  type: number
+  length: 14
+  description: "ICMS retido na fonte"
+
+L1_ABTOPCC:
+  type: number
+  length: 14
+  description: "Vl.Abat.PIS/COFINS/CSLL"
+
+L1_PARCTEF:
+  type: string
+  length: 3
+  description: "Parcelamento TEF"
+
+L1_VALPIS:
+  type: number
+  length: 14
+  description: "Valor de retencäo do PIS"
+
+L1_VALCOFI:
+  type: number
+  length: 14
+  description: "Valor de retencäo COFINS"
+
+L1_VALCSLL:
+  type: number
+  length: 14
+  description: "Valor de retencäo CSLL"
+
+L1_DIAFIXO:
+  type: string
+  length: 1
+  description: "Dia fixo para as parcelas"
+
+L1_NUMMOV:
+  type: string
+  length: 2
+  description: "Movimento do Dia"
+
+L1_NUMATEN:
+  type: string
+  length: 6
+  description: "Numero do Atendimento"
+
+L1_PEDRES:
+  type: string
+  length: 6
+  description: "Num. Pedido de venda"
+
+L1_NOMCLI:
+  type: string
+  length: 40
+  description: "Nome do cliente"
+
+L1_NUMORC:
+  type: string
+  length: 10
+  description: "Define num. DAV/Pré-Venda"
+
+L1_TPORC:
+  type: string
+  length: 1
+  description: "Define tipo do Orcamento"
+
+L1_CONTDOC:
+  type: string
+  length: 9
+  description: "Numero Contador do Docume"
+
+L1_CONTONF:
+  type: string
+  length: 9
+  description: "Numero Op. Nao Fiscal"
+
+L1_CONTRG:
+  type: string
+  length: 6
+  description: "Numero Rel. Gerenciais"
+
+L1_CONTCDC:
+  type: string
+  length: 6
+  description: "Numero Com. Cred. Debito"
+
+L1_TABELA:
+  type: string
+  length: 3
+  description: "Tabela de preco"
+
+L1_CGCCLI:
+  type: string
+  length: 16
+  description: "CGC/ CPF do Cliente"
+
+L1_TEFBAND:
+  type: string
+  length: 16
+  description: "Nome da bandeira TEF"
+
+L1_TRCXGER:
+  type: L
+  length: 1
+  description: "Transf. Caixa Geral"
+
+L1_MIDIA:
+  type: string
+  length: 6
+  example: 999999
+  description: "Código da Mídia"
+
+L1_TREFETI:
+  type: L
+  length: 1
+  description: "Transf. efetivada"
+
+L1_STATUES:
+  type: string
+  length: 1
+  description: "Status do Estorno"
+
+L1_COODAV:
+  type: string
+  length: 9
+  description: "COO DAV"
+
+L1_PAFMD5:
+  type: string
+  length: 32
+  description: "Chave MD5 do Registro"
+
+L1_SERPDV:
+  type: string
+  length: 21
+  description: "Série ECF"
+
+L1_IMPNF:
+  type: L
+  length: 1
+  description: "Imprime NF"
+
+L1_CARTFID:
+  type: number
+  length: 15
+  description: "Pagamentos Cart Fidelidad"
+
+L1_VALIRRF:
+  type: number
+  length: 14
+  description: "Valor do IRRF"
+
+L1_STORC:
+  type: string
+  length: 1
+  description: "Controle de orcamento"
+
+L1_ARRED:
+  type: number
+  length: 4
+  description: "Decimal arredondamento"
+
+L1_VEND1:
+  type: string
+  length: 6
+  description: "Código Vendedor 1"
+
+L1_VEND4:
+  type: string
+  length: 6
+  description: "Código Vendedor 4"
+
+L1_VEND5:
+  type: string
+  length: 6
+  description: "Código do Vendedor 5"
+
+L1_USRST:
+  type: string
+  length: 6
+  description: "Usr Alt Status Analise"
+
+L1_DTST:
+  type: string
+  format: date
+  length: 8
+  description: "Data Alt Status Analise"
+
+L1_HRST:
+  type: string
+  length: 6
+  description: "Hora Alt Status Analise"
+
+L1_IFSANST:
+  type: option
+  length: 1
+  options: 1=Aprovado;0=Negado;2=Mesa de Crédito;9=Sem análise de crédito/Offline
+  description: "Status Analise Credito"
+
+L1_IFSCDM1:
+  type: string
+  length: 6
+  description: "Codigo da Mensagem do FS"
+
+L1_IFSMSG1:
+  type: M
+  length: 255
+  description: "Mensagem de Retorno do FS"
+
+L1_IFSCDM2:
+  type: string
+  length: 6
+  description: "Codigo da Mensagem do FS"
+
+L1_IFSMSG2:
+  type: M
+  length: 255
+  description: "Msg Analise Crd Financial"
+
+L1_DESCFIN:
+  type: number
+  length: 14
+  description: "Desconto Financeiro"
+
+L1_MARCVEI:
+  type: string
+  length: 30
+  description: "Marca do Veiculo"
+
+L1_MODEVEI:
+  type: string
+  length: 30
+  description: "Modelo Veiculo"
+
+L1_ANOFVEI:
+  type: number
+  length: 4
+  description: "Ano Veiculo"
+
+L1_PLACVEI:
+  type: string
+  length: 15
+  description: "Placa do Veiculo"
+
+L1_RNVMVEI:
+  type: string
+  length: 15
+  description: "RENAVAM do Veiculo"
+
+L1_NUMFAB:
+  type: string
+  length: 30
+  description: "Num. Fabricacao Veiculo"
+
+L1_DVOSORI:
+  type: string
+  length: 10
+  description: "DAV-OS de Origem"
+
+L1_KEYNFCE:
+  type: string
+  length: 44
+  description: "Chave NFCe"
+
+L1_DOCRPS:
+  type: string
+  length: 9
+  description: "Numero da N.F. de Servico"
+
+L1_SERRPS:
+  type: string
+  length: 3
+  description: "Serie da N.F. de Servico"
+
+L1_ORIGEM:
+  type: string
+  length: 1
+  description: "Orcamento Originado da GC"
+
+L1_STBATCH:
+  type: string
+  length: 1
+  description: "Status de Processamento"
+
+L1_UNDOBTC:
+  type: string
+  length: 2
+  description: "Desfaz GrvBatch"
+
+L1_ERROBTC:
+  type: string
+  length: 30
+  description: "Guarda Erro do GrvBatch"
+
+L1_PEDPRS:
+  type: string
+  length: 6
+  description: "Pedido Presente"
+
+L1_CODMNEG:
+  type: string
+  length: 3
+  description: "Codigo da MultiNegociacao"
+
+L1_TIMEATE:
+  type: number
+  length: 10
+  description: "Tempo Atendim. Segundos"
+
+L1_TIMEITE:
+  type: number
+  length: 10
+  description: "Tempo Registro Item"
+
+L1_ECFLAG:
+  type: string
+  length: 1
+  description: "Status e-Commerce"
+
+L1_VLRARR:
+  type: number
+  length: 6
+  description: "Valor de Doacao"
+
+L1_VALINSS:
+  type: number
+  length: 14
+  description: "Valor de retenção de INSS"
+
+L1_UMOVINF:
+  type: string
+  length: 30
+  description: "Informacoes uMov"
+
+L1_UMOV:
+  type: string
+  length: 44
+  description: "Id unico Movimentação"
+
+L1_RECISS:
+  type: optiion
+  length: 1
+  options: 1=Sim;2=Nao
+  description: "Cliente Recolhe ISS?"
+
+L1_MENNOTA:
+  type: string
+  length: 60
+  description: "Mensagem para  Nota"
+
+L1_DOCCCF:
+  type: string
+  length: 9
+  description: "Num Comp. Cancelamento"
+
+L1_ECPEDEC:
+  type: string
+  length: 50
+  description: "Pedido Cliente ECommerce"
+
+L1_CONHTL:
+  type: string
+  length: 32
+  description: "Conta Hotel"
+
+L1_VALCOMI:
+  type: number
+  length: 16
+  description: "Valor de Comissão"
+
+L1_ESPECI1:
+  type: string
+  length: 10
+  description: "Especie 1"
+
+L1_VALFECP:
+  type: number
+  length: 14
+  description: "Valor do FECP"
+
+L1_VFECPST:
+  type: number
+  length: 14
+  description: "Valor do FECP ST"
+
+L1_BASEIPI:
+  type: number
+  length: 14
+  description: "Base de calculo para IPI"
+
+L1_BASFECP:
+  type: number
+  length: 14
+  description: "Base FCP Próprio"
+
+L1_BSFCPST:
+  type: number
+  length: 14
+  description: "Base FCP ST"
+
+L1_LTRAN:
+  type: string
+  length: 41
+  description: "Lei Transparência"
+
+L1_PRONFCE:
+  type: string
+  length: 15
+  description: "Num. Protocolo da NFCe"
+
+L1_RESEHTL:
+  type: string
+  length: 32
+  description: "Reserva Hotel"
+
+L1_TOTEST:
+  type: number
+  length: 14
+  description: "Impostos Estaduais"
+
+L1_TOTFED:
+  type: number
+  length: 14
+  description: "Impostos Federais"
+
+L1_TOTMUN:
+  type: number
+  length: 14
+  description: "Impostos Municipais"
+
+L1_ECRASTR:
+  type: string
+  length: 20
+  description: "Rastreio do Pedido E-com"
+
+L1_ECSTATU:
+  type: string
+  length: 2
+  description: "Status e-commerce enviado"
+
+L1_VLRJUR:
+  type: number
+  length: 16
+  description: "Valor de juros"
+
+L1_NUMFRT:
+  type: string
+  length: 6
+  description: "Numero Orcam FrontLoja"
+
+L1_ERGRVBT:
+  type: M
+  length: 10
+  description: "Erro GravaBatch"
+
+L1_VEICUL1:
+  type: string
+  length: 8
+  description: "Codigo do Veiculo."
+
+L1_RETSFZ:
+  type: string
+  length: 128
+  description: "Retorno da SEFAZ"
+
+L1_PRODUTO:
+  type: string
+  length: 30
+  description: "Produto"
+
+L1_SERSAT:
+  type: string
+  length: 9
+  description: "Número de Série do SAT"
+
+L1_VLRPGPX:
+  type: number
+  length: 15
+  description: "Total de Pagto. em PIX"
+
+L1_FIDCORE:
+  type: L
+  length: 1
+  description: "Núcleo de Fidelização"
+
+L1_DESCFID:
+  type: number
+  length: 14
+  description: "Desconto da Fidelização"
+
+L1_SDOC:
+  type: string
+  length: 3
+  description: "Série do Documento Fiscal"
+
+L1_SDOCPED:
+  type: string
+  length: 3
+  description: "Série da Nota Fiscal"
+
+L1_SDOCRPS:
+  type: string
+  length: 3
+  description: "Série da N.F. de Servico"
+
+L1_SDOCSUB:
+  type: string
+  length: 3
+  description: "Sub Série"
+
+L1_DTUMOV:
+  type: string
+  format: date
+  length: 8
+  description: "DT uMov"
+
+L1_HRUMOV:
+  type: string
+  length: 5
+  example: 99:99
+  description: "HR uMov"
+
+L1_INDPRES:
+  type: option
+  length: 1
+  options: 1=Presencial;2=Não Presencial;3=Não Presenc. TeleAtendi.;4=Entrega Domicilio;5=PresencialForaEstab.;9=Não Presencialoutros
+  description: "Presença Comprador"
+
+L1_INTERMD:
+  type: string
+  length: 6
+  description: "Código Intermediador"
+
+L1_VLRPGDG:
+  type: number
+  length: 15
+  description: "Total em Pagto. Digital"
+
+L1_TEL:
+  type: string
+  length: 15
+  description: "Telefone"
