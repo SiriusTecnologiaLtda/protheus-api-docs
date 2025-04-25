@@ -1139,7 +1139,8 @@ properties:
         type: string
         length: 15
         description: "Telefone"
-
+    required:
+      []
   SL2:
     type: object
     properties:
@@ -2064,7 +2065,8 @@ properties:
         type: number
         length: 14
         description: "Valor do FECP ST"
-
+    required:
+      []
   SL4:
     type: object
     properties:
@@ -2388,3 +2390,5 @@ properties:
         type: string
         length: 100
         description: ID da Transação Externa
+    required:
+      []
