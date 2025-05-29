@@ -4,28 +4,28 @@ get:
   summary: EndPoint para retornar um titulo a receber pelo código
   operationId: getTitulosAReceberById
   parameters:
-    - name: "E1_PREFIXO"
+    - name: "prefixo"
       in: path
       description: Número do prefixo do titulo a receber
       required: false
       schema:
         type: string
         example: "001"
-    - name: "E1_NUM"
+    - name: "codigo"
       in: path
       description: Número do código do titulo a receber
       required: true
       schema:
         type: string
         example: "000001"
-    - name: "E1_PARCELA"
+    - name: "parcela"
       in: path
       description: Número da parcela do titulo a receber
       required: false
       schema:
         type: string
         example: "01"
-    - name: "E1_TIPO"
+    - name: "tipo"
       in: path
       description: Número do tipo do titulo a receber
       required: false
@@ -86,28 +86,28 @@ put:
   summary: EndPoint para alterar um titulo a receber pelo código
   operationId: UpdateTitulosAReceber
   parameters:
-    - name: "E1_PREFIXO"
+    - name: "prefixo"
       in: path
       description: Número do prefixo do titulo a receber
       required: true
       schema:
         type: string
         example: "001"
-    - name: "E1_NUM"
+    - name: "codigo"
       in: path
       description: Número do código do titulo a receber
       required: true
       schema:
         type: string
         example: "000001"
-    - name: "E1_PARCELA"
+    - name: "parcela"
       in: path
       description: Número da parcela do titulo a receber
       required: true
       schema:
         type: string
         example: "01"
-    - name: "E1_TIPO"
+    - name: "tipo"
       in: path
       description: Número do tipo do titulo a receber
       required: true
@@ -199,28 +199,28 @@ delete:
   summary: EndPoint para deletar um titulo a receber pelo código
   operationId: deleteTitulosAReceberById
   parameters:
-    - name: "E1_PREFIXO"
+    - name: "prefixo"
       in: path
       description: Número do prefixo do titulo a receber
       required: true
       schema:
         type: string
         example: "001"
-    - name: "E1_NUM"
+    - name: "codigo"
       in: path
       description: Número do código do titulo a receber
       required: true
       schema:
         type: string
         example: "000001"
-    - name: "E1_PARCELA"
+    - name: "parcela"
       in: path
       description: Número da parcela do titulo a receber
       required: true
       schema:
         type: string
         example: "01"
-    - name: "E1_TIPO"
+    - name: "tipo"
       in: path
       description: Número do tipo do titulo a receber
       required: true

@@ -4,14 +4,14 @@ get:
   summary: EndPoint para retornar um fornecedor pelo código
   operationId: getFornecedorById
   parameters:
-    - name: "A2_COD"
+    - name: "codigo"
       in: path
       description: Número do código do fornecedor
       required: true
       schema:
         type: string
         example: "1"
-    - name: "A2_LOJA"
+    - name: "loja"
       in: path
       description: Número da loja do fornecedor
       required: true
@@ -72,14 +72,14 @@ put:
   summary: EndPoint para alterar um fornecedor pelo código
   operationId: UpdateFornecedor
   parameters:
-    - name: "A2_COD"
+    - name: "codigo"
       in: path
       description: Número do código do fornecedor
       required: true
       schema:
         type: string
         example: "1"
-    - name: "A2_LOJA"
+    - name: "loja"
       in: path
       description: Número da loja do fornecedor
       required: true
@@ -165,14 +165,14 @@ delete:
   summary: EndPoint para deletar um fornecedor pelo código
   operationId: deleteFornecedorById
   parameters:
-    - name: "A2_COD"
+    - name: "codigo"
       in: path
       description: Número do código do fornecedor
       required: true
       schema:
         type: string
         example: "1"
-    - name: "A2_LOJA"
+    - name: "loja"
       in: path
       description: Número da loja do fornecedor
       required: true

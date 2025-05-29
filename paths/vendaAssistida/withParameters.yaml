@@ -4,7 +4,7 @@ get:
   summary: EndPoint para retornar uma venda assistida pelo código
   operationId: getVendaAssistidaById
   parameters:
-    - name: "L1_NUM"
+    - name: "codigo"
       in: path
       description: Número do código da venda assistida
       required: true
@@ -65,7 +65,7 @@ put:
   summary: EndPoint para alterar uma venda assistida pelo código
   operationId: UpdateVendaAssistida
   parameters:
-    - name: "L1_NUM"
+    - name: "codigo"
       in: path
       description: Número do código da venda assistida
       required: true
@@ -148,7 +148,7 @@ delete:
   summary: EndPoint para deletar uma venda assistida pelo código
   operationId: deleteVendaAssistidaById
   parameters:
-    - name: "L1_NUM"
+    - name: "codigo"
       in: path
       description: Número do código da venda assistida
       required: true

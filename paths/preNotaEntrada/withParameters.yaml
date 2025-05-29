@@ -4,28 +4,28 @@ get:
   summary: EndPoint para retornar uma pré nota de entrada pelo código
   operationId: getPreNotaEntradaById
   parameters:
-    - name: "F1_DOC"
+    - name: "codigo"
       in: path
       description: Número do documento
       required: true
       schema:
         type: string
         example: "000000001"
-    - name: "F1_SERIE"
+    - name: "serie"
       in: path
       description: Número da serie do documento
       required: true
       schema:
         type: string
         example: "001"
-    - name: "F1_FORNECEDOR"
+    - name: "fornecedor"
       in: path
       description: Número do fornecedor
       required: true
       schema:
         type: string
         example: "000001"
-    - name: "F1_LOJA"
+    - name: "loja"
       in: path
       description: Número da loja do fornecedor
       required: true
@@ -86,28 +86,28 @@ put:
   summary: EndPoint para alterar uma pré nota de entrada pelo código
   operationId: UpdatePreNotaEntrada
   parameters:
-    - name: "F1_DOC"
+    - name: "codigo"
       in: path
       description: Número do documento
       required: true
       schema:
         type: string
         example: "000000001"
-    - name: "F1_SERIE"
+    - name: "serie"
       in: path
       description: Número da serie do documento
       required: true
       schema:
         type: string
         example: "001"
-    - name: "F1_FORNECEDOR"
+    - name: "fornecedor"
       in: path
       description: Número do fornecedor
       required: true
       schema:
         type: string
         example: "000001"
-    - name: "F1_LOJA"
+    - name: "loja"
       in: path
       description: Número da loja do fornecedor
       required: true
@@ -199,28 +199,28 @@ delete:
   summary: EndPoint para deletar uma pré nota de entrada pelo código
   operationId: deletePreNotaEntradaById
   parameters:
-    - name: "F1_DOC"
+    - name: "codigo"
       in: path
       description: Número do documento
       required: true
       schema:
         type: string
         example: "000000001"
-    - name: "F1_SERIE"
+    - name: "serie"
       in: path
       description: Número da serie do documento
       required: true
       schema:
         type: string
         example: "001"
-    - name: "F1_FORNECEDOR"
+    - name: "fornecedor"
       in: path
       description: Número do fornecedor
       required: true
       schema:
         type: string
         example: "000001"
-    - name: "F1_LOJA"
+    - name: "loja"
       in: path
       description: Número da loja do fornecedor
       required: true

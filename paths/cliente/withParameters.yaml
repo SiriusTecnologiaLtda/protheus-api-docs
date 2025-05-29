@@ -4,14 +4,14 @@ get:
   summary: EndPoint para retornar um cliente pelo código
   operationId: getClienteById
   parameters:
-    - name: "A1_COD"
+    - name: "codigo"
       in: path
       description: Número do código do cliente
       required: true
       schema:
         type: string
         example: "000001"
-    - name: "A1_LOJA"
+    - name: "loja"
       in: path
       description: Nuémro da loja do cliente
       required: true

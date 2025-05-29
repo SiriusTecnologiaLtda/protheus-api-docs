@@ -4,7 +4,7 @@ get:
   summary: EndPoint para retornar um pedido de venda pelo código
   operationId: getPedidoDeVendaById
   parameters:
-    - name: "C5_NUM"
+    - name: "codigo"
       in: path
       description: Número do documento
       required: true
@@ -65,7 +65,7 @@ put:
   summary: EndPoint para alterar um pedido de venda pelo código
   operationId: UpdatePedidoDeVenda
   parameters:
-    - name: "C5_NUM"
+    - name: "codigo"
       in: path
       description: Número do documento
       required: true
@@ -154,7 +154,7 @@ delete:
   summary: EndPoint para deletar um pedido de venda pelo código
   operationId: deletePedidoDeVendaById
   parameters:
-    - name: "C5_NUM"
+    - name: "codigo"
       in: path
       description: Número do documento
       required: true

@@ -4,7 +4,7 @@ get:
   summary: EndPoint para retornar um item contabil pelo código
   operationId: getItemContabilById
   parameters:
-    - name: "CTD_ITEM"
+    - name: "codigo"
       in: path
       description: Número do item contabil
       required: true
@@ -65,7 +65,7 @@ put:
   summary: EndPoint para alterar um item contabil pelo código
   operationId: UpdateItemContabil
   parameters:
-    - name: "CTD_ITEM"
+    - name: "codigo"
       in: path
       description: Número do item contabil
       required: true
@@ -148,7 +148,7 @@ delete:
   summary: EndPoint para deletar um item contabil pelo código
   operationId: deleteItemContabilById
   parameters:
-    - name: "CTD_ITEM"
+    - name: "codigo"
       in: path
       description: Número do item contabil
       required: true

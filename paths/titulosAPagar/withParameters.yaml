@@ -4,42 +4,42 @@ get:
   summary: EndPoint para retornar um titulo a pagar pelo código
   operationId: getTitulosAPagarById
   parameters:
-    - name: "E2_PREFIXO"
+    - name: "prefixo"
       in: path
       description: Número do prefixo do titulo a pagar
       required: false
       schema:
         type: string
         example: "001"
-    - name: "E2_NUM"
+    - name: "codigo"
       in: path
       description: Número do código do titulo a pagar
       required: true
       schema:
         type: string
         example: "000001"
-    - name: "E2_PARCELA"
+    - name: "parcela"
       in: path
       description: Número da parcela do titulo a pagar
       required: false
       schema:
         type: string
         example: "01"
-    - name: "E2_TIPO"
+    - name: "tipo"
       in: path
       description: Número do tipo do titulo a pagar
       required: false
       schema:
         type: string
         example: "001"
-    - name: "E2_FORNECE"
+    - name: "fornecedor"
       in: path
       description: Número do fornecedor do titulo a pagar
       required: false
       schema:
         type: string
         example: "000001"
-    - name: "E2_LOJA"
+    - name: "loja"
       in: path
       description: Número da loja do titulo a pagar
       required: false
@@ -100,42 +100,42 @@ put:
   summary: EndPoint para alterar um titulo a pagar pelo código
   operationId: UpdateTitulosAPagar
   parameters:
-    - name: "E2_PREFIXO"
+    - name: "prefixo"
       in: path
       description: Número do prefixo do titulo a pagar
       required: true
       schema:
         type: string
         example: "001"
-    - name: "E2_NUM"
+    - name: "codigo"
       in: path
       description: Número do código do titulo a pagar
       required: true
       schema:
         type: string
         example: "000001"
-    - name: "E2_PARCELA"
+    - name: "parcela"
       in: path
       description: Número da parcela do titulo a pagar
       required: true
       schema:
         type: string
         example: "01"
-    - name: "E2_TIPO"
+    - name: "tipo"
       in: path
       description: Número do tipo do titulo a pagar
       required: true
       schema:
         type: string
         example: "001"
-    - name: "E2_FORNECE"
+    - name: "fornecedor"
       in: path
       description: Número do fornecedor do titulo a pagar
       required: true
       schema:
         type: string
         example: "000001"
-    - name: "E2_LOJA"
+    - name: "loja"
       in: path
       description: Número da loja do titulo a pagar
       required: true
@@ -233,42 +233,42 @@ delete:
   summary: EndPoint para deletar um titulo a pagar pelo código
   operationId: deleteTitulosAPagarById
   parameters:
-    - name: "E2_PREFIXO"
+    - name: "prefixo"
       in: path
       description: Número do prefixo do titulo a pagar
       required: true
       schema:
         type: string
         example: "001"
-    - name: "E2_NUM"
+    - name: "codigo"
       in: path
       description: Número do código do titulo a pagar
       required: true
       schema:
         type: string
         example: "000001"
-    - name: "E2_PARCELA"
+    - name: "parcela"
       in: path
       description: Número da parcela do titulo a pagar
       required: true
       schema:
         type: string
         example: "01"
-    - name: "E2_TIPO"
+    - name: "tipo"
       in: path
       description: Número do tipo do titulo a pagar
       required: true
       schema:
         type: string
         example: "001"
-    - name: "E2_FORNECE"
+    - name: "fornecedor"
       in: path
       description: Número do fornecedor do titulo a pagar
       required: true
       schema:
         type: string
         example: "000001"
-    - name: "E2_LOJA"
+    - name: "loja"
       in: path
       description: Número da loja do titulo a pagar
       required: true

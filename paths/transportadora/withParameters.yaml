@@ -4,7 +4,7 @@ get:
   summary: EndPoint para retornar uma transportadora pelo código
   operationId: getTransportadoraById
   parameters:
-    - name: "A4_COD"
+    - name: "codigo"
       in: path
       description: Número do código da transportadora
       required: true
@@ -65,7 +65,7 @@ put:
   summary: EndPoint para alterar uma transportadora pelo código
   operationId: UpdateTransportadora
   parameters:
-    - name: "A4_COD"
+    - name: "codigo"
       in: path
       description: Número do código da transportadora
       required: true
@@ -148,7 +148,7 @@ delete:
   summary: EndPoint para deletar uma transportadora pelo código
   operationId: deleteTransportadoraById
   parameters:
-    - name: "A4_COD"
+    - name: "codigo"
       in: path
       description: Número do código da transportadora
       required: true

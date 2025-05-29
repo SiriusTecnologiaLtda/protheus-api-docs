@@ -4,21 +4,21 @@ get:
   summary: EndPoint para retornar o estoque pelo código do produto ou por filtro
   operationId: getEstoqueById
   parameters:
-    - name: "B2_COD"
+    - name: "codigo"
       in: path
       description: Número do código do produto
       required: true
       schema:
         type: string
         example: "1"
-    - name: "B2_QATU"
+    - name: "estoquePositivoSB2"
       in: path
       description: Pegar apenas estoque positivo
       required: true
       schema:
         type: string
         example: "true"
-    - name: "B6_SALDO"
+    - name: "estoquePositivoSB6"
       in: path
       description: Pegar apenas estoque positivo em poder de terceiro
       required: true

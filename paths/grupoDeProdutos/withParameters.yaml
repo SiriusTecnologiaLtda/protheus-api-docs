@@ -4,7 +4,7 @@ get:
   summary: EndPoint para retornar um grupo de produtos pelo código
   operationId: getGrupoDeProdutosById
   parameters:
-    - name: "BM_GRUPO"
+    - name: "codigo"
       in: path
       description: Número do código do grupo de produtos
       required: true
@@ -65,7 +65,7 @@ put:
   summary: EndPoint para alterar um grupo de produtos pelo código
   operationId: UpdateGrupoDeProdutos
   parameters:
-    - name: "BM_GRUPO"
+    - name: "codigo"
       in: path
       description: Número do código do grupo de produtos
       required: true
@@ -151,7 +151,7 @@ delete:
   summary: EndPoint para deletar um grupo de produtos pelo código
   operationId: deleteGrupoDeProdutosById
   parameters:
-    - name: "BM_GRUPO"
+    - name: "codigo"
       in: path
       description: Número do código do grupo de produtos
       required: true

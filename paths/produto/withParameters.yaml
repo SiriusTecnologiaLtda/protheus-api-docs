@@ -4,7 +4,7 @@ get:
   summary: EndPoint para retornar um produto pelo código
   operationId: getProdutoById
   parameters:
-    - name: "B1_COD"
+    - name: "codigo"
       in: path
       description: Número do código do produto
       required: true
@@ -65,7 +65,7 @@ put:
   summary: EndPoint para alterar um produto pelo código
   operationId: UpdateProduto
   parameters:
-    - name: "B1_COD"
+    - name: "codigo"
       in: path
       description: Número do código do produto
       required: true
@@ -148,7 +148,7 @@ delete:
   summary: EndPoint para deletar um produto pelo código
   operationId: deleteProdutoById
   parameters:
-    - name: "B1_COD"
+    - name: "codigo"
       in: path
       description: Número do código do produto
       required: true
