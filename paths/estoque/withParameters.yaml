@@ -25,6 +25,13 @@ get:
       schema:
         type: string
         example: "true"
+    - name: "exclusivoSB2"
+      in: path
+      description: Retorna apenas a tabela SB2
+      required: true
+      schema:
+        type: string
+        example: "true"
   responses:
     "200":
       description: Successful response
