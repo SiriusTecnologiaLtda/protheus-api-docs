@@ -122,7 +122,7 @@ components:
       $ref: "./paths/grupoDeProdutos/schemas/SBM.yaml"
 
     Produtos:
-      $ref: "./paths/produto/schemas/SB1+SB2+SB5.yaml"
+      $ref: "./paths/produto/schemas/SB1+SB5.yaml"
 
     TitulosAReceber:
       $ref: "./paths/titulosAReceber/schemas/SE1.yaml"
