@@ -1,0 +1,462 @@
+type: object
+properties:
+  B2_FILIAL:
+    type: string
+    length: 4
+    description: "Filial do Sistema"
+
+  B2_COD:
+    type: string
+    length: 15
+    description: "Codigo do produto"
+
+  B2_QFIM:
+    type: number
+    length: 12
+    description: "Saldo em qtde no fim mes"
+
+  B2_LOCAL:
+    type: string
+    length: 2
+    description: "Armazem do Produto"
+
+  B2_DPROD:
+    type: string
+    length: 30
+    description: "Descrição do Produto"
+
+  B2_QATU:
+    type: number
+    length: 12
+    description: "Saldo atual"
+
+  B2_VFIM1:
+    type: number
+    length: 14
+    description: "Valor final p/transferir"
+
+  B2_VATU1:
+    type: number
+    length: 14
+    description: "Saldo atual em valor"
+
+  B2_CM1:
+    type: number
+    length: 14
+    description: "Custo Unitario do produto"
+
+  B2_VFIM2:
+    type: number
+    length: 14
+    description: "Val.final 2a moeda p/tran"
+
+  B2_VATU2:
+    type: number
+    length: 14
+    description: "Saldo atual na 2a moeda"
+
+  B2_CM2:
+    type: number
+    length: 14
+    description: "Custo unit. na 2a moeda"
+
+  B2_VFIM3:
+    type: number
+    length: 14
+    description: "Val.final 3a moeda p/tran"
+
+  B2_VATU3:
+    type: number
+    length: 14
+    description: "Saldo atual na 3a moeda"
+
+  B2_CM3:
+    type: number
+    length: 14
+    description: "Custo unit. na 3a moeda"
+
+  B2_VFIM4:
+    type: number
+    length: 14
+    description: "Val.final 4a moeda p/tran"
+
+  B2_VATU4:
+    type: number
+    length: 14
+    description: "Saldo atual na 4a moeda"
+
+  B2_CM4:
+    type: number
+    length: 14
+    description: "Custo unit. na 4a moeda"
+
+  B2_VFIM5:
+    type: number
+    length: 14
+    description: "Val.final 5a moeda p/tran"
+
+  B2_VATU5:
+    type: number
+    length: 14
+    description: "Saldo atual na 5a moeda"
+
+  B2_CM5:
+    type: number
+    length: 14
+    description: "Custo unit. na 5a moeda"
+
+  B2_QEMP:
+    type: number
+    length: 12
+    description: "Quantidade Empenhada"
+
+  B2_QEMPN:
+    type: number
+    length: 12
+    description: "Qtde Empenhada para N.F.s"
+
+  B2_QTSEGUM:
+    type: number
+    length: 12
+    description: "Qtde na Segunda Unidade"
+
+  B2_USAI:
+    type: string
+    format: date
+    length: 8
+    description: "Data da Ultima saida"
+
+  B2_RESERVA:
+    type: number
+    length: 12
+    description: "Quantidade Reservada"
+
+  B2_QPEDVEN:
+    type: number
+    length: 12
+    description: "Quantidade Pedido Vendas"
+
+  B2_LOCALIZ:
+    type: string
+    length: 15
+    description: "Endereco"
+
+  B2_NAOCLAS:
+    type: number
+    length: 12
+    description: "Quantidade nao Enderecada"
+
+  B2_SALPEDI:
+    type: number
+    length: 12
+    description: "Qtde prevista p/ entrar"
+
+  B2_DINVENT:
+    type: string
+    format: date
+    length: 8
+    description: "Data do ultimo inventario"
+
+  B2_DINVFIM:
+    type: string
+    format: date
+    length: 8
+    description: "Dt Bloqueio Invent Final"
+
+  B2_QTNP:
+    type: number
+    length: 12
+    description: "Qtd. Terc. em Nosso Poder"
+
+  B2_QNPT:
+    type: number
+    length: 12
+    description: "Qtd. Nosso em Poder Terc."
+
+  B2_QTER:
+    type: number
+    length: 12
+    description: "Saldo Poder 3."
+
+  B2_QFIM2:
+    type: number
+    length: 12
+    description: "Qtd. Fim mes 2a UM"
+
+  B2_QACLASS:
+    type: number
+    length: 12
+    description: "Quantidade a Enderecar"
+
+  B2_DTINV:
+    type: string
+    format: date
+    length: 8
+    description: "Dt Bloqueio Inven Inicial"
+
+  B2_CMFF1:
+    type: number
+    length: 14
+    description: "Custo Unit. do prod. FIFO"
+
+  B2_CMFF2:
+    type: number
+    length: 14
+    description: "Custo Unit. do prod. FIFO"
+
+  B2_CMFF3:
+    type: number
+    length: 14
+    description: "Custo Unit. do prod. FIFO"
+
+  B2_CMFF4:
+    type: number
+    length: 14
+    description: "Custo Unit. do prod. FIFO"
+
+  B2_CMFF5:
+    type: number
+    length: 14
+    description: "Custo Unit. do prod. FIFO"
+
+  B2_VFIMFF1:
+    type: number
+    length: 14
+    description: "Val.final p/transferir"
+
+  B2_VFIMFF2:
+    type: number
+    length: 14
+    description: "Val.final 2a moeda p/tran"
+
+  B2_VFIMFF3:
+    type: number
+    length: 14
+    description: "Val.final 3a moeda p/tran"
+
+  B2_VFIMFF4:
+    type: number
+    length: 14
+    description: "Val.final 4a moeda p/tran"
+
+  B2_VFIMFF5:
+    type: number
+    length: 14
+    description: "Val.final 5a moeda p/tran"
+
+  B2_QEMPSA:
+    type: number
+    length: 12
+    description: "Quantidade Prevista SA"
+
+  B2_QEMPPRE:
+    type: number
+    length: 12
+    description: "Quantidade Empenhada Prev"
+
+  B2_SALPPRE:
+    type: number
+    length: 12
+    description: "Qtde prevista OP Prevista"
+
+  B2_QEMP2:
+    type: number
+    length: 12
+    description: "Qtde Empenhada na 2a UM"
+
+  B2_QEMPN2:
+    type: number
+    length: 12
+    description: "Qtde Empenhada P/ NF 2aUM"
+
+  B2_RESERV2:
+    type: number
+    length: 12
+    description: "Quantidade Reservada 2aUM"
+
+  B2_QPEDVE2:
+    type: number
+    length: 12
+    description: "Qtde Pedido Vendas 2a UM"
+
+  B2_QEPRE2:
+    type: number
+    length: 12
+    description: "Qtde. Emp. Prevista 2a UM"
+
+  B2_QFIMFF:
+    type: number
+    length: 12
+    description: "Saldo em qtde no fim mes"
+
+  B2_SALPED2:
+    type: number
+    length: 12
+    description: "Qtde Prevista 2a UM"
+
+  B2_QEMPPRJ:
+    type: number
+    length: 12
+    description: "Quantidade Empenhada Prj."
+
+  B2_CODGRP:
+    type: string
+    length: 4
+    description: "Grupo Veiculos/Oficina"
+
+  B2_CODITE:
+    type: string
+    length: 27
+    description: "Produto Veiculos/Oficina"
+
+  B2_QEMPPR2:
+    type: number
+    length: 12
+    description: "Quant Empenhada Proj 2 UM"
+
+  B2_STATUS:
+    type: string
+    length: 1
+    options: 1=Disponivel;2=Indisponivel
+    example: "option"
+    description: "Status do Saldo do Armaz."
+
+  B2_CMFIM1:
+    type: number
+    length: 14
+    description: "Custo unitario do produto"
+
+  B2_CMFIM2:
+    type: number
+    length: 14
+    description: "Custo unitario do produto"
+
+  B2_CMFIM3:
+    type: number
+    length: 14
+    description: "Custo unitario do produto"
+
+  B2_CMFIM4:
+    type: number
+    length: 14
+    description: "Custo unitario do produto"
+
+  B2_CMFIM5:
+    type: number
+    length: 14
+    description: "Custo unitario do produto"
+
+  B2_TIPO:
+    type: string
+    length: 1
+    options: 1=Padrao;2=Proprio;3=Terceiros;4=Alugados;5=Consignados
+    example: "option"
+    description: "Tipo do Armazem"
+
+  B2_CMRP1:
+    type: number
+    length: 14
+    description: "Custo Unitario Reposicao"
+
+  B2_VFRP1:
+    type: number
+    length: 14
+    description: "Valor Final de Reposicao"
+
+  B2_CMRP2:
+    type: number
+    length: 14
+    description: "Rep. Unit. na 2a. Moeda"
+
+  B2_VFRP2:
+    type: number
+    length: 14
+    description: "Vlr. Final Reposicao 2a M"
+
+  B2_CMRP3:
+    type: number
+    length: 14
+    description: "Rep. Unit. na 3a. Moeda"
+
+  B2_VFRP3:
+    type: number
+    length: 14
+    description: "Vlr. Final Reposicao 3a M"
+
+  B2_CMRP4:
+    type: number
+    length: 14
+    description: "Rep. Unit. na 4a. Moeda"
+
+  B2_VFRP4:
+    type: number
+    length: 14
+    description: "Vlr. Final Reposicao 4a M"
+
+  B2_CMRP5:
+    type: number
+    length: 14
+    description: "Rep. Unit. na 5a. Moeda"
+
+  B2_VFRP5:
+    type: number
+    length: 14
+    description: "Vlr. Final Reposicao 5a M"
+
+  B2_QULT:
+    type: number
+    length: 12
+    description: "Último Saldo em Estoque"
+
+  B2_DULT:
+    type: string
+    format: date
+    length: 8
+    description: "Data do Último Envio"
+
+  B2_BLOQUEI:
+    type: string
+    length: 1
+    options: 1=Nenhum;2=Consumo;3=Producao;4=Cons/Prod
+    example: "option"
+    description: "Tipo de Bloqueio"
+
+  B2_HULT:
+    type: string
+    length: 8
+    example: 99:99:99
+    description: "Hora do ultimo envio"
+
+  B2_DMOV:
+    type: string
+    format: date
+    length: 8
+    description: "Data do ultimo movimento"
+
+  B2_HMOV:
+    type: string
+    length: 8
+    example: 99:99:99
+    description: "Hora do ultimo movimento"
+
+  B2_XDTFIN:
+    type: string
+    format: date
+    length: 8
+    description: "Fechamento Final"
+
+  B2_XDTINI:
+    type: string
+    format: date
+    length: 8
+    description: "Fechamento inicial"
+
+  B2_MSEXP:
+    type: string
+    length: 8
+    description: "Ident.Export.Dados"
+
+  B2_ECSALDO:
+    type: number
+    length: 12
+    description: "Saldo E-Commerce"

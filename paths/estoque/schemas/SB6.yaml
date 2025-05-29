@@ -1,0 +1,225 @@
+type: object
+properties:
+  B6_ATEND:
+    type: string
+    length: 1
+    description: "Indica se atendido"
+
+  B6_CLIFOR:
+    type: string
+    length: 6
+    description: "Codigo do Cliente/Fornec."
+
+  B6_CLIPROP:
+    type: string
+    length: 6
+    description: "Cliente proprietario"
+
+  B6_CUSFF1:
+    type: number
+    length: 14
+    description: "Custo FIFO do Produto"
+
+  B6_CUSFF2:
+    type: number
+    length: 14
+    description: "Custo FIFO do Produto M.2"
+
+  B6_CUSFF3:
+    type: number
+    length: 14
+    description: "Custo FIFO do Produto M.3"
+
+  B6_CUSFF4:
+    type: number
+    length: 14
+    description: "Custo FIFO do Produto M.4"
+
+  B6_CUSFF5:
+    type: number
+    length: 14
+    description: "Custo FIFO do Produto M.5"
+
+  B6_CUSRP1:
+    type: number
+    length: 14
+    description: "Custo de Reposicao"
+
+  B6_CUSRP2:
+    type: number
+    length: 14
+    description: "Custo de Reposicao 2a M"
+
+  B6_CUSRP3:
+    type: number
+    length: 14
+    description: "Custo de Reposicao 3a M"
+
+  B6_CUSRP4:
+    type: number
+    length: 14
+    description: "Custo de Reposicao 4a M"
+
+  B6_CUSRP5:
+    type: number
+    length: 14
+    description: "Custo de Reposicao 5a M"
+
+  B6_CUSTO1:
+    type: number
+    length: 14
+    description: "Custo do Produto"
+
+  B6_CUSTO2:
+    type: number
+    length: 14
+    description: "Custo do Produto Moeda 2"
+
+  B6_CUSTO3:
+    type: number
+    length: 14
+    description: "Custo do Produto Moeda 3"
+
+  B6_CUSTO4:
+    type: number
+    length: 14
+    description: "Custo do Produto Moeda 4"
+
+  B6_CUSTO5:
+    type: number
+    length: 14
+    description: "Custo do Produto Moeda 5"
+
+  B6_DOC:
+    type: string
+    length: 9
+    description: "No.do Documento de Origem"
+
+  B6_DTDIGIT:
+    type: D
+    length: 8
+    description: "Data de Lancamento"
+
+  B6_EMISSAO:
+    type: D
+    length: 8
+    description: "Data de Emissao do Doc."
+
+  B6_ESTOQUE:
+    type: string
+    length: 1
+    options: S=Sim;N=Não
+    example: "option"
+    description: "Atualiza Estoque?"
+
+  B6_FILIAL:
+    type: string
+    length: 2
+    description: "Filial do Sistema"
+
+  B6_IDENT:
+    type: string
+    length: 6
+    description: "Sequencia Identificadora"
+
+  B6_IDENTB6:
+    type: string
+    length: 6
+    description: "Idenficador de Origem"
+
+  B6_LJCLIPR:
+    type: string
+    length: 2
+    description: "Loja Cliente Proprietario"
+
+  B6_LOCAL:
+    type: string
+    length: 2
+    description: "Armazem do Produto"
+
+  B6_LOJA:
+    type: string
+    length: 2
+    description: "Loja do Cliente/Fornec."
+
+  B6_ORIGLAN:
+    type: string
+    length: 2
+    description: "Origem do Lancamento"
+
+  B6_PODER3:
+    type: string
+    length: 1
+    description: "Indica se Remessa ou Dev."
+
+  B6_PRODUTO:
+    type: string
+    length: 15
+    description: "Codigo do Produto"
+
+  B6_PRUNIT:
+    type: number
+    length: 12
+    description: "Preco Unitario"
+
+  B6_QTSEGUM:
+    type: number
+    length: 16
+    description: "Quant. Seg. Unid. Medida"
+
+  B6_QUANT:
+    type: number
+    length: 16
+    description: "Quantidade"
+
+  B6_QULIB:
+    type: number
+    length: 16
+    description: "Quantidade Liberada"
+
+  B6_SALDO:
+    type: number
+    length: 16
+    description: "Saldo Poder Terceiros"
+
+  B6_SDOC:
+    type: string
+    length: 3
+    description: "Série do Documento Fiscal"
+
+  B6_SEGUM:
+    type: string
+    length: 2
+    description: "Unidade Seg. Medida"
+
+  B6_SERIE:
+    type: string
+    length: 3
+    description: "Serie do documento origem"
+
+  B6_TES:
+    type: string
+    length: 3
+    description: "Codigo do TES"
+
+  B6_TIPO:
+    type: string
+    length: 1
+    options: E=Em Terceiros;D=De Terceiros
+    example: "option"
+    description: "Tipo de Movimento DE/EM"
+
+  B6_TPCF:
+    type: string
+    length: 1
+    description: "Indica se Clie. ou Forn."
+
+  B6_UENT:
+    type: D
+    length: 8
+    description: "Data da Ultima Entrega"
+
+  B6_UM:
+    type: string
+    length: 2
+    description: "Unidade de Medida"

@@ -28,6 +28,7 @@ tags:
   - name: PreNotaEntrada
   - name: PedidoDeVenda
   - name: VendaAssistida
+  - name: Estoque
 
 paths:
   /api/v1/fornecedor:
@@ -95,6 +96,12 @@ paths:
 
   /api/v1/vendaAssistida/{L1_NUM}:
     $ref: './paths/vendaAssistida/withParameters.yaml'
+  
+  /api/v1/estoque:
+    $ref: './paths/estoque/noParameters.yaml'
+  
+  /api/v1/estoque/{B2_COD}/{B2_QATU}/{B6_SALDO}:
+    $ref: './paths/estoque/withParameters.yaml'
 
 components:
   securitySchemes:
@@ -134,6 +141,9 @@ components:
     
     VendaAssistida:
       $ref: "./paths/vendaAssistida/schemas/SL1+SL2+SL4.yaml"
+    
+    Estoque:
+      $ref: "./paths/estoque/schemas/SB2+SB6.yaml"
 
   responses:
     UnauthorizedError:

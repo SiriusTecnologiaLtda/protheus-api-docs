@@ -17,7 +17,7 @@ get:
       content:
         application/json:
           schema:
-            $ref: "./schemas/SB1+SB2+SB5.yaml"
+            $ref: "./schemas/SB1+SB5.yaml"
     "400":
       description: Invalid input
       content:

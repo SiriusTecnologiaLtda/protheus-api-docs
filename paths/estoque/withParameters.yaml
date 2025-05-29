@@ -1,0 +1,74 @@
+get:
+  tags:
+    - Estoque
+  summary: EndPoint para retornar o estoque pelo código do produto ou por filtro
+  operationId: getEstoqueById
+  parameters:
+    - name: "B2_COD"
+      in: path
+      description: Número do código do produto
+      required: true
+      schema:
+        type: string
+        example: "1"
+    - name: "B2_QATU"
+      in: path
+      description: Pegar apenas estoque positivo
+      required: true
+      schema:
+        type: string
+        example: "true"
+    - name: "B6_SALDO"
+      in: path
+      description: Pegar apenas estoque positivo em poder de terceiro
+      required: true
+      schema:
+        type: string
+        example: "true"
+  responses:
+    "200":
+      description: Successful response
+      content:
+        application/json:
+          schema:
+            $ref: "./schemas/SB2+SB6.yaml"
+    "400":
+      description: Invalid input
+      content:
+        application/json:
+          schema:
+            type: object
+            properties:
+              success:
+                type: boolean
+                example: false
+              code:
+                type: integer
+                example: 400
+              message:
+                type: object
+                properties:
+                  info:
+                    type: string
+                    example: Descrição do erro.
+    "500":
+      description: Invalid input
+      content:
+        application/json:
+          schema:
+            type: object
+            properties:
+              success:
+                type: boolean
+                example: false
+              code:
+                type: integer
+                example: 500
+              message:
+                type: object
+                properties:
+                  info:
+                    type: string
+                    example: "{\"code\":500,\"detailedMessage\":\"\",\"message\":\"Internal Server Error\"}"
+  security:
+    - basicAuth: []
