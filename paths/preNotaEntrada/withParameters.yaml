@@ -14,21 +14,21 @@ get:
     - name: "serie"
       in: path
       description: Número da serie do documento
-      required: true
+      required: false
       schema:
         type: string
         example: "001"
     - name: "fornecedor"
       in: path
       description: Número do fornecedor
-      required: true
+      required: false
       schema:
         type: string
         example: "000001"
     - name: "loja"
       in: path
       description: Número da loja do fornecedor
-      required: true
+      required: false
       schema:
         type: string
         example: "01"

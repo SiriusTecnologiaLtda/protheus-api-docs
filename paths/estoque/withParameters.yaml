@@ -7,28 +7,28 @@ get:
     - name: "codigo"
       in: path
       description: Número do código do produto
-      required: true
+      required: false
       schema:
         type: string
         example: "1"
     - name: "estoquePositivoSB2"
       in: path
       description: Pegar apenas estoque positivo
-      required: true
+      required: false
       schema:
         type: string
         example: "true"
     - name: "estoquePositivoSB6"
       in: path
       description: Pegar apenas estoque positivo em poder de terceiro
-      required: true
+      required: false
       schema:
         type: string
         example: "true"
     - name: "exclusivoSB2"
       in: path
       description: Retorna apenas a tabela SB2
-      required: true
+      required: false
       schema:
         type: string
         example: "true"
