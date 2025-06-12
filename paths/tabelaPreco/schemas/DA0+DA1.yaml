@@ -93,22 +93,23 @@ properties:
         length: 2
         example: 99
         description: "Moeda"
-    required:
-    [
-      "DA0_CODTAB",
-      "DA0_DESCRI",
-      "DA0_DATDE",
-      "DA0_HORADE",
-      "DA0_HORATE",
-      "DA0_ATIVO",
-      "DA0_YMOEDA",
-      "A2_MUN",
-      "A2_TIPO",
-      "A2_PAIS",
-      "A2_EMAIL",
-    ]
 
-  SB6:
+    required:
+      [
+        "DA0_CODTAB",
+        "DA0_DESCRI",
+        "DA0_DATDE",
+        "DA0_HORADE",
+        "DA0_HORATE",
+        "DA0_ATIVO",
+        "DA0_YMOEDA",
+        "A2_MUN",
+        "A2_TIPO",
+        "A2_PAIS",
+        "A2_EMAIL",
+      ]
+
+  DA1:
     type: object
     properties:
       DA1_ATIVO:
@@ -278,8 +279,9 @@ properties:
         type: string
         length: 6
         description: "Classificação Comercial"
+
     required:
-    [
-      "DA1_CODPRO",
-      "DA1_TIPPRE",
-    ]
+      [
+        "DA1_CODPRO",
+        "DA1_TIPPRE",
+      ]

@@ -29,7 +29,7 @@ tags:
   - name: PedidoDeVenda
   - name: VendaAssistida
   - name: Estoque
-  - name: TabelaPreco
+  - name: TabelaDePreco
 
 paths:
   /api/v1/fornecedor:
@@ -152,7 +152,7 @@ components:
     Estoque:
       $ref: "./paths/estoque/schemas/SB2+SB6.yaml"
     
-    TabelaPreco:
+    TabelaDePreco:
       $ref: "./paths/tabelaPreco/schemas/DA0+DA1.yaml"
 
   responses:
