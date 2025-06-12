@@ -1,0 +1,285 @@
+type: object
+properties:
+  DA0:
+    type: object
+    properties:
+      DA0_ATIVO:
+        type: string
+        length: 1
+        options: 1=Sim;2=Nao
+        example: "option"
+        description: "Tabela Ativa"
+
+      DA0_CODPUB:
+        type: string
+        length: 6
+        description: "Código da Publicação"
+
+      DA0_CODTAB:
+        type: string
+        length: 3
+        description: "Codigo da Tabela"
+
+      DA0_CONDPG:
+        type: string
+        length: 3
+        description: "Condicao de Pagamento"
+
+      DA0_DATATE:
+        type: string
+        format: date
+        length: 8
+        description: "Data de validade final"
+
+      DA0_DATDE:
+        type: string
+        format: date
+        length: 8
+        description: "Data de validade inicial"
+
+      DA0_DESCRI:
+        type: string
+        length: 30
+        description: "Descricao da tabela"
+
+      DA0_ECDTEX:
+        type: string
+        length: 8
+        description: "Data da Exportação"
+
+      DA0_ECFLAG:
+        type: string
+        length: 1
+        options: 1=Ativo;2=Inativo
+        example: "option"
+        description: "Ativo e-commerce?"
+
+      DA0_ECSEQ:
+        type: string
+        length: 15
+        description: "Seq.Exportac Intermed"
+
+      DA0_FILIAL:
+        type: string
+        length: 2
+        description: "Filial do Sistema"
+
+      DA0_FILPUB:
+        type: string
+        length: 2
+        description: "Filial da Publicação"
+
+      DA0_HORADE:
+        type: string
+        length: 5
+        example: 99:99
+        description: "Hora de validade inicial"
+
+      DA0_HORATE:
+        type: string
+        length: 5
+        example: 99:99
+        description: "Hora de validade final"
+
+      DA0_TPHORA:
+        type: string
+        length: 1
+        options: 1=Unico;2=Recorrente
+        example: "option"
+        description: "Tipo horario"
+
+      DA0_YMOEDA:
+        type: N
+        length: 2
+        example: 99
+        description: "Moeda"
+    required:
+    [
+      "DA0_CODTAB",
+      "DA0_DESCRI",
+      "DA0_DATDE",
+      "DA0_HORADE",
+      "DA0_HORATE",
+      "DA0_ATIVO",
+      "DA0_YMOEDA",
+      "A2_MUN",
+      "A2_TIPO",
+      "A2_PAIS",
+      "A2_EMAIL",
+    ]
+
+  SB6:
+    type: object
+    properties:
+      DA1_ATIVO:
+        type: string
+        length: 1
+        example: "option"
+        options: 1=Sim;2=Nao
+        description: "Item Ativo"
+
+      DA1_CODPRO:
+        type: string
+        length: 15
+        description: "Codigo do Produto"
+
+      DA1_CODTAB:
+        type: string
+        length: 3
+        description: "Codigo da Tabela"
+
+      DA1_DATVIG:
+        type: string
+        format: date
+        length: 8
+        description: "Vigencia do item"
+
+      DA1_DESCRI:
+        type: string
+        length: 30
+        description: "Descricao Produto"
+
+      DA1_DESTAB:
+        type: string
+        length: 30
+        description: "Descricao da Tabela"
+
+      DA1_DTUMOV:
+        type: string
+        format: date
+        length: 8
+        description: "Data Transf. UMov.me"
+
+      DA1_ECDTEX:
+        type: string
+        length: 8
+        description: "Data da Exportação"
+
+      DA1_ECSEQ:
+        type: string
+        length: 15
+        description: "Seq.Exportac Intermed"
+
+      DA1_ESTADO:
+        type: string
+        length: 2
+        description: "Estado"
+
+      DA1_FILIAL:
+        type: string
+        length: 2
+        description: "Filial do Sistema"
+
+      DA1_FRETE:
+        type: number
+        length: 9
+        description: "Frete"
+
+      DA1_GRUPO:
+        type: string
+        length: 4
+        description: "Grupo de Produto"
+
+      DA1_HREXPO:
+        type: string
+        length: 8
+        description: "Hora da última Exportação"
+
+      DA1_HRUMOV:
+        type: string
+        length: 8
+        description: "Hora Transf. UMov.me"
+
+      DA1_INDLOT:
+        type: string
+        length: 20
+        description: "Faixa para o preco"
+
+      DA1_ITEM:
+        type: string
+        length: 4
+        description: "Item"
+
+      DA1_ITEMGR:
+        type: string
+        length: 3
+        description: "Item da Grade"
+
+      DA1_MOEDA:
+        type: number
+        length: 2
+        description: "Moeda"
+
+      DA1_MSEXP:
+        type: string
+        length: 8
+        description: "Ident.Exp.Dados"
+
+      DA1_PERDES:
+        type: number
+        length: 6
+        description: "Fator de Acresc./Desconto"
+
+      DA1_PRCBAS:
+        type: number
+        length: 9
+        description: "Preco Base"
+
+      DA1_PRCMAX:
+        type: number
+        length: 14
+        description: "Prc Max para o Cliente"
+
+      DA1_PRCVEN:
+        type: number
+        length: 9
+        description: "Preco de venda"
+
+      DA1_QTDLOT:
+        type: number
+        length: 9
+        description: "Faixa para o preco"
+
+      DA1_REFGRD:
+        type: string
+        length: 26
+        description: "Ref Grad/CFG"
+
+      DA1_TIPPRE:
+        type: string
+        length: 1
+        example: "option"
+        options: 1=Preco Venda;2=Venda Consumidor;3=Atacado;4=Varejo;5=Promocao
+        description: "Tipo do Preco"
+
+      DA1_TPOPER:
+        type: string
+        length: 1
+        example: "option"
+        options: 1=Estadual;2=InterEstadual;3=Norte/Nordeste;4=Todos
+        description: "Tipo de Operacao"
+
+      DA1_USERGA:
+        type: string
+        length: 17
+        description: "Log de Alteração"
+
+      DA1_USERGI:
+        type: string
+        length: 17
+        description: "Log de Inclusão"
+
+      DA1_VLRDES:
+        type: number
+        length: 9
+        description: "Valor do Desconto"
+
+      DA1_YCLASS:
+        type: string
+        length: 6
+        description: "Classificação Comercial"
+    required:
+    [
+      "DA1_CODPRO",
+      "DA1_TIPPRE",
+    ]

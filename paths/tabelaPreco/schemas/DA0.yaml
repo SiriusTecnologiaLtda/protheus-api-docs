@@ -1,0 +1,92 @@
+type: object
+properties:
+  DA0_ATIVO:
+    type: string
+    length: 1
+    options: 1=Sim;2=Nao
+    example: "option"
+    description: "Tabela Ativa"
+
+  DA0_CODPUB:
+    type: string
+    length: 6
+    description: "Código da Publicação"
+
+  DA0_CODTAB:
+    type: string
+    length: 3
+    description: "Codigo da Tabela"
+
+  DA0_CONDPG:
+    type: string
+    length: 3
+    description: "Condicao de Pagamento"
+
+  DA0_DATATE:
+    type: string
+    format: date
+    length: 8
+    description: "Data de validade final"
+
+  DA0_DATDE:
+    type: string
+    format: date
+    length: 8
+    description: "Data de validade inicial"
+
+  DA0_DESCRI:
+    type: string
+    length: 30
+    description: "Descricao da tabela"
+
+  DA0_ECDTEX:
+    type: string
+    length: 8
+    description: "Data da Exportação"
+
+  DA0_ECFLAG:
+    type: string
+    length: 1
+    options: 1=Ativo;2=Inativo
+    example: "option"
+    description: "Ativo e-commerce?"
+
+  DA0_ECSEQ:
+    type: string
+    length: 15
+    description: "Seq.Exportac Intermed"
+
+  DA0_FILIAL:
+    type: string
+    length: 2
+    description: "Filial do Sistema"
+
+  DA0_FILPUB:
+    type: string
+    length: 2
+    description: "Filial da Publicação"
+
+  DA0_HORADE:
+    type: string
+    length: 5
+    example: 99:99
+    description: "Hora de validade inicial"
+
+  DA0_HORATE:
+    type: string
+    length: 5
+    example: 99:99
+    description: "Hora de validade final"
+
+  DA0_TPHORA:
+    type: string
+    length: 1
+    options: 1=Unico;2=Recorrente
+    example: "option"
+    description: "Tipo horario"
+
+  DA0_YMOEDA:
+    type: N
+    length: 2
+    example: 99
+    description: "Moeda"

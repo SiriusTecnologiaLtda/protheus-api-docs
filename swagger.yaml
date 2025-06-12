@@ -29,6 +29,7 @@ tags:
   - name: PedidoDeVenda
   - name: VendaAssistida
   - name: Estoque
+  - name: TabelaPreco
 
 paths:
   /api/v1/fornecedor:
@@ -102,6 +103,12 @@ paths:
   
   /api/v1/estoque/{codigo}/{estoquePositivoSB2}/{estoquePositivoSB6}/{exclusivoSB2}:
     $ref: './paths/estoque/withParameters.yaml'
+  
+  /api/v1/tabelaPreco:
+    $ref: './paths/tabelaPreco/noParameters.yaml'
+  
+  /api/v1/tabelaPreco/{codigo}:
+    $ref: './paths/tabelaPreco/withParameters.yaml'
 
 components:
   securitySchemes:
@@ -144,6 +151,9 @@ components:
     
     Estoque:
       $ref: "./paths/estoque/schemas/SB2+SB6.yaml"
+    
+    TabelaPreco:
+      $ref: "./paths/tabelaPreco/schemas/DA0+DA1.yaml"
 
   responses:
     UnauthorizedError:
