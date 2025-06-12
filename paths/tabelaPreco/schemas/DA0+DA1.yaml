@@ -93,7 +93,6 @@ properties:
         length: 2
         example: 99
         description: "Moeda"
-
     required:
       [
         "DA0_CODTAB",
@@ -106,7 +105,7 @@ properties:
         "A2_MUN",
         "A2_TIPO",
         "A2_PAIS",
-        "A2_EMAIL",
+        "A2_EMAIL"
       ]
 
   DA1:
@@ -279,9 +278,8 @@ properties:
         type: string
         length: 6
         description: "Classificação Comercial"
-
-    required:
+    required: 
       [
-        "DA1_CODPRO",
-        "DA1_TIPPRE",
+      "DA1_CODPRO",
+      "DA1_TIPPRE"
       ]

@@ -1,6 +1,6 @@
 get:
   tags:
-    - TabelaPreco
+    - TabelaDePreco
   summary: EndPoint para retornar a tabela de Preco pelo código da tabela
   operationId: getTabelaPrecoById
   parameters:
