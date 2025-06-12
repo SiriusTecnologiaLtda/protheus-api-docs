@@ -30,6 +30,7 @@ tags:
   - name: VendaAssistida
   - name: Estoque
   - name: TabelaPreco
+  - name: RegraDesconto
 
 paths:
   /api/v1/fornecedor:
@@ -109,6 +110,12 @@ paths:
   
   /api/v1/tabelaPreco/{codigo}:
     $ref: './paths/tabelaPreco/withParameters.yaml'
+  
+  /api/v1/regraDesconto:
+    $ref: './paths/regraDesconto/noParameters.yaml'
+  
+  /api/v1/regraDesconto/{codigo}:
+    $ref: './paths/regraDesconto/withParameters.yaml'
 
 components:
   securitySchemes:
@@ -154,6 +161,9 @@ components:
     
     TabelaDePreco:
       $ref: "./paths/tabelaPreco/schemas/DA0+DA1.yaml"
+    
+    RegraDeDesconto:
+      $ref: "./paths/regraDesconto/schemas/MEI+MB8.yaml"
 
   responses:
     UnauthorizedError:

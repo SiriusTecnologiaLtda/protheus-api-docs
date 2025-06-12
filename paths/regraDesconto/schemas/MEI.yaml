@@ -1,0 +1,144 @@
+type: object
+properties:
+  MEI_ACUMUL:
+    type: option
+    length: 1
+    options: S=Sim;N=Nao
+    description: "Acumulativa"
+
+  MEI_ATIVA:
+    type: string
+    length: 1
+    description: "Regra Ativa"
+
+  MEI_CFAIXA:
+    type: string
+    length: 20
+    description: "Faixa de Valor"
+
+  MEI_CODCLI:
+    type: string
+    length: 6
+    description: "Codigo do Cliente"
+
+  MEI_CODREG:
+    type: string
+    length: 6
+    description: "Codigo da Regra"
+
+  MEI_CODTAB:
+    type: string
+    length: 3
+    description: "Tabela de Precos"
+
+  MEI_CONDPG:
+    type: string
+    length: 3
+    description: "Condição de pagamento"
+
+  MEI_DATATE:
+    type: string
+    format: date
+    example: "yyyymmdd"
+    length: 8
+    description: "Data Final"
+
+  MEI_DATDE:
+    type: string
+    format: date
+    example: "yyyymmdd"
+    length: 8
+    description: "Data Inicial"
+
+  MEI_DESCPR:
+    type: option
+    length: 1
+    options: 1=Nao;2=Sim
+    description: "Desconto Proxima Venda"
+
+  MEI_DESCRI:
+    type: string
+    length: 30
+    description: "Descricao da regra"
+
+  MEI_DESFUN:
+    type: option
+    length: 1
+    options: S=Sim;N=Nao;E=Exclusiva
+    description: "Regra para o funcionario"
+
+  MEI_FAIXA:
+    type: number
+    length: 12
+    description: "Valor do Documento"
+
+  MEI_FILIAL:
+    type: string
+    length: 2
+    description: "Filial do Sistema"
+
+  MEI_FORMPG:
+    type: string
+    length: 2
+    description: "Forma de Pagamento"
+
+  MEI_GRPVEN:
+    type: string
+    length: 6
+    description: "Grp.Clientes"
+
+  MEI_HORADE:
+    type: string
+    length: 5
+    example: 99:99
+    description: "Hora Inicial"
+
+  MEI_HORATE:
+    type: option
+    length: 5
+    example: 99:99
+    description: "Hora Final"
+
+  MEI_LOJA:
+    type: string
+    length: 2
+    description: "Loja do Cliente"
+
+  MEI_MOEDA:
+    type: number
+    length: 2
+    description: "Moeda do Valor do Doc."
+
+  MEI_NOME:
+    type: string
+    length: 30
+    description: "Nome"
+
+  MEI_PERDES:
+    type: number
+    length: 6
+    description: "% Desconto"
+
+  MEI_TPHORA:
+    type: option
+    length: 1
+    options: 1=Unico;2=Recorrente
+    description: "Tipo horario"
+
+  MEI_TPIMPD:
+    type: option
+    length: 1
+    options: I=Item;T=Total
+    description: "Tipo Impressao Des"
+
+  MEI_PRDMOS:
+    type: option
+    length: 1
+    options: S=Sim;N=Nao
+    description: "Desconto mostruario"
+
+  MEI_PRDSLD:
+    type: option
+    length: 1
+    options: S=Sim;N=Nao
+    description: "Des Saldao"

@@ -1,0 +1,74 @@
+type: object
+properties:
+  MB8_CATEGO:
+    type: string
+    length: 6
+    description: "Codigo da categoria Prod"
+
+  MB8_CODPRO:
+    type: string
+    length: 15
+    description: "Codigo de produto"
+
+  MB8_CODREG:
+    type: string
+    length: 6
+    description: "Codigo da regra de descon"
+
+  MB8_DESCPR:
+    type: number
+    length: 5
+    description: "Percentual de desconto"
+
+  MB8_DESCTO:
+    type: option
+    length: 1
+    options: 1=Sim;2=Não
+    description: "Desconto Total Itens"
+
+  MB8_DESCVL:
+    type: number
+    length: 7
+    description: "Valor do desconto"
+
+  MB8_DESPRO:
+    type: string
+    length: 30
+    description: "Descricao Produto"
+
+  MB8_FILIAL:
+    type: string
+    length: 2
+    description: "Filial do Sistema"
+
+  MB8_GRUPO:
+    type: string
+    length: 4
+    description: "Codigo grupo de produto"
+
+  MB8_IDPROD:
+    type: string
+    length: 6
+    description: "Produto Relacionado"
+
+  MB8_QTDMUL:
+    type: option
+    length: 1
+    options: 1=Sim;2=Não
+    description: "Multiplo de Quantidade"
+
+  MB8_QTDPRO:
+    type: number
+    length: 6
+    description: "Qtd Venda"
+
+  MB8_REFGRD:
+    type: string
+    length: 2
+    description: "Referencia da Grade."
+
+  MB8_TPREGR:
+    type: option
+    length: 1
+    options: 1=Desconto;2=Bonificacao;3=Brinde
+    description: "Tipo Regra"
