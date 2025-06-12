@@ -28,12 +28,14 @@ properties:
       DA0_DATATE:
         type: string
         format: date
+        example: "yyyymmdd"
         length: 8
         description: "Data de validade final"
 
       DA0_DATDE:
         type: string
         format: date
+        example: "yyyymmdd"
         length: 8
         description: "Data de validade inicial"
 
@@ -131,6 +133,7 @@ properties:
       DA1_DATVIG:
         type: string
         format: date
+        example: "yyyymmdd"
         length: 8
         description: "Vigencia do item"
 
@@ -147,6 +150,7 @@ properties:
       DA1_DTUMOV:
         type: string
         format: date
+        example: "yyyymmdd"
         length: 8
         description: "Data Transf. UMov.me"
 

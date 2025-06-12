@@ -126,6 +126,7 @@ properties:
       B2_USAI:
         type: string
         format: date
+        example: "yyyymmdd"
         length: 8
         description: "Data da Ultima saida"
 
@@ -157,12 +158,14 @@ properties:
       B2_DINVENT:
         type: string
         format: date
+        example: "yyyymmdd"
         length: 8
         description: "Data do ultimo inventario"
 
       B2_DINVFIM:
         type: string
         format: date
+        example: "yyyymmdd"
         length: 8
         description: "Dt Bloqueio Invent Final"
 
@@ -194,6 +197,7 @@ properties:
       B2_DTINV:
         type: string
         format: date
+        example: "yyyymmdd"
         length: 8
         description: "Dt Bloqueio Inven Inicial"
 
@@ -414,6 +418,7 @@ properties:
       B2_DULT:
         type: string
         format: date
+        example: "yyyymmdd"
         length: 8
         description: "Data do Último Envio"
 
@@ -433,6 +438,7 @@ properties:
       B2_DMOV:
         type: string
         format: date
+        example: "yyyymmdd"
         length: 8
         description: "Data do ultimo movimento"
 
@@ -445,12 +451,14 @@ properties:
       B2_XDTFIN:
         type: string
         format: date
+        example: "yyyymmdd"
         length: 8
         description: "Fechamento Final"
 
       B2_XDTINI:
         type: string
         format: date
+        example: "yyyymmdd"
         length: 8
         description: "Fechamento inicial"
 
@@ -565,12 +573,14 @@ properties:
       B6_DTDIGIT:
         type: string
         format: date
+        example: "yyyymmdd"
         length: 8
         description: "Data de Lancamento"
 
       B6_EMISSAO:
         type: string
         format: date
+        example: "yyyymmdd"
         length: 8
         description: "Data de Emissao do Doc."
 
@@ -686,6 +696,7 @@ properties:
       B6_UENT:
         type: string
         format: date
+        example: "yyyymmdd"
         length: 8
         description: "Data da Ultima Entrega"
 

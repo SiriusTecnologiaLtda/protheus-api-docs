@@ -1926,6 +1926,7 @@ properties:
       B5_DTREFP2:
         type: string
         format: date
+        example: "yyyymmdd"
         length: 8
         description: "Data de Ref. do Preco 2"
 
@@ -1937,30 +1938,35 @@ properties:
       B5_DTREFP3:
         type: string
         format: date
+        example: "yyyymmdd"
         length: 8
         description: "Data de Ref. do Preco 3"
 
       B5_DTREFP4:
         type: string
         format: date
+        example: "yyyymmdd"
         length: 8
         description: "Data de Ref. do Preco 4"
 
       B5_DTREFP5:
         type: string
         format: date
+        example: "yyyymmdd"
         length: 8
         description: "Data de Ref. do Preco 5"
 
       B5_DTREFP6:
         type: string
         format: date
+        example: "yyyymmdd"
         length: 8
         description: "Data de Ref. do Preco 6"
 
       B5_DTREFP7:
         type: string
         format: date
+        example: "yyyymmdd"
         length: 8
         description: "Data de Ref. do Preco 7"
 
@@ -2368,6 +2374,7 @@ properties:
       B5_DTINV:
         type: string
         format: date
+        example: "yyyymmdd"
         length: 8
         description: "Data do Inventario"
 
@@ -2480,6 +2487,7 @@ properties:
       B5_DTDECRE:
         type: string
         format: date
+        example: "yyyymmdd"
         length: 8
         description: "Data do decreto"
 
@@ -2723,6 +2731,7 @@ properties:
       B5_DTDECAL:
         type: string
         format: date
+        example: "yyyymmdd"
         length: 8
         description: "Data do decreto de alt."
 
@@ -2936,6 +2945,7 @@ properties:
       B5_ECDTLAN:
         type: string
         format: date
+        example: "yyyymmdd"
         length: 8
         description: "Data Lancam."
 
