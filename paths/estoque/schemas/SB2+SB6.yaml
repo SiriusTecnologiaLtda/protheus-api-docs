@@ -563,12 +563,14 @@ properties:
         description: "No.do Documento de Origem"
 
       B6_DTDIGIT:
-        type: D
+        type: string
+        format: date
         length: 8
         description: "Data de Lancamento"
 
       B6_EMISSAO:
-        type: D
+        type: string
+        format: date
         length: 8
         description: "Data de Emissao do Doc."
 
@@ -682,7 +684,8 @@ properties:
         description: "Indica se Clie. ou Forn."
 
       B6_UENT:
-        type: D
+        type: string
+        format: date
         length: 8
         description: "Data da Ultima Entrega"
 

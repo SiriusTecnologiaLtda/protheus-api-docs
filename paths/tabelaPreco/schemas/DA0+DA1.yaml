@@ -105,7 +105,7 @@ properties:
         "A2_MUN",
         "A2_TIPO",
         "A2_PAIS",
-        "A2_EMAIL"
+        "A2_EMAIL",
       ]
 
   DA1:

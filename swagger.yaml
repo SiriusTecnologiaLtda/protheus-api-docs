@@ -29,7 +29,7 @@ tags:
   - name: PedidoDeVenda
   - name: VendaAssistida
   - name: Estoque
-  - name: TabelaDePreco
+  - name: TabelaPreco
 
 paths:
   /api/v1/fornecedor:

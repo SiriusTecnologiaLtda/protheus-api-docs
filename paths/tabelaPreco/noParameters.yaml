@@ -1,6 +1,6 @@
 get:
   tags:
-    - TabelaDePreco
+    - TabelaPreco
   summary: EndPoint para retornar a tabela de Preco
   operationId: getAllTabelaPreco
   responses:
