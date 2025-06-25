@@ -11,6 +11,20 @@ get:
       schema:
         type: string
         example: "000001"
+    - name: "pageNumber"
+      in: path
+      description: Número da página
+      required: false
+      schema:
+        type: number
+        example: "1"
+    - name: "pageSize"
+      in: path
+      description: Quantidade de itens por página
+      required: false
+      schema:
+        type: number
+        example: "100"
   responses:
     "200":
       description: Successful response
