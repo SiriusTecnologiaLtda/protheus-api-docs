@@ -11,6 +11,13 @@ get:
       schema:
         type: string
         example: "000001"
+    - name: "ecommerce"
+      in: path
+      description: Filtrar apenas por produtos ecommerce, com campo B5_ECFLAG = 1
+      required: false
+      schema:
+        type: string
+        example: "true"
     - name: "pageNumber"
       in: path
       description: Número da página
