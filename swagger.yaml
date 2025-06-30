@@ -60,7 +60,7 @@ paths:
   /api/v1/produto:
      $ref: './paths/produto/noParameters.yaml'
 
-  /api/v1/produto/{codigo}/{pageNumber}/{pageSize}:
+  /api/v1/produto/{codigo}/{ecommerce}/{pageNumber}/{pageSize}:
      $ref: './paths/produto/withParameters.yaml'
 
   /api/v1/titulosAReceber:
