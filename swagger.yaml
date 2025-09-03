@@ -36,18 +36,27 @@ paths:
   /api/v1/fornecedor:
     $ref: './paths/fornecedor/noParameters.yaml'
    
+  /api/v1/fornecedor/{codigo}/{loja}/{cgc}/{cep}:
+    $ref: './paths/fornecedor/withParameters2.yaml'
+
   /api/v1/fornecedor/{codigo}/{loja}:
     $ref: './paths/fornecedor/withParameters.yaml'
 
   /api/v1/transportadora:
     $ref: './paths/transportadora/noParameters.yaml'
 
+  /api/v1/transportadora/{codigo}/{cgc}:
+    $ref: './paths/transportadora/withParameters2.yaml'
+  
   /api/v1/transportadora/{codigo}:
     $ref: './paths/transportadora/withParameters.yaml'
 
   /api/v1/cliente:
     $ref: './paths/cliente/noParameters.yaml'
 
+  /api/v1/cliente/{codigo}/{loja}/{cgc}:
+    $ref: './paths/cliente/withParameters2.yaml'
+  
   /api/v1/cliente/{codigo}/{loja}:
     $ref: './paths/cliente/withParameters.yaml'
 
