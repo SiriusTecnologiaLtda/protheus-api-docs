@@ -13,7 +13,7 @@ info:
     url: https://www.apache.org/licenses/LICENSE-2.0.html
 servers:
   - url: "https://macroex.hubhero.com.br/webhook/82130c21-3282-4f14-8267-c010b385f30e"
-    description: Development server
+    description: HubHero Macroex
   # - url: 'https://api.example.com'
   # description: Production server
 tags:
@@ -32,105 +32,59 @@ tags:
   - name: TabelaPreco
   - name: RegraDesconto
 
+security:
+  - bearerAuth: []
+
 paths:
   /api/v1/fornecedor:
     $ref: './paths/fornecedor/noParameters.yaml'
-   
-  /api/v1/fornecedor/{codigo}/{loja}/{cgc}/{cep}:
-    $ref: './paths/fornecedor/withParameters2.yaml'
-
-  /api/v1/fornecedor/{codigo}/{loja}:
-    $ref: './paths/fornecedor/withParameters.yaml'
 
   /api/v1/transportadora:
     $ref: './paths/transportadora/noParameters.yaml'
 
-  /api/v1/transportadora/{codigo}/{cgc}:
-    $ref: './paths/transportadora/withParameters2.yaml'
-  
-  /api/v1/transportadora/{codigo}:
-    $ref: './paths/transportadora/withParameters.yaml'
-
   /api/v1/cliente:
     $ref: './paths/cliente/noParameters.yaml'
-
-  /api/v1/cliente/{codigo}/{loja}/{cgc}:
-    $ref: './paths/cliente/withParameters2.yaml'
-  
-  /api/v1/cliente/{codigo}/{loja}:
-    $ref: './paths/cliente/withParameters.yaml'
 
   /api/v1/grupoDeProdutos:
    $ref: './paths/grupoDeProdutos/noParameters.yaml'
 
-  /api/v1/grupoDeProdutos/{codigo}:
-    $ref: './paths/grupoDeProdutos/withParameters.yaml'
-
   /api/v1/produto:
      $ref: './paths/produto/noParameters.yaml'
-
-  /api/v1/produto/{codigo}/{ecommerce}/{pageNumber}/{pageSize}:
-     $ref: './paths/produto/withParameters.yaml'
 
   /api/v1/titulosAReceber:
     $ref: './paths/titulosAReceber/noParameters.yaml'
 
-  /api/v1/titulosAReceber/{prefixo}/{codigo}/{parcela}/{tipo}:
-    $ref: './paths/titulosAReceber/withParameters.yaml'
-
   /api/v1/titulosAPagar:
     $ref: './paths/titulosAPagar/noParameters.yaml'
 
-  /api/v1/titulosAPagar/{prefixo}/{codigo}/{parcela}/{tipo}/{fornecedor}/{loja}:
-    $ref: './paths/titulosAPagar/withParameters.yaml'
-    
   /api/v1/itemContabil:
     $ref: './paths/itemContabil/noParameters.yaml'
-
-  /api/v1/itemContabil/{codigo}:
-    $ref: './paths/itemContabil/withParameters.yaml'
 
   /api/v1/preNotaEntrada:
     $ref: './paths/preNotaEntrada/noParameters.yaml'
 
-  /api/v1/preNotaEntrada/{codigo}/{serie}/{fornecedor}/{loja}:
-    $ref: './paths/preNotaEntrada/withParameters.yaml'
-
   /api/v1/pedidoDeVenda:
     $ref: './paths/pedidoDeVenda/noParameters.yaml'
 
-  /api/v1/pedidoDeVenda/{codigo}:
-    $ref: './paths/pedidoDeVenda/withParameters.yaml'
-  
   /api/v1/vendaAssistida:
     $ref: './paths/vendaAssistida/noParameters.yaml'
 
-  /api/v1/vendaAssistida/{codigo}:
-    $ref: './paths/vendaAssistida/withParameters.yaml'
-  
   /api/v1/estoque:
     $ref: './paths/estoque/noParameters.yaml'
-  
-  /api/v1/estoque/{codigo}/{estoquePositivoSB2}/{estoquePositivoSB6}/{exclusivoSB2}:
-    $ref: './paths/estoque/withParameters.yaml'
   
   /api/v1/tabelaPreco:
     $ref: './paths/tabelaPreco/noParameters.yaml'
   
-  /api/v1/tabelaPreco/{codigo}:
-    $ref: './paths/tabelaPreco/withParameters.yaml'
-  
   /api/v1/regraDesconto:
     $ref: './paths/regraDesconto/noParameters.yaml'
   
-  /api/v1/regraDesconto/{codigo}:
-    $ref: './paths/regraDesconto/withParameters.yaml'
-
 components:
   securitySchemes:
-    basicAuth:
+    bearerAuth:
       type: http
-      scheme: basic
+      scheme: bearer
+      bearerFormat: JWT
+
   schemas:
     Fornecedor:
       $ref: "./paths/fornecedor/schemas/SA2.yaml"

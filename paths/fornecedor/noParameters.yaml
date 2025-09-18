@@ -5,6 +5,28 @@ post:
   # description: |
   # EndPoint de Fornecedor.
   operationId: createFornecedor
+  parameters:
+    - name: "tenantId"
+      in: header
+      description: TenantId (EMPRESA,FILIAL)
+      required: false
+      schema:
+        type: string
+        example: 01,0101
+    - name: "Authorization"
+      in: query
+      description: Código em base64 de autorização (USUARIO:SENHA)
+      required: true
+      schema:
+        type: string
+        example: Basic XXXXXXX
+    - name: "ambiente_dev"
+      in: query
+      description: Direcionar para ambiente de desenvolvimento
+      required: false
+      schema:
+        type: string
+        example: true
   requestBody:
     # description: The user's name to greet
     required: true
@@ -27,6 +49,12 @@ post:
               code:
                 type: integer
                 example: 200
+              environment:
+                type: string
+                example: Desenvolvimento
+              executionCode:
+                type: string
+                example: 99999
               message:
                 type: object
                 properties:
@@ -52,12 +80,43 @@ post:
               code:
                 type: integer
                 example: 400
+              environment:
+                type: string
+                example: Desenvolvimento
+              executionCode:
+                type: string
+                example: 99999
               message:
                 type: object
                 properties:
                   info:
                     type: string
                     example: Descrição do erro.
+    "404":
+      description: Invalid input
+      content:
+        application/json:
+          schema:
+            type: object
+            properties:
+              success:
+                type: boolean
+                example: false
+              code:
+                type: integer
+                example: 404
+              environment:
+                type: string
+                example: Desenvolvimento
+              executionCode:
+                type: string
+                example: 99999
+              message:
+                type: object
+                properties:
+                  info:
+                    type: string
+                    example: "{\"errorCode\":404,\"errorMessage\":\"Nenhum registro encontrado.\"}"
     "500":
       description: Invalid input
       content:
@@ -71,12 +130,15 @@ post:
               code:
                 type: integer
                 example: 500
+              executionCode:
+                type: string
+                example: 99999
               message:
                 type: object
                 properties:
                   info:
                     type: string
-                    example: '{"code":500,"detailedMessage":"","message":"Internal Server Error"}'
+                    example: "{\"code\":500,\"detailedMessage\":\"\",\"message\":\"Internal Server Error\"}"
   security:
     - basicAuth: []
 
@@ -85,13 +147,80 @@ get:
     - Fornecedor
   summary: EndPoint para retornar todos os fornecedores
   operationId: getAllFornecedores
+  parameters:
+    - name: "tenantId"
+      in: header
+      description: TenantId (EMPRESA,FILIAL)
+      required: false
+      schema:
+        type: string
+        example: 01,0101
+    - name: "Authorization"
+      in: query
+      description: Código em base64 de autorização (USUARIO:SENHA)
+      required: true
+      schema:
+        type: string
+        example: Basic XXXXXXX
+    - name: "ambiente_dev"
+      in: query
+      description: Direcionar para ambiente de desenvolvimento
+      required: false
+      schema:
+        type: string
+        example: true
+    - name: "codigo"
+      in: query
+      description: Número do código do fornecedor
+      required: false
+      schema:
+        type: string
+        example: "1"
+    - name: "loja"
+      in: query
+      description: Número da loja do fornecedor
+      required: false
+      schema:
+        type: string
+        example: "1"
+    - name: "cgc"
+      in: query
+      description: CPF ou CNPJ do fornecedor
+      required: false
+      schema:
+        type: string
+        example: "99999999999"
+    - name: "cep"
+      in: query
+      description: CEP do fornecedor
+      required: false
+      schema:
+        type: string
+        example: "99999999"
   responses:
     "200":
       description: Successful response
       content:
         application/json:
           schema:
-            $ref: "./schemas/SA2.yaml"
+            type: object
+            properties:
+              success:
+                type: boolean
+                example: true
+              code:
+                type: integer
+                example: 200
+              environment:
+                type: string
+                example: Desenvolvimento
+              executionCode:
+                type: string
+                example: 99999
+              data:
+                type: array
+                items:
+                  $ref: "./schemas/SA2.yaml"
     "400":
       description: Invalid input
       content:
@@ -105,12 +234,43 @@ get:
               code:
                 type: integer
                 example: 400
+              environment:
+                type: string
+                example: Desenvolvimento
+              executionCode:
+                type: string
+                example: 99999
               message:
                 type: object
                 properties:
                   info:
                     type: string
                     example: Descrição do erro.
+    "404":
+      description: Invalid input
+      content:
+        application/json:
+          schema:
+            type: object
+            properties:
+              success:
+                type: boolean
+                example: false
+              code:
+                type: integer
+                example: 404
+              environment:
+                type: string
+                example: Desenvolvimento
+              executionCode:
+                type: string
+                example: 99999
+              message:
+                type: object
+                properties:
+                  info:
+                    type: string
+                    example: "{\"errorCode\":404,\"errorMessage\":\"Nenhum registro encontrado.\"}"
     "500":
       description: Invalid input
       content:
@@ -124,11 +284,316 @@ get:
               code:
                 type: integer
                 example: 500
+              executionCode:
+                type: string
+                example: 99999
               message:
                 type: object
                 properties:
                   info:
                     type: string
-                    example: '{"code":500,"detailedMessage":"","message":"Internal Server Error"}'
+                    example: "{\"code\":500,\"detailedMessage\":\"\",\"message\":\"Internal Server Error\"}"
+  security:
+    - basicAuth: []
+
+put:
+  tags:
+    - Fornecedor
+  summary: EndPoint para alterar um fornecedor pelo código
+  operationId: UpdateFornecedor
+  parameters:
+    - name: "tenantId"
+      in: header
+      description: TenantId (EMPRESA,FILIAL)
+      required: false
+      schema:
+        type: string
+        example: 01,0101
+    - name: "Authorization"
+      in: query
+      description: Código em base64 de autorização (USUARIO:SENHA)
+      required: true
+      schema:
+        type: string
+        example: Basic XXXXXXX
+    - name: "ambiente_dev"
+      in: query
+      description: Direcionar para ambiente de desenvolvimento
+      required: false
+      schema:
+        type: string
+        example: true
+    - name: "codigo"
+      in: query
+      description: Número do código do fornecedor
+      required: true
+      schema:
+        type: string
+        example: "1"
+    - name: "loja"
+      in: query
+      description: Número da loja do fornecedor
+      required: true
+      schema:
+        type: string
+        example: "1"
+  requestBody:
+    required: true
+    content:
+      application/json:
+        schema:
+          $ref: "./schemas/SA2.yaml"
+  responses:
+    "200":
+      description: Successful response
+      content:
+        application/json:
+          schema:
+            type: object
+            properties:
+              success:
+                type: boolean
+                example: true
+              code:
+                type: integer
+                example: 200
+              environment:
+                type: string
+                example: Desenvolvimento
+              executionCode:
+                type: string
+                example: 99999
+              message:
+                type: object
+                properties:
+                  info:
+                    type: string
+                    example: Fornecedor alterado com sucesso!
+                  A2_COD:
+                    type: string
+                    example: 000001
+                  A2_LOJA:
+                    type: string
+                    example: 01
+    "400":
+      description: Invalid input
+      content:
+        application/json:
+          schema:
+            type: object
+            properties:
+              success:
+                type: boolean
+                example: false
+              code:
+                type: integer
+                example: 400
+              environment:
+                type: string
+                example: Desenvolvimento
+              executionCode:
+                type: string
+                example: 99999
+              message:
+                type: object
+                properties:
+                  info:
+                    type: string
+                    example: Descrição do erro.
+    "404":
+      description: Invalid input
+      content:
+        application/json:
+          schema:
+            type: object
+            properties:
+              success:
+                type: boolean
+                example: false
+              code:
+                type: integer
+                example: 404
+              environment:
+                type: string
+                example: Desenvolvimento
+              executionCode:
+                type: string
+                example: 99999
+              message:
+                type: object
+                properties:
+                  info:
+                    type: string
+                    example: "{\"errorCode\":404,\"errorMessage\":\"Nenhum registro encontrado.\"}"
+    "500":
+      description: Invalid input
+      content:
+        application/json:
+          schema:
+            type: object
+            properties:
+              success:
+                type: boolean
+                example: false
+              code:
+                type: integer
+                example: 500
+              executionCode:
+                type: string
+                example: 99999
+              message:
+                type: object
+                properties:
+                  info:
+                    type: string
+                    example: "{\"code\":500,\"detailedMessage\":\"\",\"message\":\"Internal Server Error\"}"
+  security:
+    - basicAuth: []
+
+delete:
+  tags:
+    - Fornecedor
+  summary: EndPoint para deletar um fornecedor pelo código
+  operationId: deleteFornecedorById
+  parameters:
+    - name: "tenantId"
+      in: header
+      description: TenantId (EMPRESA,FILIAL)
+      required: false
+      schema:
+        type: string
+        example: 01,0101
+    - name: "Authorization"
+      in: query
+      description: Código em base64 de autorização (USUARIO:SENHA)
+      required: true
+      schema:
+        type: string
+        example: Basic XXXXXXX
+    - name: "ambiente_dev"
+      in: query
+      description: Direcionar para ambiente de desenvolvimento
+      required: false
+      schema:
+        type: string
+        example: true
+    - name: "codigo"
+      in: query
+      description: Número do código do fornecedor
+      required: true
+      schema:
+        type: string
+        example: "1"
+    - name: "loja"
+      in: query
+      description: Número da loja do fornecedor
+      required: true
+      schema:
+        type: string
+        example: "1"
+  responses:
+    "200":
+      description: Successful response
+      content:
+        application/json:
+          schema:
+            type: object
+            properties:
+              success:
+                type: boolean
+                example: true
+              code:
+                type: integer
+                example: 200
+              environment:
+                type: string
+                example: Desenvolvimento
+              executionCode:
+                type: string
+                example: 99999
+              message:
+                type: object
+                properties:
+                  info:
+                    type: string
+                    example: Fornecedor deletado com sucesso!
+                  A2_COD:
+                    type: string
+                    example: 000001
+                  A2_LOJA:
+                    type: string
+                    example: 01
+    "400":
+      description: Invalid input
+      content:
+        application/json:
+          schema:
+            type: object
+            properties:
+              success:
+                type: boolean
+                example: false
+              code:
+                type: integer
+                example: 400
+              environment:
+                type: string
+                example: Desenvolvimento
+              executionCode:
+                type: string
+                example: 99999
+              message:
+                type: object
+                properties:
+                  info:
+                    type: string
+                    example: Descrição do erro.
+    "404":
+      description: Invalid input
+      content:
+        application/json:
+          schema:
+            type: object
+            properties:
+              success:
+                type: boolean
+                example: false
+              code:
+                type: integer
+                example: 404
+              environment:
+                type: string
+                example: Desenvolvimento
+              executionCode:
+                type: string
+                example: 99999
+              message:
+                type: object
+                properties:
+                  info:
+                    type: string
+                    example: "{\"errorCode\":404,\"errorMessage\":\"Nenhum registro encontrado.\"}"
+    "500":
+      description: Invalid input
+      content:
+        application/json:
+          schema:
+            type: object
+            properties:
+              success:
+                type: boolean
+                example: false
+              code:
+                type: integer
+                example: 500
+              executionCode:
+                type: string
+                example: 99999
+              message:
+                type: object
+                properties:
+                  info:
+                    type: string
+                    example: "{\"code\":500,\"detailedMessage\":\"\",\"message\":\"Internal Server Error\"}"
   security:
     - basicAuth: []

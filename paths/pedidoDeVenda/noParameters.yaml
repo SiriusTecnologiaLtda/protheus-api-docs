@@ -3,6 +3,28 @@ post:
     - PedidoDeVenda
   summary: EndPoint para criar uma pedido de venda
   operationId: postPedidoDeVenda
+  parameters:
+    - name: "tenantId"
+      in: header
+      description: TenantId (EMPRESA,FILIAL)
+      required: false
+      schema:
+        type: string
+        example: 01,0101
+    - name: "Authorization"
+      in: query
+      description: Código em base64 de autorização (USUARIO:SENHA)
+      required: true
+      schema:
+        type: string
+        example: Basic XXXXXXX
+    - name: "ambiente_dev"
+      in: query
+      description: Direcionar para ambiente de desenvolvimento
+      required: false
+      schema:
+        type: string
+        example: true
   requestBody:
     required: true
     content:
@@ -24,6 +46,12 @@ post:
               code:
                 type: integer
                 example: 200
+              environment:
+                type: string
+                example: Desenvolvimento
+              executionCode:
+                type: string
+                example: 99999
               message:
                 type: object
                 properties:
@@ -52,12 +80,43 @@ post:
               code:
                 type: integer
                 example: 400
+              environment:
+                type: string
+                example: Desenvolvimento
+              executionCode:
+                type: string
+                example: 99999
               message:
                 type: object
                 properties:
                   info:
                     type: string
                     example: Descrição do erro.
+    "404":
+      description: Invalid input
+      content:
+        application/json:
+          schema:
+            type: object
+            properties:
+              success:
+                type: boolean
+                example: false
+              code:
+                type: integer
+                example: 404
+              environment:
+                type: string
+                example: Desenvolvimento
+              executionCode:
+                type: string
+                example: 99999
+              message:
+                type: object
+                properties:
+                  info:
+                    type: string
+                    example: "{\"errorCode\":404,\"errorMessage\":\"Nenhum registro encontrado.\"}"
     "500":
       description: Invalid input
       content:
@@ -71,6 +130,9 @@ post:
               code:
                 type: integer
                 example: 500
+              executionCode:
+                type: string
+                example: 99999
               message:
                 type: object
                 properties:
@@ -84,15 +146,59 @@ get:
     - PedidoDeVenda
   summary: EndPoint para retornar todos os pedidos de venda
   operationId: getAllPedidoDeVenda
+  parameters:
+    - name: "tenantId"
+      in: header
+      description: TenantId (EMPRESA,FILIAL)
+      required: false
+      schema:
+        type: string
+        example: 01,0101
+    - name: "Authorization"
+      in: query
+      description: Código em base64 de autorização (USUARIO:SENHA)
+      required: true
+      schema:
+        type: string
+        example: Basic XXXXXXX
+    - name: "ambiente_dev"
+      in: query
+      description: Direcionar para ambiente de desenvolvimento
+      required: false
+      schema:
+        type: string
+        example: true
+    - name: "codigo"
+      in: query
+      description: Número do documento
+      required: false
+      schema:
+        type: string
+        example: "000001"
   responses:
     "200":
       description: Successful response
       content:
         application/json:
           schema:
-            type: array
-            items:
-              $ref: "./schemas/SC5+SC6.yaml"
+            type: object
+            properties:
+              success:
+                type: boolean
+                example: true
+              code:
+                type: integer
+                example: 200
+              environment:
+                type: string
+                example: Desenvolvimento
+              executionCode:
+                type: string
+                example: 99999
+              data:
+                type: array
+                items:
+                  $ref: "./schemas/SC5+SC6.yaml"
     "400":
       description: Invalid input
       content:
@@ -106,12 +212,43 @@ get:
               code:
                 type: integer
                 example: 400
+              environment:
+                type: string
+                example: Desenvolvimento
+              executionCode:
+                type: string
+                example: 99999
               message:
                 type: object
                 properties:
                   info:
                     type: string
                     example: Descrição do erro.
+    "404":
+      description: Invalid input
+      content:
+        application/json:
+          schema:
+            type: object
+            properties:
+              success:
+                type: boolean
+                example: false
+              code:
+                type: integer
+                example: 404
+              environment:
+                type: string
+                example: Desenvolvimento
+              executionCode:
+                type: string
+                example: 99999
+              message:
+                type: object
+                properties:
+                  info:
+                    type: string
+                    example: "{\"errorCode\":404,\"errorMessage\":\"Nenhum registro encontrado.\"}"
     "500":
       description: Invalid input
       content:
@@ -125,6 +262,303 @@ get:
               code:
                 type: integer
                 example: 500
+              executionCode:
+                type: string
+                example: 99999
+              message:
+                type: object
+                properties:
+                  info:
+                    type: string
+                    example: "{\"code\":500,\"detailedMessage\":\"\",\"message\":\"Internal Server Error\"}"
+  security:
+    - basicAuth: []
+
+put:
+  tags:
+    - PedidoDeVenda
+  summary: EndPoint para alterar um pedido de venda pelo código
+  operationId: UpdatePedidoDeVenda
+  parameters:
+    - name: "tenantId"
+      in: header
+      description: TenantId (EMPRESA,FILIAL)
+      required: false
+      schema:
+        type: string
+        example: 01,0101
+    - name: "Authorization"
+      in: query
+      description: Código em base64 de autorização (USUARIO:SENHA)
+      required: true
+      schema:
+        type: string
+        example: Basic XXXXXXX
+    - name: "ambiente_dev"
+      in: query
+      description: Direcionar para ambiente de desenvolvimento
+      required: false
+      schema:
+        type: string
+        example: true
+    - name: "codigo"
+      in: query
+      description: Número do documento
+      required: true
+      schema:
+        type: string
+        example: "000001"
+  requestBody:
+    required: true
+    content:
+      application/json:
+        schema:
+          $ref: "./schemas/SC5+SC6.yaml"
+  responses:
+    "200":
+      description: Successful response
+      content:
+        application/json:
+          schema:
+            type: object
+            properties:
+              success:
+                type: boolean
+                example: true
+              code:
+                type: integer
+                example: 200
+              environment:
+                type: string
+                example: Desenvolvimento
+              executionCode:
+                type: string
+                example: 99999
+              message:
+                type: object
+                properties:
+                  info:
+                    type: string
+                    example: Pedido de venda alterado com sucesso!
+                  C5_NUM:
+                    type: string
+                    example: 000001
+                  C5_CLIENTE:
+                    type: string
+                    example: 001
+                  C5_LOJA:
+                    type: string
+                    example: 01
+    "400":
+      description: Invalid input
+      content:
+        application/json:
+          schema:
+            type: object
+            properties:
+              success:
+                type: boolean
+                example: false
+              code:
+                type: integer
+                example: 400
+              environment:
+                type: string
+                example: Desenvolvimento
+              executionCode:
+                type: string
+                example: 99999
+              message:
+                type: object
+                properties:
+                  info:
+                    type: string
+                    example: Descrição do erro.
+    "404":
+      description: Invalid input
+      content:
+        application/json:
+          schema:
+            type: object
+            properties:
+              success:
+                type: boolean
+                example: false
+              code:
+                type: integer
+                example: 404
+              environment:
+                type: string
+                example: Desenvolvimento
+              executionCode:
+                type: string
+                example: 99999
+              message:
+                type: object
+                properties:
+                  info:
+                    type: string
+                    example: "{\"errorCode\":404,\"errorMessage\":\"Nenhum registro encontrado.\"}"
+    "500":
+      description: Invalid input
+      content:
+        application/json:
+          schema:
+            type: object
+            properties:
+              success:
+                type: boolean
+                example: false
+              code:
+                type: integer
+                example: 500
+              executionCode:
+                type: string
+                example: 99999
+              message:
+                type: object
+                properties:
+                  info:
+                    type: string
+                    example: "{\"code\":500,\"detailedMessage\":\"\",\"message\":\"Internal Server Error\"}"
+  security:
+    - basicAuth: []
+
+delete:
+  tags:
+    - PedidoDeVenda
+  summary: EndPoint para deletar um pedido de venda pelo código
+  operationId: deletePedidoDeVendaById
+  parameters:
+    - name: "tenantId"
+      in: header
+      description: TenantId (EMPRESA,FILIAL)
+      required: false
+      schema:
+        type: string
+        example: 01,0101
+    - name: "Authorization"
+      in: query
+      description: Código em base64 de autorização (USUARIO:SENHA)
+      required: true
+      schema:
+        type: string
+        example: Basic XXXXXXX
+    - name: "ambiente_dev"
+      in: query
+      description: Direcionar para ambiente de desenvolvimento
+      required: false
+      schema:
+        type: string
+        example: true
+    - name: "codigo"
+      in: query
+      description: Número do documento
+      required: true
+      schema:
+        type: string
+        example: "000001"
+  responses:
+    "200":
+      description: Successful response
+      content:
+        application/json:
+          schema:
+            type: object
+            properties:
+              success:
+                type: boolean
+                example: true
+              code:
+                type: integer
+                example: 200
+              environment:
+                type: string
+                example: Desenvolvimento
+              executionCode:
+                type: string
+                example: 99999
+              message:
+                type: object
+                properties:
+                  info:
+                    type: string
+                    example: Pedido de venda deletado com sucesso!
+                  C5_NUM:
+                    type: string
+                    example: 000001
+                  C5_CLIENTE:
+                    type: string
+                    example: 001
+                  C5_LOJA:
+                    type: string
+                    example: 01
+    "400":
+      description: Invalid input
+      content:
+        application/json:
+          schema:
+            type: object
+            properties:
+              success:
+                type: boolean
+                example: false
+              code:
+                type: integer
+                example: 400
+              environment:
+                type: string
+                example: Desenvolvimento
+              executionCode:
+                type: string
+                example: 99999
+              message:
+                type: object
+                properties:
+                  info:
+                    type: string
+                    example: Descrição do erro.
+    "404":
+      description: Invalid input
+      content:
+        application/json:
+          schema:
+            type: object
+            properties:
+              success:
+                type: boolean
+                example: false
+              code:
+                type: integer
+                example: 404
+              environment:
+                type: string
+                example: Desenvolvimento
+              executionCode:
+                type: string
+                example: 99999
+              message:
+                type: object
+                properties:
+                  info:
+                    type: string
+                    example: "{\"errorCode\":404,\"errorMessage\":\"Nenhum registro encontrado.\"}"
+    "500":
+      description: Invalid input
+      content:
+        application/json:
+          schema:
+            type: object
+            properties:
+              success:
+                type: boolean
+                example: false
+              code:
+                type: integer
+                example: 500
+              executionCode:
+                type: string
+                example: 99999
               message:
                 type: object
                 properties:

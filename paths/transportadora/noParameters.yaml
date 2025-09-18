@@ -3,6 +3,28 @@ post:
     - Transportadora
   summary: EndPoint para criar uma transportadora
   operationId: createTransportadora
+  parameters:
+    - name: "tenantId"
+      in: header
+      description: TenantId (EMPRESA,FILIAL)
+      required: false
+      schema:
+        type: string
+        example: 01,0101
+    - name: "Authorization"
+      in: query
+      description: Código em base64 de autorização (USUARIO:SENHA)
+      required: true
+      schema:
+        type: string
+        example: Basic XXXXXXX
+    - name: "ambiente_dev"
+      in: query
+      description: Direcionar para ambiente de desenvolvimento
+      required: false
+      schema:
+        type: string
+        example: true
   requestBody:
     required: true
     content:
@@ -24,6 +46,12 @@ post:
               code:
                 type: integer
                 example: 200
+              environment:
+                type: string
+                example: Desenvolvimento
+              executionCode:
+                type: string
+                example: 99999
               message:
                 type: object
                 properties:
@@ -46,12 +74,43 @@ post:
               code:
                 type: integer
                 example: 400
+              environment:
+                type: string
+                example: Desenvolvimento
+              executionCode:
+                type: string
+                example: 99999
               message:
                 type: object
                 properties:
                   info:
                     type: string
                     example: Descrição do erro.
+    "404":
+      description: Invalid input
+      content:
+        application/json:
+          schema:
+            type: object
+            properties:
+              success:
+                type: boolean
+                example: false
+              code:
+                type: integer
+                example: 404
+              environment:
+                type: string
+                example: Desenvolvimento
+              executionCode:
+                type: string
+                example: 99999
+              message:
+                type: object
+                properties:
+                  info:
+                    type: string
+                    example: "{\"errorCode\":404,\"errorMessage\":\"Nenhum registro encontrado.\"}"
     "500":
       description: Invalid input
       content:
@@ -65,6 +124,9 @@ post:
               code:
                 type: integer
                 example: 500
+              executionCode:
+                type: string
+                example: 99999
               message:
                 type: object
                 properties:
@@ -79,15 +141,66 @@ get:
     - Transportadora
   summary: EndPoint para retornar todas transportadoras
   operationId: getAllTransportadora
+  parameters:
+    - name: "tenantId"
+      in: header
+      description: TenantId (EMPRESA,FILIAL)
+      required: false
+      schema:
+        type: string
+        example: 01,0101
+    - name: "Authorization"
+      in: query
+      description: Código em base64 de autorização (USUARIO:SENHA)
+      required: true
+      schema:
+        type: string
+        example: Basic XXXXXXX
+    - name: "ambiente_dev"
+      in: query
+      description: Direcionar para ambiente de desenvolvimento
+      required: false
+      schema:
+        type: string
+        example: true
+    - name: "codigo"
+      in: query
+      description: Número do código da transportadora
+      required: false
+      schema:
+        type: string
+        example: "1"
+    - name: "cgc"
+      in: query
+      description: CPF ou CNPJ da transportadora
+      required: false
+      schema:
+        type: string
+        example: "99999999999"
   responses:
     "200":
       description: Successful response
       content:
         application/json:
           schema:
-            type: array
-            items:
-              $ref: "./schemas/SA4.yaml"
+            type: object
+            properties:
+              success:
+                type: boolean
+                example: true
+              code:
+                type: integer
+                example: 200
+              environment:
+                type: string
+                example: Desenvolvimento
+              executionCode:
+                type: string
+                example: 99999
+              data:
+                type: array
+                items:
+                 $ref: "./schemas/SA4.yaml"
     "400":
       description: Invalid input
       content:
@@ -101,12 +214,43 @@ get:
               code:
                 type: integer
                 example: 400
+              environment:
+                type: string
+                example: Desenvolvimento
+              executionCode:
+                type: string
+                example: 99999
               message:
                 type: object
                 properties:
                   info:
                     type: string
                     example: Descrição do erro.
+    "404":
+      description: Invalid input
+      content:
+        application/json:
+          schema:
+            type: object
+            properties:
+              success:
+                type: boolean
+                example: false
+              code:
+                type: integer
+                example: 404
+              environment:
+                type: string
+                example: Desenvolvimento
+              executionCode:
+                type: string
+                example: 99999
+              message:
+                type: object
+                properties:
+                  info:
+                    type: string
+                    example: "{\"errorCode\":404,\"errorMessage\":\"Nenhum registro encontrado.\"}"
     "500":
       description: Invalid input
       content:
@@ -120,6 +264,291 @@ get:
               code:
                 type: integer
                 example: 500
+              executionCode:
+                type: string
+                example: 99999
+              message:
+                type: object
+                properties:
+                  info:
+                    type: string
+                    example: "{\"code\":500,\"detailedMessage\":\"\",\"message\":\"Internal Server Error\"}"
+  security:
+    - basicAuth: []
+
+put:
+  tags:
+    - Transportadora
+  summary: EndPoint para alterar uma transportadora pelo código
+  operationId: UpdateTransportadora
+  parameters:
+    - name: "tenantId"
+      in: header
+      description: TenantId (EMPRESA,FILIAL)
+      required: false
+      schema:
+        type: string
+        example: 01,0101
+    - name: "Authorization"
+      in: query
+      description: Código em base64 de autorização (USUARIO:SENHA)
+      required: true
+      schema:
+        type: string
+        example: Basic XXXXXXX
+    - name: "ambiente_dev"
+      in: query
+      description: Direcionar para ambiente de desenvolvimento
+      required: false
+      schema:
+        type: string
+        example: true
+    - name: "codigo"
+      in: query
+      description: Número do código da transportadora
+      required: true
+      schema:
+        type: string
+        example: "1"
+  requestBody:
+    required: true
+    content:
+      application/json:
+        schema:
+          $ref: "./schemas/SA4.yaml"
+  responses:
+    "200":
+      description: Successful response
+      content:
+        application/json:
+          schema:
+            type: object
+            properties:
+              success:
+                type: boolean
+                example: true
+              code:
+                type: integer
+                example: 200
+              environment:
+                type: string
+                example: Desenvolvimento
+              executionCode:
+                type: string
+                example: 99999
+              message:
+                type: object
+                properties:
+                  info:
+                    type: string
+                    example: Transportadora alterado com sucesso!
+                  A4_COD:
+                    type: string
+                    example: 000001
+    "400":
+      description: Invalid input
+      content:
+        application/json:
+          schema:
+            type: object
+            properties:
+              success:
+                type: boolean
+                example: false
+              code:
+                type: integer
+                example: 400
+              environment:
+                type: string
+                example: Desenvolvimento
+              executionCode:
+                type: string
+                example: 99999
+              message:
+                type: object
+                properties:
+                  info:
+                    type: string
+                    example: Descrição do erro.
+    "404":
+      description: Invalid input
+      content:
+        application/json:
+          schema:
+            type: object
+            properties:
+              success:
+                type: boolean
+                example: false
+              code:
+                type: integer
+                example: 404
+              environment:
+                type: string
+                example: Desenvolvimento
+              executionCode:
+                type: string
+                example: 99999
+              message:
+                type: object
+                properties:
+                  info:
+                    type: string
+                    example: "{\"errorCode\":404,\"errorMessage\":\"Nenhum registro encontrado.\"}"
+    "500":
+      description: Invalid input
+      content:
+        application/json:
+          schema:
+            type: object
+            properties:
+              success:
+                type: boolean
+                example: false
+              code:
+                type: integer
+                example: 500
+              executionCode:
+                type: string
+                example: 99999
+              message:
+                type: object
+                properties:
+                  info:
+                    type: string
+                    example: "{\"code\":500,\"detailedMessage\":\"\",\"message\":\"Internal Server Error\"}"
+  security:
+    - basicAuth: []
+
+delete:
+  tags:
+    - Transportadora
+  summary: EndPoint para deletar uma transportadora pelo código
+  operationId: deleteTransportadoraById
+  parameters:
+    - name: "tenantId"
+      in: header
+      description: TenantId (EMPRESA,FILIAL)
+      required: false
+      schema:
+        type: string
+        example: 01,0101
+    - name: "Authorization"
+      in: query
+      description: Código em base64 de autorização (USUARIO:SENHA)
+      required: true
+      schema:
+        type: string
+        example: Basic XXXXXXX
+    - name: "ambiente_dev"
+      in: query
+      description: Direcionar para ambiente de desenvolvimento
+      required: false
+      schema:
+        type: string
+        example: true
+    - name: "codigo"
+      in: query
+      description: Número do código da transportadora
+      required: true
+      schema:
+        type: string
+        example: "1"
+  responses:
+    "200":
+      description: Successful response
+      content:
+        application/json:
+          schema:
+            type: object
+            properties:
+              success:
+                type: boolean
+                example: true
+              code:
+                type: integer
+                example: 200
+              environment:
+                type: string
+                example: Desenvolvimento
+              executionCode:
+                type: string
+                example: 99999
+              message:
+                type: object
+                properties:
+                  info:
+                    type: string
+                    example: Transportadora deletado com sucesso!
+                  A4_COD:
+                    type: string
+                    example: 000001
+    "400":
+      description: Invalid input
+      content:
+        application/json:
+          schema:
+            type: object
+            properties:
+              success:
+                type: boolean
+                example: false
+              code:
+                type: integer
+                example: 400
+              environment:
+                type: string
+                example: Desenvolvimento
+              executionCode:
+                type: string
+                example: 99999
+              message:
+                type: object
+                properties:
+                  info:
+                    type: string
+                    example: Descrição do erro.
+    "404":
+      description: Invalid input
+      content:
+        application/json:
+          schema:
+            type: object
+            properties:
+              success:
+                type: boolean
+                example: false
+              code:
+                type: integer
+                example: 404
+              environment:
+                type: string
+                example: Desenvolvimento
+              executionCode:
+                type: string
+                example: 99999
+              message:
+                type: object
+                properties:
+                  info:
+                    type: string
+                    example: "{\"errorCode\":404,\"errorMessage\":\"Nenhum registro encontrado.\"}"
+    "500":
+      description: Invalid input
+      content:
+        application/json:
+          schema:
+            type: object
+            properties:
+              success:
+                type: boolean
+                example: false
+              code:
+                type: integer
+                example: 500
+              executionCode:
+                type: string
+                example: 99999
               message:
                 type: object
                 properties:
