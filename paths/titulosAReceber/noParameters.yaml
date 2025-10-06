@@ -172,29 +172,36 @@ get:
         type: string
         example: true
     - name: "prefixo"
-      in: path
+      in: query
       description: Número do prefixo do titulo a receber
       required: false
       schema:
         type: string
         example: "001"
     - name: "codigo"
-      in: path
+      in: query
       description: Número do código do titulo a receber
       required: false
       schema:
         type: string
         example: "000001"
     - name: "parcela"
-      in: path
+      in: query
       description: Número da parcela do titulo a receber
       required: false
       schema:
         type: string
         example: "01"
     - name: "tipo"
-      in: path
+      in: query
       description: Número do tipo do titulo a receber
+      required: false
+      schema:
+        type: string
+        example: "001"
+    - name: "itemContabil"
+      in: query
+      description: Número do item contabil
       required: false
       schema:
         type: string
@@ -326,28 +333,28 @@ put:
         type: string
         example: true
     - name: "prefixo"
-      in: path
+      in: query
       description: Número do prefixo do titulo a receber
       required: true
       schema:
         type: string
         example: "001"
     - name: "codigo"
-      in: path
+      in: query
       description: Número do código do titulo a receber
       required: true
       schema:
         type: string
         example: "000001"
     - name: "parcela"
-      in: path
+      in: query
       description: Número da parcela do titulo a receber
       required: true
       schema:
         type: string
         example: "01"
     - name: "tipo"
-      in: path
+      in: query
       description: Número do tipo do titulo a receber
       required: true
       schema:
@@ -500,28 +507,28 @@ delete:
         type: string
         example: true
     - name: "prefixo"
-      in: path
+      in: query
       description: Número do prefixo do titulo a receber
       required: true
       schema:
         type: string
         example: "001"
     - name: "codigo"
-      in: path
+      in: query
       description: Número do código do titulo a receber
       required: true
       schema:
         type: string
         example: "000001"
     - name: "parcela"
-      in: path
+      in: query
       description: Número da parcela do titulo a receber
       required: true
       schema:
         type: string
         example: "01"
     - name: "tipo"
-      in: path
+      in: query
       description: Número do tipo do titulo a receber
       required: true
       schema:

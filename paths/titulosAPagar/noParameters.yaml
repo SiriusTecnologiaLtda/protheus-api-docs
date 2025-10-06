@@ -125,7 +125,7 @@ post:
                 properties:
                   info:
                     type: string
-                    example: "{\"errorCode\":404,\"errorMessage\":\"Nenhum registro encontrado.\"}"
+                    example: '{"errorCode":404,"errorMessage":"Nenhum registro encontrado."}'
     "500":
       description: Invalid input
       content:
@@ -147,7 +147,7 @@ post:
                 properties:
                   info:
                     type: string
-                    example: "{\"code\":500,\"detailedMessage\":\"\",\"message\":\"Internal Server Error\"}"
+                    example: '{"code":500,"detailedMessage":"","message":"Internal Server Error"}'
   security:
     - basicAuth: []
 get:
@@ -219,6 +219,13 @@ get:
       schema:
         type: string
         example: "01"
+    - name: "itemContabil"
+      in: query
+      description: Número do item contabil
+      required: false
+      schema:
+        type: string
+        example: "001"
   responses:
     "200":
       description: Successful response
@@ -292,7 +299,7 @@ get:
                 properties:
                   info:
                     type: string
-                    example: "{\"errorCode\":404,\"errorMessage\":\"Nenhum registro encontrado.\"}"
+                    example: '{"errorCode":404,"errorMessage":"Nenhum registro encontrado."}'
     "500":
       description: Invalid input
       content:
@@ -314,7 +321,7 @@ get:
                 properties:
                   info:
                     type: string
-                    example: "{\"code\":500,\"detailedMessage\":\"\",\"message\":\"Internal Server Error\"}"
+                    example: '{"code":500,"detailedMessage":"","message":"Internal Server Error"}'
   security:
     - basicAuth: []
 
@@ -486,7 +493,7 @@ put:
                 properties:
                   info:
                     type: string
-                    example: "{\"errorCode\":404,\"errorMessage\":\"Nenhum registro encontrado.\"}"
+                    example: '{"errorCode":404,"errorMessage":"Nenhum registro encontrado."}'
     "500":
       description: Invalid input
       content:
@@ -508,7 +515,7 @@ put:
                 properties:
                   info:
                     type: string
-                    example: "{\"code\":500,\"detailedMessage\":\"\",\"message\":\"Internal Server Error\"}"
+                    example: '{"code":500,"detailedMessage":"","message":"Internal Server Error"}'
   security:
     - basicAuth: []
 
@@ -674,7 +681,7 @@ delete:
                 properties:
                   info:
                     type: string
-                    example: "{\"errorCode\":404,\"errorMessage\":\"Nenhum registro encontrado.\"}"
+                    example: '{"errorCode":404,"errorMessage":"Nenhum registro encontrado."}'
     "500":
       description: Invalid input
       content:
@@ -696,6 +703,6 @@ delete:
                 properties:
                   info:
                     type: string
-                    example: "{\"code\":500,\"detailedMessage\":\"\",\"message\":\"Internal Server Error\"}"
+                    example: '{"code":500,"detailedMessage":"","message":"Internal Server Error"}'
   security:
     - basicAuth: []
