@@ -53,6 +53,9 @@ paths:
 
   /api/v1/titulosAReceber:
     $ref: './paths/titulosAReceber/noParameters.yaml'
+  
+  /api/v1/titulosAReceber/baixa:
+    $ref: './paths/titulosAReceber/baixaDeTitulo.yaml'
 
   /api/v1/titulosAPagar:
     $ref: './paths/titulosAPagar/noParameters.yaml'

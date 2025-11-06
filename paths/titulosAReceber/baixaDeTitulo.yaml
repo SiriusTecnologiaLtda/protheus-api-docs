@@ -1,315 +1,8 @@
 post:
   tags:
     - TitulosAReceber
-  summary: EndPoint para criar um titulo a receber
-  operationId: postTitulosAReceber
-  parameters:
-    - name: "tenantId"
-      in: header
-      description: TenantId (EMPRESA,FILIAL)
-      required: false
-      schema:
-        type: string
-        example: 01,0101
-    - name: "Authorization"
-      in: query
-      description: Código em base64 de autorização (USUARIO:SENHA)
-      required: true
-      schema:
-        type: string
-        example: Basic XXXXXXX
-    - name: "ambiente_dev"
-      in: query
-      description: Direcionar para ambiente de desenvolvimento
-      required: false
-      schema:
-        type: string
-        example: true
-  requestBody:
-    required: true
-    content:
-      application/json:
-        schema:
-          $ref: "./schemas/SE1.yaml"
-
-  responses:
-    "200":
-      description: Successful response
-      content:
-        application/json:
-          schema:
-            type: object
-            properties:
-              success:
-                type: boolean
-                example: true
-              code:
-                type: integer
-                example: 200
-              environment:
-                type: string
-                example: Desenvolvimento
-              executionCode:
-                type: string
-                example: 99999
-              message:
-                type: object
-                properties:
-                  info:
-                    type: string
-                    example: Título a receber incluido com sucesso!
-                  E1_PREFIXO:
-                    type: string
-                    example: MAN
-                  E1_NUM:
-                    type: string
-                    example: 99/9999
-                  E1_PARCELA:
-                    type: string
-                    example: 000001
-                  E1_TIPO:
-                    type: string
-                    example: PRE
-    "400":
-      description: Invalid input
-      content:
-        application/json:
-          schema:
-            type: object
-            properties:
-              success:
-                type: boolean
-                example: false
-              code:
-                type: integer
-                example: 400
-              environment:
-                type: string
-                example: Desenvolvimento
-              executionCode:
-                type: string
-                example: 99999
-              message:
-                type: object
-                properties:
-                  info:
-                    type: string
-                    example: Descrição do erro.
-    "404":
-      description: Invalid input
-      content:
-        application/json:
-          schema:
-            type: object
-            properties:
-              success:
-                type: boolean
-                example: false
-              code:
-                type: integer
-                example: 404
-              environment:
-                type: string
-                example: Desenvolvimento
-              executionCode:
-                type: string
-                example: 99999
-              message:
-                type: object
-                properties:
-                  info:
-                    type: string
-                    example: "{\"errorCode\":404,\"errorMessage\":\"Nenhum registro encontrado.\"}"
-    "500":
-      description: Invalid input
-      content:
-        application/json:
-          schema:
-            type: object
-            properties:
-              success:
-                type: boolean
-                example: false
-              code:
-                type: integer
-                example: 500
-              executionCode:
-                type: string
-                example: 99999
-              message:
-                type: object
-                properties:
-                  info:
-                    type: string
-                    example: "{\"code\":500,\"detailedMessage\":\"\",\"message\":\"Internal Server Error\"}"
-  security:
-    - basicAuth: []
-get:
-  tags:
-    - TitulosAReceber
-  summary: EndPoint para retornar todos os titulos a receber
-  operationId: getAllTitulosAReceber
-  parameters:
-    - name: "tenantId"
-      in: header
-      description: TenantId (EMPRESA,FILIAL)
-      required: false
-      schema:
-        type: string
-        example: 01,0101
-    - name: "Authorization"
-      in: query
-      description: Código em base64 de autorização (USUARIO:SENHA)
-      required: true
-      schema:
-        type: string
-        example: Basic XXXXXXX
-    - name: "ambiente_dev"
-      in: query
-      description: Direcionar para ambiente de desenvolvimento
-      required: false
-      schema:
-        type: string
-        example: true
-    - name: "prefixo"
-      in: query
-      description: Número do prefixo do titulo a receber
-      required: false
-      schema:
-        type: string
-        example: "001"
-    - name: "codigo"
-      in: query
-      description: Número do código do titulo a receber
-      required: false
-      schema:
-        type: string
-        example: "000001"
-    - name: "parcela"
-      in: query
-      description: Número da parcela do titulo a receber
-      required: false
-      schema:
-        type: string
-        example: "01"
-    - name: "tipo"
-      in: query
-      description: Número do tipo do titulo a receber
-      required: false
-      schema:
-        type: string
-        example: "001"
-    - name: "itemContabil"
-      in: query
-      description: Número do item contabil
-      required: false
-      schema:
-        type: string
-        example: "001"
-  responses:
-    "200":
-      description: Successful response
-      content:
-        application/json:
-          schema:
-            type: object
-            properties:
-              success:
-                type: boolean
-                example: true
-              code:
-                type: integer
-                example: 200
-              environment:
-                type: string
-                example: Desenvolvimento
-              executionCode:
-                type: string
-                example: 99999
-              data:
-                type: array
-                items:
-                  $ref: "./schemas/SE1.yaml"
-    "400":
-      description: Invalid input
-      content:
-        application/json:
-          schema:
-            type: object
-            properties:
-              success:
-                type: boolean
-                example: false
-              code:
-                type: integer
-                example: 400
-              environment:
-                type: string
-                example: Desenvolvimento
-              executionCode:
-                type: string
-                example: 99999
-              message:
-                type: object
-                properties:
-                  info:
-                    type: string
-                    example: Descrição do erro.
-    "404":
-      description: Invalid input
-      content:
-        application/json:
-          schema:
-            type: object
-            properties:
-              success:
-                type: boolean
-                example: false
-              code:
-                type: integer
-                example: 404
-              environment:
-                type: string
-                example: Desenvolvimento
-              executionCode:
-                type: string
-                example: 99999
-              message:
-                type: object
-                properties:
-                  info:
-                    type: string
-                    example: "{\"errorCode\":404,\"errorMessage\":\"Nenhum registro encontrado.\"}"
-    "500":
-      description: Invalid input
-      content:
-        application/json:
-          schema:
-            type: object
-            properties:
-              success:
-                type: boolean
-                example: false
-              code:
-                type: integer
-                example: 500
-              executionCode:
-                type: string
-                example: 99999
-              message:
-                type: object
-                properties:
-                  info:
-                    type: string
-                    example: "{\"code\":500,\"detailedMessage\":\"\",\"message\":\"Internal Server Error\"}"
-  security:
-    - basicAuth: []
-
-put:
-  tags:
-    - TitulosAReceber
-  summary: EndPoint para alterar um titulo a receber pelo código
-  operationId: UpdateTitulosAReceber
+  summary: EndPoint para efetuar a baixa de titulos a receber
+  operationId: postBaixaTitulosAReceber
   parameters:
     - name: "tenantId"
       in: header
@@ -365,7 +58,8 @@ put:
     content:
       application/json:
         schema:
-          $ref: "./schemas/SE1.yaml"
+          $ref: "./schemas/baixa.yaml"
+
   responses:
     "200":
       description: Successful response
@@ -391,7 +85,7 @@ put:
                 properties:
                   info:
                     type: string
-                    example: Título a receber alterado com sucesso!
+                    example: Realizado a baixa do Título a receber com sucesso!
                   E1_PREFIXO:
                     type: string
                     example: MAN
@@ -482,8 +176,8 @@ put:
 delete:
   tags:
     - TitulosAReceber
-  summary: EndPoint para deletar um titulo a receber pelo código
-  operationId: deleteTitulosAReceberById
+  summary: EndPoint para efetuar o cancelamento da baixa de titulos a receber pelo código
+  operationId: DelBaixaTitulosAReceberById
   parameters:
     - name: "tenantId"
       in: header
@@ -559,7 +253,7 @@ delete:
                 properties:
                   info:
                     type: string
-                    example: Título a receber deletado com sucesso!
+                    example: Realizado o cancelamento da baixa do Título a receber realizado com sucesso!
                   E1_PREFIXO:
                     type: string
                     example: MAN
@@ -646,3 +340,4 @@ delete:
                     example: "{\"code\":500,\"detailedMessage\":\"\",\"message\":\"Internal Server Error\"}"
   security:
     - basicAuth: []
+
