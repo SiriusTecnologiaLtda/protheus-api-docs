@@ -60,6 +60,9 @@ paths:
   /api/v1/titulosAPagar:
     $ref: './paths/titulosAPagar/noParameters.yaml'
 
+  /api/v1/titulosAPagar/baixa:
+    $ref: './paths/titulosAPagar/baixaDeTitulo.yaml'
+
   /api/v1/itemContabil:
     $ref: './paths/itemContabil/noParameters.yaml'
 

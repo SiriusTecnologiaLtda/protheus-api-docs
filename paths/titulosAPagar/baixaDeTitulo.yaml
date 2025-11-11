@@ -1,0 +1,383 @@
+post:
+  tags:
+    - TitulosAPagar
+  summary: EndPoint para efetuar a baixa de titulos a pagar
+  operationId: postBaixaTitulosAPagar
+  parameters:
+    - name: "tenantId"
+      in: header
+      description: TenantId (EMPRESA,FILIAL)
+      required: false
+      schema:
+        type: string
+        example: 01,0101
+    - name: "Authorization"
+      in: query
+      description: Código em base64 de autorização (USUARIO:SENHA)
+      required: true
+      schema:
+        type: string
+        example: Basic XXXXXXX
+    - name: "ambiente_dev"
+      in: query
+      description: Direcionar para ambiente de desenvolvimento
+      required: false
+      schema:
+        type: string
+        example: true
+    - name: "prefixo"
+      in: query
+      description: Número do prefixo do titulo a pagar
+      required: true
+      schema:
+        type: string
+        example: "001"
+    - name: "codigo"
+      in: query
+      description: Número do código do titulo a pagar
+      required: true
+      schema:
+        type: string
+        example: "000001"
+    - name: "parcela"
+      in: query
+      description: Número da parcela do titulo a pagar
+      required: true
+      schema:
+        type: string
+        example: "01"
+    - name: "tipo"
+      in: query
+      description: Número do tipo do titulo a pagar
+      required: true
+      schema:
+        type: string
+        example: "001"
+    - name: "fornecedor"
+      in: query
+      description: Número do fornecedor do titulo a pagar
+      required: true
+      schema:
+        type: string
+        example: "000001"
+    - name: "loja"
+      in: query
+      description: Número da loja do titulo a pagar
+      required: true
+      schema:
+        type: string
+        example: "01"
+  requestBody:
+    required: true
+    content:
+      application/json:
+        schema:
+          $ref: "./schemas/baixa.yaml"
+
+  responses:
+    "200":
+      description: Successful response
+      content:
+        application/json:
+          schema:
+            type: object
+            properties:
+              success:
+                type: boolean
+                example: true
+              code:
+                type: integer
+                example: 200
+              environment:
+                type: string
+                example: Desenvolvimento
+              executionCode:
+                type: string
+                example: 99999
+              message:
+                type: object
+                properties:
+                  info:
+                    type: string
+                    example: Realizado a baixa do Título a pagar com sucesso!
+                  E2_PREFIXO:
+                    type: string
+                    example: MAN
+                  E2_NUM:
+                    type: string
+                    example: 99/9999
+                  E2_PARCELA:
+                    type: string
+                    example: 000001
+                  E2_TIPO:
+                    type: string
+                    example: FT
+                  E2_FORNEC:
+                    type: string
+                    example: 000011
+                  E2_LOJA:
+                    type: string
+                    example: 01
+    "400":
+      description: Invalid input
+      content:
+        application/json:
+          schema:
+            type: object
+            properties:
+              success:
+                type: boolean
+                example: false
+              code:
+                type: integer
+                example: 400
+              environment:
+                type: string
+                example: Desenvolvimento
+              executionCode:
+                type: string
+                example: 99999
+              message:
+                type: object
+                properties:
+                  info:
+                    type: string
+                    example: Descrição do erro.
+    "404":
+      description: Invalid input
+      content:
+        application/json:
+          schema:
+            type: object
+            properties:
+              success:
+                type: boolean
+                example: false
+              code:
+                type: integer
+                example: 404
+              environment:
+                type: string
+                example: Desenvolvimento
+              executionCode:
+                type: string
+                example: 99999
+              message:
+                type: object
+                properties:
+                  info:
+                    type: string
+                    example: "{\"errorCode\":404,\"errorMessage\":\"Nenhum registro encontrado.\"}"
+    "500":
+      description: Invalid input
+      content:
+        application/json:
+          schema:
+            type: object
+            properties:
+              success:
+                type: boolean
+                example: false
+              code:
+                type: integer
+                example: 500
+              executionCode:
+                type: string
+                example: 99999
+              message:
+                type: object
+                properties:
+                  info:
+                    type: string
+                    example: "{\"code\":500,\"detailedMessage\":\"\",\"message\":\"Internal Server Error\"}"
+  security:
+    - basicAuth: []
+
+delete:
+  tags:
+    - TitulosAPagar
+  summary: EndPoint para efetuar o cancelamento da baixa de titulos a pagar pelo código
+  operationId: DelBaixaTitulosAPagarById
+  parameters:
+    - name: "tenantId"
+      in: header
+      description: TenantId (EMPRESA,FILIAL)
+      required: false
+      schema:
+        type: string
+        example: 01,0101
+    - name: "Authorization"
+      in: query
+      description: Código em base64 de autorização (USUARIO:SENHA)
+      required: true
+      schema:
+        type: string
+        example: Basic XXXXXXX
+    - name: "ambiente_dev"
+      in: query
+      description: Direcionar para ambiente de desenvolvimento
+      required: false
+      schema:
+        type: string
+        example: true
+    - name: "prefixo"
+      in: query
+      description: Número do prefixo do titulo a pagar
+      required: true
+      schema:
+        type: string
+        example: "001"
+    - name: "codigo"
+      in: query
+      description: Número do código do titulo a pagar
+      required: true
+      schema:
+        type: string
+        example: "000001"
+    - name: "parcela"
+      in: query
+      description: Número da parcela do titulo a pagar
+      required: true
+      schema:
+        type: string
+        example: "01"
+    - name: "tipo"
+      in: query
+      description: Número do tipo do titulo a pagar
+      required: true
+      schema:
+        type: string
+        example: "001"
+    - name: "fornecedor"
+      in: query
+      description: Número do fornecedor do titulo a pagar
+      required: true
+      schema:
+        type: string
+        example: "000001"
+    - name: "loja"
+      in: query
+      description: Número da loja do titulo a pagar
+      required: true
+      schema:
+        type: string
+        example: "01"
+  responses:
+    "200":
+      description: Successful response
+      content:
+        application/json:
+          schema:
+            type: object
+            properties:
+              success:
+                type: boolean
+                example: true
+              code:
+                type: integer
+                example: 200
+              environment:
+                type: string
+                example: Desenvolvimento
+              executionCode:
+                type: string
+                example: 99999
+              message:
+                type: object
+                properties:
+                  info:
+                    type: string
+                    example: Realizado o cancelamento da baixa do Título a pagar realizado com sucesso!
+                  E2_PREFIXO:
+                    type: string
+                    example: MAN
+                  E2_NUM:
+                    type: string
+                    example: 99/9999
+                  E2_PARCELA:
+                    type: string
+                    example: 000001
+                  E2_TIPO:
+                    type: string
+                    example: FT
+                  E2_FORNEC:
+                    type: string
+                    example: 000011
+                  E2_LOJA:
+                    type: string
+                    example: 01
+    "400":
+      description: Invalid input
+      content:
+        application/json:
+          schema:
+            type: object
+            properties:
+              success:
+                type: boolean
+                example: false
+              code:
+                type: integer
+                example: 400
+              environment:
+                type: string
+                example: Desenvolvimento
+              executionCode:
+                type: string
+                example: 99999
+              message:
+                type: object
+                properties:
+                  info:
+                    type: string
+                    example: Descrição do erro.
+    "404":
+      description: Invalid input
+      content:
+        application/json:
+          schema:
+            type: object
+            properties:
+              success:
+                type: boolean
+                example: false
+              code:
+                type: integer
+                example: 404
+              environment:
+                type: string
+                example: Desenvolvimento
+              executionCode:
+                type: string
+                example: 99999
+              message:
+                type: object
+                properties:
+                  info:
+                    type: string
+                    example: "{\"errorCode\":404,\"errorMessage\":\"Nenhum registro encontrado.\"}"
+    "500":
+      description: Invalid input
+      content:
+        application/json:
+          schema:
+            type: object
+            properties:
+              success:
+                type: boolean
+                example: false
+              code:
+                type: integer
+                example: 500
+              executionCode:
+                type: string
+                example: 99999
+              message:
+                type: object
+                properties:
+                  info:
+                    type: string
+                    example: "{\"code\":500,\"detailedMessage\":\"\",\"message\":\"Internal Server Error\"}"
+  security:
+    - basicAuth: []
+

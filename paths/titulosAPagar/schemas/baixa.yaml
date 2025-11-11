@@ -1,0 +1,49 @@
+type: object
+properties:
+  AUTBANCO:
+    type: string
+    lenght: 3
+    description: "Código do agente cobrador (banco) em que a operação está sendo efetuada. Ex: Bradesco=237; Valor padrão E2_PORTADO."
+  AUTAGENCIA:
+    type: string
+    lenght: 5
+    description: "Código da agência do agente cobrador referente a operação bancária.; Valor padrão E2_AGEDEP."
+  AUTCONTA:
+    type: string
+    lenght: 10
+    description: "Número da conta bancária de/para onde os títulos serão debitados/creditados; Valor padrão E2_CONTA."
+  AUTMOTBX:
+    type: string
+    lenght: 3
+    options: "NOR - Normal;DEV - Devolução;DAC - Dação;DEB - Débito C/C"
+    example: "option"
+    description: "Deverá ser informado o motivo da baixa, conforme siglas cadastradas na tabela de motivos de baixas, opção: Miscelanea/Arquivos/Tabela Mot. Baixa; Valor padrão NOR - Normal."
+  AUTDTBAIXA:
+    type: string
+    example: "DD/MM/YYYY"
+    lenght: 10
+    description: "Data da baixa efetiva do título. Esta data será utilizada para a contábilização e lançamento do título; Valor padrão data atual."
+  AUTDTCREDITO:
+    type: string
+    example: "DD/MM/YYYY"
+    lenght: 10
+    description: "Data do crédito bancário referente à baixa do título em questão. Esta será utilizada como a data para a movimentação bancária; Valor padrão data atual."
+  AUTHIST:
+    type: string
+    lenght: 40
+    description: "Neste campo você pode digitar o histórico da baixa, modificando o texto originalmente sugerido; Valor padrão E2_HIST."
+  AUTJUROS:
+    type: number
+    lenght: 16
+    decimal: 2
+    description: "Valor do juros eventualmente aplicado a este título; Valor padrão E2_JUROS."
+  AUTDESCONT:
+    type: number
+    lenght: 16
+    decimal: 2
+    description: "Valor de desconto dado ao título na ocasião da baixa; Valor padrão E2_DESCONT."
+  AUTVLRPG:
+    type: number
+    lenght: 16
+    decimal: 2
+    description: "Valor efetivamente recebido pelo título; Valor padrão E2_SALDO."
