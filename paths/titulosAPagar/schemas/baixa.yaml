@@ -20,12 +20,12 @@ properties:
     description: "Deverá ser informado o motivo da baixa, conforme siglas cadastradas na tabela de motivos de baixas, opção: Miscelanea/Arquivos/Tabela Mot. Baixa; Valor padrão NOR - Normal."
   AUTDTBAIXA:
     type: string
-    example: "DD/MM/YYYY"
+    example: "YYYYMMDD"
     lenght: 10
     description: "Data da baixa efetiva do título. Esta data será utilizada para a contábilização e lançamento do título; Valor padrão data atual."
   AUTDTCREDITO:
     type: string
-    example: "DD/MM/YYYY"
+    example: "YYYYMMDD"
     lenght: 10
     description: "Data do crédito bancário referente à baixa do título em questão. Esta será utilizada como a data para a movimentação bancária; Valor padrão data atual."
   AUTHIST:
