@@ -47,3 +47,43 @@ properties:
     lenght: 16
     decimal: 2
     description: "Valor efetivamente recebido pelo título; Valor padrão E1_SALDO."
+  Rateio:
+    type: array
+    items:
+      type: object
+      properties:
+        SEV:
+          type: object
+          properties:
+            EV_NATUREZ:
+              type: string
+              lenght: 10
+              description: "Natureza do orcamento."
+            EV_VALOR:
+              type: number
+              lenght: 16
+              decimal: 2
+              description: "Valor da movimentacao."
+            EV_PERC:
+              type: number
+              lenght: 11
+              decimal: 7
+              description: "Perc. Distribuido da Nat."
+            EV_RATEICC:
+              type: string
+              lenght: 1
+              options: "1=Sim;2=Nao"
+              example: "option"
+              description: "Rateio p/ Centro de Custo"
+        SEZ:
+          type: object
+          properties:
+            EZ_CCUSTO:
+              type: string
+              lenght: 9
+              description: "Centro de Custo."
+            EZ_VALOR:
+              type: number
+              lenght: 16
+              decimal: 2
+              description: "Valor do movimento."
